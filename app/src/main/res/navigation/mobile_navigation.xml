@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mobile_navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/playlistGenerationFragment">
 
+    <fragment
+        android:id="@+id/playlistGenerationFragment"
+        android:name="me.cpele.baladr.PlaylistGenerationFragment"
+        android:label="fragment_playlist_generation"
+        tools:layout="@layout/fragment_playlist_generation">
+        <action
+            android:id="@+id/action_playlistGenerationFragment_to_playlistDisplayFragment"
+            app:destination="@id/playlistDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistDisplayFragment"
+        android:name="me.cpele.baladr.PlaylistDisplayFragment"
+        android:label="fragment_playlist_display"
+        tools:layout="@layout/fragment_playlist_display" />
 </navigation>
