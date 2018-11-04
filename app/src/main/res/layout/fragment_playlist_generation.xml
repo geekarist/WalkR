@@ -19,17 +19,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/generationTempoMinLabel"
+        android:id="@+id/generationTempoMaxLabel"
+        style="@android:style/TextAppearance.Material.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="60"
+        android:layout_marginEnd="16dp"
+        android:text="260"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
         app:layout_constraintBottom_toBottomOf="@id/generationTempoSeekBar"
-        app:layout_constraintEnd_toStartOf="@+id/generationTempoSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/generationTempoSeekBar"
-        tools:layout_editor_absoluteY="57dp" />
+        app:layout_constraintStart_toEndOf="@+id/generationTempoSeekBar"
+        app:layout_constraintTop_toTopOf="@id/generationTempoSeekBar" />
 
     <SeekBar
         android:id="@+id/generationTempoSeekBar"
@@ -40,23 +41,8 @@
         android:max="140"
         android:progress="10"
         app:layout_constraintEnd_toStartOf="@+id/generationTempoMaxLabel"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/generationTempoMinLabel"
-        app:layout_constraintTop_toBottomOf="@id/generationTempoLabel"
-        tools:layout_editor_absoluteY="59dp" />
-
-    <TextView
-        android:id="@+id/generationTempoMaxLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="260"
-        app:layout_constraintBottom_toBottomOf="@id/generationTempoSeekBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/generationTempoSeekBar"
-        app:layout_constraintTop_toTopOf="@id/generationTempoSeekBar"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generationTempoLabel" />
 
     <Button
         android:id="@+id/generation"
@@ -66,6 +52,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="Generate"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
