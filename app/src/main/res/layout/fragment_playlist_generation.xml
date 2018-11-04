@@ -18,19 +18,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/generationTempoMinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="60"
+        app:layout_constraintBottom_toBottomOf="@id/generationTempoSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/generationTempoSeekBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/generationTempoSeekBar"
+        tools:layout_editor_absoluteY="57dp" />
+
     <SeekBar
         android:id="@+id/generationTempoSeekBar"
         style="@android:style/Widget.Material.SeekBar"
         android:layout_width="0dp"
         android:layout_height="15dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:max="140"
         android:progress="10"
+        app:layout_constraintEnd_toStartOf="@+id/generationTempoMaxLabel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/generationTempoMinLabel"
+        app:layout_constraintTop_toBottomOf="@id/generationTempoLabel"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/generationTempoMaxLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="260"
+        app:layout_constraintBottom_toBottomOf="@id/generationTempoSeekBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/generationTempoLabel" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/generationTempoSeekBar"
+        app:layout_constraintTop_toTopOf="@id/generationTempoSeekBar"
+        tools:layout_editor_absoluteY="53dp" />
 
     <Button
         android:id="@+id/generation"
@@ -42,4 +68,5 @@
         android:text="Generate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
