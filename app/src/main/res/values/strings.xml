@@ -3,4 +3,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="display_label">Playlist Tracks</string>
+    <string name="display_open">Open Playlist</string>
+    <string name="generation_tempo_label">Tempo</string>
+    <string name="generation_tempo_max_label">260 bpm</string>
+    <string name="generation_generate_playlist">Generate Playlist</string>
 </resources>

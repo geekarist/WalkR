@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Tempo"
+        android:text="@string/generation_tempo_label"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:text="260 bpm"
+        android:text="@string/generation_tempo_max_label"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
         app:layout_constraintBottom_toBottomOf="@id/generationTempoSeekBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,13 +45,13 @@
         app:layout_constraintTop_toBottomOf="@id/generationTempoLabel" />
 
     <Button
-        android:id="@+id/generation"
+        android:id="@+id/generationButton"
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Generate"
+        android:text="@string/generation_generate_playlist"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

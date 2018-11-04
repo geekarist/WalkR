@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_playlist_generation.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -27,5 +29,11 @@ class PlaylistGenerationFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_playlist_generation, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        generationButton.setOnClickListener {
+            findNavController().navigate(R.id.action_playlistGenerationFragment_to_playlistDisplayFragment)
+        }
+    }
 }
