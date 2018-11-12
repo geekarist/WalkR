@@ -1,13 +1,13 @@
 package me.cpele.baladr
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import kotlinx.android.synthetic.main.fragment_playlist_display.*
 
 class PlaylistDisplayFragment : Fragment() {
 
@@ -24,8 +24,10 @@ class PlaylistDisplayFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val adapter = PlaylistAdapter()
+        displayList.adapter = adapter
         viewModel.tracks.observe(this, Observer { tracks: List<Track> ->
-            Log.d(javaClass.simpleName, tracks.toString())
+            adapter.submitList(tracks)
         })
     }
 }
