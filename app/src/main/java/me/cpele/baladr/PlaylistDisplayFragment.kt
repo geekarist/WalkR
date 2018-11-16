@@ -12,7 +12,10 @@ import kotlinx.android.synthetic.main.fragment_playlist_display.*
 class PlaylistDisplayFragment : Fragment() {
 
     private val viewModel: PlaylistDisplayViewModel by lazy {
-        ViewModelProviders.of(this).get(PlaylistDisplayViewModel::class.java)
+        ViewModelProviders.of(
+            this,
+            CustomApp.instance.playlistDisplayViewModelFactory
+        ).get(PlaylistDisplayViewModel::class.java)
     }
 
     override fun onCreateView(

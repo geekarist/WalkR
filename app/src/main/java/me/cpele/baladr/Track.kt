@@ -1,5 +1,8 @@
 package me.cpele.baladr
 
+import androidx.room.Entity
+
+@Entity
 data class Track(
     val id: String,
     val cover: String,
