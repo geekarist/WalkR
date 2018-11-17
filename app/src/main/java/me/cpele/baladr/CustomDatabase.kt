@@ -4,7 +4,8 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 
 @Database(
-    version = 1, entities = [
+    version = 1,
+    entities = [
         Track::class
     ]
 )

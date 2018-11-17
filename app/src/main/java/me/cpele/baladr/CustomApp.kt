@@ -6,7 +6,13 @@ import androidx.room.Room
 
 class CustomApp : Application() {
 
-    lateinit var playlistDisplayViewModelFactory: ViewModelProvider.Factory
+    private val database: CustomDatabase by lazy {
+        Room.databaseBuilder(this, CustomDatabase::class.java, "custom.db").build()
+    }
+
+    val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {
+        PlaylistDisplayViewModel.Factory(this, database.trackDao())
+    }
 
     companion object {
         lateinit var instance: CustomApp
@@ -15,7 +21,5 @@ class CustomApp : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        val database: CustomDatabase = Room.databaseBuilder(this, CustomDatabase::class.java, "custom.db").build()
-        playlistDisplayViewModelFactory = PlaylistDisplayViewModel.Factory(this, database.trackDao())
     }
 }
