@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="me.cpele.baladr">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".CustomApp"
         android:allowBackup="true"

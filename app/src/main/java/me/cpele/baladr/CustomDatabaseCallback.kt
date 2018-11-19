@@ -27,7 +27,7 @@ class CustomDatabaseCallback : RoomDatabase.Callback() {
             trackDto?.let {
                 TrackBo(
                     it.id ?: TODO(),
-                    "TODO",
+                    it.album?.images?.get(0)?.url ?: "https://picsum.photos/200",
                     it.name ?: TODO(),
                     it.artists?.get(0)?.name ?: TODO(),
                     it.duration_ms.toString(),
