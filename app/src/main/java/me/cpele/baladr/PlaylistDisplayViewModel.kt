@@ -17,5 +17,5 @@ class PlaylistDisplayViewModel(application: Application, trackDao: TrackDao) : A
         }
     }
 
-    val tracks: LiveData<List<Track>> = trackDao.findByTempo(80)
+    val tracks: LiveData<List<TrackBo>> = trackDao.findByTempo(80)
 }

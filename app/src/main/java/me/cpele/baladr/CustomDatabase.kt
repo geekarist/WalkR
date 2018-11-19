@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase
 @Database(
     version = 1,
     entities = [
-        Track::class
+        TrackBo::class
     ]
 )
 abstract class CustomDatabase : RoomDatabase() {

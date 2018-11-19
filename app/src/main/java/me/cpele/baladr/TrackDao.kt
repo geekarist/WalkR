@@ -2,10 +2,14 @@ package me.cpele.baladr
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
+import androidx.room.Insert
 import androidx.room.Query
 
 @Dao
 interface TrackDao {
-    @Query("SELECT * FROM Track WHERE tempo = :tempo")
-    fun findByTempo(tempo: Int): LiveData<List<Track>>
+    @Query("SELECT * FROM TrackBo WHERE tempo = :tempo")
+    fun findByTempo(tempo: Int): LiveData<List<TrackBo>>
+
+    @Insert
+    fun insertAll(tracks: List<TrackBo>)
 }

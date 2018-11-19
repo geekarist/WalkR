@@ -6,8 +6,10 @@ import androidx.room.Room
 
 class CustomApp : Application() {
 
-    private val database: CustomDatabase by lazy {
-        Room.databaseBuilder(this, CustomDatabase::class.java, "custom.db").build()
+    val database: CustomDatabase by lazy {
+        Room.databaseBuilder(this, CustomDatabase::class.java, "custom.db")
+            .addCallback(CustomDatabaseCallback())
+            .build()
     }
 
     val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {

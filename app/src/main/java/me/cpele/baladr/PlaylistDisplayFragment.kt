@@ -29,7 +29,7 @@ class PlaylistDisplayFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val adapter = PlaylistAdapter()
         displayList.adapter = adapter
-        viewModel.tracks.observe(this, Observer { tracks: List<Track> ->
+        viewModel.tracks.observe(this, Observer { tracks: List<TrackBo> ->
             adapter.submitList(tracks)
         })
     }
