@@ -12,4 +12,7 @@ interface TrackDao {
 
     @Insert
     fun insertAll(tracks: List<TrackBo>)
+
+    @Query("SELECT COUNT(*) FROM TrackBo")
+    fun count(): Int
 }
