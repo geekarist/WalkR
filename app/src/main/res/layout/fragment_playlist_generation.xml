@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -15,6 +16,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/generation_tempo_label"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
+        app:layout_constraintBottom_toTopOf="@+id/generationTempoSeekBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,23 +38,36 @@
         android:id="@+id/generationTempoSeekBar"
         style="@android:style/Widget.Material.SeekBar"
         android:layout_width="0dp"
-        android:layout_height="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:max="140"
         android:progress="10"
         app:layout_constraintEnd_toStartOf="@+id/generationTempoMaxLabel"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/generationTempoLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/generationTempoLabel" />
+
+    <View
+        android:id="@+id/generationDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/generationButton" />
 
     <Button
         android:id="@+id/generationButton"
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/generation_generate_playlist"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
