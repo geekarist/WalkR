@@ -31,16 +31,19 @@ class PlaylistGenerationFragment : Fragment() {
 
         generationTempoSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                viewModel.onTempoChanged(progress)
+                viewModel.onProgressChanged(progress)
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) = Unit
             override fun onStopTrackingTouch(seekBar: SeekBar?) = Unit
         })
 
-        viewModel.tempo.observe(this, Observer { tempo: Int ->
-            generationTempoMaxLabel.text = tempo.toString()
-            generationTempoSeekBar.progress = tempo
+        viewModel.progress.observe(this, Observer { progress: Int ->
+            generationTempoSeekBar.progress = progress
+        })
+
+        viewModel.tempo.observe(this, Observer {
+            generationTempoMaxLabel.text = it.toString()
         })
 
         generationButton.setOnClickListener {
