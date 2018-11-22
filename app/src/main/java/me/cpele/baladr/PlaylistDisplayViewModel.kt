@@ -1,10 +1,7 @@
 package me.cpele.baladr
 
 import android.app.Application
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.*
 
 class PlaylistDisplayViewModel(application: Application, trackDao: TrackDao) : AndroidViewModel(application) {
 
@@ -17,5 +14,13 @@ class PlaylistDisplayViewModel(application: Application, trackDao: TrackDao) : A
         }
     }
 
-    val tracks: LiveData<List<TrackBo>> = trackDao.findByTempo(80)
+    private val tempoData: MutableLiveData<Int> = MutableLiveData()
+
+    val tracks: LiveData<List<TrackBo>> = Transformations.switchMap(tempoData) { tempo ->
+        trackDao.findByTempo(tempo)
+    }
+
+    fun onPostTempo(newTempo: Int?) {
+        tempoData.value = newTempo
+    }
 }
