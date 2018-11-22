@@ -14,9 +14,16 @@
             android:id="@+id/action_playlistGenerationFragment_to_playlistDisplayFragment"
             app:destination="@id/playlistDisplayFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/playlistDisplayFragment"
         android:name="me.cpele.baladr.PlaylistDisplayFragment"
         android:label="fragment_playlist_display"
-        tools:layout="@layout/fragment_playlist_display" />
+        tools:layout="@layout/fragment_playlist_display">
+        <argument
+            android:name="ARG_TEMPO"
+            android:defaultValue="100"
+            app:argType="integer" />
+    </fragment>
+
 </navigation>

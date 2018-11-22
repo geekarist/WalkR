@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -47,7 +48,11 @@ class PlaylistGenerationFragment : Fragment() {
         })
 
         generationButton.setOnClickListener {
-            findNavController().navigate(R.id.action_playlistGenerationFragment_to_playlistDisplayFragment)
+            val bundle = bundleOf("ARG_TEMPO" to viewModel.tempo.value)
+            findNavController().navigate(
+                R.id.action_playlistGenerationFragment_to_playlistDisplayFragment,
+                bundle
+            )
         }
     }
 }
