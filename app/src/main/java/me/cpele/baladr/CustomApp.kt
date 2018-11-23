@@ -10,7 +10,7 @@ class CustomApp : Application() {
 
     val database: CustomDatabase by lazy {
         Room.databaseBuilder(this, CustomDatabase::class.java, "custom.db")
-            .addCallback(CustomDatabaseCallback())
+            .addCallback(DatabasePopulationCallback())
             .build()
     }
 

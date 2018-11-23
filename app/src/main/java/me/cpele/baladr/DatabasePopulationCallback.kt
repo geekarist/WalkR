@@ -12,7 +12,12 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 import java.nio.charset.Charset
 
-class CustomDatabaseCallback : RoomDatabase.Callback() {
+class DatabasePopulationCallback : RoomDatabase.Callback() {
+
+    private val app by lazy { CustomApp.instance }
+    private val gson by lazy { Gson() }
+    private val trackDao by lazy { app.database.trackDao() }
+
     override fun onCreate(db: SupportSQLiteDatabase) {
         super.onCreate(db)
 
@@ -22,10 +27,23 @@ class CustomDatabaseCallback : RoomDatabase.Callback() {
     }
 
     private fun init() = GlobalScope.async(Dispatchers.IO) {
-        val app = CustomApp.instance
-        val trackDao = app.database.trackDao()
-        val rawRes = app.resources.openRawResource(R.raw.default_reco_100)
-        val tracksDto = Gson().fromJson(rawRes.reader(Charset.defaultCharset()), TracksDto::class.java)
+        for (tempo in 70..200 step 10) {
+            insertDefaultTracks(tempo)
+        }
+    }
+
+    private fun insertDefaultTracks(tempo: Int) {
+        val rawRes = app.resources.openRawResource(
+            app.resources.getIdentifier(
+                "default_reco_$tempo",
+                "raw",
+                app.packageName
+            )
+        )
+        val tracksDto = gson.fromJson(
+            rawRes.reader(Charset.defaultCharset()),
+            TracksDto::class.java
+        )
         tracksDto.tracks?.map { trackDto ->
             trackDto?.let {
                 val url = it.album?.images?.get(0)?.url ?: "https://picsum.photos/200"
@@ -40,7 +58,7 @@ class CustomDatabaseCallback : RoomDatabase.Callback() {
                     it.name ?: TODO(),
                     it.artists?.get(0)?.name ?: TODO(),
                     it.duration_ms.toString(),
-                    80
+                    tempo
                 )
             } ?: TODO()
         }?.let {
