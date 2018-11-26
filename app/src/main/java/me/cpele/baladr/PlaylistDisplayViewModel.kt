@@ -16,11 +16,20 @@ class PlaylistDisplayViewModel(application: Application, trackDao: TrackDao) : A
 
     private val tempoData: MutableLiveData<Int> = MutableLiveData()
 
+    private val _isButtonEnabled = MutableLiveData<Boolean>()
+
+    val isButtonEnabled
+        get() = _isButtonEnabled
+
     val tracks: LiveData<List<TrackBo>> = Transformations.switchMap(tempoData) { tempo ->
         trackDao.findByTempo(tempo)
     }
 
     fun onPostTempo(newTempo: Int?) {
         tempoData.value = newTempo
+    }
+
+    fun onNetworkActive(isNetworkActive: Boolean?) {
+        _isButtonEnabled.postValue(isNetworkActive == true)
     }
 }
