@@ -42,7 +42,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:max="140"
+        android:max="130"
         app:layout_constraintEnd_toStartOf="@+id/generationTempoMaxLabel"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
