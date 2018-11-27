@@ -15,7 +15,7 @@ class CustomApp : Application() {
     }
 
     val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {
-        PlaylistDisplayViewModel.Factory(this, database.trackDao())
+        PlaylistDisplayViewModel.Factory(this, database.trackDao(), database.playlistDao())
     }
 
     companion object {

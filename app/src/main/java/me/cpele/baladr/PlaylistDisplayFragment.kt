@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_playlist_display.*
 
 class PlaylistDisplayFragment : Fragment() {
@@ -77,6 +78,14 @@ class PlaylistDisplayFragment : Fragment() {
 
         viewModel.recyclerViewVisibility.observe(this, Observer {
             displayList.visibility = it
+        })
+
+        viewModel.playlistSaveEvent.observe(this, Observer {
+            Snackbar.make(
+                view,
+                "Playlist has been saved with ${it.consumed.trackIds.size} tracks",
+                Snackbar.LENGTH_LONG
+            )
         })
     }
 

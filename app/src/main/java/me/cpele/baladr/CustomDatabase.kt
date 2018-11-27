@@ -6,9 +6,11 @@ import androidx.room.RoomDatabase
 @Database(
     version = 1,
     entities = [
-        TrackBo::class
+        TrackBo::class,
+        PlaylistBo::class
     ]
 )
 abstract class CustomDatabase : RoomDatabase() {
     abstract fun trackDao(): TrackDao
+    abstract fun playlistDao(): PlaylistDao
 }

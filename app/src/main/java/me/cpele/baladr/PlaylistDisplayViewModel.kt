@@ -3,15 +3,23 @@ package me.cpele.baladr
 import android.app.Application
 import android.view.View
 import androidx.lifecycle.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import java.util.*
 
-class PlaylistDisplayViewModel(application: Application, trackDao: TrackDao) : AndroidViewModel(application) {
+class PlaylistDisplayViewModel(
+    application: Application,
+    trackDao: TrackDao,
+    private val playlistDao: PlaylistDao
+) : AndroidViewModel(application) {
 
     class Factory(
         private val application: Application,
-        private val trackDao: TrackDao
+        private val trackDao: TrackDao,
+        private val playlistDao: PlaylistDao
     ) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(PlaylistDisplayViewModel(application, trackDao)) as T
+            return modelClass.cast(PlaylistDisplayViewModel(application, trackDao, playlistDao)) as T
         }
     }
 
@@ -42,8 +50,19 @@ class PlaylistDisplayViewModel(application: Application, trackDao: TrackDao) : A
         tempoData.value = newTempo
     }
 
+    private val _playlistSaveEvent = MutableLiveData<LiveEvent<PlaylistBo>>()
+    val playlistSaveEvent: LiveData<LiveEvent<PlaylistBo>>
+        get() = _playlistSaveEvent
+
     fun onClickSave() {
-        TODO()
+        tracksData.value?.let { tracks ->
+            val trackIds = tracks.map { it.id }
+            val playlist = PlaylistBo(UUID.randomUUID().toString(), trackIds)
+            GlobalScope.launch {
+                playlistDao.insert(playlist)
+                _playlistSaveEvent.value = LiveEvent(playlist)
+            }
+        }
     }
 
     fun onConnectivityChange(status: Boolean) {
