@@ -40,12 +40,12 @@ class PlaylistDisplayFragment : Fragment() {
         object : ConnectivityManager.NetworkCallback() {
             override fun onAvailable(network: Network?) {
                 super.onAvailable(network)
-                viewModel.onNetworkActive(true)
+                viewModel.onConnectivityChange(true)
             }
 
             override fun onLost(network: Network?) {
                 super.onLost(network)
-                viewModel.onNetworkActive(false)
+                viewModel.onConnectivityChange(false)
             }
         }
     }
@@ -56,16 +56,28 @@ class PlaylistDisplayFragment : Fragment() {
         displayList.adapter = adapter
 
         viewModel.onPostTempo(arguments?.getInt("ARG_TEMPO"))
-        viewModel.tracks.observe(this, Observer { tracks: List<TrackBo> ->
+        viewModel.tracksData.observe(this, Observer { tracks: List<TrackBo> ->
             adapter.submitList(tracks)
         })
 
         viewModel.isButtonEnabled.observe(this, Observer {
-            displayButton.isEnabled = it
+            displaySaveButton.isEnabled = it
         })
 
         val req = NetworkRequest.Builder().addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET).build()
         connectivityManager?.registerNetworkCallback(req, networkCallback)
+
+        displaySaveButton.setOnClickListener {
+            viewModel.onClickSave()
+        }
+
+        viewModel.emptyViewVisibility.observe(this, Observer {
+            displayEmpty.visibility = it
+        })
+
+        viewModel.recyclerViewVisibility.observe(this, Observer {
+            displayList.visibility = it
+        })
     }
 
     override fun onDestroyView() {
