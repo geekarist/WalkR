@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/playlistGenerationFragment">
+    app:startDestination="@id/libraryFragment">
 
     <fragment
         android:id="@+id/playlistGenerationFragment"
@@ -24,6 +24,22 @@
             android:name="ARG_TEMPO"
             android:defaultValue="100"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_playlistDisplayFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="me.cpele.baladr.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryFragment_to_playlistGenerationFragment"
+            app:destination="@id/playlistGenerationFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_playlistDisplayFragment2"
+            app:destination="@id/playlistDisplayFragment" />
     </fragment>
 
 </navigation>

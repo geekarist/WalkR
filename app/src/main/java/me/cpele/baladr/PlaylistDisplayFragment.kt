@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_playlist_display.*
 
@@ -87,6 +88,7 @@ class PlaylistDisplayFragment : Fragment() {
                 "Playlist '${playlist.name}' has been saved with ${playlist.trackIds.size} tracks",
                 Snackbar.LENGTH_LONG
             ).show()
+            findNavController().navigate(R.id.action_playlistDisplayFragment_to_libraryFragment)
         })
     }
 
