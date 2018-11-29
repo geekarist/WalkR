@@ -81,9 +81,10 @@ class PlaylistDisplayFragment : Fragment() {
         })
 
         viewModel.playlistSaveEvent.observe(this, Observer {
+            val playlist = it.consumed
             Snackbar.make(
                 view,
-                "Playlist has been saved with ${it.consumed.trackIds.size} tracks",
+                "Playlist '${playlist.name}' has been saved with ${playlist.trackIds.size} tracks",
                 Snackbar.LENGTH_LONG
             ).show()
         })

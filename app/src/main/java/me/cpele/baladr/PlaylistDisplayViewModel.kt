@@ -57,7 +57,8 @@ class PlaylistDisplayViewModel(
     fun onClickSave() {
         tracksData.value?.let { tracks ->
             val trackIds = tracks.map { it.id }
-            val playlist = PlaylistBo(UUID.randomUUID().toString(), trackIds)
+            val name = Date().toString()
+            val playlist = PlaylistBo(name = name, trackIds = trackIds)
             GlobalScope.launch {
                 playlistDao.insert(playlist)
                 _playlistSaveEvent.postValue(LiveEvent(playlist))

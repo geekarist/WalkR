@@ -6,4 +6,8 @@ import androidx.room.TypeConverters
 
 @Entity
 @TypeConverters(ListTypeConverter::class)
-data class PlaylistBo(@PrimaryKey val id: String, val trackIds: List<String>)
+data class PlaylistBo(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val name: String,
+    val trackIds: List<String>
+)
