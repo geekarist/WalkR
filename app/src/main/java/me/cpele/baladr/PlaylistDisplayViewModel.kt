@@ -60,7 +60,7 @@ class PlaylistDisplayViewModel(
             val playlist = PlaylistBo(UUID.randomUUID().toString(), trackIds)
             GlobalScope.launch {
                 playlistDao.insert(playlist)
-                _playlistSaveEvent.value = LiveEvent(playlist)
+                _playlistSaveEvent.postValue(LiveEvent(playlist))
             }
         }
     }

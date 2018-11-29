@@ -85,7 +85,7 @@ class PlaylistDisplayFragment : Fragment() {
                 view,
                 "Playlist has been saved with ${it.consumed.trackIds.size} tracks",
                 Snackbar.LENGTH_LONG
-            )
+            ).show()
         })
     }
 
