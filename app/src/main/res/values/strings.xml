@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">BaladR</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="library_add">Add Playlist</string>
     <string name="display_label">Playlist Tracks</string>
     <string name="display_save">Save Playlist</string>
     <string name="generation_tempo_label">Tempo</string>

@@ -20,7 +20,7 @@ class LibraryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        libraryHello.setOnClickListener {
+        libraryButton.setOnClickListener {
             findNavController().navigate(R.id.action_libraryFragment_to_playlistGenerationFragment)
         }
     }
