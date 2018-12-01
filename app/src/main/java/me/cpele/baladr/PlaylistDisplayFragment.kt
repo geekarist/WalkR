@@ -82,13 +82,14 @@ class PlaylistDisplayFragment : Fragment() {
         })
 
         viewModel.playlistSaveEvent.observe(this, Observer {
-            val playlist = it.consumed
-            Snackbar.make(
-                view,
-                "Playlist '${playlist.name}' has been saved with ${playlist.trackIds.size} tracks",
-                Snackbar.LENGTH_LONG
-            ).show()
-            findNavController().navigate(R.id.action_playlistDisplayFragment_to_libraryFragment)
+            it.consumed?.apply {
+                Snackbar.make(
+                    view,
+                    "Playlist '${name}' has been saved with ${trackIds.size} tracks",
+                    Snackbar.LENGTH_LONG
+                ).show()
+                findNavController().navigate(R.id.action_playlistDisplayFragment_to_libraryFragment)
+            }
         })
     }
 
