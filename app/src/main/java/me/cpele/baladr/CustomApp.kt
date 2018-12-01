@@ -18,6 +18,10 @@ class CustomApp : Application() {
         PlaylistDisplayViewModel.Factory(this, database.trackDao(), database.playlistDao())
     }
 
+    val libraryViewModelFactory: ViewModelProvider.Factory by lazy {
+        LibraryViewModel.Factory(database.playlistDao())
+    }
+
     companion object {
         lateinit var instance: CustomApp
     }

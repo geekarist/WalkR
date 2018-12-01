@@ -7,10 +7,10 @@ class ListTypeConverter {
 
     @TypeConverter
     fun toList(json: String): List<String> {
-        val type = listOf("yo").javaClass
+        val type = ArrayList<String>().javaClass
         return Gson().fromJson(json, type)
     }
 
     @TypeConverter
-    fun toJson(strings: List<String>) = Gson().toJson(strings)
+    fun toJson(strings: List<String>): String = Gson().toJson(strings)
 }

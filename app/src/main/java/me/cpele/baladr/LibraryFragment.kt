@@ -21,7 +21,7 @@ class LibraryFragment : Fragment() {
     }
 
     private val viewModel: LibraryViewModel by lazy {
-        ViewModelProviders.of(this).get(LibraryViewModel::class.java)
+        ViewModelProviders.of(this, CustomApp.instance.libraryViewModelFactory).get(LibraryViewModel::class.java)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
