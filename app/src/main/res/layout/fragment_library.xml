@@ -19,9 +19,8 @@
         app:layout_constraintBottom_toTopOf="@+id/libraryDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/view_library_playlist" />
 
     <View
         android:id="@+id/libraryDivider"
