@@ -85,7 +85,7 @@ class PlaylistDisplayFragment : Fragment() {
             it.consumed?.apply {
                 Toast.makeText(
                     context,
-                    "Playlist '$name' has been saved with ${trackIds.size} tracks",
+                    "Playlist '$name' has been saved",
                     Toast.LENGTH_LONG
                 ).show()
 

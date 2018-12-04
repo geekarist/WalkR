@@ -9,7 +9,7 @@ import java.util.*
 
 class PlaylistDisplayViewModel(
     application: Application,
-    trackDao: TrackDao,
+    private val trackDao: TrackDao,
     private val playlistDao: PlaylistDao
 ) : AndroidViewModel(application) {
 
@@ -57,10 +57,13 @@ class PlaylistDisplayViewModel(
     fun onClickSave() {
         tracksData.value?.let { tracks ->
             GlobalScope.launch {
-                val trackIds = tracks.map { it.id }
                 val name = Date().toString()
-                val playlist = PlaylistBo(name = name, trackIds = trackIds)
+                val playlist = PlaylistBo(name = name)
                 playlistDao.insert(playlist)
+                tracks.forEach {
+                    it.playlistId = playlist.id
+                }
+                trackDao.insertAll(tracks)
                 _playlistSaveEvent.postValue(LiveEvent(playlist))
             }
         }
