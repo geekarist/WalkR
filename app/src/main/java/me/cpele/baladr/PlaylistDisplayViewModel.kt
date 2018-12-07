@@ -1,6 +1,7 @@
 package me.cpele.baladr
 
 import android.app.Application
+import android.util.Log
 import android.view.View
 import androidx.lifecycle.*
 import kotlinx.coroutines.GlobalScope
@@ -57,14 +58,18 @@ class PlaylistDisplayViewModel(
     fun onClickSave() {
         tracksData.value?.let { tracks ->
             GlobalScope.launch {
-                val name = Date().toString()
-                val playlist = PlaylistBo(name = name)
-                playlistDao.insert(playlist)
-                tracks.forEach {
-                    it.playlistId = playlist.id
+                try {
+                    val name = Date().toString()
+                    val playlist = PlaylistBo(name = name)
+                    val insertedPlaylistId = playlistDao.insert(playlist)
+                    tracks.forEach {
+                        it.playlistId = insertedPlaylistId.toInt()
+                    }
+                    trackDao.insertAll(tracks)
+                    _playlistSaveEvent.postValue(LiveEvent(playlist))
+                } catch (e: Exception) {
+                    Log.d(javaClass.simpleName, "Error saving playlist", e)
                 }
-                trackDao.insertAll(tracks)
-                _playlistSaveEvent.postValue(LiveEvent(playlist))
             }
         }
     }

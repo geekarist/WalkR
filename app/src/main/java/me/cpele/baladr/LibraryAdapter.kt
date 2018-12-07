@@ -5,11 +5,18 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 
-class LibraryAdapter : ListAdapter<PlaylistBo, PlaylistViewHolder>(DiffCallback) {
+class LibraryAdapter : ListAdapter<PlaylistWithTracksBo, PlaylistViewHolder>(DiffCallback) {
 
-    object DiffCallback : DiffUtil.ItemCallback<PlaylistBo>() {
-        override fun areItemsTheSame(oldItem: PlaylistBo, newItem: PlaylistBo): Boolean = oldItem.id == newItem.id
-        override fun areContentsTheSame(oldItem: PlaylistBo, newItem: PlaylistBo): Boolean = oldItem == newItem
+    object DiffCallback : DiffUtil.ItemCallback<PlaylistWithTracksBo>() {
+        override fun areItemsTheSame(
+            oldItem: PlaylistWithTracksBo,
+            newItem: PlaylistWithTracksBo
+        ): Boolean = oldItem.playlist.id == newItem.playlist.id
+
+        override fun areContentsTheSame(
+            oldItem: PlaylistWithTracksBo,
+            newItem: PlaylistWithTracksBo
+        ): Boolean = oldItem == newItem
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaylistViewHolder {

@@ -19,7 +19,7 @@ class CustomApp : Application() {
     }
 
     val libraryViewModelFactory: ViewModelProvider.Factory by lazy {
-        LibraryViewModel.Factory(database.playlistDao())
+        LibraryViewModel.Factory(database.playlistWithTracksDao())
     }
 
     companion object {

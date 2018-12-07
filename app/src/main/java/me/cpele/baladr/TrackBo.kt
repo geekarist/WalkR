@@ -4,7 +4,13 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(
+    foreignKeys = [ForeignKey(
+        entity = PlaylistBo::class,
+        parentColumns = ["id"],
+        childColumns = ["playlistId"]
+    )]
+)
 data class TrackBo(
 
     @PrimaryKey
@@ -16,10 +22,5 @@ data class TrackBo(
     val duration: String,
     val tempo: Int,
 
-    @ForeignKey(
-        entity = PlaylistBo::class,
-        parentColumns = ["id"],
-        childColumns = ["playlistId"]
-    )
     var playlistId: Int? = null
 )
