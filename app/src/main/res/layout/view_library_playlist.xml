@@ -1,8 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/playlistItemName"
+    android:id="@+id/playlistItemContainer"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:text="Playlist name" />
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/playlistItemCover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/playlist_item_cover"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playlistItemName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/playlistItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/playlistItemCover"
+        app:layout_constraintTop_toTopOf="@+id/playlistItemCover"
+        tools:showIn="@layout/fragment_library"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/playlistItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/playlistItemName"
+        app:layout_constraintTop_toBottomOf="@+id/playlistItemDuration"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <TextView
+        android:id="@+id/playlistItemTrackCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/playlistItemName"
+        app:layout_constraintTop_toBottomOf="@+id/playlistItemName"
+        tools:text="12 tracks" />
+
+    <TextView
+        android:id="@+id/playlistItemDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/playlistItemName"
+        app:layout_constraintTop_toBottomOf="@+id/playlistItemTrackCount"
+        tools:text="0 h 46 m" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

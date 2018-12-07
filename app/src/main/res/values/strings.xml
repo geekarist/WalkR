@@ -8,4 +8,6 @@
     <string name="generation_tempo_max_label">260 bpm</string>
     <string name="generation_generate_playlist">Generate Playlist</string>
     <string name="display_no_result">No result</string>
+    <string name="track_cover_content_desc">Track cover</string>
+    <string name="playlist_item_cover">Playlist cover</string>
 </resources>
