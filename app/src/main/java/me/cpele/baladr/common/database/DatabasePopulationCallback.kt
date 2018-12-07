@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.common.database
 
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
@@ -10,6 +10,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
+import me.cpele.baladr.CustomApp
+import me.cpele.baladr.common.datasource.TracksDto
 import java.nio.charset.Charset
 
 class DatabasePopulationCallback : RoomDatabase.Callback() {

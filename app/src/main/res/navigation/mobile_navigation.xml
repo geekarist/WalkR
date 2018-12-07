@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/playlistGenerationFragment"
-        android:name="me.cpele.baladr.PlaylistGenerationFragment"
+        android:name="me.cpele.baladr.feature.playlist_generation.PlaylistGenerationFragment"
         android:label="fragment_playlist_generation"
         tools:layout="@layout/fragment_playlist_generation">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/playlistDisplayFragment"
-        android:name="me.cpele.baladr.PlaylistDisplayFragment"
+        android:name="me.cpele.baladr.feature.playlist_display.PlaylistDisplayFragment"
         android:label="fragment_playlist_display"
         tools:layout="@layout/fragment_playlist_display">
         <argument
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/libraryFragment"
-        android:name="me.cpele.baladr.LibraryFragment"
+        android:name="me.cpele.baladr.feature.library.LibraryFragment"
         android:label="fragment_library"
         tools:layout="@layout/fragment_library">
         <action

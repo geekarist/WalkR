@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.feature.playlist_display
 
 import android.app.Application
 import android.util.Log
@@ -6,6 +6,11 @@ import android.view.View
 import androidx.lifecycle.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.cpele.baladr.LiveEvent
+import me.cpele.baladr.common.database.PlaylistBo
+import me.cpele.baladr.common.database.PlaylistDao
+import me.cpele.baladr.common.database.TrackBo
+import me.cpele.baladr.common.database.TrackDao
 import java.util.*
 
 class PlaylistDisplayViewModel(
@@ -20,7 +25,13 @@ class PlaylistDisplayViewModel(
         private val playlistDao: PlaylistDao
     ) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(PlaylistDisplayViewModel(application, trackDao, playlistDao)) as T
+            return modelClass.cast(
+                PlaylistDisplayViewModel(
+                    application,
+                    trackDao,
+                    playlistDao
+                )
+            ) as T
         }
     }
 

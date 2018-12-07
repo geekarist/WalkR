@@ -5,6 +5,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.cpele.baladr.common.database.CustomDatabase
+import me.cpele.baladr.common.database.DatabasePopulationCallback
+import me.cpele.baladr.feature.library.LibraryViewModel
+import me.cpele.baladr.feature.playlist_display.PlaylistDisplayViewModel
 
 class CustomApp : Application() {
 

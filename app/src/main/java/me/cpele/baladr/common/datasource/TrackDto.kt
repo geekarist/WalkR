@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.common.datasource
 
 data class TrackDto(
     val id: String?,

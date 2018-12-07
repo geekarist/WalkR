@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.feature.library
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,8 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_library.*
+import me.cpele.baladr.CustomApp
+import me.cpele.baladr.R
 
 class LibraryFragment : Fragment() {
 

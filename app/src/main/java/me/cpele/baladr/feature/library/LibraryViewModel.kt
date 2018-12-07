@@ -1,7 +1,8 @@
-package me.cpele.baladr
+package me.cpele.baladr.feature.library
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import me.cpele.baladr.common.database.PlaylistWithTracksDao
 
 class LibraryViewModel(playlistWithTracksDao: PlaylistWithTracksDao) : ViewModel() {
 

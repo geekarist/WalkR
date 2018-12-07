@@ -1,9 +1,11 @@
-package me.cpele.baladr
+package me.cpele.baladr.feature.library
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
+import me.cpele.baladr.R
+import me.cpele.baladr.common.database.PlaylistWithTracksBo
 
 class LibraryAdapter : ListAdapter<PlaylistWithTracksBo, PlaylistViewHolder>(DiffCallback) {
 

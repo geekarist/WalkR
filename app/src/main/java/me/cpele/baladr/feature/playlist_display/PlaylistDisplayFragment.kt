@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.feature.playlist_display
 
 import android.net.ConnectivityManager
 import android.net.Network
@@ -15,6 +15,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_playlist_display.*
+import me.cpele.baladr.CustomApp
+import me.cpele.baladr.R
+import me.cpele.baladr.common.database.TrackBo
 
 class PlaylistDisplayFragment : Fragment() {
 

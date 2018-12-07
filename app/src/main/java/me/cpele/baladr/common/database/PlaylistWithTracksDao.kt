@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.common.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

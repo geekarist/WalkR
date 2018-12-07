@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.feature.playlist_generation
 
 
 import android.os.Bundle
@@ -12,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_playlist_generation.*
+import me.cpele.baladr.R
 
 
 class PlaylistGenerationFragment : Fragment() {

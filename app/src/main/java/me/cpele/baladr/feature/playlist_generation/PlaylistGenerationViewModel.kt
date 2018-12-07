@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.feature.playlist_generation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
