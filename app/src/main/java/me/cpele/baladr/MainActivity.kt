@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         navHostFragment.findNavController().apply {
-            addOnNavigatedListener { controller, destination ->
+            addOnDestinationChangedListener { controller, destination, _ ->
                 supportActionBar?.apply {
                     val isAtStart = destination.id == controller.graph.startDestination
                     setDisplayShowHomeEnabled(!isAtStart)
