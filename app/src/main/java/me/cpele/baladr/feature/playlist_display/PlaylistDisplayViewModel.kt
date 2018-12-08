@@ -6,7 +6,7 @@ import android.view.View
 import androidx.lifecycle.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import me.cpele.baladr.LiveEvent
+import me.cpele.baladr.common.LiveEvent
 import me.cpele.baladr.common.database.PlaylistBo
 import me.cpele.baladr.common.database.PlaylistDao
 import me.cpele.baladr.common.database.TrackBo

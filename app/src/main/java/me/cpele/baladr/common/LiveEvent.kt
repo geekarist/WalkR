@@ -1,4 +1,4 @@
-package me.cpele.baladr
+package me.cpele.baladr.common
 
 class LiveEvent<T>(private val value: T) {
 
@@ -15,5 +15,4 @@ class LiveEvent<T>(private val value: T) {
                 }
             }
         }
-
 }
