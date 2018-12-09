@@ -1,5 +1,6 @@
 package me.cpele.baladr.feature.playlist_display
 
+import android.content.Context
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
@@ -16,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_playlist_display.*
 import me.cpele.baladr.CustomApp
+import me.cpele.baladr.MainViewModel
 import me.cpele.baladr.R
 import me.cpele.baladr.common.database.TrackBo
 
@@ -32,6 +34,14 @@ class PlaylistDisplayFragment : Fragment() {
         context?.let {
             ContextCompat.getSystemService(it, ConnectivityManager::class.java)
         }
+    }
+
+    override fun onAttach(context: Context?) {
+        super.onAttach(context)
+
+        activity?.let {
+            ViewModelProviders.of(it).get(MainViewModel::class.java)
+        }?.postTitle(getString(R.string.display_label))
     }
 
     override fun onCreateView(

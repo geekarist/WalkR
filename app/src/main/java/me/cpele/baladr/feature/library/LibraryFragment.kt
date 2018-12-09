@@ -1,5 +1,6 @@
 package me.cpele.baladr.feature.library
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_library.*
 import me.cpele.baladr.CustomApp
+import me.cpele.baladr.MainViewModel
 import me.cpele.baladr.R
 
 class LibraryFragment : Fragment() {
@@ -24,6 +26,14 @@ class LibraryFragment : Fragment() {
 
     private val viewModel: LibraryViewModel by lazy {
         ViewModelProviders.of(this, CustomApp.instance.libraryViewModelFactory).get(LibraryViewModel::class.java)
+    }
+
+    override fun onAttach(context: Context?) {
+        super.onAttach(context)
+
+        activity?.let {
+            ViewModelProviders.of(it).get(MainViewModel::class.java)
+        }?.postTitle(getString(R.string.library_title))
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

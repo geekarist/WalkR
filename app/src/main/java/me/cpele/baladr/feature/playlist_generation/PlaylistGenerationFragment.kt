@@ -1,6 +1,7 @@
 package me.cpele.baladr.feature.playlist_generation
 
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_playlist_generation.*
+import me.cpele.baladr.MainViewModel
 import me.cpele.baladr.R
 
 
@@ -26,6 +28,14 @@ class PlaylistGenerationFragment : Fragment() {
 
     private val viewModel: PlaylistGenerationViewModel by lazy {
         ViewModelProviders.of(this).get(PlaylistGenerationViewModel::class.java)
+    }
+
+    override fun onAttach(context: Context?) {
+        super.onAttach(context)
+
+        activity?.let {
+            ViewModelProviders.of(it).get(MainViewModel::class.java)
+        }?.postTitle(getString(R.string.generation_title))
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
