@@ -66,7 +66,7 @@ class PlaylistDisplayViewModel(
     val playlistSaveEvent: LiveData<LiveEvent<PlaylistBo>>
         get() = _playlistSaveEvent
 
-    fun onClickSave() {
+    fun onConfirmSave() {
         tracksData.value?.let { tracks ->
             GlobalScope.launch {
                 try {

@@ -83,7 +83,7 @@ class PlaylistDisplayFragment : Fragment() {
         connectivityManager?.registerNetworkCallback(req, networkCallback)
 
         displaySaveButton.setOnClickListener {
-            viewModel.onClickSave()
+            PlaylistNamingDialogFragment.newInstance().show(childFragmentManager, "TAG_CHOOSE_TEXT_DIALOG_FRAG")
         }
 
         viewModel.emptyViewVisibility.observe(this, Observer {
