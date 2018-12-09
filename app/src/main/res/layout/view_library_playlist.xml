@@ -8,26 +8,36 @@
     android:layout_height="wrap_content">
 
     <com.lopei.collageview.CollageView
-        android:id="@+id/playlistItemCover"
+        android:id="@+id/playlistItemCoverContainer"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray"
         android:contentDescription="@string/playlist_item_cover"
+        android:padding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/playlistItemName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.lopei.collageview.CollageView
+            android:id="@+id/playlistItemCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/playlist_item_cover" />
+
+    </com.lopei.collageview.CollageView>
 
     <TextView
         android:id="@+id/playlistItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@+id/playlistItemCover"
-        app:layout_constraintTop_toTopOf="@+id/playlistItemCover"
+        app:layout_constraintStart_toEndOf="@+id/playlistItemCoverContainer"
+        app:layout_constraintTop_toTopOf="@+id/playlistItemCoverContainer"
         tools:showIn="@layout/fragment_library"
         tools:text="@tools:sample/lorem" />
 

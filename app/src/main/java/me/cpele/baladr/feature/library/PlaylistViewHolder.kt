@@ -16,8 +16,6 @@ class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 .useFirstAsHeader(false)
                 .useCards(false)
                 .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
-                .backgroundColor(android.R.color.black)
-                .photoMargin(1)
                 .loadPhotos(tracks?.map { it.cover })
         }
     }
