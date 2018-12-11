@@ -15,4 +15,5 @@
     <string name="display_no_result">No result</string>
 
     <string name="track_cover_content_desc">Track cover</string>
+    <string name="playlist_naming_default_title">Untitled</string>
 </resources>

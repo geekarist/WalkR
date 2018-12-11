@@ -6,18 +6,18 @@ import android.view.View
 import androidx.lifecycle.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.cpele.baladr.R
 import me.cpele.baladr.common.LiveEvent
 import me.cpele.baladr.common.database.PlaylistBo
 import me.cpele.baladr.common.database.PlaylistDao
 import me.cpele.baladr.common.database.TrackBo
 import me.cpele.baladr.common.database.TrackDao
-import java.util.*
 
 class PlaylistDisplayViewModel(
-    application: Application,
+    private val app: Application,
     private val trackDao: TrackDao,
     private val playlistDao: PlaylistDao
-) : AndroidViewModel(application) {
+) : AndroidViewModel(app) {
 
     class Factory(
         private val application: Application,
@@ -66,12 +66,14 @@ class PlaylistDisplayViewModel(
     val playlistSaveEvent: LiveData<LiveEvent<PlaylistBo>>
         get() = _playlistSaveEvent
 
-    fun onConfirmSave() {
+    fun onConfirmSave(playlistName: String) {
         tracksData.value?.let { tracks ->
             GlobalScope.launch {
                 try {
-                    val name = Date().toString()
-                    val playlist = PlaylistBo(name = name)
+                    val notBlankName =
+                        if (playlistName.isNotBlank()) playlistName
+                        else app.getString(R.string.playlist_naming_default_title)
+                    val playlist = PlaylistBo(name = notBlankName)
                     val insertedPlaylistId = playlistDao.insert(playlist)
                     tracks.forEach {
                         it.playlistId = insertedPlaylistId.toInt()
