@@ -5,19 +5,18 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import me.cpele.baladr.R
-import me.cpele.baladr.common.database.PlaylistWithTracksEntity
 
-class LibraryAdapter : ListAdapter<PlaylistWithTracksEntity, PlaylistViewHolder>(DiffCallback) {
+class LibraryAdapter : ListAdapter<PlaylistBo, PlaylistViewHolder>(DiffCallback) {
 
-    object DiffCallback : DiffUtil.ItemCallback<PlaylistWithTracksEntity>() {
+    object DiffCallback : DiffUtil.ItemCallback<PlaylistBo>() {
         override fun areItemsTheSame(
-            oldItem: PlaylistWithTracksEntity,
-            newItem: PlaylistWithTracksEntity
-        ): Boolean = oldItem.playlist.id == newItem.playlist.id
+            oldItem: PlaylistBo,
+            newItem: PlaylistBo
+        ): Boolean = oldItem === newItem
 
         override fun areContentsTheSame(
-            oldItem: PlaylistWithTracksEntity,
-            newItem: PlaylistWithTracksEntity
+            oldItem: PlaylistBo,
+            newItem: PlaylistBo
         ): Boolean = oldItem == newItem
     }
 

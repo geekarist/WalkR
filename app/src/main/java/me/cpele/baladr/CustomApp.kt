@@ -8,6 +8,7 @@ import kotlinx.coroutines.launch
 import me.cpele.baladr.common.database.CustomDatabase
 import me.cpele.baladr.common.database.DatabasePopulationCallback
 import me.cpele.baladr.feature.library.LibraryViewModel
+import me.cpele.baladr.feature.library.PlaylistRepository
 import me.cpele.baladr.feature.playlist_display.PlaylistDisplayViewModel
 
 class CustomApp : Application() {
@@ -18,12 +19,14 @@ class CustomApp : Application() {
             .build()
     }
 
+    private val playlistRepository: PlaylistRepository by lazy { PlaylistRepository() }
+
     val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {
         PlaylistDisplayViewModel.Factory(this, database.trackDao(), database.playlistDao())
     }
 
     val libraryViewModelFactory: ViewModelProvider.Factory by lazy {
-        LibraryViewModel.Factory(database.playlistWithTracksDao())
+        LibraryViewModel.Factory(playlistRepository)
     }
 
     companion object {
