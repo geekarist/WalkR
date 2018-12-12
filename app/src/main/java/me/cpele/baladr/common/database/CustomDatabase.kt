@@ -6,8 +6,8 @@ import androidx.room.RoomDatabase
 @Database(
     version = 1,
     entities = [
-        TrackBo::class,
-        PlaylistBo::class
+        TrackEntity::class,
+        PlaylistEntity::class
     ]
 )
 abstract class CustomDatabase : RoomDatabase() {

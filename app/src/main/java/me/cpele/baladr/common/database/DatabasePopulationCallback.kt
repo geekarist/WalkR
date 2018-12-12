@@ -54,7 +54,7 @@ class DatabasePopulationCallback : RoomDatabase.Callback() {
                     .load(url)
                     .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.ALL))
                     .submit()
-                TrackBo(
+                TrackEntity(
                     it.id ?: TODO(),
                     url,
                     it.name ?: TODO(),

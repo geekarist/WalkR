@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_playlist_display.*
 import me.cpele.baladr.CustomApp
 import me.cpele.baladr.MainViewModel
 import me.cpele.baladr.R
-import me.cpele.baladr.common.database.TrackBo
+import me.cpele.baladr.common.database.TrackEntity
 
 class PlaylistDisplayFragment : Fragment() {
 
@@ -71,7 +71,7 @@ class PlaylistDisplayFragment : Fragment() {
         displayList.adapter = adapter
 
         viewModel.onPostTempo(arguments?.getInt("ARG_TEMPO"))
-        viewModel.tracksData.observe(this, Observer { tracks: List<TrackBo> ->
+        viewModel.tracksData.observe(this, Observer { tracks: List<TrackEntity> ->
             adapter.submitList(tracks)
         })
 

@@ -8,8 +8,8 @@ import androidx.room.Query
 @Dao
 interface PlaylistDao {
     @Insert
-    fun insert(playlist: PlaylistBo): Long
+    fun insert(playlist: PlaylistEntity): Long
 
-    @Query("SELECT * FROM PlaylistBo")
-    fun findAll(): LiveData<List<PlaylistBo>>
+    @Query("SELECT * FROM PlaylistEntity")
+    fun findAll(): LiveData<List<PlaylistEntity>>
 }

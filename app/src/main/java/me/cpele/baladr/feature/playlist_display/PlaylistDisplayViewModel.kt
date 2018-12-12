@@ -8,10 +8,10 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import me.cpele.baladr.R
 import me.cpele.baladr.common.LiveEvent
-import me.cpele.baladr.common.database.PlaylistBo
 import me.cpele.baladr.common.database.PlaylistDao
-import me.cpele.baladr.common.database.TrackBo
+import me.cpele.baladr.common.database.PlaylistEntity
 import me.cpele.baladr.common.database.TrackDao
+import me.cpele.baladr.common.database.TrackEntity
 
 class PlaylistDisplayViewModel(
     private val app: Application,
@@ -46,7 +46,7 @@ class PlaylistDisplayViewModel(
     val isButtonEnabled: LiveData<Boolean>
         get() = _isButtonEnabled
 
-    val tracksData: LiveData<List<TrackBo>> = Transformations.switchMap(tempoData) { tempo ->
+    val tracksData: LiveData<List<TrackEntity>> = Transformations.switchMap(tempoData) { tempo ->
         trackDao.findByTempo(tempo)
     }
 
@@ -62,8 +62,8 @@ class PlaylistDisplayViewModel(
         tempoData.value = newTempo
     }
 
-    private val _playlistSaveEvent = MutableLiveData<LiveEvent<PlaylistBo>>()
-    val playlistSaveEvent: LiveData<LiveEvent<PlaylistBo>>
+    private val _playlistSaveEvent = MutableLiveData<LiveEvent<PlaylistEntity>>()
+    val playlistSaveEvent: LiveData<LiveEvent<PlaylistEntity>>
         get() = _playlistSaveEvent
 
     fun onConfirmSave(playlistName: String) {
@@ -73,7 +73,7 @@ class PlaylistDisplayViewModel(
                     val notBlankName =
                         if (playlistName.isNotBlank()) playlistName
                         else app.getString(R.string.playlist_naming_default_title)
-                    val playlist = PlaylistBo(name = notBlankName)
+                    val playlist = PlaylistEntity(name = notBlankName)
                     val insertedPlaylistId = playlistDao.insert(playlist)
                     tracks.forEach {
                         it.playlistId = insertedPlaylistId.toInt()

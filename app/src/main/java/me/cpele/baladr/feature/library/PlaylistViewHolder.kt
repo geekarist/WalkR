@@ -4,10 +4,10 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.lopei.collageview.CollageView
 import kotlinx.android.synthetic.main.view_library_playlist.view.*
-import me.cpele.baladr.common.database.PlaylistWithTracksBo
+import me.cpele.baladr.common.database.PlaylistWithTracksEntity
 
 class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    fun bind(item: PlaylistWithTracksBo?) {
+    fun bind(item: PlaylistWithTracksEntity?) {
         item?.apply {
             itemView.playlistItemName.text = playlist.name
             itemView.playlistItemTrackCount.text = tracks?.size.toString()

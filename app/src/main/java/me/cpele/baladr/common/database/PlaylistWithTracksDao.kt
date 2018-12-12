@@ -6,6 +6,6 @@ import androidx.room.Query
 
 @Dao
 interface PlaylistWithTracksDao {
-    @Query("SELECT * FROM PlaylistBo")
-    fun findAll(): LiveData<List<PlaylistWithTracksBo>>
+    @Query("SELECT * FROM PlaylistEntity")
+    fun findAll(): LiveData<List<PlaylistWithTracksEntity>>
 }

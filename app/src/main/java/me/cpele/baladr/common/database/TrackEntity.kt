@@ -6,12 +6,12 @@ import androidx.room.PrimaryKey
 
 @Entity(
     foreignKeys = [ForeignKey(
-        entity = PlaylistBo::class,
+        entity = PlaylistEntity::class,
         parentColumns = ["id"],
         childColumns = ["playlistId"]
     )]
 )
-data class TrackBo(
+data class TrackEntity(
 
     @PrimaryKey
     val id: String,

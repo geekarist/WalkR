@@ -8,12 +8,12 @@ import androidx.room.Query
 
 @Dao
 interface TrackDao {
-    @Query("SELECT * FROM TrackBo WHERE tempo = :tempo")
-    fun findByTempo(tempo: Int): LiveData<List<TrackBo>>
+    @Query("SELECT * FROM TrackEntity WHERE tempo = :tempo")
+    fun findByTempo(tempo: Int): LiveData<List<TrackEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(tracks: List<TrackBo>)
+    fun insertAll(tracks: List<TrackEntity>)
 
-    @Query("SELECT COUNT(*) FROM TrackBo")
+    @Query("SELECT COUNT(*) FROM TrackEntity")
     fun count(): Int
 }
