@@ -17,5 +17,6 @@ interface TrackDao {
     @Query("SELECT COUNT(*) FROM TrackEntity")
     fun countSync(): Int
 
+    @Query("SELECT * FROM TrackEntity WHERE id = :id")
     fun findOneSync(id: String): TrackEntity
 }

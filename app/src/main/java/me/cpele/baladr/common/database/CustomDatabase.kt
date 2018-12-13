@@ -14,6 +14,5 @@ import androidx.room.RoomDatabase
 abstract class CustomDatabase : RoomDatabase() {
     abstract fun trackDao(): TrackDao
     abstract fun playlistDao(): PlaylistDao
-    abstract fun playlistWithTracksDao(): PlaylistWithTracksDao
     abstract fun playlistTrackDao(): PlaylistTrackDao
 }
