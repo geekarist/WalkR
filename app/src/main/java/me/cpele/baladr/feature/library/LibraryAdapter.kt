@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import me.cpele.baladr.R
+import me.cpele.baladr.common.business.PlaylistBo
 
 class LibraryAdapter : ListAdapter<PlaylistBo, PlaylistViewHolder>(DiffCallback) {
 

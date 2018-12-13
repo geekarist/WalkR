@@ -1,16 +1,9 @@
 package me.cpele.baladr.common.database
 
 import androidx.room.Entity
-import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
-@Entity(
-    foreignKeys = [ForeignKey(
-        entity = PlaylistEntity::class,
-        parentColumns = ["id"],
-        childColumns = ["playlistId"]
-    )]
-)
+@Entity
 data class TrackEntity(
 
     @PrimaryKey
@@ -20,7 +13,5 @@ data class TrackEntity(
     val title: String,
     val artist: String,
     val duration: String,
-    val tempo: Int,
-
-    var playlistId: Int? = null
+    val tempo: Int
 )

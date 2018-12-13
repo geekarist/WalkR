@@ -15,5 +15,7 @@ interface TrackDao {
     fun insertAll(tracks: List<TrackEntity>)
 
     @Query("SELECT COUNT(*) FROM TrackEntity")
-    fun count(): Int
+    fun countSync(): Int
+
+    fun findOneSync(id: String): TrackEntity
 }

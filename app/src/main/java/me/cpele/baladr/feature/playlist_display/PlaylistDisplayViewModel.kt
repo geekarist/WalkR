@@ -8,28 +8,28 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import me.cpele.baladr.R
 import me.cpele.baladr.common.LiveEvent
-import me.cpele.baladr.common.database.PlaylistDao
-import me.cpele.baladr.common.database.PlaylistEntity
-import me.cpele.baladr.common.database.TrackDao
-import me.cpele.baladr.common.database.TrackEntity
+import me.cpele.baladr.common.database.*
 
 class PlaylistDisplayViewModel(
     private val app: Application,
     private val trackDao: TrackDao,
-    private val playlistDao: PlaylistDao
+    private val playlistDao: PlaylistDao,
+    private val playlistTrackDao: PlaylistTrackDao
 ) : AndroidViewModel(app) {
 
     class Factory(
         private val application: Application,
         private val trackDao: TrackDao,
-        private val playlistDao: PlaylistDao
+        private val playlistDao: PlaylistDao,
+        private val playlistTrackDao: PlaylistTrackDao
     ) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return modelClass.cast(
                 PlaylistDisplayViewModel(
                     application,
                     trackDao,
-                    playlistDao
+                    playlistDao,
+                    playlistTrackDao
                 )
             ) as T
         }
@@ -75,10 +75,11 @@ class PlaylistDisplayViewModel(
                         else app.getString(R.string.playlist_naming_default_title)
                     val playlist = PlaylistEntity(name = notBlankName)
                     val insertedPlaylistId = playlistDao.insert(playlist)
-                    tracks.forEach {
-                        it.playlistId = insertedPlaylistId.toInt()
-                    }
                     trackDao.insertAll(tracks)
+                    val playlistTrackEntities = tracks.map {
+                        PlaylistTrackEntity(insertedPlaylistId, it.id)
+                    }
+                    playlistTrackDao.insertAll(playlistTrackEntities)
                     _playlistSaveEvent.postValue(LiveEvent(playlist))
                 } catch (e: Exception) {
                     Log.d(javaClass.simpleName, "Error saving playlist", e)

@@ -4,6 +4,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.lopei.collageview.CollageView
 import kotlinx.android.synthetic.main.view_library_playlist.view.*
+import me.cpele.baladr.common.business.PlaylistBo
 
 class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(item: PlaylistBo?) {

@@ -12,4 +12,7 @@ interface PlaylistDao {
 
     @Query("SELECT * FROM PlaylistEntity")
     fun findAll(): LiveData<List<PlaylistEntity>>
+
+    @Query("SELECT * FROM PlaylistEntity")
+    fun findAllSync(): List<PlaylistEntity>
 }

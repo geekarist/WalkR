@@ -19,10 +19,21 @@ class CustomApp : Application() {
             .build()
     }
 
-    private val playlistRepository: PlaylistRepository by lazy { PlaylistRepository() }
+    private val playlistRepository: PlaylistRepository by lazy {
+        PlaylistRepository(
+            database.playlistDao(),
+            database.trackDao(),
+            database.playlistTrackDao()
+        )
+    }
 
     val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {
-        PlaylistDisplayViewModel.Factory(this, database.trackDao(), database.playlistDao())
+        PlaylistDisplayViewModel.Factory(
+            this,
+            database.trackDao(),
+            database.playlistDao(),
+            database.playlistTrackDao()
+        )
     }
 
     val libraryViewModelFactory: ViewModelProvider.Factory by lazy {
@@ -40,6 +51,6 @@ class CustomApp : Application() {
     }
 
     private fun triggerDbInit() = GlobalScope.launch {
-        database.trackDao().count()
+        database.trackDao().countSync()
     }
 }
