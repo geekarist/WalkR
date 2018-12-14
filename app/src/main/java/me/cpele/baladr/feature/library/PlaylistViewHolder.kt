@@ -16,7 +16,7 @@ class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 .useFirstAsHeader(false)
                 .useCards(false)
                 .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
-                .loadPhotos(tracks.map { it.cover })
+                .loadPhotos(tracks.takeLast(4).map { it.cover })
         }
     }
 }
