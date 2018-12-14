@@ -9,7 +9,7 @@ import me.cpele.baladr.common.database.CustomDatabase
 import me.cpele.baladr.common.database.DatabasePopulationCallback
 import me.cpele.baladr.feature.library.LibraryViewModel
 import me.cpele.baladr.feature.library.PlaylistRepository
-import me.cpele.baladr.feature.playlist_display.PlaylistDisplayViewModel
+import me.cpele.baladr.feature.playlistdisplay.PlaylistDisplayViewModel
 
 class CustomApp : Application() {
 

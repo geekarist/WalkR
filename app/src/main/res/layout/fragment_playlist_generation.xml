@@ -6,7 +6,7 @@
     android:id="@+id/generationContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.playlist_generation.PlaylistGenerationFragment">
+    tools:context=".feature.playlistgeneration.PlaylistGenerationFragment">
 
     <TextView
         android:id="@+id/generationTempoLabel"

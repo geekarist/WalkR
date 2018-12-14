@@ -1,4 +1,4 @@
-package me.cpele.baladr.feature.playlist_display
+package me.cpele.baladr.feature.playlistdisplay
 
 import android.content.Context
 import android.net.ConnectivityManager

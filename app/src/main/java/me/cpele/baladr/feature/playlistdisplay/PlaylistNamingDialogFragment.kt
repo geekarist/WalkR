@@ -1,4 +1,4 @@
-package me.cpele.baladr.feature.playlist_display
+package me.cpele.baladr.feature.playlistdisplay
 
 import android.os.Bundle
 import android.view.LayoutInflater

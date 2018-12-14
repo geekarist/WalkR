@@ -1,4 +1,4 @@
-package me.cpele.baladr.feature.playlist_display
+package me.cpele.baladr.feature.playlistdisplay
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -10,8 +10,8 @@ import me.cpele.baladr.common.database.TrackEntity
 class PlaylistAdapter : ListAdapter<TrackEntity, TrackViewHolder>(ItemCallback()) {
 
     class ItemCallback : DiffUtil.ItemCallback<TrackEntity>() {
-        override fun areItemsTheSame(oldItem: TrackEntity, newItem: TrackEntity): Boolean = (oldItem == newItem)
-        override fun areContentsTheSame(oldItem: TrackEntity, newItem: TrackEntity): Boolean = (oldItem === newItem)
+        override fun areItemsTheSame(oldItem: TrackEntity, newItem: TrackEntity) = (oldItem === newItem)
+        override fun areContentsTheSame(oldItem: TrackEntity, newItem: TrackEntity) = (oldItem == newItem)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrackViewHolder {
