@@ -47,6 +47,7 @@ class CustomApp : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
+        StethoWrapper.initializeWithDefaults(this)
         triggerDbInit()
     }
 
