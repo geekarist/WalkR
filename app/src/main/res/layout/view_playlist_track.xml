@@ -16,6 +16,7 @@
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/track_cover_content_desc"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
