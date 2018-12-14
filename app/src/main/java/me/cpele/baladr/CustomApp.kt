@@ -5,10 +5,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.cpele.baladr.common.business.PlaylistRepository
+import me.cpele.baladr.common.business.TrackRepository
 import me.cpele.baladr.common.database.CustomDatabase
 import me.cpele.baladr.common.database.DatabasePopulationCallback
 import me.cpele.baladr.feature.library.LibraryViewModel
-import me.cpele.baladr.feature.library.PlaylistRepository
 import me.cpele.baladr.feature.playlistdisplay.PlaylistDisplayViewModel
 
 class CustomApp : Application() {
@@ -27,12 +28,15 @@ class CustomApp : Application() {
         )
     }
 
+    private val trackRepository: TrackRepository by lazy {
+        TrackRepository(database.trackDao())
+    }
+
     val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {
         PlaylistDisplayViewModel.Factory(
             this,
-            database.trackDao(),
-            database.playlistDao(),
-            database.playlistTrackDao()
+            trackRepository,
+            playlistRepository
         )
     }
 
