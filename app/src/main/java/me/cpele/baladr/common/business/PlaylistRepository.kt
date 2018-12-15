@@ -1,7 +1,7 @@
 package me.cpele.baladr.common.business
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Transformations
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import me.cpele.baladr.common.database.*
@@ -9,32 +9,29 @@ import me.cpele.baladr.common.database.*
 class PlaylistRepository(
     private val playlistDao: PlaylistDao,
     private val trackDao: TrackDao,
-    private val playlistTrackDao: PlaylistTrackDao
+    private val playlistTrackDao: PlaylistTrackDao,
+    private val joinPlaylistTrackDao: JoinPlaylistTrackDao
 ) {
-    fun findAll(): LiveData<List<PlaylistBo>> {
-        val result = MutableLiveData<List<PlaylistBo>>()
-        GlobalScope.launch {
-            val playlistBos = playlistDao.findAllSync().map { playlistEntity ->
-                val playlistTrackEntities = playlistTrackDao.findByPlaylistIdSync(playlistEntity.id)
-                val trackEntities = playlistTrackEntities.map { ptEntity ->
-                    trackDao.findOneSync(ptEntity.trackId)
+    fun findAll(): LiveData<List<PlaylistBo>> =
+        Transformations.map(joinPlaylistTrackDao.findAll()) { joinResult: List<JoinPlaylistTrackWrapper>? ->
+            joinResult
+                ?.groupBy { it: JoinPlaylistTrackWrapper -> it.playlist }
+                ?.map { entry: Map.Entry<PlaylistEntity, List<JoinPlaylistTrackWrapper>> ->
+                    PlaylistBo(
+                        entry.key.id,
+                        entry.key.name,
+                        entry.value.map { groupedJoinResult: JoinPlaylistTrackWrapper ->
+                            TrackBo(
+                                groupedJoinResult.track.id,
+                                groupedJoinResult.track.cover,
+                                groupedJoinResult.track.title,
+                                groupedJoinResult.track.artist,
+                                groupedJoinResult.track.duration,
+                                groupedJoinResult.track.tempo
+                            )
+                        })
                 }
-                val trackBos = trackEntities.map {
-                    TrackBo(
-                        it.id,
-                        it.cover,
-                        it.title,
-                        it.artist,
-                        it.duration,
-                        it.tempo
-                    )
-                }
-                PlaylistBo(playlistEntity.id, playlistEntity.name, trackBos)
-            }
-            result.postValue(playlistBos)
         }
-        return result
-    }
 
     fun insert(playlist: PlaylistBo) = GlobalScope.launch {
         val playlistEntity = PlaylistEntity(name = playlist.name)

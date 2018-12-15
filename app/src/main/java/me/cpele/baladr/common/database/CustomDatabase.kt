@@ -15,4 +15,5 @@ abstract class CustomDatabase : RoomDatabase() {
     abstract fun trackDao(): TrackDao
     abstract fun playlistDao(): PlaylistDao
     abstract fun playlistTrackDao(): PlaylistTrackDao
+    abstract fun joinPlaylistTrackDao(): JoinPlaylistTrackDao
 }

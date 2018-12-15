@@ -24,7 +24,8 @@ class CustomApp : Application() {
         PlaylistRepository(
             database.playlistDao(),
             database.trackDao(),
-            database.playlistTrackDao()
+            database.playlistTrackDao(),
+            database.joinPlaylistTrackDao()
         )
     }
 
