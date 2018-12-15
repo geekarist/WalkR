@@ -48,7 +48,7 @@ class DatabasePopulationCallback : RoomDatabase.Callback() {
         )
         tracksDto.tracks?.map { trackDto ->
             trackDto?.let {
-                val url = it.album?.images?.get(0)?.url ?: "https://picsum.photos/200"
+                val url = it.album?.images?.last()?.url ?: "https://picsum.photos/200"
                 Glide.with(app)
                     .asBitmap()
                     .load(url)
