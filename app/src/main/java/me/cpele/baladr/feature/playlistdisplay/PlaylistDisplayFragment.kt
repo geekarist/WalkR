@@ -20,7 +20,6 @@ import me.cpele.baladr.CustomApp
 import me.cpele.baladr.MainViewModel
 import me.cpele.baladr.R
 import me.cpele.baladr.common.business.TrackBo
-import me.cpele.baladr.common.database.TrackEntity
 
 class PlaylistDisplayFragment : Fragment() {
 
