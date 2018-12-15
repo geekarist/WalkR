@@ -9,8 +9,8 @@ interface JoinPlaylistTrackDao {
     @Query(
         """
         SELECT p.*, t.*, pt.* FROM PlaylistEntity p
-        INNER JOIN PlaylistTrackEntity pt ON p.id = pt.playlistId
-        INNER JOIN TrackEntity t ON t.id = pt.trackId
+        INNER JOIN PlaylistTrackEntity pt ON p.plId = pt.ptPlaylistId
+        INNER JOIN TrackEntity t ON t.trId = pt.ptTrackId
         """
     )
     fun findAll(): LiveData<List<JoinPlaylistTrackWrapper>>

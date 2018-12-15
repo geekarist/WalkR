@@ -10,6 +10,6 @@ interface PlaylistTrackDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(playlistTrackEntities: List<PlaylistTrackEntity>)
 
-    @Query("SELECT * FROM PlaylistTrackEntity WHERE playlistId = :id")
+    @Query("SELECT * FROM PlaylistTrackEntity WHERE ptPlaylistId = :id")
     fun findByPlaylistIdSync(id: Int): List<PlaylistTrackEntity>
 }

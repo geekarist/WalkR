@@ -18,23 +18,23 @@ class PlaylistRepository(
                 ?.groupBy { it: JoinPlaylistTrackWrapper -> it.playlist }
                 ?.map { entry: Map.Entry<PlaylistEntity, List<JoinPlaylistTrackWrapper>> ->
                     PlaylistBo(
-                        entry.key.id,
-                        entry.key.name,
+                        entry.key.plId,
+                        entry.key.plName,
                         entry.value.map { groupedJoinResult: JoinPlaylistTrackWrapper ->
                             TrackBo(
-                                groupedJoinResult.track.id,
-                                groupedJoinResult.track.cover,
-                                groupedJoinResult.track.title,
-                                groupedJoinResult.track.artist,
-                                groupedJoinResult.track.duration,
-                                groupedJoinResult.track.tempo
+                                groupedJoinResult.track.trId,
+                                groupedJoinResult.track.trCover,
+                                groupedJoinResult.track.trTitle,
+                                groupedJoinResult.track.trArtist,
+                                groupedJoinResult.track.trDuration,
+                                groupedJoinResult.track.trTempo
                             )
                         })
                 }
         }
 
     fun insert(playlist: PlaylistBo) = GlobalScope.launch {
-        val playlistEntity = PlaylistEntity(name = playlist.name)
+        val playlistEntity = PlaylistEntity(plName = playlist.name)
         val insertedPlaylistId = playlistDao.insert(playlistEntity)
 
         val trackEntities = playlist.tracks.map {
@@ -43,7 +43,7 @@ class PlaylistRepository(
         trackDao.insertAll(trackEntities)
 
         val playlistTrackEntities = trackEntities.map {
-            PlaylistTrackEntity(insertedPlaylistId, it.id)
+            PlaylistTrackEntity(insertedPlaylistId, it.trId)
         }
         playlistTrackDao.insertAll(playlistTrackEntities)
     }

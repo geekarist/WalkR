@@ -7,11 +7,11 @@ import androidx.room.PrimaryKey
 data class TrackEntity(
 
     @PrimaryKey
-    val id: String,
+    val trId: String,
 
-    val cover: String,
-    val title: String,
-    val artist: String,
-    val duration: String,
-    val tempo: Int
+    val trCover: String,
+    val trTitle: String,
+    val trArtist: String,
+    val trDuration: String,
+    val trTempo: Int
 )

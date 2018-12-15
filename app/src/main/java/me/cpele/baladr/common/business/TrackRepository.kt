@@ -9,12 +9,12 @@ class TrackRepository(private val trackDao: TrackDao) {
         Transformations.map(trackDao.findByTempo(tempo)) { entities ->
             entities.map {
                 TrackBo(
-                    it.id,
-                    it.cover,
-                    it.title,
-                    it.artist,
-                    it.duration,
-                    it.tempo
+                    it.trId,
+                    it.trCover,
+                    it.trTitle,
+                    it.trArtist,
+                    it.trDuration,
+                    it.trTempo
                 )
             }
         }

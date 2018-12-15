@@ -4,18 +4,18 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 
 @Entity(
-    primaryKeys = ["playlistId", "trackId"],
+    primaryKeys = ["ptPlaylistId", "ptTrackId"],
     foreignKeys = [
         ForeignKey(
             entity = PlaylistEntity::class,
-            childColumns = ["playlistId"],
-            parentColumns = ["id"]
+            childColumns = ["ptPlaylistId"],
+            parentColumns = ["plId"]
         ),
         ForeignKey(
             entity = TrackEntity::class,
-            childColumns = ["trackId"],
-            parentColumns = ["id"]
+            childColumns = ["ptTrackId"],
+            parentColumns = ["trId"]
         )
     ]
 )
-data class PlaylistTrackEntity(val playlistId: Long, val trackId: String)
+data class PlaylistTrackEntity(val ptPlaylistId: Long, val ptTrackId: String)

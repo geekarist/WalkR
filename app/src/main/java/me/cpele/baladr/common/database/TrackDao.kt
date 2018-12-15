@@ -8,7 +8,7 @@ import androidx.room.Query
 
 @Dao
 interface TrackDao {
-    @Query("SELECT * FROM TrackEntity WHERE tempo = :tempo")
+    @Query("SELECT * FROM TrackEntity WHERE trTempo = :tempo")
     fun findByTempo(tempo: Int): LiveData<List<TrackEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -17,6 +17,6 @@ interface TrackDao {
     @Query("SELECT COUNT(*) FROM TrackEntity")
     fun countSync(): Int
 
-    @Query("SELECT * FROM TrackEntity WHERE id = :id")
+    @Query("SELECT * FROM TrackEntity WHERE trId = :id")
     fun findOneSync(id: String): TrackEntity
 }
