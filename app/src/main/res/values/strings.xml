@@ -4,6 +4,7 @@
     <string name="library_title">Library</string>
     <string name="library_add">Add Playlist</string>
     <string name="playlist_item_cover">Playlist cover</string>
+    <string name="library_count">%1$d tracks</string>
 
     <string name="generation_tempo_label">Tempo</string>
     <string name="generation_tempo_max_label">260 bpm</string>

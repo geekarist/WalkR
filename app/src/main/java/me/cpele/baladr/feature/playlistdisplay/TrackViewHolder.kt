@@ -10,7 +10,6 @@ class TrackViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(item: TrackBo?) {
         itemView.trackTitle.text = item?.title
         itemView.trackArtist.text = item?.artist
-        itemView.trackDuration.text = item?.duration
         item?.apply {
             Glide.with(itemView).load(cover).into(itemView.trackCover)
         }
