@@ -49,6 +49,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0")
     implementation("androidx.recyclerview:recyclerview:1.0.0")
 
+    implementation("com.github.kittinunf.fuel:fuel:1.16.0")
+
     implementation("com.google.code.gson:gson:2.8.5")
 
     implementation("com.github.bumptech.glide:glide:4.8.0")

@@ -3,6 +3,7 @@ package me.cpele.baladr
 import android.app.Application
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
+import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import me.cpele.baladr.common.business.PlaylistRepository
@@ -20,12 +21,15 @@ class CustomApp : Application() {
             .build()
     }
 
+    private val gson: Gson by lazy { Gson() }
+
     private val playlistRepository: PlaylistRepository by lazy {
         PlaylistRepository(
             database.playlistDao(),
             database.trackDao(),
             database.playlistTrackDao(),
-            database.joinPlaylistTrackDao()
+            database.joinPlaylistTrackDao(),
+            gson
         )
     }
 
