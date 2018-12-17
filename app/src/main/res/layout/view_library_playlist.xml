@@ -7,10 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.lopei.collageview.CollageView
+    <FrameLayout
         android:id="@+id/playlistItemCoverContainer"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/playlist_item_cover" />
 
-    </com.lopei.collageview.CollageView>
+    </FrameLayout>
 
     <TextView
         android:id="@+id/playlistItemName"
@@ -43,15 +43,6 @@
         tools:text="@tools:sample/lorem" />
 
     <TextView
-        android:id="@+id/playlistItemDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/playlistItemName"
-        app:layout_constraintTop_toBottomOf="@+id/playlistItemDuration"
-        tools:text="@tools:sample/date/ddmmyy" />
-
-    <TextView
         android:id="@+id/playlistItemTrackCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,14 +51,5 @@
         app:layout_constraintStart_toStartOf="@+id/playlistItemName"
         app:layout_constraintTop_toBottomOf="@+id/playlistItemName"
         tools:text="12 tracks" />
-
-    <TextView
-        android:id="@+id/playlistItemDuration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/playlistItemName"
-        app:layout_constraintTop_toBottomOf="@+id/playlistItemTrackCount"
-        tools:text="0 h 46 m" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
