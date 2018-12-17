@@ -3,8 +3,8 @@ package me.cpele.baladr.common.business
 import androidx.lifecycle.LiveData
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.cpele.baladr.common.AsyncTransform
 import me.cpele.baladr.common.database.*
-import me.cpele.baladr.common.mapAsync
 
 class PlaylistRepository(
     private val playlistDao: PlaylistDao,
@@ -13,7 +13,7 @@ class PlaylistRepository(
     private val joinPlaylistTrackDao: JoinPlaylistTrackDao
 ) {
     fun findAll(): LiveData<List<PlaylistBo>> =
-        mapAsync(joinPlaylistTrackDao.findAll()) { joinResult: List<JoinPlaylistTrackWrapper>? ->
+        AsyncTransform.map(joinPlaylistTrackDao.findAll()) { joinResult: List<JoinPlaylistTrackWrapper>? ->
             joinResult
                 ?.groupBy { it: JoinPlaylistTrackWrapper -> it.playlist }
                 ?.map { entry: Map.Entry<PlaylistEntity, List<JoinPlaylistTrackWrapper>> ->
