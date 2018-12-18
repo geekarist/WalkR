@@ -62,8 +62,8 @@ dependencies {
     implementation("com.github.lopei:collageview:0.1.3")
 
     testImplementation("junit:junit:4.12")
-    androidTestImplementation("androidx.test:runner:1.1.0")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.1.0")
+    androidTestImplementation("androidx.test:runner:1.1.1")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.1.1")
 
     debugImplementation("com.facebook.stetho:stetho:1.5.0")
 }
