@@ -1,7 +1,6 @@
 package me.cpele.baladr.feature.playlistdisplay
 
 import android.app.Application
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.*
 import me.cpele.baladr.R
@@ -56,23 +55,22 @@ class PlaylistDisplayViewModel(
         tempoData.value = newTempo
     }
 
-    private val _playlistSaveEvent = MutableLiveData<LiveEvent<PlaylistBo>>()
-    val playlistSaveEvent: LiveData<LiveEvent<PlaylistBo>>
-        get() = _playlistSaveEvent
+    private val inputPlaylistName = MutableLiveData<String>()
 
-    fun onConfirmSave(playlistName: String) {
-        tracksData.value?.let { tracks ->
-            try {
+    val playlistSaveEvent: LiveData<LiveEvent<PlaylistBo>> =
+        Transformations.switchMap(inputPlaylistName) { playlistName: String? ->
+            Transformations.map(tracksData) { tracks ->
                 val notBlankName =
-                    if (playlistName.isNotBlank()) playlistName
+                    if (playlistName?.isNotBlank() == true) playlistName
                     else app.getString(R.string.playlist_naming_default_title)
                 val playlist = PlaylistBo(0, notBlankName, tracks)
                 playlistRepository.insert(playlist)
-                _playlistSaveEvent.postValue(LiveEvent(playlist))
-            } catch (e: Exception) {
-                Log.d(javaClass.simpleName, "Error saving playlist", e)
+                LiveEvent(playlist)
             }
         }
+
+    fun onConfirmSave(playlistName: String) {
+        inputPlaylistName.value = playlistName
     }
 
     fun onConnectivityChange(status: Boolean) {
