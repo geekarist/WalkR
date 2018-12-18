@@ -36,6 +36,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.extra.get("kotlin_version")}")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1")
 
     implementation("android.arch.navigation:navigation-fragment:1.0.0-alpha08")
     implementation("android.arch.navigation:navigation-ui:1.0.0-alpha08")
