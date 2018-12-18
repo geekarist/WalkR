@@ -59,13 +59,16 @@ class PlaylistDisplayViewModel(
 
     val saveMsgEvent: LiveData<LiveEvent<String>> =
         Transformations.switchMap(inputPlaylistName) { playlistName: String? ->
-            Transformations.map(tracksData) { tracks ->
-                val notBlankName =
-                    if (playlistName?.isNotBlank() == true) playlistName
-                    else app.getString(R.string.playlist_naming_default_title)
+            val notBlankName =
+                if (playlistName?.isNotBlank() == true) playlistName
+                else app.getString(R.string.playlist_naming_default_title)
+
+            Transformations.switchMap(tracksData) { tracks ->
                 val playlist = PlaylistBo(0, notBlankName, tracks)
-                playlistRepository.insert(playlist)
-                LiveEvent(app.getString(R.string.display_save_result_msg, notBlankName, tracks.size))
+
+                Transformations.map(playlistRepository.insert(playlist)) {
+                    LiveEvent(app.getString(R.string.display_save_result_msg, notBlankName, tracks.size))
+                }
             }
         }
 

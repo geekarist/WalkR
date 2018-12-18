@@ -11,7 +11,7 @@ interface TrackDao {
     @Query("SELECT * FROM TrackEntity WHERE trTempo = :tempo")
     fun findByTempo(tempo: Int): LiveData<List<TrackEntity>>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertAll(tracks: List<TrackEntity>)
 
     @Query("SELECT COUNT(*) FROM TrackEntity")
