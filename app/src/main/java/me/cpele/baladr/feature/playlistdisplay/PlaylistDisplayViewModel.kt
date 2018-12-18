@@ -57,7 +57,7 @@ class PlaylistDisplayViewModel(
 
     private val inputPlaylistName = MutableLiveData<String>()
 
-    val playlistSaveEvent: LiveData<LiveEvent<PlaylistBo>> =
+    val saveMsgEvent: LiveData<LiveEvent<String>> =
         Transformations.switchMap(inputPlaylistName) { playlistName: String? ->
             Transformations.map(tracksData) { tracks ->
                 val notBlankName =
@@ -65,7 +65,7 @@ class PlaylistDisplayViewModel(
                     else app.getString(R.string.playlist_naming_default_title)
                 val playlist = PlaylistBo(0, notBlankName, tracks)
                 playlistRepository.insert(playlist)
-                LiveEvent(playlist)
+                LiveEvent(app.getString(R.string.display_save_result_msg, notBlankName, tracks.size))
             }
         }
 

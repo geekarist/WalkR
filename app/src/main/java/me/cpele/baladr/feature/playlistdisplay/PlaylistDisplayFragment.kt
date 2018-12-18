@@ -94,13 +94,9 @@ class PlaylistDisplayFragment : Fragment() {
             displayList.visibility = it
         })
 
-        viewModel.playlistSaveEvent.observe(this, Observer {
-            it.consumed?.apply {
-                Toast.makeText(
-                    context,
-                    "Playlist '$name' has been saved",
-                    Toast.LENGTH_LONG
-                ).show()
+        viewModel.saveMsgEvent.observe(this, Observer {
+            it.consumed?.let { msg ->
+                Toast.makeText(context, msg, Toast.LENGTH_LONG).show()
 
                 findNavController().navigate(R.id.action_playlistDisplayFragment_to_libraryFragment)
             }
