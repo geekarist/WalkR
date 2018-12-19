@@ -3,9 +3,6 @@ package me.cpele.baladr.common.business
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.github.kittinunf.fuel.Fuel
-import com.github.kittinunf.fuel.core.FuelError
-import com.github.kittinunf.fuel.core.Request
-import com.github.kittinunf.fuel.core.Response
 import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -15,7 +12,6 @@ import me.cpele.baladr.common.datasource.PlaylistDto
 
 class PlaylistRepository(
     private val playlistDao: PlaylistDao,
-    private val trackDao: TrackDao,
     private val playlistTrackDao: PlaylistTrackDao,
     private val joinPlaylistTrackDao: JoinPlaylistTrackDao,
     private val gson: Gson
@@ -51,17 +47,10 @@ class PlaylistRepository(
         val resultData = MutableLiveData<Result<Unit>>()
 
         GlobalScope.launch {
-
             try {
                 insertEntities(playlist)
-
-                val (_, _, result) = insertResource(playlist)
-                resultData.postValue(
-                    when (result) {
-                        is com.github.kittinunf.result.Result.Success -> Result.success(Unit)
-                        is com.github.kittinunf.result.Result.Failure -> Result.failure(result.getException())
-                    }
-                )
+                insertResource(playlist)
+                resultData.postValue(Result.success(Unit))
             } catch (e: Exception) {
                 resultData.postValue(Result.failure(e))
             }
@@ -69,15 +58,18 @@ class PlaylistRepository(
         return resultData
     }
 
-    private fun insertResource(playlist: PlaylistBo): Triple<Request, Response, com.github.kittinunf.result.Result<ByteArray, FuelError>> {
-        return Fuel.post("https://api.spotify.com/v1/me/playlists")
+    private fun insertResource(playlist: PlaylistBo) {
+        val accessToken = "TODO"
+        val (_, _, result) = Fuel.post("https://api.spotify.com/v1/me/playlists")
             .header(
                 mapOf(
-                    "Authorization" to "Bearer BQBS2oOuyDowgtNCB2yQoNLM1_XzOoTNiByI00hDCT1Hrrxy7Ye2dIVo786sD0xLXSoVNnt-AXgbgBjvahhl7lNlVebG0Bly64wkgg5GrIDRX7r3FFOPN4c2fHTfqPTt47epB3GAM_KtJDskOciOkP6CdnSREK14bD8VeWkC4hp2G9M4Nl5G5yvprWtRLr6_oXfXRNIg8M9h1mwd9igRYisprJE2Hw",
+                    "Authorization" to "Bearer $accessToken",
                     "Content-Type" to "application/json"
                 )
             ).body(gson.toJson(PlaylistDto(name = playlist.name)))
             .response()
+
+        if (result is com.github.kittinunf.result.Result.Failure) throw result.getException()
     }
 
     private fun insertEntities(playlist: PlaylistBo) {

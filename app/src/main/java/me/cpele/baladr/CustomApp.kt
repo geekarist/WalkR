@@ -26,7 +26,6 @@ class CustomApp : Application() {
     private val playlistRepository: PlaylistRepository by lazy {
         PlaylistRepository(
             database.playlistDao(),
-            database.trackDao(),
             database.playlistTrackDao(),
             database.joinPlaylistTrackDao(),
             gson
