@@ -45,13 +45,9 @@ class PlaylistRepository(
             val playlistEntity = PlaylistEntity(plName = playlist.name)
             val insertedPlaylistId = playlistDao.insert(playlistEntity)
 
-            val trackEntities = playlist.tracks.map {
-                TrackEntity(it.id, it.cover, it.title, it.artist, it.duration, it.tempo)
-            }
-            trackDao.insertAll(trackEntities)
-
-            val playlistTrackEntities = trackEntities.map {
-                PlaylistTrackEntity(insertedPlaylistId, it.trId)
+            // We know that playlist.tracks come from the db so we don't need to insert them
+            val playlistTrackEntities = playlist.tracks.map {
+                PlaylistTrackEntity(insertedPlaylistId, it.id)
             }
             playlistTrackDao.insertAll(playlistTrackEntities)
 
