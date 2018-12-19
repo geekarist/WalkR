@@ -67,7 +67,13 @@ class PlaylistDisplayViewModel(
                 val playlist = PlaylistBo(0, notBlankName, tracks)
 
                 Transformations.map(playlistRepository.insert(playlist)) {
-                    LiveEvent(app.getString(R.string.display_save_result_msg, notBlankName, tracks.size))
+                    LiveEvent(
+                        if (it.isSuccess) {
+                            app.getString(R.string.display_save_result_msg, notBlankName, tracks.size)
+                        } else {
+                            app.getString(R.string.display_save_error_msg, notBlankName, it.exceptionOrNull()?.message)
+                        }
+                    )
                 }
             }
         }
