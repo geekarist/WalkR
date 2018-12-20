@@ -81,4 +81,11 @@ class PlaylistDisplayViewModel(
     fun onConfirmSave(playlistName: String) {
         inputPlaylistName.value = playlistName
     }
+
+    private val _requestLoginEvent = MutableLiveData<LiveEvent<Unit>>()
+    val loginRequestEvent: LiveData<LiveEvent<Unit>> = _requestLoginEvent
+
+    fun onRequestLogin() {
+        _requestLoginEvent.value = LiveEvent(Unit)
+    }
 }

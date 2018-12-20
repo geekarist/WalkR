@@ -1,5 +1,6 @@
 package me.cpele.baladr.feature.playlistdisplay
 
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -71,6 +72,12 @@ class PlaylistDisplayFragment : Fragment() {
                 Toast.makeText(context, msg, Toast.LENGTH_LONG).show()
 
                 findNavController().navigate(R.id.action_playlistDisplayFragment_to_libraryFragment)
+            }
+        })
+
+        viewModel.loginRequestEvent.observe(this, Observer {
+            it.consumed?.let {
+                AlertDialog.Builder(activity).setMessage("TODO: Login").show()
             }
         })
     }

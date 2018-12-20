@@ -28,6 +28,7 @@ class PlaylistNamingDialogFragment : BottomSheetDialogFragment() {
 
         playlistNamingConfirmButton.setOnClickListener {
             parentViewModel?.onConfirmSave(playlistNamingEdit.text.toString())
+            parentViewModel?.onRequestLogin()
         }
 
         playlistNamingCancelButton.setOnClickListener { dismiss() }

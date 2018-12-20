@@ -49,7 +49,7 @@ class PlaylistRepository(
         GlobalScope.launch {
             try {
                 insertEntities(playlist)
-                insertResource(playlist)
+                insertResource(playlist, "TODO")
                 resultData.postValue(Result.success(Unit))
             } catch (e: Exception) {
                 resultData.postValue(Result.failure(e))
@@ -58,8 +58,7 @@ class PlaylistRepository(
         return resultData
     }
 
-    private fun insertResource(playlist: PlaylistBo) {
-        val accessToken = "TODO"
+    private fun insertResource(playlist: PlaylistBo, accessToken: String) {
         val (_, _, result) = Fuel.post("https://api.spotify.com/v1/me/playlists")
             .header(
                 mapOf(
