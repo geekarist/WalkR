@@ -81,8 +81,4 @@ class PlaylistDisplayViewModel(
     fun onConfirmSave(playlistName: String) {
         inputPlaylistName.value = playlistName
     }
-
-    fun onConnectivityChange(status: Boolean) {
-        connectivityStatusData.postValue(status)
-    }
 }

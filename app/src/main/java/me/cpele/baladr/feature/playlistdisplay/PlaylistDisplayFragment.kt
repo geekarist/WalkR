@@ -1,16 +1,11 @@
 package me.cpele.baladr.feature.playlistdisplay
 
 import android.content.Context
-import android.net.ConnectivityManager
-import android.net.Network
-import android.net.NetworkCapabilities
-import android.net.NetworkRequest
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -30,12 +25,6 @@ class PlaylistDisplayFragment : Fragment() {
         ).get(PlaylistDisplayViewModel::class.java)
     }
 
-    private val connectivityManager: ConnectivityManager? by lazy {
-        context?.let {
-            ContextCompat.getSystemService(it, ConnectivityManager::class.java)
-        }
-    }
-
     override fun onAttach(context: Context?) {
         super.onAttach(context)
 
@@ -51,20 +40,6 @@ class PlaylistDisplayFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_playlist_display, container, false)
     }
 
-    private val networkCallback: ConnectivityManager.NetworkCallback by lazy {
-        object : ConnectivityManager.NetworkCallback() {
-            override fun onAvailable(network: Network?) {
-                super.onAvailable(network)
-                viewModel.onConnectivityChange(true)
-            }
-
-            override fun onLost(network: Network?) {
-                super.onLost(network)
-                viewModel.onConnectivityChange(false)
-            }
-        }
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val adapter = PlaylistAdapter()
@@ -78,9 +53,6 @@ class PlaylistDisplayFragment : Fragment() {
         viewModel.isButtonEnabled.observe(this, Observer {
             displaySaveButton.isEnabled = it
         })
-
-        val req = NetworkRequest.Builder().addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET).build()
-        connectivityManager?.registerNetworkCallback(req, networkCallback)
 
         displaySaveButton.setOnClickListener {
             PlaylistNamingDialogFragment.newInstance().show(childFragmentManager, "TAG_CHOOSE_TEXT_DIALOG_FRAG")
@@ -101,10 +73,5 @@ class PlaylistDisplayFragment : Fragment() {
                 findNavController().navigate(R.id.action_playlistDisplayFragment_to_libraryFragment)
             }
         })
-    }
-
-    override fun onDestroyView() {
-        connectivityManager?.unregisterNetworkCallback(networkCallback)
-        super.onDestroyView()
     }
 }
