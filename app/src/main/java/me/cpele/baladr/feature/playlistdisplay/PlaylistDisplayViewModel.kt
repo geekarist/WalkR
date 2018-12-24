@@ -3,6 +3,8 @@ package me.cpele.baladr.feature.playlistdisplay
 import android.app.Application
 import android.view.View
 import androidx.lifecycle.*
+import com.github.musichin.reactivelivedata.map
+import com.github.musichin.reactivelivedata.switchMap
 import me.cpele.baladr.R
 import me.cpele.baladr.common.LiveEvent
 import me.cpele.baladr.common.business.PlaylistBo
@@ -32,22 +34,22 @@ class PlaylistDisplayViewModel(
 
     private val connectivityStatusData = MutableLiveData<Boolean>()
 
-    private val _isButtonEnabled: LiveData<Boolean> = Transformations.switchMap(connectivityStatusData) { status ->
-        Transformations.map(tracksData) { tracks -> status && tracks.isNotEmpty() }
+    private val _isButtonEnabled: LiveData<Boolean> = connectivityStatusData.switchMap { status ->
+        tracksData.map { tracks -> status && tracks.isNotEmpty() }
     }
 
     val isButtonEnabled: LiveData<Boolean>
         get() = _isButtonEnabled
 
-    val tracksData: LiveData<List<TrackBo>> = Transformations.switchMap(tempoData) { tempo ->
+    val tracksData: LiveData<List<TrackBo>> = tempoData.switchMap { tempo ->
         trackRepository.findByTempo(tempo)
     }
 
-    val emptyViewVisibility: LiveData<Int> = Transformations.map(tracksData) {
+    val emptyViewVisibility: LiveData<Int> = tracksData.map {
         if (it.isEmpty()) View.VISIBLE else View.INVISIBLE
     }
 
-    val recyclerViewVisibility: LiveData<Int> = Transformations.map(tracksData) {
+    val recyclerViewVisibility: LiveData<Int> = tracksData.map {
         if (it.isNotEmpty()) View.VISIBLE else View.INVISIBLE
     }
 
@@ -58,15 +60,15 @@ class PlaylistDisplayViewModel(
     private val inputPlaylistName = MutableLiveData<String>()
 
     val saveMsgEvent: LiveData<LiveEvent<String>> =
-        Transformations.switchMap(inputPlaylistName) { playlistName: String? ->
+        inputPlaylistName.switchMap { playlistName: String? ->
             val notBlankName =
                 if (playlistName?.isNotBlank() == true) playlistName
                 else app.getString(R.string.playlist_naming_default_title)
 
-            Transformations.switchMap(tracksData) { tracks ->
+            tracksData.switchMap { tracks ->
                 val playlist = PlaylistBo(0, notBlankName, tracks)
 
-                Transformations.map(playlistRepository.insert(playlist)) {
+                playlistRepository.insert(playlist).map {
                     LiveEvent(
                         if (it.isSuccess) {
                             app.getString(R.string.display_save_result_msg, notBlankName, tracks.size)
