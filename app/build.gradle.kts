@@ -59,6 +59,8 @@ dependencies {
     implementation("androidx.room:room-runtime:2.0.0")
     kapt("androidx.room:room-compiler:2.0.0")
 
+    implementation("com.github.musichin.reactivelivedata:reactivelivedata:0.21.0")
+
     implementation("com.github.lopei:collageview:0.1.3")
 
     testImplementation("junit:junit:4.12")
