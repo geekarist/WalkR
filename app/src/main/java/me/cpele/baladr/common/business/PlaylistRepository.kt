@@ -3,6 +3,8 @@ package me.cpele.baladr.common.business
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.github.kittinunf.fuel.Fuel
+import com.github.musichin.reactivelivedata.combineLatestWith
+import com.github.musichin.reactivelivedata.switchMap
 import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -14,6 +16,7 @@ class PlaylistRepository(
     private val playlistDao: PlaylistDao,
     private val playlistTrackDao: PlaylistTrackDao,
     private val joinPlaylistTrackDao: JoinPlaylistTrackDao,
+    private val accessTokenDao: AccessTokenDao,
     private val gson: Gson
 ) {
     fun findAll(): LiveData<List<PlaylistBo>> {
@@ -42,18 +45,49 @@ class PlaylistRepository(
         }
     }
 
-    fun insert(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> {
+    fun insert(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> =
+        insertEntitiesAsync(playlist)
+            .combineLatestWith(accessTokenDao.get()) { result: Result<PlaylistBo>, accessToken: String? ->
+                Pair(result, accessToken)
+            }.switchMap {
+                val (result: Result<PlaylistBo>, accessToken: String?) = it
+                val resultData = MutableLiveData<Result<PlaylistBo>>()
+                GlobalScope.launch {
+                    when {
+                        result.isSuccess && accessToken != null -> {
+                            try {
+                                insertResource(playlist, accessToken)
+                                resultData.postValue(Result.success(playlist))
+                            } catch (e: Exception) {
+                                resultData.postValue(Result.failure(e))
+                            }
+                        }
+                        result.isSuccess && accessToken == null -> {
+                            resultData.postValue(
+                                Result.failure(
+                                    Exception(
+                                        "Error inserting playlist: access token is not set"
+                                    )
+                                )
+                            )
+                        }
+                        result.isFailure -> {
+                            resultData.postValue(result)
+                        }
+                    }
+                }
+                resultData
+            }
 
+    private fun insertEntitiesAsync(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> {
         val resultData = MutableLiveData<Result<PlaylistBo>>()
-
         GlobalScope.launch {
             try {
                 insertEntities(playlist)
-                insertResource(playlist, "TODO")
-                resultData.postValue(Result.success(playlist))
             } catch (e: Exception) {
                 resultData.postValue(Result.failure(e))
             }
+            resultData.postValue(Result.success(playlist))
         }
         return resultData
     }

@@ -28,6 +28,7 @@ class CustomApp : Application() {
             database.playlistDao(),
             database.playlistTrackDao(),
             database.joinPlaylistTrackDao(),
+            database.accessTokenDao(),
             gson
         )
     }

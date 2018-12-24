@@ -8,7 +8,8 @@ import androidx.room.RoomDatabase
     entities = [
         TrackEntity::class,
         PlaylistEntity::class,
-        PlaylistTrackEntity::class
+        PlaylistTrackEntity::class,
+        AccessTokenEntity::class
     ]
 )
 abstract class CustomDatabase : RoomDatabase() {
@@ -16,4 +17,5 @@ abstract class CustomDatabase : RoomDatabase() {
     abstract fun playlistDao(): PlaylistDao
     abstract fun playlistTrackDao(): PlaylistTrackDao
     abstract fun joinPlaylistTrackDao(): JoinPlaylistTrackDao
+    abstract fun accessTokenDao(): AccessTokenDao
 }
