@@ -3,6 +3,7 @@ package me.cpele.baladr.feature.playlistdisplay
 import android.app.Application
 import android.view.View
 import androidx.lifecycle.*
+import com.github.musichin.reactivelivedata.combineLatestWith
 import com.github.musichin.reactivelivedata.map
 import com.github.musichin.reactivelivedata.switchMap
 import me.cpele.baladr.R
@@ -60,25 +61,28 @@ class PlaylistDisplayViewModel(
     private val inputPlaylistName = MutableLiveData<String>()
 
     val saveMsgEvent: LiveData<LiveEvent<String>> =
-        inputPlaylistName.switchMap { playlistName: String? ->
-            val notBlankName =
-                if (playlistName?.isNotBlank() == true) playlistName
-                else app.getString(R.string.playlist_naming_default_title)
-
-            tracksData.switchMap { tracks ->
-                val playlist = PlaylistBo(0, notBlankName, tracks)
-
-                playlistRepository.insert(playlist).map {
-                    LiveEvent(
-                        if (it.isSuccess) {
-                            app.getString(R.string.display_save_result_msg, notBlankName, tracks.size)
-                        } else {
-                            app.getString(R.string.display_save_error_msg, notBlankName, it.exceptionOrNull()?.message)
-                        }
-                    )
-                }
+        inputPlaylistName.map { playlistName: String? ->
+            if (playlistName?.isNotBlank() == true) playlistName
+            else app.getString(R.string.playlist_naming_default_title)
+        }.combineLatestWith(tracksData) { notBlankName, tracks ->
+            Pair(notBlankName, tracks)
+        }.switchMap {
+            val (notBlankName, tracks) = it
+            playlistRepository.insert(PlaylistBo(0, notBlankName, tracks))
+        }.map {
+            if (it.isSuccess) {
+                app.getString(
+                    R.string.display_save_result_msg,
+                    it.getOrNull()?.name,
+                    it.getOrNull()?.tracks?.size
+                )
+            } else {
+                app.getString(
+                    R.string.display_save_error_msg,
+                    it.exceptionOrNull()?.message
+                )
             }
-        }
+        }.map { LiveEvent(it) }
 
     fun onConfirmSave(playlistName: String) {
         inputPlaylistName.value = playlistName

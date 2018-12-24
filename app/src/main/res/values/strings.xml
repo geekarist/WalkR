@@ -15,7 +15,7 @@
     <string name="display_save">Save Playlist</string>
     <string name="display_no_result">No result</string>
     <string name="display_save_result_msg">Playlist \'%1$s\' has been saved successfully with number of tracks: %2$d</string>
-    <string name="display_save_error_msg">Error saving playlist \'%1$s\': %2$s</string>
+    <string name="display_save_error_msg">Error saving playlist: %1$s</string>
 
     <string name="track_cover_content_desc">Track cover</string>
 

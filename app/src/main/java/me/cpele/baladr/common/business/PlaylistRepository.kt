@@ -42,15 +42,15 @@ class PlaylistRepository(
         }
     }
 
-    fun insert(playlist: PlaylistBo): LiveData<Result<Unit>> {
+    fun insert(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> {
 
-        val resultData = MutableLiveData<Result<Unit>>()
+        val resultData = MutableLiveData<Result<PlaylistBo>>()
 
         GlobalScope.launch {
             try {
                 insertEntities(playlist)
                 insertResource(playlist, "TODO")
-                resultData.postValue(Result.success(Unit))
+                resultData.postValue(Result.success(playlist))
             } catch (e: Exception) {
                 resultData.postValue(Result.failure(e))
             }
