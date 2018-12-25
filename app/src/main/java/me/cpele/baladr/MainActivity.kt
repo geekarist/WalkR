@@ -1,12 +1,15 @@
 package me.cpele.baladr
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.activity_main.*
+import me.cpele.baladr.feature.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,10 +34,17 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        return when (item?.itemId) {
-            android.R.id.home -> navHostFragment.findNavController().popBackStack()
-            else -> super.onOptionsItemSelected(item)
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean = when (item?.itemId) {
+        android.R.id.home -> navHostFragment.findNavController().popBackStack()
+        R.id.menuMainLogin -> {
+            startActivity(Intent(this, LoginActivity::class.java))
+            true
         }
+        else -> super.onOptionsItemSelected(item)
     }
 }

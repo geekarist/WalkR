@@ -23,4 +23,5 @@
     <string name="playlist_naming_dialog_title">Give your playlist a name</string>
     <string name="playlist_naming_confirm">Confirm</string>
     <string name="playlist_naming_cancel">Cancel</string>
+    <string name="menu_main_log_in">Log in</string>
 </resources>
