@@ -57,7 +57,9 @@ class LoginActivity : Activity(), CoroutineScope {
             Intent(this, javaClass).setAction(ACTION_HANDLE_CODE).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP),
             0
         )
-        authService.performAuthorizationRequest(authRequest, completedPendingIntent)
+        launch(Dispatchers.IO) {
+            authService.performAuthorizationRequest(authRequest, completedPendingIntent)
+        }
     }
 
     private fun requestToken() {
