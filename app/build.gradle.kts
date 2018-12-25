@@ -14,6 +14,9 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = mapOf(
+            "appAuthRedirectScheme" to "baladr"
+        )
     }
     buildTypes {
         getByName("release") {
@@ -62,6 +65,8 @@ dependencies {
     implementation("com.github.musichin.reactivelivedata:reactivelivedata:0.21.0")
 
     implementation("com.github.lopei:collageview:0.1.3")
+
+    implementation("net.openid:appauth:0.7.1")
 
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.1.1")
