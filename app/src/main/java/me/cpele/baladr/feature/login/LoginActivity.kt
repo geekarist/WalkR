@@ -6,13 +6,17 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Toast
-import net.openid.appauth.AuthorizationRequest
-import net.openid.appauth.AuthorizationService
-import net.openid.appauth.AuthorizationServiceConfiguration
-import net.openid.appauth.ResponseTypeValues
+import kotlinx.coroutines.*
+import me.cpele.baladr.BuildConfig
+import me.cpele.baladr.CustomApp
+import net.openid.appauth.*
+import kotlin.coroutines.CoroutineContext
 
-class LoginActivity : Activity() {
+class LoginActivity : Activity(), CoroutineScope {
+
+    private lateinit var job: Job
+    override val coroutineContext: CoroutineContext
+        get() = job + Dispatchers.Main
 
     companion object {
         private const val ACTION_LAUNCH = "ACTION_LAUNCH"
@@ -23,18 +27,23 @@ class LoginActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        job = Job()
+
         when (intent?.action) {
-            ACTION_LAUNCH -> requestAuthCode()
-            ACTION_HANDLE_CODE -> Toast.makeText(this, "Yo", Toast.LENGTH_SHORT).show()
+            ACTION_LAUNCH -> requestCode()
+            ACTION_HANDLE_CODE -> requestToken()
         }
     }
 
-    private fun requestAuthCode() {
+    private val authService by lazy {
+        AuthorizationService(this)
+    }
+
+    private fun requestCode() {
         val config = AuthorizationServiceConfiguration(
             Uri.parse("https://accounts.spotify.com/authorize"),
             Uri.parse("https://accounts.spotify.com/api/token")
         )
-        val authService = AuthorizationService(this)
         val authRequest = AuthorizationRequest.Builder(
             config,
             "e4927569efc54bc08036701294ca33db",
@@ -49,5 +58,34 @@ class LoginActivity : Activity() {
             0
         )
         authService.performAuthorizationRequest(authRequest, completedPendingIntent)
+    }
+
+    private fun requestToken() {
+        val authResponse = AuthorizationResponse.fromIntent(intent)
+        val authError = AuthorizationException.fromIntent(intent)
+        val authState = AuthState(authResponse, authError)
+        authResponse?.createTokenExchangeRequest()?.let { tokenRequest ->
+            authService.performTokenRequest(
+                tokenRequest,
+                ClientSecretBasic(BuildConfig.SPOTIFY_CLIENT_SECRET)
+            ) { response, ex ->
+                authState.update(response, ex)
+                authState.performActionWithFreshTokens(authService) { accessToken, _, _ ->
+                    accessToken?.let {
+                        launch(Dispatchers.IO) {
+                            CustomApp.instance.database.accessTokenDao().set(it)
+                            withContext(Dispatchers.Main) {
+                                finish()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        job.cancel()
+        super.onDestroy()
     }
 }

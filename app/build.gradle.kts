@@ -1,9 +1,15 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
 }
+
+val authProps = Properties().apply { load(FileInputStream("$rootDir/private/auth.properties")) }
+fun Properties.getQuoted(name: String): String = "\"${getProperty(name)}\""
 
 android {
     compileSdkVersion(28)
@@ -17,6 +23,7 @@ android {
         manifestPlaceholders = mapOf(
             "appAuthRedirectScheme" to "baladr"
         )
+        buildConfigField("String", "SPOTIFY_CLIENT_SECRET", authProps.getQuoted("spotify.client.secret"))
     }
     buildTypes {
         getByName("release") {
