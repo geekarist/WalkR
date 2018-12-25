@@ -1,6 +1,5 @@
 package me.cpele.baladr
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -42,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean = when (item?.itemId) {
         android.R.id.home -> navHostFragment.findNavController().popBackStack()
         R.id.menuMainLogin -> {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(LoginActivity.newIntent(this))
             true
         }
         else -> super.onOptionsItemSelected(item)
