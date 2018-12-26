@@ -117,7 +117,7 @@ class PlaylistRepository(
         val joinedUris = uriList.joinToString(",")
 
         val (_, _, updateResult) =
-                Fuel.post("https://api.spotify.com/v1/me/playlists/$playlistExternalId/tracks?uris=$joinedUris")
+                Fuel.post("https://api.spotify.com/v1/playlists/$playlistExternalId/tracks?uris=$joinedUris")
                     .header(
                         mapOf(
                             "Authorization" to "Bearer $accessToken",
