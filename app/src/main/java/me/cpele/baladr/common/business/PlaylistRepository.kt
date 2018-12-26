@@ -11,6 +11,7 @@ import kotlinx.coroutines.launch
 import me.cpele.baladr.common.AsyncTransform
 import me.cpele.baladr.common.database.*
 import me.cpele.baladr.common.datasource.PlaylistDto
+import java.nio.charset.Charset
 
 class PlaylistRepository(
     private val playlistDao: PlaylistDao,
@@ -36,7 +37,8 @@ class PlaylistRepository(
                                         trTitle,
                                         trArtist,
                                         trDuration,
-                                        trTempo
+                                        trTempo,
+                                        trUri
                                     )
                                 }
                             })
@@ -93,7 +95,7 @@ class PlaylistRepository(
     }
 
     private fun insertResource(playlist: PlaylistBo, accessToken: String) {
-        val (_, _, result) = Fuel.post("https://api.spotify.com/v1/me/playlists")
+        val (_, _, insertionResult) = Fuel.post("https://api.spotify.com/v1/me/playlists")
             .header(
                 mapOf(
                     "Authorization" to "Bearer $accessToken",
@@ -102,7 +104,28 @@ class PlaylistRepository(
             ).body(gson.toJson(PlaylistDto(name = playlist.name)))
             .response()
 
-        if (result is com.github.kittinunf.result.Result.Failure) throw result.getException()
+        if (insertionResult is com.github.kittinunf.result.Result.Failure) throw insertionResult.getException()
+
+        val insertedPlaylistDto =
+            gson.fromJson(
+                insertionResult.get().toString(Charset.defaultCharset()),
+                PlaylistDto::class.java
+            )
+
+        val playlistExternalId = insertedPlaylistDto.id
+        val uriList = playlist.tracks.map { it.uri }
+        val joinedUris = uriList.joinToString(",")
+
+        val (_, _, updateResult) =
+                Fuel.post("https://api.spotify.com/v1/me/playlists/$playlistExternalId/tracks?uris=$joinedUris")
+                    .header(
+                        mapOf(
+                            "Authorization" to "Bearer $accessToken",
+                            "Content-Type" to "application/json"
+                        )
+                    ).response()
+
+        if (updateResult is com.github.kittinunf.result.Result.Failure) throw updateResult.getException()
     }
 
     private fun insertEntities(playlist: PlaylistBo) {

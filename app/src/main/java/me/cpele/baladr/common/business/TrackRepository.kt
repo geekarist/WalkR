@@ -14,7 +14,8 @@ class TrackRepository(private val trackDao: TrackDao) {
                     it.trTitle,
                     it.trArtist,
                     it.trDuration,
-                    it.trTempo
+                    it.trTempo,
+                    it.trUri
                 )
             }
         }

@@ -60,7 +60,8 @@ class DatabasePopulationCallback : RoomDatabase.Callback() {
                     it.name ?: TODO(),
                     it.artists?.get(0)?.name ?: TODO(),
                     it.duration_ms.toString(),
-                    tempo
+                    tempo,
+                    it.uri ?: TODO()
                 )
             } ?: TODO()
         }?.let {

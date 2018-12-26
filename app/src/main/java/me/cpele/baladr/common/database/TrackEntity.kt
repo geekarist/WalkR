@@ -13,5 +13,6 @@ data class TrackEntity(
     val trTitle: String,
     val trArtist: String,
     val trDuration: String,
-    val trTempo: Int
+    val trTempo: Int,
+    val trUri: String
 )

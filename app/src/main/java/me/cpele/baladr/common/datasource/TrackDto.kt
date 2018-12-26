@@ -5,5 +5,6 @@ data class TrackDto(
     val name: String?,
     val album: AlbumDto?,
     val artists: List<ArtistDto?>?,
-    val duration_ms: Long?
+    val duration_ms: Long?,
+    val uri: String?
 )
