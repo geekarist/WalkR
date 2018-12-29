@@ -40,13 +40,14 @@ class PlaylistRepository(
                                         trUri
                                     )
                                 }
-                            })
+                            },
+                            key.plUri
+                        )
                     }
                 }
         }
     }
 
-    // TODO: Update inserted playlist with spotify uri
     fun insert(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> =
         accessTokenDao.get().switchMap { accessToken ->
             val resultData = MutableLiveData<Result<PlaylistBo>>()
@@ -55,7 +56,8 @@ class PlaylistRepository(
                     insertEntities(playlist)
                     resultData.postValue(
                         if (accessToken != null) {
-                            insertResource(playlist, accessToken)
+                            val insertedPlaylist = insertResource(playlist, accessToken)
+                            updateEntities(insertedPlaylist)
                             Result.success(playlist)
                         } else {
                             Result.failure(Exception("Error inserting playlist: access token is not set"))
@@ -68,7 +70,7 @@ class PlaylistRepository(
             resultData
         }
 
-    private fun insertResource(playlist: PlaylistBo, accessToken: String) {
+    private fun insertResource(playlist: PlaylistBo, accessToken: String): PlaylistBo {
         val (_, _, insertionResult) = Fuel.post("https://api.spotify.com/v1/me/playlists")
             .header(
                 mapOf(
@@ -100,10 +102,12 @@ class PlaylistRepository(
                     ).response()
 
         if (updateResult is com.github.kittinunf.result.Result.Failure) throw updateResult.getException()
+
+        return playlist.copy(uri = insertedPlaylistDto.uri ?: TODO())
     }
 
     private fun insertEntities(playlist: PlaylistBo) {
-        val playlistEntity = PlaylistEntity(plName = playlist.name)
+        val playlistEntity = PlaylistEntity(plName = playlist.name, plUri = playlist.uri)
         val insertedPlaylistId = playlistDao.insert(playlistEntity)
 
         // We know that playlist.tracks come from the db so we don't need to insert them
@@ -111,5 +115,14 @@ class PlaylistRepository(
             PlaylistTrackEntity(insertedPlaylistId, it.id)
         }
         playlistTrackDao.insertAll(playlistTrackEntities)
+    }
+
+    private fun updateEntities(playlist: PlaylistBo) {
+        val playlistEntity = PlaylistEntity(
+            plId = playlist.id,
+            plName = playlist.name,
+            plUri = playlist.uri
+        )
+        playlistDao.update(playlistEntity)
     }
 }
