@@ -1,6 +1,9 @@
 package me.cpele.baladr.feature.library
 
+import android.content.Intent
+import android.net.Uri
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.lopei.collageview.CollageView
 import kotlinx.android.synthetic.main.view_library_playlist.view.*
@@ -18,6 +21,13 @@ class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 .useCards(false)
                 .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
                 .loadPhotos(tracks.takeLast(4).map { it.cover })
+            itemView.setOnClickListener {
+                if (uri == null) {
+                    Toast.makeText(itemView.context, "Playlist has no URI", Toast.LENGTH_LONG).show()
+                } else {
+                    itemView.context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(uri)))
+                }
+            }
         }
     }
 }
