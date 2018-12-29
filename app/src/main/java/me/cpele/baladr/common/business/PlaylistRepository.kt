@@ -53,12 +53,12 @@ class PlaylistRepository(
             val resultData = MutableLiveData<Result<PlaylistBo>>()
             try {
                 GlobalScope.launch {
-                    insertEntities(playlist)
+                    val playlistWithId = insertEntities(playlist)
                     resultData.postValue(
                         if (accessToken != null) {
-                            val insertedPlaylist = insertResource(playlist, accessToken)
-                            updateEntities(insertedPlaylist)
-                            Result.success(playlist)
+                            val playlistWithUri = insertResource(playlistWithId, accessToken)
+                            updateEntities(playlistWithUri)
+                            Result.success(playlistWithUri)
                         } else {
                             Result.failure(Exception("Error inserting playlist: access token is not set"))
                         }
@@ -106,7 +106,7 @@ class PlaylistRepository(
         return playlist.copy(uri = insertedPlaylistDto.uri ?: TODO())
     }
 
-    private fun insertEntities(playlist: PlaylistBo) {
+    private fun insertEntities(playlist: PlaylistBo): PlaylistBo {
         val playlistEntity = PlaylistEntity(plName = playlist.name, plUri = playlist.uri)
         val insertedPlaylistId = playlistDao.insert(playlistEntity)
 
@@ -115,6 +115,8 @@ class PlaylistRepository(
             PlaylistTrackEntity(insertedPlaylistId, it.id)
         }
         playlistTrackDao.insertAll(playlistTrackEntities)
+
+        return playlist.copy(id = insertedPlaylistId)
     }
 
     private fun updateEntities(playlist: PlaylistBo) {

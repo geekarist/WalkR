@@ -12,7 +12,7 @@ interface PlaylistDao {
     fun insert(playlist: PlaylistEntity): Long
 
     @Update
-    fun update(playlist: PlaylistEntity): Long
+    fun update(playlist: PlaylistEntity)
 
     @Query("SELECT * FROM PlaylistEntity")
     fun findAll(): LiveData<List<PlaylistEntity>>
