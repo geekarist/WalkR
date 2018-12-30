@@ -10,6 +10,7 @@
     <string name="generation_tempo_max_label">260 bpm</string>
     <string name="generation_generate_playlist">Generate Playlist</string>
     <string name="generation_title">Generate Playlist</string>
+    <string name="generation_detect">Detect</string>
 
     <string name="display_label">Playlist Tracks</string>
     <string name="display_save">Save Playlist</string>
@@ -23,5 +24,6 @@
     <string name="playlist_naming_dialog_title">Give your playlist a name</string>
     <string name="playlist_naming_confirm">Confirm</string>
     <string name="playlist_naming_cancel">Cancel</string>
+
     <string name="menu_main_log_in">Log in</string>
 </resources>

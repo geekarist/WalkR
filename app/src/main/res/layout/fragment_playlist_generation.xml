@@ -30,7 +30,6 @@
         android:textAppearance="@android:style/TextAppearance.Material.Title"
         app:layout_constraintBottom_toBottomOf="@id/generationTempoSeekBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/generationTempoSeekBar"
         app:layout_constraintTop_toTopOf="@id/generationTempoSeekBar" />
 
@@ -44,9 +43,20 @@
         android:layout_marginEnd="8dp"
         android:max="130"
         app:layout_constraintEnd_toStartOf="@+id/generationTempoMaxLabel"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generationTempoLabel" />
+
+    <Button
+        android:id="@+id/generationTempoDetectButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_walk"
+        android:text="@string/generation_detect"
+        app:layout_constraintBottom_toBottomOf="@+id/generationTempoLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/generationTempoLabel" />
 
     <View
         android:id="@+id/generationDivider"
