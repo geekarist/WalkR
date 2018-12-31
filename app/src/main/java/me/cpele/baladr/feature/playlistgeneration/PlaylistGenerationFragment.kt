@@ -65,5 +65,17 @@ class PlaylistGenerationFragment : Fragment() {
                 bundle
             )
         }
+
+        viewModel.tempoDetectButtonEnabled.observe(this, Observer { isEnabled: Boolean ->
+            generationTempoDetectButton.isEnabled = isEnabled
+        })
+
+        viewModel.seekBarEnabled.observe(this, Observer {
+            generationTempoSeekBar.isEnabled = it
+        })
+
+        generationTempoDetectButton.setOnClickListener {
+            viewModel.onStartTempoDetection(durationSeconds = 10)
+        }
     }
 }
