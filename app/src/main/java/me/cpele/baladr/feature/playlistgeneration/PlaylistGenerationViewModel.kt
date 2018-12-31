@@ -33,15 +33,13 @@ class PlaylistGenerationViewModel : ViewModel(), CoroutineScope {
         }
     }
 
-    fun onStartTempoDetection(durationSeconds: Int) {
-        launch {
-            _detectionRunning.postValue(true)
-            delay(TimeUnit.SECONDS.toMillis(durationSeconds.toLong()))
-            _detectionRunning.postValue(false)
-            val count = 15
-            val tempo = count * (60 / durationSeconds)
-            _progress.postValue(tempo - 70)
-        }
+    fun onStartTempoDetection(durationSeconds: Int) = launch {
+        _detectionRunning.postValue(true)
+        delay(TimeUnit.SECONDS.toMillis(durationSeconds.toLong()))
+        _detectionRunning.postValue(false)
+        val count = 15
+        val tempo = count * (60 / durationSeconds)
+        _progress.postValue(tempo - 70)
     }
 
     override fun onCleared() {
