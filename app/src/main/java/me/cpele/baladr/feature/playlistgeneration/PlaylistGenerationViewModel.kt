@@ -48,9 +48,10 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
     private var listener: StepCountSensorListener? = null
 
     fun onStartTempoDetection(durationSeconds: Int) = launch {
-        val endTimeMsec = Date().time + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
+        val startTimeMsec = Date().time
+        val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
         listener?.let(sensorManager::unregisterListener)
-        listener = StepCountSensorListener(endTimeMsec)
+        listener = StepCountSensorListener(startTimeMsec, endTimeMsec)
         val defaultSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
         sensorManager.registerListener(
             listener,
@@ -62,15 +63,21 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
         _detectionRunning.postValue(false)
     }
 
-    inner class StepCountSensorListener(private val endTimeMsec: Long) : SensorEventListener {
+    inner class StepCountSensorListener(
+        private val startTimeMsec: Long,
+        private val endTimeMsec: Long
+    ) : SensorEventListener {
         override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit
 
+        private var firstCount = 0f
+
         override fun onSensorChanged(event: SensorEvent?) {
-            event?.values?.get(0)?.let { count ->
+            event?.values?.get(0)?.let { currentCount ->
                 val timestampMsec =
                     System.currentTimeMillis() -
                             SystemClock.elapsedRealtime() +
                             TimeUnit.NANOSECONDS.toMillis(event.timestamp)
+                if (firstCount == 0f) firstCount = currentCount
                 if (timestampMsec >= endTimeMsec) {
                     sensorManager.unregisterListener(this)
                     Toast.makeText(
@@ -78,9 +85,9 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
                         "timestamp: ${Date(event.timestamp)}, endTimeMsec: ${Date(endTimeMsec)}",
                         Toast.LENGTH_LONG
                     ).show()
-                    val diffMsec = timestampMsec - endTimeMsec
-                    val diffMin = TimeUnit.MILLISECONDS.toMinutes(diffMsec)
-                    val countPerMin = count / diffMin
+                    val diffMsec = timestampMsec - startTimeMsec
+                    val diffMin: Float = diffMsec / 1000f / 60f
+                    val countPerMin = (currentCount - firstCount) / diffMin
                     _progress.postValue(countPerMin.toInt() - 70)
                     _detectionRunning.postValue(false)
                 }
