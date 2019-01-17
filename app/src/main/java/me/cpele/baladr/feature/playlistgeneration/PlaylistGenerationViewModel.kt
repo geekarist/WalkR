@@ -52,15 +52,16 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
         val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
         listener?.let(sensorManager::unregisterListener)
         listener = StepCountSensorListener(startTimeMsec, endTimeMsec)
-        val defaultSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+        val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
         sensorManager.registerListener(
             listener,
-            defaultSensor,
+            stepSensor,
             SensorManager.SENSOR_DELAY_FASTEST
         )
         _detectionRunning.postValue(true)
         delay(TimeUnit.SECONDS.toMillis(11))
         _detectionRunning.postValue(false)
+        sensorManager.unregisterListener(listener)
     }
 
     inner class StepCountSensorListener(
