@@ -89,7 +89,7 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
                     val diffMsec = timestampMsec - startTimeMsec
                     val diffMin: Float = diffMsec / 1000f / 60f
                     val countPerMin = (currentCount - firstCount) / diffMin
-                    _progress.postValue(countPerMin.toInt() - 70)
+                    onProgressChanged(countPerMin.toInt() - 70)
                     _detectionRunning.postValue(false)
                 }
             }
