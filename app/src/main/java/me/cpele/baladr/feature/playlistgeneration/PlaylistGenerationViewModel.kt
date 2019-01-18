@@ -6,7 +6,6 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.SystemClock
-import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -48,9 +47,11 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
     private var listener: StepCountSensorListener? = null
 
     fun onStartTempoDetection(durationSeconds: Int) = launch {
+
         val startTimeMsec = Date().time
         val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
-        listener?.let(sensorManager::unregisterListener)
+
+        sensorManager.unregisterListener(listener)
         listener = StepCountSensorListener(startTimeMsec, endTimeMsec)
         val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
         sensorManager.registerListener(
@@ -58,9 +59,11 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
             stepSensor,
             SensorManager.SENSOR_DELAY_FASTEST
         )
+
         _detectionRunning.postValue(true)
         delay(TimeUnit.SECONDS.toMillis(11))
         _detectionRunning.postValue(false)
+
         sensorManager.unregisterListener(listener)
     }
 
@@ -81,11 +84,6 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
                 if (firstCount == 0f) firstCount = currentCount
                 if (timestampMsec >= endTimeMsec) {
                     sensorManager.unregisterListener(this)
-                    Toast.makeText(
-                        app,
-                        "timestamp: ${Date(event.timestamp)}, endTimeMsec: ${Date(endTimeMsec)}",
-                        Toast.LENGTH_LONG
-                    ).show()
                     val diffMsec = timestampMsec - startTimeMsec
                     val diffMin: Float = diffMsec / 1000f / 60f
                     val countPerMin = (currentCount - firstCount) / diffMin

@@ -23,9 +23,18 @@ class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 .loadPhotos(tracks.takeLast(4).map { it.cover })
             itemView.setOnClickListener {
                 if (uri == null) {
-                    Toast.makeText(itemView.context, "Playlist has no URI", Toast.LENGTH_LONG).show()
+                    Toast.makeText(itemView.context, "Playlist has no URI", Toast.LENGTH_SHORT).show()
                 } else {
-                    itemView.context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(uri)))
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+                    if (intent.resolveActivity(itemView.context.packageManager) != null) {
+                        itemView.context.startActivity(intent)
+                    } else {
+                        Toast.makeText(
+                            itemView.context,
+                            "No application found to open this playlist",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
                 }
             }
         }
