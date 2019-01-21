@@ -54,22 +54,28 @@ class PlaylistRepository(
     fun insert(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> =
         authStateRepository.get().switchMap { authState ->
             val resultData = MutableLiveData<Result<PlaylistBo>>()
-            authState?.performActionWithFreshTokens(authService) { accessToken, _, ex ->
-                try {
-                    GlobalScope.launch {
-                        val playlistWithId = insertEntities(playlist)
-                        resultData.postValue(
-                            if (accessToken != null) {
-                                val playlistWithUri = insertResource(playlistWithId, accessToken)
-                                updateEntities(playlistWithUri)
-                                Result.success(playlistWithUri)
-                            } else {
-                                Result.failure(Exception("Error inserting playlist: access token is not set"))
-                            }
-                        )
+            GlobalScope.launch {
+                val playlistWithId = insertEntities(playlist)
+                if (authState != null) {
+                    authState.performActionWithFreshTokens(authService) { accessToken, _, ex ->
+                        try {
+                            resultData.postValue(
+                                when {
+                                    ex != null -> Result.failure(Exception("Error inserting resource when performing auth action"))
+                                    accessToken != null -> {
+                                        val playlistWithUri = insertResource(playlistWithId, accessToken)
+                                        updateEntities(playlistWithUri)
+                                        Result.success(playlistWithUri)
+                                    }
+                                    else -> Result.failure(Exception("Error inserting resource: no access token"))
+                                }
+                            )
+                        } catch (e: Exception) {
+                            resultData.postValue(Result.failure(e))
+                        }
                     }
-                } catch (e: Exception) {
-                    resultData.postValue(Result.failure(e))
+                } else {
+                    resultData.postValue(Result.failure(Exception("Error inserting playlist: not authorized")))
                 }
             }
             resultData
