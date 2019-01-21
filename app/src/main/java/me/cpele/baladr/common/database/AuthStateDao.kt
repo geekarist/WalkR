@@ -7,14 +7,14 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
-abstract class AccessTokenDao {
-    @Query("SELECT atValue FROM AccessTokenEntity LIMIT 1")
+abstract class AuthStateDao {
+    @Query("SELECT asValue FROM AuthStateEntity LIMIT 1")
     abstract fun get(): LiveData<String?>
 
-    fun set(accessToken: String) {
-        insert(AccessTokenEntity(0, accessToken))
+    fun set(authStateStr: String) {
+        insert(AuthStateEntity(0, authStateStr))
     }
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    abstract fun insert(accessTokenEntity: AccessTokenEntity)
+    abstract fun insert(authStateEntity: AuthStateEntity)
 }

@@ -75,7 +75,7 @@ class LoginActivity : Activity(), CoroutineScope {
                 authState.performActionWithFreshTokens(authService) { accessToken, _, _ ->
                     accessToken?.let {
                         launch(Dispatchers.IO) {
-                            CustomApp.instance.database.accessTokenDao().set(it)
+                            CustomApp.instance.database.authStateDao().set(it)
                             withContext(Dispatchers.Main) {
                                 finish()
                             }

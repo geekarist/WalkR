@@ -16,7 +16,7 @@ class PlaylistRepository(
     private val playlistDao: PlaylistDao,
     private val playlistTrackDao: PlaylistTrackDao,
     private val joinPlaylistTrackDao: JoinPlaylistTrackDao,
-    private val accessTokenDao: AccessTokenDao,
+    private val authStateDao: AuthStateDao,
     private val gson: Gson
 ) {
     fun findAll(): LiveData<List<PlaylistBo>> {
@@ -49,7 +49,7 @@ class PlaylistRepository(
     }
 
     fun insert(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> =
-        accessTokenDao.get().switchMap { accessToken ->
+        authStateDao.get().switchMap { accessToken ->
             val resultData = MutableLiveData<Result<PlaylistBo>>()
             try {
                 GlobalScope.launch {
