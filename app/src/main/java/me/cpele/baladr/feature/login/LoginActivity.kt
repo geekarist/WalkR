@@ -72,14 +72,10 @@ class LoginActivity : Activity(), CoroutineScope {
                 ClientSecretBasic(BuildConfig.SPOTIFY_CLIENT_SECRET)
             ) { response, ex ->
                 authState.update(response, ex)
-                authState.performActionWithFreshTokens(authService) { accessToken, _, _ ->
-                    accessToken?.let {
-                        launch(Dispatchers.IO) {
-                            CustomApp.instance.database.authStateDao().set(it)
-                            withContext(Dispatchers.Main) {
-                                finish()
-                            }
-                        }
+                launch(Dispatchers.IO) {
+                    CustomApp.instance.authStateRepository.set(authState)
+                    withContext(Dispatchers.Main) {
+                        finish()
                     }
                 }
             }

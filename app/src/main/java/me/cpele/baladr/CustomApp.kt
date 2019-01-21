@@ -12,6 +12,7 @@ import me.cpele.baladr.common.database.CustomDatabase
 import me.cpele.baladr.common.database.DatabasePopulationCallback
 import me.cpele.baladr.feature.library.LibraryViewModel
 import me.cpele.baladr.feature.playlistdisplay.PlaylistDisplayViewModel
+import net.openid.appauth.AuthorizationService
 
 class CustomApp : Application() {
 
@@ -23,13 +24,18 @@ class CustomApp : Application() {
 
     private val gson: Gson by lazy { Gson() }
 
+    private val authService by lazy { AuthorizationService(this) }
+
+    val authStateRepository by lazy { AuthStateRepository(database.authStateDao()) }
+
     private val playlistRepository: PlaylistRepository by lazy {
         PlaylistRepository(
             database.playlistDao(),
             database.playlistTrackDao(),
             database.joinPlaylistTrackDao(),
-            database.authStateDao(),
-            gson
+            authStateRepository,
+            gson,
+            authService
         )
     }
 

@@ -7,17 +7,20 @@ import com.github.musichin.reactivelivedata.switchMap
 import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.cpele.baladr.AuthStateRepository
 import me.cpele.baladr.common.AsyncTransform
 import me.cpele.baladr.common.database.*
 import me.cpele.baladr.common.datasource.PlaylistDto
+import net.openid.appauth.AuthorizationService
 import java.nio.charset.Charset
 
 class PlaylistRepository(
     private val playlistDao: PlaylistDao,
     private val playlistTrackDao: PlaylistTrackDao,
     private val joinPlaylistTrackDao: JoinPlaylistTrackDao,
-    private val authStateDao: AuthStateDao,
-    private val gson: Gson
+    private val authStateRepository: AuthStateRepository,
+    private val gson: Gson,
+    val authService: AuthorizationService
 ) {
     fun findAll(): LiveData<List<PlaylistBo>> {
         return AsyncTransform.map(joinPlaylistTrackDao.findAll()) { joinResult: List<JoinPlaylistTrackWrapper>? ->
@@ -49,23 +52,25 @@ class PlaylistRepository(
     }
 
     fun insert(playlist: PlaylistBo): LiveData<Result<PlaylistBo>> =
-        authStateDao.get().switchMap { accessToken ->
+        authStateRepository.get().switchMap { authState ->
             val resultData = MutableLiveData<Result<PlaylistBo>>()
-            try {
-                GlobalScope.launch {
-                    val playlistWithId = insertEntities(playlist)
-                    resultData.postValue(
-                        if (accessToken != null) {
-                            val playlistWithUri = insertResource(playlistWithId, accessToken)
-                            updateEntities(playlistWithUri)
-                            Result.success(playlistWithUri)
-                        } else {
-                            Result.failure(Exception("Error inserting playlist: access token is not set"))
-                        }
-                    )
+            authState?.performActionWithFreshTokens(authService) { accessToken, _, ex ->
+                try {
+                    GlobalScope.launch {
+                        val playlistWithId = insertEntities(playlist)
+                        resultData.postValue(
+                            if (accessToken != null) {
+                                val playlistWithUri = insertResource(playlistWithId, accessToken)
+                                updateEntities(playlistWithUri)
+                                Result.success(playlistWithUri)
+                            } else {
+                                Result.failure(Exception("Error inserting playlist: access token is not set"))
+                            }
+                        )
+                    }
+                } catch (e: Exception) {
+                    resultData.postValue(Result.failure(e))
                 }
-            } catch (e: Exception) {
-                resultData.postValue(Result.failure(e))
             }
             resultData
         }
