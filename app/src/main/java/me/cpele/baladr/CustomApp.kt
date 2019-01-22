@@ -55,6 +55,10 @@ class CustomApp : Application() {
         LibraryViewModel.Factory(playlistRepository)
     }
 
+    val mainViewModelFactory by lazy {
+        MainViewModel.Factory(authStateRepository)
+    }
+
     companion object {
         lateinit var instance: CustomApp
     }

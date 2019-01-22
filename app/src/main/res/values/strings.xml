@@ -26,4 +26,5 @@
     <string name="playlist_naming_cancel">Cancel</string>
 
     <string name="menu_main_log_in">Log in</string>
+    <string name="menu_main_log_out">Log out</string>
 </resources>

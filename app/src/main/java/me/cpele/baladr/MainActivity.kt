@@ -12,6 +12,13 @@ import me.cpele.baladr.feature.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
+    private val viewModel by lazy {
+        ViewModelProviders.of(
+            this,
+            CustomApp.instance.mainViewModelFactory
+        ).get(MainViewModel::class.java)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,8 +33,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-
         viewModel.title.observe(this, Observer {
             supportActionBar?.title = it
         })
@@ -35,6 +40,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
+
+        val loginItem = menu?.findItem(R.id.menuMainLogin)
+        val logoutItem = menu?.findItem(R.id.menuMainLogout)
+
+        viewModel.isLoginVisible.observe(this, Observer { loginItem?.isVisible = it })
+        viewModel.isLogoutVisible.observe(this, Observer { logoutItem?.isVisible = it })
+
         return super.onCreateOptionsMenu(menu)
     }
 
