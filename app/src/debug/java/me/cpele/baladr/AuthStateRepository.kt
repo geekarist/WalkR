@@ -15,4 +15,6 @@ class AuthStateRepository(private val authStateDao: AuthStateDao) {
     fun get(): LiveData<AuthState?> = Transformations.map(authStateDao.get()) {
         it?.let { serialized -> AuthState.jsonDeserialize(serialized) }
     }
+
+    fun clear() = set(AuthState())
 }

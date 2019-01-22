@@ -56,6 +56,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(LoginActivity.newIntent(this))
             true
         }
+        R.id.menuMainLogout -> {
+            viewModel.logout()
+            true
+        }
         else -> super.onOptionsItemSelected(item)
     }
 }

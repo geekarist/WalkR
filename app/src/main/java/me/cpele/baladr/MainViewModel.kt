@@ -2,7 +2,7 @@ package me.cpele.baladr
 
 import androidx.lifecycle.*
 
-class MainViewModel(authStateRepository: AuthStateRepository) : ViewModel() {
+class MainViewModel(private val authStateRepository: AuthStateRepository) : ViewModel() {
 
     class Factory(private val authStateRepository: AuthStateRepository) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
@@ -21,4 +21,6 @@ class MainViewModel(authStateRepository: AuthStateRepository) : ViewModel() {
     fun postTitle(strTitle: String) {
         _title.value = strTitle
     }
+
+    fun logout() = authStateRepository.clear()
 }
