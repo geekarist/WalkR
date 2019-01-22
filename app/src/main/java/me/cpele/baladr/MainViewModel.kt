@@ -1,8 +1,17 @@
 package me.cpele.baladr
 
 import androidx.lifecycle.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlin.coroutines.CoroutineContext
 
-class MainViewModel(private val authStateRepository: AuthStateRepository) : ViewModel() {
+class MainViewModel(private val authStateRepository: AuthStateRepository) : ViewModel(), CoroutineScope {
+
+    private val job = Job()
+    override val coroutineContext: CoroutineContext
+        get() = Dispatchers.IO + job
 
     class Factory(private val authStateRepository: AuthStateRepository) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
@@ -22,5 +31,10 @@ class MainViewModel(private val authStateRepository: AuthStateRepository) : View
         _title.value = strTitle
     }
 
-    fun logout() = authStateRepository.clear()
+    fun logout() = launch { authStateRepository.clear() }
+
+    override fun onCleared() {
+        job.cancel()
+        super.onCleared()
+    }
 }
