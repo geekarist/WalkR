@@ -8,10 +8,12 @@ import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import me.cpele.baladr.AuthStateRepository
+import me.cpele.baladr.BuildConfig
 import me.cpele.baladr.common.AsyncTransform
 import me.cpele.baladr.common.database.*
 import me.cpele.baladr.common.datasource.PlaylistDto
 import net.openid.appauth.AuthorizationService
+import net.openid.appauth.ClientSecretBasic
 import java.nio.charset.Charset
 
 class PlaylistRepository(
@@ -20,7 +22,7 @@ class PlaylistRepository(
     private val joinPlaylistTrackDao: JoinPlaylistTrackDao,
     private val authStateRepository: AuthStateRepository,
     private val gson: Gson,
-    val authService: AuthorizationService
+    private val authService: AuthorizationService
 ) {
     fun findAll(): LiveData<List<PlaylistBo>> {
         return AsyncTransform.map(joinPlaylistTrackDao.findAll()) { joinResult: List<JoinPlaylistTrackWrapper>? ->
@@ -57,7 +59,9 @@ class PlaylistRepository(
             GlobalScope.launch {
                 val playlistWithId = insertEntities(playlist)
                 if (authState != null) {
-                    authState.performActionWithFreshTokens(authService) { accessToken, _, ex ->
+                    authState.needsTokenRefresh = true
+                    val clientAuth = ClientSecretBasic(BuildConfig.SPOTIFY_CLIENT_SECRET)
+                    authState.performActionWithFreshTokens(authService, clientAuth) { accessToken, _, ex ->
                         try {
                             resultData.postValue(
                                 when {
