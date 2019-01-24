@@ -62,20 +62,22 @@ class PlaylistRepository(
                     authState.needsTokenRefresh = true
                     val clientAuth = ClientSecretBasic(BuildConfig.SPOTIFY_CLIENT_SECRET)
                     authState.performActionWithFreshTokens(authService, clientAuth) { accessToken, _, ex ->
-                        try {
-                            resultData.postValue(
-                                when {
-                                    ex != null -> Result.failure(Exception("Error inserting resource when performing auth action"))
-                                    accessToken != null -> {
-                                        val playlistWithUri = insertResource(playlistWithId, accessToken)
-                                        updateEntities(playlistWithUri)
-                                        Result.success(playlistWithUri)
+                        GlobalScope.launch {
+                            try {
+                                resultData.postValue(
+                                    when {
+                                        ex != null -> Result.failure(Exception("Error inserting resource when performing auth action"))
+                                        accessToken != null -> {
+                                            val playlistWithUri = insertResource(playlistWithId, accessToken)
+                                            updateEntities(playlistWithUri)
+                                            Result.success(playlistWithUri)
+                                        }
+                                        else -> Result.failure(Exception("Error inserting resource: no access token"))
                                     }
-                                    else -> Result.failure(Exception("Error inserting resource: no access token"))
-                                }
-                            )
-                        } catch (e: Exception) {
-                            resultData.postValue(Result.failure(e))
+                                )
+                            } catch (e: Exception) {
+                                resultData.postValue(Result.failure(e))
+                            }
                         }
                     }
                 } else {
