@@ -5,6 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import com.github.kittinunf.fuel.Fuel
 import com.github.musichin.reactivelivedata.switchMap
 import com.google.gson.Gson
+import kotlinx.coroutines.CompletableDeferred
+import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import me.cpele.baladr.AuthStateRepository
@@ -12,8 +14,7 @@ import me.cpele.baladr.BuildConfig
 import me.cpele.baladr.common.AsyncTransform
 import me.cpele.baladr.common.database.*
 import me.cpele.baladr.common.datasource.PlaylistDto
-import net.openid.appauth.AuthorizationService
-import net.openid.appauth.ClientSecretBasic
+import net.openid.appauth.*
 import java.nio.charset.Charset
 
 class PlaylistRepository(
@@ -58,33 +59,45 @@ class PlaylistRepository(
             val resultData = MutableLiveData<Result<PlaylistBo>>()
             GlobalScope.launch {
                 val playlistWithId = insertEntities(playlist)
-                if (authState != null) {
-                    val clientAuth = ClientSecretBasic(BuildConfig.SPOTIFY_CLIENT_SECRET)
-                    authState.performActionWithFreshTokens(authService, clientAuth) { accessToken, _, ex ->
-                        GlobalScope.launch {
-                            try {
-                                resultData.postValue(
-                                    when {
-                                        ex != null -> Result.failure(Exception("Error inserting resource when performing auth action"))
-                                        accessToken != null -> {
-                                            val playlistWithUri = insertResource(playlistWithId, accessToken)
-                                            updateEntities(playlistWithUri)
-                                            Result.success(playlistWithUri)
-                                        }
-                                        else -> Result.failure(Exception("Error inserting resource: no access token"))
-                                    }
-                                )
-                            } catch (e: Exception) {
-                                resultData.postValue(Result.failure(e))
+
+                resultData.postValue(
+                    if (authState != null) {
+                        val clientAuth = ClientSecretBasic(BuildConfig.SPOTIFY_CLIENT_SECRET)
+                        val (token, _, ex) = authState.asyncPerformWithFreshTokens(authService, clientAuth).await()
+
+                        try {
+                            when {
+                                ex != null -> Result.failure(Exception("Error inserting resource when performing auth action"))
+                                token != null -> {
+                                    val playlistWithUri = insertResource(playlistWithId, token)
+                                    updateEntities(playlistWithUri)
+                                    Result.success(playlistWithUri)
+                                }
+                                else -> Result.failure(Exception("Error inserting resource: no access token"))
                             }
+                        } catch (e: Exception) {
+                            Result.failure<PlaylistBo>(e)
                         }
+                    } else {
+                        Result.failure(Exception("Error inserting playlist: not authorized"))
                     }
-                } else {
-                    resultData.postValue(Result.failure(Exception("Error inserting playlist: not authorized")))
-                }
+                )
             }
             resultData
         }
+
+    private fun AuthState.asyncPerformWithFreshTokens(
+        authService: AuthorizationService,
+        clientAuthentication: ClientAuthentication
+    ): Deferred<Triple<String?, String?, AuthorizationException?>> {
+        val result = CompletableDeferred<Triple<String?, String?, AuthorizationException?>>()
+        performActionWithFreshTokens(authService, clientAuthentication) { accessToken, idToken, ex ->
+            GlobalScope.launch {
+                result.complete(Triple(accessToken, idToken, ex))
+            }
+        }
+        return result
+    }
 
     private fun insertResource(playlist: PlaylistBo, accessToken: String): PlaylistBo {
         val (_, _, insertionResult) = Fuel.post("https://api.spotify.com/v1/me/playlists")
