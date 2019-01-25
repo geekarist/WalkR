@@ -59,7 +59,6 @@ class PlaylistRepository(
             GlobalScope.launch {
                 val playlistWithId = insertEntities(playlist)
                 if (authState != null) {
-                    authState.needsTokenRefresh = true
                     val clientAuth = ClientSecretBasic(BuildConfig.SPOTIFY_CLIENT_SECRET)
                     authState.performActionWithFreshTokens(authService, clientAuth) { accessToken, _, ex ->
                         GlobalScope.launch {
