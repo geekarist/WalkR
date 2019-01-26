@@ -6,9 +6,11 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.coroutines.*
 import me.cpele.baladr.BuildConfig
 import me.cpele.baladr.CustomApp
+import me.cpele.baladr.R
 import net.openid.appauth.*
 import kotlin.coroutines.CoroutineContext
 
@@ -21,6 +23,7 @@ class LoginActivity : Activity(), CoroutineScope {
     companion object {
         private const val ACTION_LAUNCH = "ACTION_LAUNCH"
         private const val ACTION_HANDLE_CODE = "ACTION_HANDLE_CODE"
+        private const val ACTION_CANCEL_AUTH = "ACTION_CANCEL_AUTH"
         fun newIntent(ctx: Context): Intent = Intent(ctx, LoginActivity::class.java).setAction(ACTION_LAUNCH)
     }
 
@@ -32,6 +35,10 @@ class LoginActivity : Activity(), CoroutineScope {
         when (intent?.action) {
             ACTION_LAUNCH -> requestCode()
             ACTION_HANDLE_CODE -> requestToken()
+            ACTION_CANCEL_AUTH -> {
+                Toast.makeText(this, getString(R.string.login_auth_canceled), Toast.LENGTH_SHORT).show()
+                finish()
+            }
         }
     }
 
@@ -57,8 +64,14 @@ class LoginActivity : Activity(), CoroutineScope {
             Intent(this, javaClass).setAction(ACTION_HANDLE_CODE).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP),
             0
         )
+        val canceledPendingIntent = PendingIntent.getActivity(
+            this,
+            0,
+            Intent(this, javaClass).setAction(ACTION_CANCEL_AUTH).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP),
+            0
+        )
         launch(Dispatchers.IO) {
-            authService.performAuthorizationRequest(authRequest, completedPendingIntent)
+            authService.performAuthorizationRequest(authRequest, completedPendingIntent, canceledPendingIntent)
         }
     }
 
@@ -75,6 +88,8 @@ class LoginActivity : Activity(), CoroutineScope {
                 launch(Dispatchers.IO) {
                     CustomApp.instance.authStateRepository.set(authState)
                     withContext(Dispatchers.Main) {
+                        Toast.makeText(this@LoginActivity, getString(R.string.login_successful), Toast.LENGTH_SHORT)
+                            .show()
                         finish()
                     }
                 }
