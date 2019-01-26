@@ -73,7 +73,7 @@ dependencies {
 
     implementation("com.github.lopei:collageview:0.1.3")
 
-    implementation("net.openid:appauth:0.7.1")
+    implementation("net.openid:appauth:0.7.1-7-g060c3fb")
 
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.1.1")

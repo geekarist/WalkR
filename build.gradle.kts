@@ -19,6 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenLocal()
         maven { setUrl("https://jitpack.io") }
         maven { setUrl("https://dl.bintray.com/musichin/maven") }
     }
