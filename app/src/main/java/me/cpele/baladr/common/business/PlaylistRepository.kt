@@ -16,6 +16,7 @@ import me.cpele.baladr.common.database.*
 import me.cpele.baladr.common.datasource.PlaylistDto
 import net.openid.appauth.*
 import java.nio.charset.Charset
+import java.util.*
 
 class PlaylistRepository(
     private val playlistDao: PlaylistDao,
@@ -47,7 +48,8 @@ class PlaylistRepository(
                                     )
                                 }
                             },
-                            key.plUri
+                            key.plUri,
+                            Date(key.plDate)
                         )
                     }
                 }
@@ -136,7 +138,7 @@ class PlaylistRepository(
     }
 
     private fun insertEntities(playlist: PlaylistBo): PlaylistBo {
-        val playlistEntity = PlaylistEntity(plName = playlist.name, plUri = playlist.uri)
+        val playlistEntity = PlaylistEntity(plName = playlist.name, plUri = playlist.uri, plDate = playlist.date.time)
         val insertedPlaylistId = playlistDao.insert(playlistEntity)
 
         // We know that playlist.tracks come from the db so we don't need to insert them
@@ -152,7 +154,8 @@ class PlaylistRepository(
         val playlistEntity = PlaylistEntity(
             plId = playlist.id,
             plName = playlist.name,
-            plUri = playlist.uri
+            plUri = playlist.uri,
+            plDate = playlist.date.time
         )
         playlistDao.update(playlistEntity)
     }

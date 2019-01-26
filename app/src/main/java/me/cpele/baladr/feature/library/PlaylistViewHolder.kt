@@ -21,6 +21,7 @@ class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 .useCards(false)
                 .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
                 .loadPhotos(tracks.takeLast(4).map { it.cover })
+            itemView.playlistItemDate.text = date.toString()
             itemView.setOnClickListener {
                 if (uri == null) {
                     Toast.makeText(itemView.context, "Playlist has no URI", Toast.LENGTH_SHORT).show()

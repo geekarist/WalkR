@@ -12,6 +12,7 @@ import me.cpele.baladr.common.business.PlaylistBo
 import me.cpele.baladr.common.business.PlaylistRepository
 import me.cpele.baladr.common.business.TrackBo
 import me.cpele.baladr.common.business.TrackRepository
+import java.util.*
 
 class PlaylistDisplayViewModel(
     private val app: Application,
@@ -68,7 +69,7 @@ class PlaylistDisplayViewModel(
             Pair(notBlankName, tracks)
         }.switchMap {
             val (notBlankName, tracks) = it
-            playlistRepository.insert(PlaylistBo(0, notBlankName, tracks))
+            playlistRepository.insert(PlaylistBo(0, notBlankName, tracks, date = Date()))
         }.map {
             if (it.isSuccess) {
                 app.getString(

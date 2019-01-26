@@ -1,55 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/playlistItemContainer"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:id="@+id/playlistItemContainer"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
 
     <FrameLayout
-        android:id="@+id/playlistItemCoverContainer"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/darker_gray"
-        android:contentDescription="@string/playlist_item_cover"
-        android:padding="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/playlistItemName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+            android:id="@+id/playlistItemCoverContainer"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/playlist_item_cover"
+            android:padding="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playlistItemName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
         <com.lopei.collageview.CollageView
-            android:id="@+id/playlistItemCover"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/playlist_item_cover" />
+                android:id="@+id/playlistItemCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/playlist_item_cover"/>
 
     </FrameLayout>
 
     <TextView
-        android:id="@+id/playlistItemName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintStart_toEndOf="@+id/playlistItemCoverContainer"
-        app:layout_constraintTop_toTopOf="@+id/playlistItemCoverContainer"
-        tools:showIn="@layout/fragment_library"
-        tools:text="@tools:sample/lorem" />
+            android:id="@+id/playlistItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toEndOf="@+id/playlistItemCoverContainer"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:showIn="@layout/fragment_library"
+            tools:text="@tools:sample/lorem" app:layout_constraintBottom_toTopOf="@+id/playlistItemTrackCount"
+            android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/playlistItemTrackCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintStart_toStartOf="@+id/playlistItemName"
-        app:layout_constraintTop_toBottomOf="@+id/playlistItemName"
-        tools:text="12 tracks" />
+            android:id="@+id/playlistItemTrackCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/playlistItemName"
+            app:layout_constraintTop_toBottomOf="@+id/playlistItemName"
+            tools:text="12 tracks"
+            app:layout_constraintBottom_toTopOf="@+id/playlistItemDate"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/playlistItemDate"
+            app:layout_constraintStart_toStartOf="@+id/playlistItemTrackCount"
+            app:layout_constraintTop_toBottomOf="@+id/playlistItemTrackCount" android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+            tools:text="Today"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
