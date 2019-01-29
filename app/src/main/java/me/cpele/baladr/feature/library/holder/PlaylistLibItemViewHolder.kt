@@ -1,18 +1,20 @@
-package me.cpele.baladr.feature.library
+package me.cpele.baladr.feature.library.holder
 
 import android.content.Intent
 import android.net.Uri
 import android.view.View
 import android.widget.Toast
-import androidx.recyclerview.widget.RecyclerView
 import com.lopei.collageview.CollageView
-import kotlinx.android.synthetic.main.view_library_playlist.view.*
+import kotlinx.android.synthetic.main.view_lib_item_playlist.view.*
 import me.cpele.baladr.R
-import me.cpele.baladr.common.business.PlaylistBo
+import me.cpele.baladr.feature.library.item.LibItem
+import me.cpele.baladr.feature.library.item.PlaylistLibItem
 
-class PlaylistViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    fun bind(item: PlaylistBo?) {
-        item?.apply {
+class PlaylistLibItemViewHolder(itemView: View) : LibItemViewHolder(itemView) {
+
+    override fun bind(item: LibItem) {
+        val playlistItem = item as? PlaylistLibItem
+        playlistItem?.value?.apply {
             itemView.playlistItemName.text = name
             itemView.playlistItemTrackCount.text = itemView.context.getString(R.string.library_count, tracks.size)
             itemView.playlistItemCover.useFirstAsHeader(false)

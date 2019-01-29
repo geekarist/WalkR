@@ -13,5 +13,6 @@ class LibraryViewModel(playlistRepository: PlaylistRepository) : ViewModel() {
         }
     }
 
+    // TODO: Map to list of LibItem
     val playlists = playlistRepository.findAll()
 }
