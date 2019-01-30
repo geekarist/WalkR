@@ -14,7 +14,6 @@ import kotlinx.android.synthetic.main.fragment_library.*
 import me.cpele.baladr.CustomApp
 import me.cpele.baladr.MainViewModel
 import me.cpele.baladr.R
-import me.cpele.baladr.feature.library.item.PlaylistLibItem
 
 class LibraryFragment : Fragment() {
 
@@ -50,8 +49,8 @@ class LibraryFragment : Fragment() {
             layoutManager = LinearLayoutManager(context)
         }
 
-        viewModel.playlists.observe(this, Observer { playlists ->
-            libAdapter.submitList(playlists.map { PlaylistLibItem(it) })
+        viewModel.libItems.observe(this, Observer { items ->
+            libAdapter.submitList(items)
         })
     }
 }
