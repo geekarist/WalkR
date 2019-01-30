@@ -1,21 +1,26 @@
 package me.cpele.baladr.feature.library
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Transformations
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+import android.app.Application
+import androidx.annotation.StringRes
+import androidx.lifecycle.*
+import me.cpele.baladr.R
 import me.cpele.baladr.common.business.PlaylistRepository
 import me.cpele.baladr.feature.library.item.GroupLibItem
 import me.cpele.baladr.feature.library.item.LibItem
 import me.cpele.baladr.feature.library.item.PlaylistLibItem
 import java.util.*
 
-class LibraryViewModel(playlistRepository: PlaylistRepository) : ViewModel() {
+class LibraryViewModel(
+        private val app: Application,
+        playlistRepository: PlaylistRepository
+) : AndroidViewModel(app) {
 
-    class Factory(private val playlistRepository: PlaylistRepository) :
-        ViewModelProvider.Factory {
+    class Factory(
+            private val app: Application,
+            private val playlistRepository: PlaylistRepository
+    ) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(LibraryViewModel(playlistRepository)) as T
+            return modelClass.cast(LibraryViewModel(app, playlistRepository)) as T
         }
     }
 
@@ -34,7 +39,7 @@ class LibraryViewModel(playlistRepository: PlaylistRepository) : ViewModel() {
             }
         }
         groupedPlaylists.keys.flatMap { group: Group ->
-            val result = mutableListOf(GroupLibItem(group.name) as LibItem)
+            val result = mutableListOf(GroupLibItem(app.getString(group.titleRes)) as LibItem)
             groupedPlaylists[group]?.let { playlistsForGroup ->
                 result.addAll(playlistsForGroup.map { PlaylistLibItem(it) })
             }
@@ -82,11 +87,11 @@ class LibraryViewModel(playlistRepository: PlaylistRepository) : ViewModel() {
         }.time
     }
 
-    private enum class Group {
-        TODAY,
-        EARLIER_THIS_WEEK,
-        EARLIER_THIS_MONTH,
-        EARLIER_THIS_YEAR,
-        EARLIER
+    private enum class Group(@StringRes val titleRes: Int) {
+        TODAY(R.string.lib_item_group_today),
+        EARLIER_THIS_WEEK(R.string.lib_item_group_week),
+        EARLIER_THIS_MONTH(R.string.lib_item_group_month),
+        EARLIER_THIS_YEAR(R.string.lib_item_group_year),
+        EARLIER(R.string.lib_item_group_earlier);
     }
 }

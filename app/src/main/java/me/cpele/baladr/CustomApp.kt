@@ -52,7 +52,7 @@ class CustomApp : Application() {
     }
 
     val libraryViewModelFactory: ViewModelProvider.Factory by lazy {
-        LibraryViewModel.Factory(playlistRepository)
+        LibraryViewModel.Factory(this, playlistRepository)
     }
 
     val mainViewModelFactory by lazy {

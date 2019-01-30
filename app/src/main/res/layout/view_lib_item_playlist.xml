@@ -12,9 +12,9 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/playlist_item_cover"
             android:padding="1dp"
@@ -41,7 +41,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:showIn="@layout/fragment_library"
             tools:text="@tools:sample/lorem" app:layout_constraintBottom_toTopOf="@+id/playlistItemTrackCount"
-            android:layout_marginTop="16dp"/>
+        android:layout_marginTop="8dp" />
 
     <TextView
             android:id="@+id/playlistItemTrackCount"
@@ -58,7 +58,8 @@
             android:layout_height="wrap_content" android:id="@+id/playlistItemDate"
             app:layout_constraintStart_toStartOf="@+id/playlistItemTrackCount"
             app:layout_constraintTop_toBottomOf="@+id/playlistItemTrackCount" android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
             tools:text="Today"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
