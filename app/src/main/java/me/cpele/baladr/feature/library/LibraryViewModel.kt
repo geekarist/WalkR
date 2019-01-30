@@ -24,7 +24,7 @@ class LibraryViewModel(playlistRepository: PlaylistRepository) : ViewModel() {
         val startOfWeek by lazy { findStartOfWeek() }
         val startOfMonth by lazy { findStartOfMonth() }
         val startOfYear by lazy { findStartOfYear() }
-        val groupedPlaylists = playlists.groupBy {
+        val groupedPlaylists = playlists.reversed().groupBy {
             when {
                 it.date.after(startOfToday) -> Group.TODAY
                 it.date.after(startOfWeek) -> Group.EARLIER_THIS_WEEK
