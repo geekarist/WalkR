@@ -2,6 +2,7 @@ package me.cpele.baladr.feature.library.holder
 
 import android.content.Intent
 import android.net.Uri
+import android.text.format.DateUtils
 import android.view.View
 import android.widget.Toast
 import com.lopei.collageview.CollageView
@@ -9,6 +10,7 @@ import kotlinx.android.synthetic.main.view_lib_item_playlist.view.*
 import me.cpele.baladr.R
 import me.cpele.baladr.feature.library.item.LibItem
 import me.cpele.baladr.feature.library.item.PlaylistLibItem
+import java.util.concurrent.TimeUnit
 
 class PlaylistLibItemViewHolder(itemView: View) : LibItemViewHolder(itemView) {
 
@@ -23,7 +25,13 @@ class PlaylistLibItemViewHolder(itemView: View) : LibItemViewHolder(itemView) {
                 .useCards(false)
                 .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
                 .loadPhotos(tracks.takeLast(4).map { it.cover })
-            itemView.playlistItemDate.text = date.toString()
+            itemView.playlistItemDate.text = DateUtils.getRelativeDateTimeString(
+                itemView.context,
+                date.time,
+                0L,
+                TimeUnit.DAYS.toMillis(7),
+                0
+            )
             itemView.setOnClickListener {
                 if (uri == null) {
                     Toast.makeText(itemView.context, "Playlist has no URI", Toast.LENGTH_SHORT).show()
