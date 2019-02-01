@@ -1,5 +1,5 @@
-import java.util.Properties
 import java.io.FileInputStream
+import java.util.*
 
 plugins {
     id("com.android.application")
@@ -48,10 +48,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1")
 
-    implementation("android.arch.navigation:navigation-fragment:1.0.0-alpha09")
-    implementation("android.arch.navigation:navigation-ui:1.0.0-alpha09")
-    implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha09")
-    implementation("android.arch.navigation:navigation-ui-ktx:1.0.0-alpha09")
+    implementation("android.arch.navigation:navigation-fragment:1.0.0-alpha11")
+    implementation("android.arch.navigation:navigation-ui:1.0.0-alpha11")
+    implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha11")
+    implementation("android.arch.navigation:navigation-ui-ktx:1.0.0-alpha11")
     implementation("androidx.appcompat:appcompat:1.0.2")
     implementation("androidx.core:core-ktx:1.0.1")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
