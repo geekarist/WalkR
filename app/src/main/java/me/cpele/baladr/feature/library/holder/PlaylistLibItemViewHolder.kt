@@ -26,7 +26,7 @@ class PlaylistLibItemViewHolder(itemView: View) : LibItemViewHolder(itemView) {
                     .useCards(false)
                     .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
                     .loadPhotos(tracks.takeLast(4).map { it.cover })
-                setOnPhotoClickListener { itemView.callOnClick() }
+                setOnPhotoClickListener { itemView.performClick() }
             }
             itemView.playlistItemDate.text = DateUtils.getRelativeDateTimeString(
                 itemView.context,
