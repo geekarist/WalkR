@@ -19,12 +19,15 @@ class PlaylistLibItemViewHolder(itemView: View) : LibItemViewHolder(itemView) {
         playlistItem?.value?.apply {
             itemView.playlistItemName.text = name
             itemView.playlistItemTrackCount.text = itemView.context.getString(R.string.library_count, tracks.size)
-            itemView.playlistItemCover.useFirstAsHeader(false)
-                .defaultPhotosForLine(2)
-                .useFirstAsHeader(false)
-                .useCards(false)
-                .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
-                .loadPhotos(tracks.takeLast(4).map { it.cover })
+            itemView.playlistItemCover.apply {
+                useFirstAsHeader(false)
+                    .defaultPhotosForLine(2)
+                    .useFirstAsHeader(false)
+                    .useCards(false)
+                    .photosForm(CollageView.ImageForm.IMAGE_FORM_SQUARE)
+                    .loadPhotos(tracks.takeLast(4).map { it.cover })
+                setOnPhotoClickListener { itemView.callOnClick() }
+            }
             itemView.playlistItemDate.text = DateUtils.getRelativeDateTimeString(
                 itemView.context,
                 date.time,
