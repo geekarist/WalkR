@@ -1,7 +1,6 @@
 package me.cpele.baladr.feature.playlistgeneration
 
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,14 +27,6 @@ class PlaylistGenerationFragment : Fragment() {
 
     private val viewModel: PlaylistGenerationViewModel by lazy {
         ViewModelProviders.of(this).get(PlaylistGenerationViewModel::class.java)
-    }
-
-    override fun onAttach(context: Context?) {
-        super.onAttach(context)
-
-        activity?.let {
-            ViewModelProviders.of(it).get(MainViewModel::class.java)
-        }?.postTitle(getString(R.string.generation_title))
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -77,5 +68,12 @@ class PlaylistGenerationFragment : Fragment() {
         generationTempoDetectButton.setOnClickListener {
             viewModel.onStartTempoDetection(durationSeconds = 10)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        activity?.let {
+            ViewModelProviders.of(it).get(MainViewModel::class.java)
+        }?.postTitle(getString(R.string.generation_title))
     }
 }

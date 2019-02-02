@@ -1,6 +1,5 @@
 package me.cpele.baladr.feature.library
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,14 +27,6 @@ class LibraryFragment : Fragment() {
         ViewModelProviders.of(this, CustomApp.instance.libraryViewModelFactory).get(LibraryViewModel::class.java)
     }
 
-    override fun onAttach(context: Context?) {
-        super.onAttach(context)
-
-        activity?.let {
-            ViewModelProviders.of(it).get(MainViewModel::class.java)
-        }?.postTitle(getString(R.string.library_title))
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -52,5 +43,12 @@ class LibraryFragment : Fragment() {
         viewModel.libItems.observe(this, Observer { items ->
             libAdapter.submitList(items)
         })
+    }
+
+    override fun onResume() {
+        super.onResume()
+        activity?.let {
+            ViewModelProviders.of(it).get(MainViewModel::class.java)
+        }?.postTitle(getString(R.string.library_title))
     }
 }

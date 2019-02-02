@@ -1,6 +1,5 @@
 package me.cpele.baladr.feature.playlistdisplay
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -23,14 +22,6 @@ class PlaylistDisplayFragment : Fragment() {
             this,
             CustomApp.instance.playlistDisplayViewModelFactory
         ).get(PlaylistDisplayViewModel::class.java)
-    }
-
-    override fun onAttach(context: Context?) {
-        super.onAttach(context)
-
-        activity?.let {
-            ViewModelProviders.of(it).get(MainViewModel::class.java)
-        }?.postTitle(getString(R.string.display_label))
     }
 
     override fun onCreateView(
@@ -73,5 +64,12 @@ class PlaylistDisplayFragment : Fragment() {
                 findNavController().navigate(R.id.action_playlistDisplayFragment_to_libraryFragment)
             }
         })
+    }
+
+    override fun onResume() {
+        super.onResume()
+        activity?.let {
+            ViewModelProviders.of(it).get(MainViewModel::class.java)
+        }?.postTitle(getString(R.string.display_label))
     }
 }
