@@ -1,21 +1,10 @@
 package me.cpele.baladr.feature.playlistgeneration
 
-import android.app.Application
-import android.hardware.Sensor
-import android.hardware.SensorEvent
-import android.hardware.SensorEventListener
-import android.hardware.SensorManager
-import android.os.SystemClock
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
+import androidx.lifecycle.*
 import kotlinx.coroutines.*
-import java.util.*
-import java.util.concurrent.TimeUnit
 import kotlin.coroutines.CoroutineContext
 
-class PlaylistGenerationViewModel(private val app: Application) : AndroidViewModel(app), CoroutineScope {
+class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : ViewModel(), CoroutineScope {
 
     private val job = Job()
     override val coroutineContext: CoroutineContext = Dispatchers.Default + job
@@ -32,10 +21,6 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
     val tempoDetectButtonEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
     val seekBarEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
 
-    private val sensorManager: SensorManager by lazy {
-        app.getSystemService(Application.SENSOR_SERVICE) as SensorManager
-    }
-
     fun onProgressChanged(progress: Int) {
         _progress.value?.let { value ->
             if (value != progress) {
@@ -44,60 +29,23 @@ class PlaylistGenerationViewModel(private val app: Application) : AndroidViewMod
         }
     }
 
-    private var listener: StepCountSensorListener? = null
-
     fun onStartTempoDetection(durationSeconds: Int) = launch {
-
-        val startTimeMsec = Date().time
-        val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
-
-        sensorManager.unregisterListener(listener)
-        listener = StepCountSensorListener(startTimeMsec, endTimeMsec)
-        val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
-        sensorManager.registerListener(
-            listener,
-            stepSensor,
-            SensorManager.SENSOR_DELAY_FASTEST
-        )
-
         _detectionRunning.postValue(true)
-        delay(TimeUnit.SECONDS.toMillis(11))
+        val tempo = tempoDetection.executeAsync(durationSeconds).await()
         _detectionRunning.postValue(false)
-
-        sensorManager.unregisterListener(listener)
-    }
-
-    inner class StepCountSensorListener(
-        private val startTimeMsec: Long,
-        private val endTimeMsec: Long
-    ) : SensorEventListener {
-        override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit
-
-        private var firstCount = 0f
-
-        override fun onSensorChanged(event: SensorEvent?) {
-            event?.values?.get(0)?.let { currentCount ->
-                val timestampMsec =
-                    System.currentTimeMillis() -
-                            SystemClock.elapsedRealtime() +
-                            TimeUnit.NANOSECONDS.toMillis(event.timestamp)
-                if (firstCount == 0f) firstCount = currentCount
-                if (timestampMsec >= endTimeMsec) {
-                    sensorManager.unregisterListener(this)
-                    val diffMsec = timestampMsec - startTimeMsec
-                    val diffMin: Float = diffMsec / 1000f / 60f
-                    val countPerMin = (currentCount - firstCount) / diffMin
-                    onProgressChanged(countPerMin.toInt() - 70)
-                    _detectionRunning.postValue(false)
-                }
-            }
-        }
+        withContext(Dispatchers.Main) { onProgressChanged(tempo) }
     }
 
     override fun onCleared() {
-        listener?.let(sensorManager::unregisterListener)
         job.cancel()
         super.onCleared()
+    }
+
+    class Factory(private val tempoDetection: TempoDetection) :
+        ViewModelProvider.Factory {
+        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+            return modelClass.cast(PlaylistGenerationViewModel(tempoDetection)) as T
+        }
     }
 }
 

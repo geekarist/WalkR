@@ -12,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_playlist_generation.*
+import me.cpele.baladr.CustomApp
 import me.cpele.baladr.MainViewModel
 import me.cpele.baladr.R
 
@@ -26,7 +27,10 @@ class PlaylistGenerationFragment : Fragment() {
     }
 
     private val viewModel: PlaylistGenerationViewModel by lazy {
-        ViewModelProviders.of(this).get(PlaylistGenerationViewModel::class.java)
+        ViewModelProviders.of(
+            this,
+            CustomApp.instance.playlistGenerationViewModelFactory
+        ).get(PlaylistGenerationViewModel::class.java)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
