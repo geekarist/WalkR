@@ -12,6 +12,7 @@ import me.cpele.baladr.common.database.CustomDatabase
 import me.cpele.baladr.common.database.DatabasePopulationCallback
 import me.cpele.baladr.feature.library.LibraryViewModel
 import me.cpele.baladr.feature.playlistdisplay.PlaylistDisplayViewModel
+import me.cpele.baladr.feature.playlistgeneration.FitTempoDetection
 import me.cpele.baladr.feature.playlistgeneration.PlaylistGenerationViewModel
 import me.cpele.baladr.feature.playlistgeneration.TempoDetection
 import net.openid.appauth.AuthorizationService
@@ -61,7 +62,7 @@ class CustomApp : Application() {
         MainViewModel.Factory(authStateRepository)
     }
 
-    private val tempoDetection: TempoDetection by lazy { TempoDetection(this) }
+    private val tempoDetection: TempoDetection by lazy { FitTempoDetection(this) }
 
     val playlistGenerationViewModelFactory: ViewModelProvider.Factory by lazy {
         PlaylistGenerationViewModel.Factory(tempoDetection)
