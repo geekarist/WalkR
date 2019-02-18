@@ -1,7 +1,9 @@
 package me.cpele.baladr.feature.playlistgeneration
 
+import android.app.Activity
 import android.content.Context
 import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.fitness.Fitness
 import com.google.android.gms.fitness.data.DataType
 import com.google.android.gms.fitness.data.Field
@@ -9,15 +11,30 @@ import com.google.android.gms.fitness.request.DataReadRequest
 import com.google.android.gms.tasks.Tasks
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Deferred
-import kotlinx.coroutines.delay
 import java.util.concurrent.TimeUnit
 
-class FitTempoDetection(private val context: Context) : TempoDetection {
+class FitTempoDetection(context: Context) : TempoDetection {
+
+    private val appContext = context.applicationContext
+
+    override fun setup(activity: Activity) {
+        val lastSignedInAccount = GoogleSignIn.getLastSignedInAccount(appContext)
+
+        if (lastSignedInAccount == null) {
+            val options = GoogleSignInOptions.Builder().requestEmail().build()
+            val client = GoogleSignIn.getClient(appContext, options)
+            val intent = client.signInIntent
+            activity.startActivityForResult(intent, 0)
+        }
+    }
+
     override suspend fun executeAsync(durationSeconds: Int): Deferred<Int> {
         val deferred = CompletableDeferred<Int>()
-        GoogleSignIn.getLastSignedInAccount(context)?.let { account ->
-            delay(TimeUnit.SECONDS.toMillis(durationSeconds.toLong()))
-            val client = Fitness.getHistoryClient(context, account)
+
+        val lastSignedInAccount = GoogleSignIn.getLastSignedInAccount(appContext)
+
+        lastSignedInAccount?.let { safeAccount ->
+            val client = Fitness.getHistoryClient(appContext, safeAccount)
             val now = System.currentTimeMillis()
             val tenSecsAgo = System.currentTimeMillis() - TimeUnit.SECONDS.toMillis(10)
             val request = DataReadRequest.Builder()
@@ -29,6 +46,7 @@ class FitTempoDetection(private val context: Context) : TempoDetection {
             val dataPoint = dataSet.dataPoints[0]
             deferred.complete(dataPoint.getValue(Field.FIELD_STEPS).asInt())
         }
+
         return deferred
     }
 }
