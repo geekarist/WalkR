@@ -35,6 +35,6 @@
     <string name="lib_item_group_today">Today</string>
     <string name="lib_item_group_week">Earlier this week</string>
     <string name="lib_item_group_month">Earlier this month</string>
-    <string name="lib_item_group_year">Earlier this month</string>
+    <string name="lib_item_group_year">Earlier this year</string>
     <string name="lib_item_group_earlier">Earlier</string>
 </resources>
