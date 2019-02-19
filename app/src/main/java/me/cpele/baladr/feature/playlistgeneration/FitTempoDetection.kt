@@ -2,8 +2,8 @@ package me.cpele.baladr.feature.playlistgeneration
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.fitness.Fitness
 import com.google.android.gms.fitness.data.DataType
 import com.google.android.gms.fitness.data.Field
@@ -11,6 +11,7 @@ import com.google.android.gms.fitness.request.DataReadRequest
 import com.google.android.gms.tasks.Tasks
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Deferred
+import kotlinx.coroutines.delay
 import java.util.concurrent.TimeUnit
 
 class FitTempoDetection(context: Context) : TempoDetection {
@@ -21,10 +22,7 @@ class FitTempoDetection(context: Context) : TempoDetection {
         val lastSignedInAccount = GoogleSignIn.getLastSignedInAccount(appContext)
 
         if (lastSignedInAccount == null) {
-            val options = GoogleSignInOptions.Builder().requestEmail().build()
-            val client = GoogleSignIn.getClient(appContext, options)
-            val intent = client.signInIntent
-            activity.startActivityForResult(intent, 0)
+            appContext.startActivity(Intent(appContext, FitLoginActivity::class.java))
         }
     }
 
@@ -34,6 +32,7 @@ class FitTempoDetection(context: Context) : TempoDetection {
         val lastSignedInAccount = GoogleSignIn.getLastSignedInAccount(appContext)
 
         lastSignedInAccount?.let { safeAccount ->
+            delay(TimeUnit.SECONDS.toMillis(10))
             val client = Fitness.getHistoryClient(appContext, safeAccount)
             val now = System.currentTimeMillis()
             val tenSecsAgo = System.currentTimeMillis() - TimeUnit.SECONDS.toMillis(10)
@@ -43,8 +42,8 @@ class FitTempoDetection(context: Context) : TempoDetection {
                 .build()
             val result = Tasks.await(client.readData(request))
             val dataSet = result.getDataSet(DataType.AGGREGATE_STEP_COUNT_DELTA)
-            val dataPoint = dataSet.dataPoints[0]
-            deferred.complete(dataPoint.getValue(Field.FIELD_STEPS).asInt())
+            val dataPoint = dataSet.dataPoints.maxBy { it.getEndTime(TimeUnit.MILLISECONDS) }
+            deferred.complete(dataPoint?.getValue(Field.FIELD_STEPS)?.asInt() ?: 0)
         }
 
         return deferred
