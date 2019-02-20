@@ -7,6 +7,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.Scopes
 import com.google.android.gms.common.api.Scope
+import com.google.android.gms.fitness.FitnessOptions
+import com.google.android.gms.fitness.data.DataType
 import me.cpele.baladr.R
 
 class FitLoginActivity : Activity() {
@@ -19,7 +21,12 @@ class FitLoginActivity : Activity() {
         val options = GoogleSignInOptions.Builder()
             .requestEmail()
             .requestScopes(Scope(Scopes.FITNESS_ACTIVITY_READ))
-            .build()
+            .addExtension(
+                FitnessOptions.builder().addDataType(
+                    DataType.AGGREGATE_STEP_COUNT_DELTA,
+                    FitnessOptions.ACCESS_READ
+                ).build()
+            ).build()
         val client = GoogleSignIn.getClient(this, options)
         val intent = client.signInIntent
         startActivityForResult(intent, 0)

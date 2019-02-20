@@ -1,6 +1,5 @@
 package me.cpele.baladr.feature.playlistgeneration
 
-import android.app.Activity
 import android.app.Application
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -46,9 +45,6 @@ class AndroidTempoDetection(private val app: Application) : TempoDetection {
             }
         }
     }
-
-    // No setup needed
-    override fun setup(activity: Activity) = Unit
 
     override suspend fun executeAsync(durationSeconds: Int): Deferred<Int> {
 

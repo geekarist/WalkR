@@ -1,6 +1,5 @@
 package me.cpele.baladr.feature.playlistgeneration
 
-import android.app.Activity
 import androidx.lifecycle.*
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
@@ -34,15 +33,13 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
         _detectionRunning.postValue(true)
         val tempo = tempoDetection.executeAsync(durationSeconds).await()
         _detectionRunning.postValue(false)
-        withContext(Dispatchers.Main) { onProgressChanged(tempo) }
+        withContext(Dispatchers.Main) { onProgressChanged(tempo - 70) }
     }
 
     override fun onCleared() {
         job.cancel()
         super.onCleared()
     }
-
-    fun setupTempoDetection(activity: Activity) = tempoDetection.setup(activity)
 
     class Factory(private val tempoDetection: TempoDetection) :
         ViewModelProvider.Factory {

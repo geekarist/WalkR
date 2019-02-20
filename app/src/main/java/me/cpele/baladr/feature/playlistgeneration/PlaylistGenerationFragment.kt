@@ -69,8 +69,6 @@ class PlaylistGenerationFragment : Fragment() {
             generationTempoSeekBar.isEnabled = it
         })
 
-        activity?.let { viewModel.setupTempoDetection(it) }
-
         generationTempoDetectButton.setOnClickListener {
             viewModel.onStartTempoDetection(durationSeconds = 10)
         }
