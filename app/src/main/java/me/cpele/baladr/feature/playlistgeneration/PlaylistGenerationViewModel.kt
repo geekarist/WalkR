@@ -2,7 +2,9 @@ package me.cpele.baladr.feature.playlistgeneration
 
 import androidx.lifecycle.*
 import kotlinx.coroutines.*
+import java.util.*
 import kotlin.coroutines.CoroutineContext
+import kotlin.math.roundToLong
 
 class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : ViewModel(), CoroutineScope {
 
@@ -17,9 +19,21 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
     }
     val tempo: LiveData<Int> = _tempo
 
+    private val tapsData = MutableLiveData<MutableList<Date>>().apply { value = mutableListOf() }
+
     private val _detectionRunning = MutableLiveData<Boolean>().apply { value = false }
     val tempoDetectButtonEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
     val seekBarEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
+
+    val tapTempo: LiveData<Long?> = Transformations.map(tapsData) { nullableTaps: MutableList<Date>? ->
+        nullableTaps?.takeIf { it.size >= 20 }?.let { taps ->
+            val lowerTimeMsec = taps.minBy { it.time }?.time ?: return@map null
+            val upperTimeMsec = taps.maxBy { it.time }?.time ?: return@map null
+            val diffMsec = upperTimeMsec - lowerTimeMsec
+            val beatsPerMsec = taps.size.toFloat() / diffMsec.toFloat()
+            (beatsPerMsec * 1000 * 60).roundToLong()
+        }
+    }
 
     fun onProgressChanged(progress: Int) {
         _progress.value?.let { value ->
@@ -34,6 +48,11 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
         val tempo = tempoDetection.executeAsync(durationSeconds).await()
         _detectionRunning.postValue(false)
         withContext(Dispatchers.Main) { onProgressChanged(tempo - 70) }
+    }
+
+    fun onClickTapTempo() = tapsData.value?.let { tapsList ->
+        tapsList.add(Date())
+        tapsData.value = tapsList.takeLast(20).toMutableList()
     }
 
     override fun onCleared() {

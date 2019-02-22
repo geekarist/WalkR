@@ -58,6 +58,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/generationTempoLabel" />
 
+    <Button
+        android:id="@+id/generationTempoTapButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_touch_app"
+        android:text="@string/generation_tap"
+        app:layout_constraintBottom_toBottomOf="@+id/generationTempoLabel"
+        app:layout_constraintEnd_toStartOf="@+id/generationTempoDetectButton"
+        app:layout_constraintTop_toTopOf="@+id/generationTempoLabel" />
+
     <View
         android:id="@+id/generationDivider"
         android:layout_width="match_parent"

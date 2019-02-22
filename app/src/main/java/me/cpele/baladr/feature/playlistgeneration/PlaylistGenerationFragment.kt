@@ -2,6 +2,7 @@ package me.cpele.baladr.feature.playlistgeneration
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -72,6 +73,12 @@ class PlaylistGenerationFragment : Fragment() {
         generationTempoDetectButton.setOnClickListener {
             viewModel.onStartTempoDetection(durationSeconds = 10)
         }
+
+        generationTempoTapButton.setOnClickListener { viewModel.onClickTapTempo() }
+
+        viewModel.tapTempo.observe(this, Observer {
+            Log.d(javaClass.simpleName, "Tap tempo: $it")
+        })
     }
 
     override fun onResume() {
