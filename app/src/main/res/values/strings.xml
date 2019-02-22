@@ -38,4 +38,6 @@
     <string name="lib_item_group_month">Earlier this month</string>
     <string name="lib_item_group_year">Earlier this year</string>
     <string name="lib_item_group_earlier">Earlier</string>
+
+    <string name="tap_tempo_tap_in_rythm">Tap in rhythm</string>
 </resources>

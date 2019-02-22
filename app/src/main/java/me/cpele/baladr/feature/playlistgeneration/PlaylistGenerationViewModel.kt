@@ -50,11 +50,6 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
         withContext(Dispatchers.Main) { onProgressChanged(tempo - 70) }
     }
 
-    fun onClickTapTempo() = tapsData.value?.let { tapsList ->
-        tapsList.add(Date())
-        tapsData.value = tapsList.takeLast(20).toMutableList()
-    }
-
     override fun onCleared() {
         job.cancel()
         super.onCleared()

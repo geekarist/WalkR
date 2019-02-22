@@ -74,10 +74,14 @@ class PlaylistGenerationFragment : Fragment() {
             viewModel.onStartTempoDetection(durationSeconds = 10)
         }
 
-        generationTempoTapButton.setOnClickListener { viewModel.onClickTapTempo() }
+        generationTempoTapButton.setOnClickListener {
+            TapTempoDialogFragment.newInstance().show(childFragmentManager, TAG_FRAGMENT_TAP_TEMPO)
+        }
 
         viewModel.tapTempo.observe(this, Observer {
-            Log.d(javaClass.simpleName, "Tap tempo: $it")
+            it?.apply {
+                Log.d(javaClass.simpleName, "Tap tempo: $it")
+            }
         })
     }
 
@@ -86,5 +90,9 @@ class PlaylistGenerationFragment : Fragment() {
         activity?.let {
             ViewModelProviders.of(it).get(MainViewModel::class.java)
         }?.postTitle(getString(R.string.generation_title))
+    }
+
+    companion object {
+        private const val TAG_FRAGMENT_TAP_TEMPO = "TAG_FRAGMENT_TAP_TEMPO"
     }
 }
