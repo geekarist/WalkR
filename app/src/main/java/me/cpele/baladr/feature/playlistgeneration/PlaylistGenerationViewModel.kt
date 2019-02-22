@@ -19,11 +19,11 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
     }
     val tempo: LiveData<Int> = _tempo
 
-    private val tapsData = MutableLiveData<MutableList<Date>>().apply { value = mutableListOf() }
-
     private val _detectionRunning = MutableLiveData<Boolean>().apply { value = false }
     val tempoDetectButtonEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
     val seekBarEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
+
+    private val tapsData = MutableLiveData<MutableList<Date>>().apply { value = mutableListOf() }
 
     val tapTempo: LiveData<Long?> = Transformations.map(tapsData) { nullableTaps: MutableList<Date>? ->
         nullableTaps?.takeIf { it.size >= 20 }?.let { taps ->
