@@ -24,7 +24,7 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
     fun onProgressChanged(progress: Int) {
         _progress.value?.let { value ->
             if (value != progress) {
-                _progress.value = (progress / 10) * 10
+                _progress.value = Math.round(progress.toFloat() / 10f) * 10
             }
         }
     }
