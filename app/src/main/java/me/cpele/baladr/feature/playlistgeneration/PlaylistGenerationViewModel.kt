@@ -2,38 +2,24 @@ package me.cpele.baladr.feature.playlistgeneration
 
 import androidx.lifecycle.*
 import kotlinx.coroutines.*
-import java.util.*
 import kotlin.coroutines.CoroutineContext
-import kotlin.math.roundToLong
 
 class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : ViewModel(), CoroutineScope {
 
     private val job = Job()
     override val coroutineContext: CoroutineContext = Dispatchers.Default + job
 
-    private val _progress = MutableLiveData<Int>().apply { value = 100 }
+    private val _progress = MutableLiveData<Int>().apply { value = DEFAULT_TEMPO }
     val progress: LiveData<Int> = _progress
 
     private val _tempo = Transformations.map(progress) {
-        it + 70
+        it + TEMPO_PROGRESS_OFFSET
     }
     val tempo: LiveData<Int> = _tempo
 
     private val _detectionRunning = MutableLiveData<Boolean>().apply { value = false }
     val tempoDetectButtonEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
     val seekBarEnabled: LiveData<Boolean> = Transformations.map(_detectionRunning) { !it }
-
-    private val tapsData = MutableLiveData<MutableList<Date>>().apply { value = mutableListOf() }
-
-    val tapTempo: LiveData<Long?> = Transformations.map(tapsData) { nullableTaps: MutableList<Date>? ->
-        nullableTaps?.takeIf { it.size >= 20 }?.let { taps ->
-            val lowerTimeMsec = taps.minBy { it.time }?.time ?: return@map null
-            val upperTimeMsec = taps.maxBy { it.time }?.time ?: return@map null
-            val diffMsec = upperTimeMsec - lowerTimeMsec
-            val beatsPerMsec = taps.size.toFloat() / diffMsec.toFloat()
-            (beatsPerMsec * 1000 * 60).roundToLong()
-        }
-    }
 
     fun onProgressChanged(progress: Int) {
         _progress.value?.let { value ->
@@ -47,7 +33,11 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
         _detectionRunning.postValue(true)
         val tempo = tempoDetection.executeAsync(durationSeconds).await()
         _detectionRunning.postValue(false)
-        withContext(Dispatchers.Main) { onProgressChanged(tempo - 70) }
+        withContext(Dispatchers.Main) { onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET) }
+    }
+
+    fun onTempoChangedExternally(tempo: Int) {
+        onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET)
     }
 
     override fun onCleared() {
@@ -60,6 +50,11 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return modelClass.cast(PlaylistGenerationViewModel(tempoDetection)) as T
         }
+    }
+
+    companion object {
+        private const val TEMPO_PROGRESS_OFFSET = 70
+        private const val DEFAULT_TEMPO = 100
     }
 }
 
