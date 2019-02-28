@@ -2,44 +2,45 @@ package me.cpele.baladr.feature.playlistgeneration
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import java.util.*
 import java.util.concurrent.TimeUnit
-import kotlin.math.roundToInt
 
 class TapTempoViewModel : ViewModel() {
 
-    private val tapsData = MutableLiveData<MutableList<Date>>().apply { value = mutableListOf() }
+    private val _beatsPerMin = MutableLiveData<Int>()
+    val beatsPerMin: LiveData<Int> = _beatsPerMin
 
-    private val _count: LiveData<Int> = Transformations.map(tapsData) { nullableTaps: MutableList<Date>? ->
-        nullableTaps
-            ?.takeIf { it.size >= MIN_TAPS }
-            ?.let { taps ->
-                val lowerTimeMsec = taps.minBy { it.time }?.time ?: return@let null
-                val upperTimeMsec = taps.maxBy { it.time }?.time ?: return@let null
-                val diffMsec = upperTimeMsec - lowerTimeMsec
-                val beatsPerMsec = taps.size.toFloat() / diffMsec.toFloat()
-                (beatsPerMsec * TimeUnit.MINUTES.toMillis(1)).roundToInt()
-            } ?: 0
-    }
-
-    val count: LiveData<Int> = _count
+    private var previousTapMsec: Long = 0
+    private var firstTapMsec: Long = 0
+    private var tapCount: Int = 0
 
     fun onTap() {
-        val tapsList = tapsData.value
-        tapsList?.add(Date())
-        tapsData.value = tapsList?.takeLast(MIN_TAPS)?.toMutableList()
+        val lastTapMsec = Date().time
+        val isResetDelayElapsed = lastTapMsec - previousTapMsec > TimeUnit.SECONDS.toMillis(2)
+        if (isResetDelayElapsed) {
+            tapCount = 0
+        }
+
+        if (tapCount == 0) {
+            firstTapMsec = lastTapMsec
+            tapCount = 1
+        } else {
+            val timeSinceFirstTapMsec = lastTapMsec - firstTapMsec
+            val beatsPerMsec = tapCount.toDouble() / timeSinceFirstTapMsec
+            val beatsPerMin = 60_000 * beatsPerMsec
+            _beatsPerMin.value = beatsPerMin.toInt()
+            tapCount++
+        }
+
+        previousTapMsec = lastTapMsec
     }
 
 
     fun onReset() {
-        val tapsList = tapsData.value
-        tapsList?.clear()
-        tapsData.value = tapsList
-    }
-
-    companion object {
-        private const val MIN_TAPS = 10
+        _beatsPerMin.value = 0
+        previousTapMsec = 0
+        firstTapMsec = 0
+        tapCount = 0
     }
 }
