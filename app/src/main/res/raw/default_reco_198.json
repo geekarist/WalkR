@@ -1,0 +1,198 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2xiIXseIJcq3nG7C8fHeBj"
+            },
+            "href": "https://api.spotify.com/v1/artists/2xiIXseIJcq3nG7C8fHeBj",
+            "id": "2xiIXseIJcq3nG7C8fHeBj",
+            "name": "Three Days Grace",
+            "type": "artist",
+            "uri": "spotify:artist:2xiIXseIJcq3nG7C8fHeBj"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4ZDwEvXIKxWdwhAQK8ndBU"
+        },
+        "href": "https://api.spotify.com/v1/albums/4ZDwEvXIKxWdwhAQK8ndBU",
+        "id": "4ZDwEvXIKxWdwhAQK8ndBU",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/fdbdf54c69e505c617b128d19e670d753573add6",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/2e3b58d63ec69a8ebc289006c359db5bff97c907",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/84620e49624132a0757c5e9ed330568c586982d9",
+            "width": 64
+          }
+        ],
+        "name": "One-X",
+        "release_date": "2006-06-25",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:4ZDwEvXIKxWdwhAQK8ndBU"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2xiIXseIJcq3nG7C8fHeBj"
+          },
+          "href": "https://api.spotify.com/v1/artists/2xiIXseIJcq3nG7C8fHeBj",
+          "id": "2xiIXseIJcq3nG7C8fHeBj",
+          "name": "Three Days Grace",
+          "type": "artist",
+          "uri": "spotify:artist:2xiIXseIJcq3nG7C8fHeBj"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 186373,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USJI10600165"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7piw04hPQZ1OHZ9Fq9JOXR"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7piw04hPQZ1OHZ9Fq9JOXR",
+      "id": "7piw04hPQZ1OHZ9Fq9JOXR",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Time of Dying",
+      "popularity": 65,
+      "preview_url": "https://p.scdn.co/mp3-preview/d2da079180cf8de8d90982c820de59c15fe207ee?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 10,
+      "type": "track",
+      "uri": "spotify:track:7piw04hPQZ1OHZ9Fq9JOXR"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4S2yOnmsWW97dT87yVoaSZ"
+            },
+            "href": "https://api.spotify.com/v1/artists/4S2yOnmsWW97dT87yVoaSZ",
+            "id": "4S2yOnmsWW97dT87yVoaSZ",
+            "name": "NOFX",
+            "type": "artist",
+            "uri": "spotify:artist:4S2yOnmsWW97dT87yVoaSZ"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6Z8BYH27wINoUk4QMUx7gh"
+        },
+        "href": "https://api.spotify.com/v1/albums/6Z8BYH27wINoUk4QMUx7gh",
+        "id": "6Z8BYH27wINoUk4QMUx7gh",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/e85d59b55aa02cf8140af19adf3f9d2fe0042693",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/b06a21897c6cc58059f82a3424bc74f08bcc45fa",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/af824523d4d6999ac06152e70f4aaeced0281c7b",
+            "width": 64
+          }
+        ],
+        "name": "Punk In Drublic",
+        "release_date": "1994-07-19",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:6Z8BYH27wINoUk4QMUx7gh"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4S2yOnmsWW97dT87yVoaSZ"
+          },
+          "href": "https://api.spotify.com/v1/artists/4S2yOnmsWW97dT87yVoaSZ",
+          "id": "4S2yOnmsWW97dT87yVoaSZ",
+          "name": "NOFX",
+          "type": "artist",
+          "uri": "spotify:artist:4S2yOnmsWW97dT87yVoaSZ"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 130266,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USEP40310201"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4uB28m7RAflobYpnLMb6A2"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4uB28m7RAflobYpnLMb6A2",
+      "id": "4uB28m7RAflobYpnLMb6A2",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Linoleum",
+      "popularity": 58,
+      "preview_url": "https://p.scdn.co/mp3-preview/97a8e00f4dc1b5434d5992f83a486fec759e6fbb?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:4uB28m7RAflobYpnLMb6A2"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}

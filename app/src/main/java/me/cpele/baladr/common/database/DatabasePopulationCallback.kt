@@ -29,7 +29,7 @@ class DatabasePopulationCallback : RoomDatabase.Callback() {
     }
 
     private fun init() = GlobalScope.async(Dispatchers.IO) {
-        for (tempo in 70..200 step 10) {
+        for (tempo in 70..200 step 2) {
             insertDefaultTracks(tempo)
         }
     }

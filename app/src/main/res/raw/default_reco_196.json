@@ -1,0 +1,207 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+            },
+            "href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+            "id": "6Wr3hh341P84m3EI8qdn9O",
+            "name": "Rise Against",
+            "type": "artist",
+            "uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1VZ0i4vJ0AkPbmpuaktZMJ"
+        },
+        "href": "https://api.spotify.com/v1/albums/1VZ0i4vJ0AkPbmpuaktZMJ",
+        "id": "1VZ0i4vJ0AkPbmpuaktZMJ",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/f5ac1ade923d3da5990e2c9c193ba62977b6fb92",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/9c978d91dfc1a0ba4e4637c848356d7cc303ee1d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/4a1ba8ace21c0ba3816225db50910a65d7454764",
+            "width": 64
+          }
+        ],
+        "name": "The Sufferer & The Witness",
+        "release_date": "2006-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1VZ0i4vJ0AkPbmpuaktZMJ"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+          },
+          "href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+          "id": "6Wr3hh341P84m3EI8qdn9O",
+          "name": "Rise Against",
+          "type": "artist",
+          "uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 199386,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM70603971"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4OSbctVD37ycS0H3rwRm72"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4OSbctVD37ycS0H3rwRm72",
+      "id": "4OSbctVD37ycS0H3rwRm72",
+      "is_local": false,
+      "is_playable": true,
+      "linked_from": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2VGQ342iuqj6aSaYbyBQVJ"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2VGQ342iuqj6aSaYbyBQVJ",
+        "id": "2VGQ342iuqj6aSaYbyBQVJ",
+        "type": "track",
+        "uri": "spotify:track:2VGQ342iuqj6aSaYbyBQVJ"
+      },
+      "name": "Prayer Of The Refugee",
+      "popularity": 63,
+      "preview_url": null,
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:4OSbctVD37ycS0H3rwRm72"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2xiIXseIJcq3nG7C8fHeBj"
+            },
+            "href": "https://api.spotify.com/v1/artists/2xiIXseIJcq3nG7C8fHeBj",
+            "id": "2xiIXseIJcq3nG7C8fHeBj",
+            "name": "Three Days Grace",
+            "type": "artist",
+            "uri": "spotify:artist:2xiIXseIJcq3nG7C8fHeBj"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4ZDwEvXIKxWdwhAQK8ndBU"
+        },
+        "href": "https://api.spotify.com/v1/albums/4ZDwEvXIKxWdwhAQK8ndBU",
+        "id": "4ZDwEvXIKxWdwhAQK8ndBU",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/fdbdf54c69e505c617b128d19e670d753573add6",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/2e3b58d63ec69a8ebc289006c359db5bff97c907",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/84620e49624132a0757c5e9ed330568c586982d9",
+            "width": 64
+          }
+        ],
+        "name": "One-X",
+        "release_date": "2006-06-25",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:4ZDwEvXIKxWdwhAQK8ndBU"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2xiIXseIJcq3nG7C8fHeBj"
+          },
+          "href": "https://api.spotify.com/v1/artists/2xiIXseIJcq3nG7C8fHeBj",
+          "id": "2xiIXseIJcq3nG7C8fHeBj",
+          "name": "Three Days Grace",
+          "type": "artist",
+          "uri": "spotify:artist:2xiIXseIJcq3nG7C8fHeBj"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 207586,
+      "explicit": true,
+      "external_ids": {
+        "isrc": "USJI10600162"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1Q2fYlSdwuutWj3QplhY9q"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1Q2fYlSdwuutWj3QplhY9q",
+      "id": "1Q2fYlSdwuutWj3QplhY9q",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Riot",
+      "popularity": 69,
+      "preview_url": "https://p.scdn.co/mp3-preview/f9aa2d8edbef04dbab10930dd0083e27c7d9be37?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:1Q2fYlSdwuutWj3QplhY9q"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}

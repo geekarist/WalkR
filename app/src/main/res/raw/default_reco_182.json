@@ -1,0 +1,426 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+            },
+            "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+            "id": "7oPftvlwr6VrsViSDV7fJY",
+            "name": "Green Day",
+            "type": "artist",
+            "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4uG8q3GPuWHQlRbswMIRS6"
+        },
+        "href": "https://api.spotify.com/v1/albums/4uG8q3GPuWHQlRbswMIRS6",
+        "id": "4uG8q3GPuWHQlRbswMIRS6",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/927a0b3a207f999eaf94aa1f9b92b8900c95e014",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/39ac4904a22405fcf66d9ab8dea354d5b95a64f2",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/882ded5bfb1472be3ddd5862a224f62972c1a49c",
+            "width": 64
+          }
+        ],
+        "name": "Dookie",
+        "release_date": "1994-02-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:4uG8q3GPuWHQlRbswMIRS6"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+          },
+          "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+          "id": "7oPftvlwr6VrsViSDV7fJY",
+          "name": "Green Day",
+          "type": "artist",
+          "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 157626,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRE19900153"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4oqF9y2thGJh7hFd1hqItt"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4oqF9y2thGJh7hFd1hqItt",
+      "id": "4oqF9y2thGJh7hFd1hqItt",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Sassafras Roots",
+      "popularity": 54,
+      "preview_url": "https://p.scdn.co/mp3-preview/91f40e96a7faa3e284073f754e9e54ca61ae7bc5?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 9,
+      "type": "track",
+      "uri": "spotify:track:4oqF9y2thGJh7hFd1hqItt"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+            },
+            "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
+            "id": "5eAWCfyUhZtHHtBdNk56l1",
+            "name": "System Of A Down",
+            "type": "artist",
+            "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3QxX3NbWyLlLG6lP1xveL3"
+        },
+        "href": "https://api.spotify.com/v1/albums/3QxX3NbWyLlLG6lP1xveL3",
+        "id": "3QxX3NbWyLlLG6lP1xveL3",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/2b4d88d7d8c2ff42f431d5d6d21caa6908ae8a64",
+            "width": 637
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/99a8c1edc099c4f380bf3bbd3dce585cae12b4fa",
+            "width": 299
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/0eb5aff3b4585b958ff059cd8856ccd4b76afe6c",
+            "width": 64
+          }
+        ],
+        "name": "Hypnotize",
+        "release_date": "2005-11-22",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3QxX3NbWyLlLG6lP1xveL3"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+          },
+          "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
+          "id": "5eAWCfyUhZtHHtBdNk56l1",
+          "name": "System Of A Down",
+          "type": "artist",
+          "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 239866,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USSM10505332"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4uCfGqrF2OHcav71k0bk9D"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4uCfGqrF2OHcav71k0bk9D",
+      "id": "4uCfGqrF2OHcav71k0bk9D",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Dreaming",
+      "popularity": 55,
+      "preview_url": "https://p.scdn.co/mp3-preview/396e31625ab4cced419c06d8a6a083ab39d751e8?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:4uCfGqrF2OHcav71k0bk9D"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5uYXMC13cIUulobh204QuK"
+            },
+            "href": "https://api.spotify.com/v1/artists/5uYXMC13cIUulobh204QuK",
+            "id": "5uYXMC13cIUulobh204QuK",
+            "name": "The Mighty Mighty Bosstones",
+            "type": "artist",
+            "uri": "spotify:artist:5uYXMC13cIUulobh204QuK"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5yBYSnmpRANjb99msqeCee"
+        },
+        "href": "https://api.spotify.com/v1/albums/5yBYSnmpRANjb99msqeCee",
+        "id": "5yBYSnmpRANjb99msqeCee",
+        "images": [
+          {
+            "height": 632,
+            "url": "https://i.scdn.co/image/378122349222328c84df556b810fe98d3389342e",
+            "width": 640
+          },
+          {
+            "height": 296,
+            "url": "https://i.scdn.co/image/b44f82596b03a426b47bcee27334cbda5f26f9ec",
+            "width": 300
+          },
+          {
+            "height": 63,
+            "url": "https://i.scdn.co/image/163feb1f56b8b664f41ecdce8c75092781fc03ae",
+            "width": 64
+          }
+        ],
+        "name": "Let's Face It",
+        "release_date": "1997-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5yBYSnmpRANjb99msqeCee"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5uYXMC13cIUulobh204QuK"
+          },
+          "href": "https://api.spotify.com/v1/artists/5uYXMC13cIUulobh204QuK",
+          "id": "5uYXMC13cIUulobh204QuK",
+          "name": "The Mighty Mighty Bosstones",
+          "type": "artist",
+          "uri": "spotify:artist:5uYXMC13cIUulobh204QuK"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 194760,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USMR19780102"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1ru5R5iSawvuMELqKXxLjS"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1ru5R5iSawvuMELqKXxLjS",
+      "id": "1ru5R5iSawvuMELqKXxLjS",
+      "is_local": false,
+      "is_playable": true,
+      "name": "The Impression That I Get",
+      "popularity": 65,
+      "preview_url": null,
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:1ru5R5iSawvuMELqKXxLjS"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/46gyXjRIvN1NL1eCB8GBxo"
+            },
+            "href": "https://api.spotify.com/v1/artists/46gyXjRIvN1NL1eCB8GBxo",
+            "id": "46gyXjRIvN1NL1eCB8GBxo",
+            "name": "All Time Low",
+            "type": "artist",
+            "uri": "spotify:artist:46gyXjRIvN1NL1eCB8GBxo"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5WoRLOCwzWVCGqFXLBghGx"
+        },
+        "href": "https://api.spotify.com/v1/albums/5WoRLOCwzWVCGqFXLBghGx",
+        "id": "5WoRLOCwzWVCGqFXLBghGx",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/a297127ee4ea7934a2cf2568994fca2d27a4b7a9",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/cfe7ec3ab1bcc1c1111e3718e0958c482fe69706",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/c4f8a4bf4061c2625d70055b849a93c7de6074b1",
+            "width": 64
+          }
+        ],
+        "name": "Nothing Personal (Deluxe Version)",
+        "release_date": "2009-07-07",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5WoRLOCwzWVCGqFXLBghGx"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/46gyXjRIvN1NL1eCB8GBxo"
+          },
+          "href": "https://api.spotify.com/v1/artists/46gyXjRIvN1NL1eCB8GBxo",
+          "id": "46gyXjRIvN1NL1eCB8GBxo",
+          "name": "All Time Low",
+          "type": "artist",
+          "uri": "spotify:artist:46gyXjRIvN1NL1eCB8GBxo"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 198000,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USHR20947001"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4cqYUqmKMcb3q1tdImVpGW"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4cqYUqmKMcb3q1tdImVpGW",
+      "id": "4cqYUqmKMcb3q1tdImVpGW",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Weightless",
+      "popularity": 64,
+      "preview_url": "https://p.scdn.co/mp3-preview/ff1672eaa57ab4726fbab25e0cff7c7c65e87e8a?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:4cqYUqmKMcb3q1tdImVpGW"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/46gyXjRIvN1NL1eCB8GBxo"
+            },
+            "href": "https://api.spotify.com/v1/artists/46gyXjRIvN1NL1eCB8GBxo",
+            "id": "46gyXjRIvN1NL1eCB8GBxo",
+            "name": "All Time Low",
+            "type": "artist",
+            "uri": "spotify:artist:46gyXjRIvN1NL1eCB8GBxo"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2e8m3glGL3xIuSrGGXzcIc"
+        },
+        "href": "https://api.spotify.com/v1/albums/2e8m3glGL3xIuSrGGXzcIc",
+        "id": "2e8m3glGL3xIuSrGGXzcIc",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/0daa2c0fe838c0a4354e45263860b9a70b39f3d6",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/1ec1d51a0ee5a2a8c58e38262789bf5a92437f14",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/dd2ac483a13edf31ab59341a8eea3aea926e3cfc",
+            "width": 64
+          }
+        ],
+        "name": "So Wrong, It's Right (Deluxe Version)",
+        "release_date": "2008-07-29",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:2e8m3glGL3xIuSrGGXzcIc"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/46gyXjRIvN1NL1eCB8GBxo"
+          },
+          "href": "https://api.spotify.com/v1/artists/46gyXjRIvN1NL1eCB8GBxo",
+          "id": "46gyXjRIvN1NL1eCB8GBxo",
+          "name": "All Time Low",
+          "type": "artist",
+          "uri": "spotify:artist:46gyXjRIvN1NL1eCB8GBxo"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 182826,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USHR20747017"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3ZsexY07D4t4HRq7ogeSAS"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3ZsexY07D4t4HRq7ogeSAS",
+      "id": "3ZsexY07D4t4HRq7ogeSAS",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Dear Maria, Count Me In",
+      "popularity": 68,
+      "preview_url": "https://p.scdn.co/mp3-preview/aa9c38e29aa6e69f06ea955e01e15045afad6068?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:3ZsexY07D4t4HRq7ogeSAS"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}

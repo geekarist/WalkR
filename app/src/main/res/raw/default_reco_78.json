@@ -1,0 +1,663 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0EdvGhlC1FkGItLOWQzG4J"
+            },
+            "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J",
+            "id": "0EdvGhlC1FkGItLOWQzG4J",
+            "name": "Sublime",
+            "type": "artist",
+            "uri": "spotify:artist:0EdvGhlC1FkGItLOWQzG4J"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1sVlvoWbgJwJLGdEoOAz03"
+        },
+        "href": "https://api.spotify.com/v1/albums/1sVlvoWbgJwJLGdEoOAz03",
+        "id": "1sVlvoWbgJwJLGdEoOAz03",
+        "images": [
+          {
+            "height": 636,
+            "url": "https://i.scdn.co/image/bb8d03c98fdc510dccbbe2970283dde14851aceb",
+            "width": 640
+          },
+          {
+            "height": 298,
+            "url": "https://i.scdn.co/image/da919d59c93659cc3259bc4d25d40c901364f0f6",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/46f99ca4240265ca574018be440734b6d60fa511",
+            "width": 64
+          }
+        ],
+        "name": "20th Century Masters: The Millennium Collection: Best Of Sublime",
+        "release_date": "2002-10-29",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1sVlvoWbgJwJLGdEoOAz03"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0EdvGhlC1FkGItLOWQzG4J"
+          },
+          "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J",
+          "id": "0EdvGhlC1FkGItLOWQzG4J",
+          "name": "Sublime",
+          "type": "artist",
+          "uri": "spotify:artist:0EdvGhlC1FkGItLOWQzG4J"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 233666,
+      "explicit": true,
+      "external_ids": {
+        "isrc": "USGA19648331"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4aiGuq8owmdrU9WKZNVfCe"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4aiGuq8owmdrU9WKZNVfCe",
+      "id": "4aiGuq8owmdrU9WKZNVfCe",
+      "is_local": false,
+      "is_playable": true,
+      "name": "April 29, 1992 (Miami)",
+      "popularity": 50,
+      "preview_url": null,
+      "track_number": 10,
+      "type": "track",
+      "uri": "spotify:track:4aiGuq8owmdrU9WKZNVfCe"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+            },
+            "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+            "id": "2WjvvwAX0mdWwq3aFuUdtc",
+            "name": "Rebelution",
+            "type": "artist",
+            "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5FfbqVo0OapeCvoJvjWlOp"
+        },
+        "href": "https://api.spotify.com/v1/albums/5FfbqVo0OapeCvoJvjWlOp",
+        "id": "5FfbqVo0OapeCvoJvjWlOp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/8905fdddf49460c8721aed84adc760ce364d74b7",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/430f1c83248103deb23b8149f2c5b2813737fbb9",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/8b260937519cd097b5c1bbe07001581029da9889",
+            "width": 64
+          }
+        ],
+        "name": "Free Rein",
+        "release_date": "2018-06-15",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5FfbqVo0OapeCvoJvjWlOp"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+          },
+          "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+          "id": "2WjvvwAX0mdWwq3aFuUdtc",
+          "name": "Rebelution",
+          "type": "artist",
+          "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 236975,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "US4CL1810004"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1TtJB7TqB6uhA5dEh0sqFW"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1TtJB7TqB6uhA5dEh0sqFW",
+      "id": "1TtJB7TqB6uhA5dEh0sqFW",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Settle Down Easy",
+      "popularity": 56,
+      "preview_url": "https://p.scdn.co/mp3-preview/cc776d7f73d5bae2e940dbb189ce07480360f574?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:1TtJB7TqB6uhA5dEh0sqFW"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6F3NW2aC9Sni1FH7QPSLvw"
+            },
+            "href": "https://api.spotify.com/v1/artists/6F3NW2aC9Sni1FH7QPSLvw",
+            "id": "6F3NW2aC9Sni1FH7QPSLvw",
+            "name": "Dishwalla",
+            "type": "artist",
+            "uri": "spotify:artist:6F3NW2aC9Sni1FH7QPSLvw"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/30ovRiMwvlgNVkB0cCfaOb"
+        },
+        "href": "https://api.spotify.com/v1/albums/30ovRiMwvlgNVkB0cCfaOb",
+        "id": "30ovRiMwvlgNVkB0cCfaOb",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/d06bcefe02fa8fdd637c96df1e1a0a3c0f32e906",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/562d0fa67728d272202f7cb82e26ae3cc9a2dd08",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/3be11dd5deb58faf03ce9b0541a28d5bbe1a71fb",
+            "width": 64
+          }
+        ],
+        "name": "Opaline",
+        "release_date": "2002-08-23",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:30ovRiMwvlgNVkB0cCfaOb"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6F3NW2aC9Sni1FH7QPSLvw"
+          },
+          "href": "https://api.spotify.com/v1/artists/6F3NW2aC9Sni1FH7QPSLvw",
+          "id": "6F3NW2aC9Sni1FH7QPSLvw",
+          "name": "Dishwalla",
+          "type": "artist",
+          "uri": "spotify:artist:6F3NW2aC9Sni1FH7QPSLvw"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 243800,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USI8R0200902"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2fnMKNqdGCf78E12681NRG"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2fnMKNqdGCf78E12681NRG",
+      "id": "2fnMKNqdGCf78E12681NRG",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Angels Or Devils",
+      "popularity": 51,
+      "preview_url": "https://p.scdn.co/mp3-preview/94d1d521b9eb639e6d4e08a3958ef16479fe3c10?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:2fnMKNqdGCf78E12681NRG"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q9lPhJHW5R9J7RXIJRbTk"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q9lPhJHW5R9J7RXIJRbTk",
+            "id": "0q9lPhJHW5R9J7RXIJRbTk",
+            "name": "Iration",
+            "type": "artist",
+            "uri": "spotify:artist:0q9lPhJHW5R9J7RXIJRbTk"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6XBN7JbqWczCIST7mmdkAx"
+        },
+        "href": "https://api.spotify.com/v1/albums/6XBN7JbqWczCIST7mmdkAx",
+        "id": "6XBN7JbqWczCIST7mmdkAx",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/1c2637b544b6280da7ff96ad3b8be669e2b39f95",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/71ff181df9b6fd46d93f427034378c890390d027",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/7be7885a78a8ab335d9ddae9f194a049b2c6737e",
+            "width": 64
+          }
+        ],
+        "name": "Iration",
+        "release_date": "2018-05-18",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:6XBN7JbqWczCIST7mmdkAx"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q9lPhJHW5R9J7RXIJRbTk"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q9lPhJHW5R9J7RXIJRbTk",
+          "id": "0q9lPhJHW5R9J7RXIJRbTk",
+          "name": "Iration",
+          "type": "artist",
+          "uri": "spotify:artist:0q9lPhJHW5R9J7RXIJRbTk"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 261079,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USME31800223"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5GrXshz0UGM1qP74PKHKOC"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5GrXshz0UGM1qP74PKHKOC",
+      "id": "5GrXshz0UGM1qP74PKHKOC",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Already Gold",
+      "popularity": 51,
+      "preview_url": "https://p.scdn.co/mp3-preview/3f4fd3db2cdc9d2033d8826407fcb885ff3f7fa8?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:5GrXshz0UGM1qP74PKHKOC"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+            },
+            "href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+            "id": "6Wr3hh341P84m3EI8qdn9O",
+            "name": "Rise Against",
+            "type": "artist",
+            "uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3smHEWBKoqDUFuJrV8BCg1"
+        },
+        "href": "https://api.spotify.com/v1/albums/3smHEWBKoqDUFuJrV8BCg1",
+        "id": "3smHEWBKoqDUFuJrV8BCg1",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/9821a760f8bc0dc59f186ee184c624e5fe51abb2",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/efd9d9f1d6f0045dfd51132cd4f2cc39c404df4a",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/dd2cb1d9874b4c277c51070faffebd63890c9f68",
+            "width": 64
+          }
+        ],
+        "name": "Appeal To Reason",
+        "release_date": "2008-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3smHEWBKoqDUFuJrV8BCg1"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+          },
+          "href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+          "id": "6Wr3hh341P84m3EI8qdn9O",
+          "name": "Rise Against",
+          "type": "artist",
+          "uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 253080,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM70832583"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2y6zrJK0sgeQt6oNkz6Xb7"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2y6zrJK0sgeQt6oNkz6Xb7",
+      "id": "2y6zrJK0sgeQt6oNkz6Xb7",
+      "is_local": false,
+      "is_playable": true,
+      "linked_from": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/00hVU6kDP67JHurfwG2dtq"
+        },
+        "href": "https://api.spotify.com/v1/tracks/00hVU6kDP67JHurfwG2dtq",
+        "id": "00hVU6kDP67JHurfwG2dtq",
+        "type": "track",
+        "uri": "spotify:track:00hVU6kDP67JHurfwG2dtq"
+      },
+      "name": "Hero Of War",
+      "popularity": 57,
+      "preview_url": null,
+      "track_number": 10,
+      "type": "track",
+      "uri": "spotify:track:2y6zrJK0sgeQt6oNkz6Xb7"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1YK8JdPbiaMSnf4hrlBkGT"
+            },
+            "href": "https://api.spotify.com/v1/artists/1YK8JdPbiaMSnf4hrlBkGT",
+            "id": "1YK8JdPbiaMSnf4hrlBkGT",
+            "name": "Pepper",
+            "type": "artist",
+            "uri": "spotify:artist:1YK8JdPbiaMSnf4hrlBkGT"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/37ijUtHcOrsDCIQRsa5sB4"
+        },
+        "href": "https://api.spotify.com/v1/albums/37ijUtHcOrsDCIQRsa5sB4",
+        "id": "37ijUtHcOrsDCIQRsa5sB4",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/0668c63bbcffc52438a46fa16013842cf4a35c34",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/6e9bfd46466a9ea15d7f24a48ab66f3ebf672af0",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e51cc3d2946897a94358ad46ecb1a7e2e0f14c6e",
+            "width": 64
+          }
+        ],
+        "name": "Kona Town",
+        "release_date": "2002-03-26",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:37ijUtHcOrsDCIQRsa5sB4"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1YK8JdPbiaMSnf4hrlBkGT"
+          },
+          "href": "https://api.spotify.com/v1/artists/1YK8JdPbiaMSnf4hrlBkGT",
+          "id": "1YK8JdPbiaMSnf4hrlBkGT",
+          "name": "Pepper",
+          "type": "artist",
+          "uri": "spotify:artist:1YK8JdPbiaMSnf4hrlBkGT"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 254800,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USVE30500115"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1AO26gK1sI6PoFY9eUF8yV"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1AO26gK1sI6PoFY9eUF8yV",
+      "id": "1AO26gK1sI6PoFY9eUF8yV",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Stone Love",
+      "popularity": 61,
+      "preview_url": "https://p.scdn.co/mp3-preview/63530db5d0171186480e9585f6c1e7740c705b58?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:1AO26gK1sI6PoFY9eUF8yV"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1YK8JdPbiaMSnf4hrlBkGT"
+            },
+            "href": "https://api.spotify.com/v1/artists/1YK8JdPbiaMSnf4hrlBkGT",
+            "id": "1YK8JdPbiaMSnf4hrlBkGT",
+            "name": "Pepper",
+            "type": "artist",
+            "uri": "spotify:artist:1YK8JdPbiaMSnf4hrlBkGT"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/40cxw1nvPEnaMHJMmQTHYm"
+        },
+        "href": "https://api.spotify.com/v1/albums/40cxw1nvPEnaMHJMmQTHYm",
+        "id": "40cxw1nvPEnaMHJMmQTHYm",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/696a76d34365f702555d38fb8fffc347d1e22929",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/b2c19e8c9bc3508cb3ee368430ff93a215c9ff2a",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/6f549baae514b8574226b8192dde7b024bd64a6f",
+            "width": 64
+          }
+        ],
+        "name": "In With The Old",
+        "release_date": "2004-02-17",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:40cxw1nvPEnaMHJMmQTHYm"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1YK8JdPbiaMSnf4hrlBkGT"
+          },
+          "href": "https://api.spotify.com/v1/artists/1YK8JdPbiaMSnf4hrlBkGT",
+          "id": "1YK8JdPbiaMSnf4hrlBkGT",
+          "name": "Pepper",
+          "type": "artist",
+          "uri": "spotify:artist:1YK8JdPbiaMSnf4hrlBkGT"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 181533,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USVE30400027"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5vSH05fXsfYtltxV4ujRkc"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5vSH05fXsfYtltxV4ujRkc",
+      "id": "5vSH05fXsfYtltxV4ujRkc",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Ashes",
+      "popularity": 52,
+      "preview_url": "https://p.scdn.co/mp3-preview/2736d6807a34ff1874a722e03da2945111ec64a9?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:5vSH05fXsfYtltxV4ujRkc"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+            },
+            "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+            "id": "2WjvvwAX0mdWwq3aFuUdtc",
+            "name": "Rebelution",
+            "type": "artist",
+            "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/581TFVtaXAO5GeU5Ry324y"
+        },
+        "href": "https://api.spotify.com/v1/albums/581TFVtaXAO5GeU5Ry324y",
+        "id": "581TFVtaXAO5GeU5Ry324y",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/1677a63ec563862b53b7a43e4eb0582ac8d98a83",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/58e018578f7e9f553f9041a39b5f4454d64bc0fd",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/f8339cc7c798de4f53c55ad10b03f7fa446fdeed",
+            "width": 64
+          }
+        ],
+        "name": "Courage to Grow",
+        "release_date": "2007-06-08",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:581TFVtaXAO5GeU5Ry324y"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+          },
+          "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+          "id": "2WjvvwAX0mdWwq3aFuUdtc",
+          "name": "Rebelution",
+          "type": "artist",
+          "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 229493,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "ushm20777313"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5GQaLen4w5m5YiJmzYfegN"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5GQaLen4w5m5YiJmzYfegN",
+      "id": "5GQaLen4w5m5YiJmzYfegN",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Safe and Sound",
+      "popularity": 59,
+      "preview_url": "https://p.scdn.co/mp3-preview/84359a462e5fd64a747889e0b3da1558888988bd?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:5GQaLen4w5m5YiJmzYfegN"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 6,
+      "afterRelinkingSize": 6,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}

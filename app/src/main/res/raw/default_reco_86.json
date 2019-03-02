@@ -1,0 +1,502 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4ERtgeBbWRkFzIz6LaFCeY"
+            },
+            "href": "https://api.spotify.com/v1/artists/4ERtgeBbWRkFzIz6LaFCeY",
+            "id": "4ERtgeBbWRkFzIz6LaFCeY",
+            "name": "Dashboard Confessional",
+            "type": "artist",
+            "uri": "spotify:artist:4ERtgeBbWRkFzIz6LaFCeY"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6HNDip6KYIQapVTDziA91U"
+        },
+        "href": "https://api.spotify.com/v1/albums/6HNDip6KYIQapVTDziA91U",
+        "id": "6HNDip6KYIQapVTDziA91U",
+        "images": [
+          {
+            "height": 634,
+            "url": "https://i.scdn.co/image/694819432b1484ca6ea7ab54271f8a0568bfc424",
+            "width": 640
+          },
+          {
+            "height": 297,
+            "url": "https://i.scdn.co/image/c6ca3efcdf4ec91115f8752cca46d0924e7a65dc",
+            "width": 300
+          },
+          {
+            "height": 63,
+            "url": "https://i.scdn.co/image/8b5445c554221a4a3f8a45672d6b8fd6a200adad",
+            "width": 64
+          }
+        ],
+        "name": "Dusk And Summer",
+        "release_date": "2006",
+        "release_date_precision": "year",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:6HNDip6KYIQapVTDziA91U"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4ERtgeBbWRkFzIz6LaFCeY"
+          },
+          "href": "https://api.spotify.com/v1/artists/4ERtgeBbWRkFzIz6LaFCeY",
+          "id": "4ERtgeBbWRkFzIz6LaFCeY",
+          "name": "Dashboard Confessional",
+          "type": "artist",
+          "uri": "spotify:artist:4ERtgeBbWRkFzIz6LaFCeY"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 201346,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USVR90400024"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1EotcFbWTbMCXeKFVEtX6Y"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1EotcFbWTbMCXeKFVEtX6Y",
+      "id": "1EotcFbWTbMCXeKFVEtX6Y",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Vindicated",
+      "popularity": 56,
+      "preview_url": null,
+      "track_number": 11,
+      "type": "track",
+      "uri": "spotify:track:1EotcFbWTbMCXeKFVEtX6Y"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+            },
+            "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+            "id": "7oPftvlwr6VrsViSDV7fJY",
+            "name": "Green Day",
+            "type": "artist",
+            "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4uG8q3GPuWHQlRbswMIRS6"
+        },
+        "href": "https://api.spotify.com/v1/albums/4uG8q3GPuWHQlRbswMIRS6",
+        "id": "4uG8q3GPuWHQlRbswMIRS6",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/927a0b3a207f999eaf94aa1f9b92b8900c95e014",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/39ac4904a22405fcf66d9ab8dea354d5b95a64f2",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/882ded5bfb1472be3ddd5862a224f62972c1a49c",
+            "width": 64
+          }
+        ],
+        "name": "Dookie",
+        "release_date": "1994-02-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:4uG8q3GPuWHQlRbswMIRS6"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+          },
+          "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+          "id": "7oPftvlwr6VrsViSDV7fJY",
+          "name": "Green Day",
+          "type": "artist",
+          "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 181533,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRE19900151"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6L89mwZXSOwYl76YXfX13s"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6L89mwZXSOwYl76YXfX13s",
+      "id": "6L89mwZXSOwYl76YXfX13s",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Basket Case",
+      "popularity": 79,
+      "preview_url": "https://p.scdn.co/mp3-preview/a66864fcfd8923c6084fc2000e3086e4e1e0a657?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 7,
+      "type": "track",
+      "uri": "spotify:track:6L89mwZXSOwYl76YXfX13s"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6BdSOHfQ6kMg0tbAFlXR1z"
+            },
+            "href": "https://api.spotify.com/v1/artists/6BdSOHfQ6kMg0tbAFlXR1z",
+            "id": "6BdSOHfQ6kMg0tbAFlXR1z",
+            "name": "Nonpoint",
+            "type": "artist",
+            "uri": "spotify:artist:6BdSOHfQ6kMg0tbAFlXR1z"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1UnoCRuJTGd39YMDNGI1RE"
+        },
+        "href": "https://api.spotify.com/v1/albums/1UnoCRuJTGd39YMDNGI1RE",
+        "id": "1UnoCRuJTGd39YMDNGI1RE",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/2fd594678a4c7cde8b0d38e771805b2b65ca6d49",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/e03efd5ef3b19025297f1a95ae23914d59b98a7c",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/8172c8a02b694ef9c5227bf26089f12062913c3b",
+            "width": 64
+          }
+        ],
+        "name": "Chaos And Earthquakes",
+        "release_date": "2018-06-22",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1UnoCRuJTGd39YMDNGI1RE"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6BdSOHfQ6kMg0tbAFlXR1z"
+          },
+          "href": "https://api.spotify.com/v1/artists/6BdSOHfQ6kMg0tbAFlXR1z",
+          "id": "6BdSOHfQ6kMg0tbAFlXR1z",
+          "name": "Nonpoint",
+          "type": "artist",
+          "uri": "spotify:artist:6BdSOHfQ6kMg0tbAFlXR1z"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 225133,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "GBUM71802186"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2imkodSyg1hOZwZuE2fJdU"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2imkodSyg1hOZwZuE2fJdU",
+      "id": "2imkodSyg1hOZwZuE2fJdU",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Chaos And Earthquakes",
+      "popularity": 64,
+      "preview_url": null,
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:2imkodSyg1hOZwZuE2fJdU"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6GkJh85o22LfD2vgL9DP6f"
+            },
+            "href": "https://api.spotify.com/v1/artists/6GkJh85o22LfD2vgL9DP6f",
+            "id": "6GkJh85o22LfD2vgL9DP6f",
+            "name": "Dirty Heads",
+            "type": "artist",
+            "uri": "spotify:artist:6GkJh85o22LfD2vgL9DP6f"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2yt8pr76AIWu3ohmnZKNcd"
+        },
+        "href": "https://api.spotify.com/v1/albums/2yt8pr76AIWu3ohmnZKNcd",
+        "id": "2yt8pr76AIWu3ohmnZKNcd",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/1b6cb3b884b871308eb5f20bd27dddcbf9284e5c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/a8093d9ffd649e31411dbf40ecbde6846c9b0e85",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/7970b241b312e73594ac56f956e85c864fc1aedb",
+            "width": 64
+          }
+        ],
+        "name": "Dirty Heads",
+        "release_date": "2016-07-15",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:2yt8pr76AIWu3ohmnZKNcd"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6GkJh85o22LfD2vgL9DP6f"
+          },
+          "href": "https://api.spotify.com/v1/artists/6GkJh85o22LfD2vgL9DP6f",
+          "id": "6GkJh85o22LfD2vgL9DP6f",
+          "name": "Dirty Heads",
+          "type": "artist",
+          "uri": "spotify:artist:6GkJh85o22LfD2vgL9DP6f"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 236705,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USDPK1600081"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4neYMvZ7JfRWU1sTMohQCS"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4neYMvZ7JfRWU1sTMohQCS",
+      "id": "4neYMvZ7JfRWU1sTMohQCS",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Moon Tower",
+      "popularity": 52,
+      "preview_url": "https://p.scdn.co/mp3-preview/10e7d85825a2c9b9d04a4a52c6de538965fb5e61?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 10,
+      "type": "track",
+      "uri": "spotify:track:4neYMvZ7JfRWU1sTMohQCS"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6Hizgjo92FnMp8wGaRUNTn"
+            },
+            "href": "https://api.spotify.com/v1/artists/6Hizgjo92FnMp8wGaRUNTn",
+            "id": "6Hizgjo92FnMp8wGaRUNTn",
+            "name": "Vertical Horizon",
+            "type": "artist",
+            "uri": "spotify:artist:6Hizgjo92FnMp8wGaRUNTn"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2gJ6axVHAsQmmO6nslQRN1"
+        },
+        "href": "https://api.spotify.com/v1/albums/2gJ6axVHAsQmmO6nslQRN1",
+        "id": "2gJ6axVHAsQmmO6nslQRN1",
+        "images": [
+          {
+            "height": 637,
+            "url": "https://i.scdn.co/image/5e44405da12aacd8e1ac2bd97d07cc06b77673cd",
+            "width": 640
+          },
+          {
+            "height": 299,
+            "url": "https://i.scdn.co/image/da701436720bbb786eee1bc59d1356d9cd9b623b",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/b8189b1ef4543c7c042ca980648c92f417ad7e9f",
+            "width": 64
+          }
+        ],
+        "name": "Everything You Want",
+        "release_date": "1999-06-15",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:2gJ6axVHAsQmmO6nslQRN1"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Hizgjo92FnMp8wGaRUNTn"
+          },
+          "href": "https://api.spotify.com/v1/artists/6Hizgjo92FnMp8wGaRUNTn",
+          "id": "6Hizgjo92FnMp8wGaRUNTn",
+          "name": "Vertical Horizon",
+          "type": "artist",
+          "uri": "spotify:artist:6Hizgjo92FnMp8wGaRUNTn"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 270800,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC19900050"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2EVNYzHWebyLvKxPX6Ozt8"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2EVNYzHWebyLvKxPX6Ozt8",
+      "id": "2EVNYzHWebyLvKxPX6Ozt8",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Best I Ever Had (Grey Sky Morning)",
+      "popularity": 59,
+      "preview_url": "https://p.scdn.co/mp3-preview/f82b5f7b1173a5a003af82b6c416a48d903005b9?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:2EVNYzHWebyLvKxPX6Ozt8"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
+            "id": "3jOstUTkEu2JkjvRdBA5Gu",
+            "name": "Weezer",
+            "type": "artist",
+            "uri": "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/65sHj9PvsbyD0uugGHjueN"
+        },
+        "href": "https://api.spotify.com/v1/albums/65sHj9PvsbyD0uugGHjueN",
+        "id": "65sHj9PvsbyD0uugGHjueN",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/f2ee8c0215d3793015704885a644cbe8c5e07862",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/092a68a8cc0f29fd39091846413b151dbf71ebaa",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/c68ab80b931952b6058043ac3964a0a6ee464325",
+            "width": 64
+          }
+        ],
+        "name": "Weezer (Teal Album)",
+        "release_date": "2019-01-24",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:65sHj9PvsbyD0uugGHjueN"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+          },
+          "href": "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
+          "id": "3jOstUTkEu2JkjvRdBA5Gu",
+          "name": "Weezer",
+          "type": "artist",
+          "uri": "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 164853,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USAT21900611"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3n8bWAjDqrAscPTHoCVY3U"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3n8bWAjDqrAscPTHoCVY3U",
+      "id": "3n8bWAjDqrAscPTHoCVY3U",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Paranoid",
+      "popularity": 64,
+      "preview_url": "https://p.scdn.co/mp3-preview/f2b4951286bd71a70230d5c876bc38937c4c0ac4?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:3n8bWAjDqrAscPTHoCVY3U"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}

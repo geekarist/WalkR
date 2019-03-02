@@ -1,0 +1,806 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6xTk3EK5T9UzudENVvu9YB"
+            },
+            "href": "https://api.spotify.com/v1/artists/6xTk3EK5T9UzudENVvu9YB",
+            "id": "6xTk3EK5T9UzudENVvu9YB",
+            "name": "Rancid",
+            "type": "artist",
+            "uri": "spotify:artist:6xTk3EK5T9UzudENVvu9YB"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1HisV3ZKLs9It3KlGcPki5"
+        },
+        "href": "https://api.spotify.com/v1/albums/1HisV3ZKLs9It3KlGcPki5",
+        "id": "1HisV3ZKLs9It3KlGcPki5",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/4763809d82f4f280c91e0e7265da86efaebe8e0c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/a60c7f41520ff9a0b2fafe4f2c87cf3b0360eeeb",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/aa906a049ba886bd1c7b220880ba1c5873e3c2b2",
+            "width": 64
+          }
+        ],
+        "name": "...And Out Come The Wolves",
+        "release_date": "1995-08-15",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1HisV3ZKLs9It3KlGcPki5"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6xTk3EK5T9UzudENVvu9YB"
+          },
+          "href": "https://api.spotify.com/v1/artists/6xTk3EK5T9UzudENVvu9YB",
+          "id": "6xTk3EK5T9UzudENVvu9YB",
+          "name": "Rancid",
+          "type": "artist",
+          "uri": "spotify:artist:6xTk3EK5T9UzudENVvu9YB"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 157533,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USEP40322109"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1pNlZQeoPnlxqf1Mjgm0H2"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1pNlZQeoPnlxqf1Mjgm0H2",
+      "id": "1pNlZQeoPnlxqf1Mjgm0H2",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Ruby Soho",
+      "popularity": 59,
+      "preview_url": "https://p.scdn.co/mp3-preview/c5ebf2f30961e4acd72571a09c63712f9b3c164e?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 9,
+      "type": "track",
+      "uri": "spotify:track:1pNlZQeoPnlxqf1Mjgm0H2"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+            },
+            "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
+            "id": "5eAWCfyUhZtHHtBdNk56l1",
+            "name": "System Of A Down",
+            "type": "artist",
+            "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0cn6MHyx4YuZauaB7Pb66o"
+        },
+        "href": "https://api.spotify.com/v1/albums/0cn6MHyx4YuZauaB7Pb66o",
+        "id": "0cn6MHyx4YuZauaB7Pb66o",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/66eb75e0f3a8a91822ba7154e4b41066e63e51f2",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/df6b8f413c14579d752ebbc37dd6bfd7852b7611",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/1a0bf07e652bf53bcb8896c424ba363ceec8b9bd",
+            "width": 64
+          }
+        ],
+        "name": "Mezmerize",
+        "release_date": "2005-05-17",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:0cn6MHyx4YuZauaB7Pb66o"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+          },
+          "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
+          "id": "5eAWCfyUhZtHHtBdNk56l1",
+          "name": "System Of A Down",
+          "type": "artist",
+          "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 176866,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USSM10501586"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6iFVJGxSVdFkzYQJL7Rgdk"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6iFVJGxSVdFkzYQJL7Rgdk",
+      "id": "6iFVJGxSVdFkzYQJL7Rgdk",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Old School Hollywood",
+      "popularity": 56,
+      "preview_url": "https://p.scdn.co/mp3-preview/ceb7c834e8543e5b7d5239d5a89c55cc1bae4134?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 10,
+      "type": "track",
+      "uri": "spotify:track:6iFVJGxSVdFkzYQJL7Rgdk"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD"
+            },
+            "href": "https://api.spotify.com/v1/artists/7jy3rLJdDQY21OgRLCZ9sD",
+            "id": "7jy3rLJdDQY21OgRLCZ9sD",
+            "name": "Foo Fighters",
+            "type": "artist",
+            "uri": "spotify:artist:7jy3rLJdDQY21OgRLCZ9sD"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1zCNrbPpz5OLSr6mSpPdKm"
+        },
+        "href": "https://api.spotify.com/v1/albums/1zCNrbPpz5OLSr6mSpPdKm",
+        "id": "1zCNrbPpz5OLSr6mSpPdKm",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/3b505559c2bce1f6205eeb0b19d65e3a2c8f5617",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/690932c4cdc34270a6421079af4c2afc3f48234a",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/88e091688667eff1085cebeec92cba9d6726c000",
+            "width": 64
+          }
+        ],
+        "name": "Greatest Hits",
+        "release_date": "2009-11-03",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1zCNrbPpz5OLSr6mSpPdKm"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD"
+          },
+          "href": "https://api.spotify.com/v1/artists/7jy3rLJdDQY21OgRLCZ9sD",
+          "id": "7jy3rLJdDQY21OgRLCZ9sD",
+          "name": "Foo Fighters",
+          "type": "artist",
+          "uri": "spotify:artist:7jy3rLJdDQY21OgRLCZ9sD"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 278213,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC10900528"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3KsatAMRt1a7iryhWt5I8U"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3KsatAMRt1a7iryhWt5I8U",
+      "id": "3KsatAMRt1a7iryhWt5I8U",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Wheels",
+      "popularity": 60,
+      "preview_url": "https://p.scdn.co/mp3-preview/f77125218955448bc17bac79fdcc0bf024b62e52?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 14,
+      "type": "track",
+      "uri": "spotify:track:3KsatAMRt1a7iryhWt5I8U"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7iWiAD5LLKyiox2grgfmUT"
+            },
+            "href": "https://api.spotify.com/v1/artists/7iWiAD5LLKyiox2grgfmUT",
+            "id": "7iWiAD5LLKyiox2grgfmUT",
+            "name": "Bullet For My Valentine",
+            "type": "artist",
+            "uri": "spotify:artist:7iWiAD5LLKyiox2grgfmUT"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4uNzDULQ9RAy0nxGaPbCDn"
+        },
+        "href": "https://api.spotify.com/v1/albums/4uNzDULQ9RAy0nxGaPbCDn",
+        "id": "4uNzDULQ9RAy0nxGaPbCDn",
+        "images": [
+          {
+            "height": 635,
+            "url": "https://i.scdn.co/image/7c6208595c51ea89f9322af9cbaefd0cb0dd89e3",
+            "width": 640
+          },
+          {
+            "height": 298,
+            "url": "https://i.scdn.co/image/7e4bb888ac02fca8332d51be3b1b561a72420d6b",
+            "width": 300
+          },
+          {
+            "height": 63,
+            "url": "https://i.scdn.co/image/bb8dff0323e128263c3457c96ca04a3f51249906",
+            "width": 64
+          }
+        ],
+        "name": "The Poison (Deluxe Version)",
+        "release_date": "2007-06-12",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:4uNzDULQ9RAy0nxGaPbCDn"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7iWiAD5LLKyiox2grgfmUT"
+          },
+          "href": "https://api.spotify.com/v1/artists/7iWiAD5LLKyiox2grgfmUT",
+          "id": "7iWiAD5LLKyiox2grgfmUT",
+          "name": "Bullet For My Valentine",
+          "type": "artist",
+          "uri": "spotify:artist:7iWiAD5LLKyiox2grgfmUT"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 348386,
+      "explicit": true,
+      "external_ids": {
+        "isrc": "GBHQD0500017"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3iWlbqAaoIR7H7gyO3a6rV"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3iWlbqAaoIR7H7gyO3a6rV",
+      "id": "3iWlbqAaoIR7H7gyO3a6rV",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Tears Don't Fall",
+      "popularity": 63,
+      "preview_url": "https://p.scdn.co/mp3-preview/33328221bdb4b558539e5a26aa12798f963a4b4a?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:3iWlbqAaoIR7H7gyO3a6rV"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+            },
+            "href": "https://api.spotify.com/v1/artists/4UXqAaa6dQYAk18Lv7PEgX",
+            "id": "4UXqAaa6dQYAk18Lv7PEgX",
+            "name": "Fall Out Boy",
+            "type": "artist",
+            "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5nkUSlIhtoJZMOUlB0sNCp"
+        },
+        "href": "https://api.spotify.com/v1/albums/5nkUSlIhtoJZMOUlB0sNCp",
+        "id": "5nkUSlIhtoJZMOUlB0sNCp",
+        "images": [
+          {
+            "height": 631,
+            "url": "https://i.scdn.co/image/63a37f32006eab70bd58c892e4098f2a84bb915e",
+            "width": 640
+          },
+          {
+            "height": 296,
+            "url": "https://i.scdn.co/image/92f68545738413d443a97f3d394f222b4b8ea5bc",
+            "width": 300
+          },
+          {
+            "height": 63,
+            "url": "https://i.scdn.co/image/5bc9f20320fba62aa1f5da7aab70ddf8db628207",
+            "width": 64
+          }
+        ],
+        "name": "From Under The Cork Tree",
+        "release_date": "2005-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5nkUSlIhtoJZMOUlB0sNCp"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+          },
+          "href": "https://api.spotify.com/v1/artists/4UXqAaa6dQYAk18Lv7PEgX",
+          "id": "4UXqAaa6dQYAk18Lv7PEgX",
+          "name": "Fall Out Boy",
+          "type": "artist",
+          "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 229093,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USIR20500201"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2TfSHkHiFO4gRztVIkggkE"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2TfSHkHiFO4gRztVIkggkE",
+      "id": "2TfSHkHiFO4gRztVIkggkE",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Sugar, We're Goin Down",
+      "popularity": 78,
+      "preview_url": null,
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:2TfSHkHiFO4gRztVIkggkE"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/42aeGx2I3uXINpGqC8L0LD"
+            },
+            "href": "https://api.spotify.com/v1/artists/42aeGx2I3uXINpGqC8L0LD",
+            "id": "42aeGx2I3uXINpGqC8L0LD",
+            "name": "Jack's Mannequin",
+            "type": "artist",
+            "uri": "spotify:artist:42aeGx2I3uXINpGqC8L0LD"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3kb9M8LHAO4JKh2Z7ZgiOV"
+        },
+        "href": "https://api.spotify.com/v1/albums/3kb9M8LHAO4JKh2Z7ZgiOV",
+        "id": "3kb9M8LHAO4JKh2Z7ZgiOV",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/548c3c00b2d775964a8dac4e58241bb8c000b774",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/097ea8fcba64cbcc755f58491900a94acc547a33",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/43777420693d6fb357ff69699d7458ae1ad3ffbd",
+            "width": 64
+          }
+        ],
+        "name": "Everything In Transit (Non-PA Release)",
+        "release_date": "2005-08-23",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3kb9M8LHAO4JKh2Z7ZgiOV"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/42aeGx2I3uXINpGqC8L0LD"
+          },
+          "href": "https://api.spotify.com/v1/artists/42aeGx2I3uXINpGqC8L0LD",
+          "id": "42aeGx2I3uXINpGqC8L0LD",
+          "name": "Jack's Mannequin",
+          "type": "artist",
+          "uri": "spotify:artist:42aeGx2I3uXINpGqC8L0LD"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 251797,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USMV20500149"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2XFOuxF5xUZ00RaVfaIdw2"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2XFOuxF5xUZ00RaVfaIdw2",
+      "id": "2XFOuxF5xUZ00RaVfaIdw2",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Dark Blue",
+      "popularity": 51,
+      "preview_url": "https://p.scdn.co/mp3-preview/396f5cb4bf6670ad95302938602d798a2b99e011?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:2XFOuxF5xUZ00RaVfaIdw2"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6gZq1Q6bdOxsUPUG1TaFbF"
+            },
+            "href": "https://api.spotify.com/v1/artists/6gZq1Q6bdOxsUPUG1TaFbF",
+            "id": "6gZq1Q6bdOxsUPUG1TaFbF",
+            "name": "Godsmack",
+            "type": "artist",
+            "uri": "spotify:artist:6gZq1Q6bdOxsUPUG1TaFbF"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1TtbAHb4E0J0BQkf5HOl7o"
+        },
+        "href": "https://api.spotify.com/v1/albums/1TtbAHb4E0J0BQkf5HOl7o",
+        "id": "1TtbAHb4E0J0BQkf5HOl7o",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/edfa7753122d6137813c13c19912fd9fe616bdd8",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/b16682a0c1750050b01d2974fd41af1defaab05d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/9d91bbe483e64f784bca9c3c5cd5bddc5613a5d8",
+            "width": 64
+          }
+        ],
+        "name": "Bulletproof",
+        "release_date": "2018-02-28",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1TtbAHb4E0J0BQkf5HOl7o"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6gZq1Q6bdOxsUPUG1TaFbF"
+          },
+          "href": "https://api.spotify.com/v1/artists/6gZq1Q6bdOxsUPUG1TaFbF",
+          "id": "6gZq1Q6bdOxsUPUG1TaFbF",
+          "name": "Godsmack",
+          "type": "artist",
+          "uri": "spotify:artist:6gZq1Q6bdOxsUPUG1TaFbF"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 177048,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QMRSZ1703237"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4VRRbrw7ai2mztUrXrAvfd"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4VRRbrw7ai2mztUrXrAvfd",
+      "id": "4VRRbrw7ai2mztUrXrAvfd",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Bulletproof",
+      "popularity": 61,
+      "preview_url": "https://p.scdn.co/mp3-preview/e271341966c7983ad6fa93ee2adedf3408044d58?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:4VRRbrw7ai2mztUrXrAvfd"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+            },
+            "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+            "id": "2WjvvwAX0mdWwq3aFuUdtc",
+            "name": "Rebelution",
+            "type": "artist",
+            "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5FfbqVo0OapeCvoJvjWlOp"
+        },
+        "href": "https://api.spotify.com/v1/albums/5FfbqVo0OapeCvoJvjWlOp",
+        "id": "5FfbqVo0OapeCvoJvjWlOp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/8905fdddf49460c8721aed84adc760ce364d74b7",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/430f1c83248103deb23b8149f2c5b2813737fbb9",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/8b260937519cd097b5c1bbe07001581029da9889",
+            "width": 64
+          }
+        ],
+        "name": "Free Rein",
+        "release_date": "2018-06-15",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5FfbqVo0OapeCvoJvjWlOp"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+          },
+          "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+          "id": "2WjvvwAX0mdWwq3aFuUdtc",
+          "name": "Rebelution",
+          "type": "artist",
+          "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 207648,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "US4CL1810002"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1ozK6iAeBgCOSXecRojzMo"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1ozK6iAeBgCOSXecRojzMo",
+      "id": "1ozK6iAeBgCOSXecRojzMo",
+      "is_local": false,
+      "is_playable": true,
+      "name": "City Life",
+      "popularity": 54,
+      "preview_url": "https://p.scdn.co/mp3-preview/84c2638f4b6bd55ff5c0af7fd359c4f8f39491e4?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:1ozK6iAeBgCOSXecRojzMo"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
+            },
+            "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
+            "id": "3Ayl7mCk0nScecqOzvNp6s",
+            "name": "Jimmy Eat World",
+            "type": "artist",
+            "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2ZuFyQ3E5n1L0VA9iyH0YV"
+        },
+        "href": "https://api.spotify.com/v1/albums/2ZuFyQ3E5n1L0VA9iyH0YV",
+        "id": "2ZuFyQ3E5n1L0VA9iyH0YV",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/9f78f6b616dea4bb944e4fa20db1171455a4deeb",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/3a970133d606fc2b5e02af36d9a6244130ffd175",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/9e5f532f2b079e46e775e0057a7703e21eef76ad",
+            "width": 64
+          }
+        ],
+        "name": "Bleed American (Deluxe Edition)",
+        "release_date": "2001",
+        "release_date_precision": "year",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:2ZuFyQ3E5n1L0VA9iyH0YV"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
+          },
+          "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
+          "id": "3Ayl7mCk0nScecqOzvNp6s",
+          "name": "Jimmy Eat World",
+          "type": "artist",
+          "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 168253,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USDW10110256"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3mcG2NI5G5vhrQtRda1YnA"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3mcG2NI5G5vhrQtRda1YnA",
+      "id": "3mcG2NI5G5vhrQtRda1YnA",
+      "is_local": false,
+      "is_playable": true,
+      "name": "The Middle",
+      "popularity": 77,
+      "preview_url": null,
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:3mcG2NI5G5vhrQtRda1YnA"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6xTk3EK5T9UzudENVvu9YB"
+            },
+            "href": "https://api.spotify.com/v1/artists/6xTk3EK5T9UzudENVvu9YB",
+            "id": "6xTk3EK5T9UzudENVvu9YB",
+            "name": "Rancid",
+            "type": "artist",
+            "uri": "spotify:artist:6xTk3EK5T9UzudENVvu9YB"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1HisV3ZKLs9It3KlGcPki5"
+        },
+        "href": "https://api.spotify.com/v1/albums/1HisV3ZKLs9It3KlGcPki5",
+        "id": "1HisV3ZKLs9It3KlGcPki5",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/4763809d82f4f280c91e0e7265da86efaebe8e0c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/a60c7f41520ff9a0b2fafe4f2c87cf3b0360eeeb",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/aa906a049ba886bd1c7b220880ba1c5873e3c2b2",
+            "width": 64
+          }
+        ],
+        "name": "...And Out Come The Wolves",
+        "release_date": "1995-08-15",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1HisV3ZKLs9It3KlGcPki5"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6xTk3EK5T9UzudENVvu9YB"
+          },
+          "href": "https://api.spotify.com/v1/artists/6xTk3EK5T9UzudENVvu9YB",
+          "id": "6xTk3EK5T9UzudENVvu9YB",
+          "name": "Rancid",
+          "type": "artist",
+          "uri": "spotify:artist:6xTk3EK5T9UzudENVvu9YB"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 167506,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USEP40322103"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0LWkdUtorgGHr1bwT2C6tY"
+      },
+      "href": "https://api.spotify.com/v1/tracks/0LWkdUtorgGHr1bwT2C6tY",
+      "id": "0LWkdUtorgGHr1bwT2C6tY",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Roots Radical",
+      "popularity": 53,
+      "preview_url": "https://p.scdn.co/mp3-preview/6e5d020b91691cbfe44994a7427e4007ac11c4ec?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:0LWkdUtorgGHr1bwT2C6tY"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}

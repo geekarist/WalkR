@@ -1,0 +1,502 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4j7EVY3kuDwLPfD2jfC7LC"
+            },
+            "href": "https://api.spotify.com/v1/artists/4j7EVY3kuDwLPfD2jfC7LC",
+            "id": "4j7EVY3kuDwLPfD2jfC7LC",
+            "name": "Toad The Wet Sprocket",
+            "type": "artist",
+            "uri": "spotify:artist:4j7EVY3kuDwLPfD2jfC7LC"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4MCGhE7t3MzFXlyq9pQYVM"
+        },
+        "href": "https://api.spotify.com/v1/albums/4MCGhE7t3MzFXlyq9pQYVM",
+        "id": "4MCGhE7t3MzFXlyq9pQYVM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/f03907a0e69d9b869fb0bfbcdeedffcde4425eee",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/e6942bbd9944bedcf20573ec254ca31421ea942f",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/02f0fd0d8e8ecaa3166b719fcb1b4bbc28ebb54b",
+            "width": 64
+          }
+        ],
+        "name": "P.S. (a Toad retrospective)",
+        "release_date": "1988",
+        "release_date_precision": "year",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:4MCGhE7t3MzFXlyq9pQYVM"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4j7EVY3kuDwLPfD2jfC7LC"
+          },
+          "href": "https://api.spotify.com/v1/artists/4j7EVY3kuDwLPfD2jfC7LC",
+          "id": "4j7EVY3kuDwLPfD2jfC7LC",
+          "name": "Toad The Wet Sprocket",
+          "type": "artist",
+          "uri": "spotify:artist:4j7EVY3kuDwLPfD2jfC7LC"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 179040,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USSM19100108"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6DfvtrAhkXb6ruEaTGdA8r"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6DfvtrAhkXb6ruEaTGdA8r",
+      "id": "6DfvtrAhkXb6ruEaTGdA8r",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Walk On The Ocean",
+      "popularity": 55,
+      "preview_url": "https://p.scdn.co/mp3-preview/7747ec37c1eb36b28465ef580b9afa937807a4c6?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 8,
+      "type": "track",
+      "uri": "spotify:track:6DfvtrAhkXb6ruEaTGdA8r"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+            },
+            "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
+            "id": "5eAWCfyUhZtHHtBdNk56l1",
+            "name": "System Of A Down",
+            "type": "artist",
+            "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3QxX3NbWyLlLG6lP1xveL3"
+        },
+        "href": "https://api.spotify.com/v1/albums/3QxX3NbWyLlLG6lP1xveL3",
+        "id": "3QxX3NbWyLlLG6lP1xveL3",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/2b4d88d7d8c2ff42f431d5d6d21caa6908ae8a64",
+            "width": 637
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/99a8c1edc099c4f380bf3bbd3dce585cae12b4fa",
+            "width": 299
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/0eb5aff3b4585b958ff059cd8856ccd4b76afe6c",
+            "width": 64
+          }
+        ],
+        "name": "Hypnotize",
+        "release_date": "2005-11-22",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3QxX3NbWyLlLG6lP1xveL3"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+          },
+          "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
+          "id": "5eAWCfyUhZtHHtBdNk56l1",
+          "name": "System Of A Down",
+          "type": "artist",
+          "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 147960,
+      "explicit": true,
+      "external_ids": {
+        "isrc": "USSM10505333"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/28TReO2Mxk9Q3GA4K98YSz"
+      },
+      "href": "https://api.spotify.com/v1/tracks/28TReO2Mxk9Q3GA4K98YSz",
+      "id": "28TReO2Mxk9Q3GA4K98YSz",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Kill Rock 'n Roll - Explicit Album Version",
+      "popularity": 60,
+      "preview_url": "https://p.scdn.co/mp3-preview/fcda3243d43bcc3c453c29eead3856c04ae51f0b?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:28TReO2Mxk9Q3GA4K98YSz"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6gZq1Q6bdOxsUPUG1TaFbF"
+            },
+            "href": "https://api.spotify.com/v1/artists/6gZq1Q6bdOxsUPUG1TaFbF",
+            "id": "6gZq1Q6bdOxsUPUG1TaFbF",
+            "name": "Godsmack",
+            "type": "artist",
+            "uri": "spotify:artist:6gZq1Q6bdOxsUPUG1TaFbF"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6yOWKkrlpmUWOC5yndULeq"
+        },
+        "href": "https://api.spotify.com/v1/albums/6yOWKkrlpmUWOC5yndULeq",
+        "id": "6yOWKkrlpmUWOC5yndULeq",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/71a839f621da1c3898e3f3d2a90839f31f66d34e",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/4d53a249468cb7b39af5ae5bb75387be1a385151",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/2c1619384c5753fa4e7abbcfa3dcae9d47cd5ac7",
+            "width": 64
+          }
+        ],
+        "name": "The Oracle (Deluxe Edition)",
+        "release_date": "2010-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:6yOWKkrlpmUWOC5yndULeq"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6gZq1Q6bdOxsUPUG1TaFbF"
+          },
+          "href": "https://api.spotify.com/v1/artists/6gZq1Q6bdOxsUPUG1TaFbF",
+          "id": "6gZq1Q6bdOxsUPUG1TaFbF",
+          "name": "Godsmack",
+          "type": "artist",
+          "uri": "spotify:artist:6gZq1Q6bdOxsUPUG1TaFbF"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 315453,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71007614"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/36QG29bbGuJkxNgzY6o9Mu"
+      },
+      "href": "https://api.spotify.com/v1/tracks/36QG29bbGuJkxNgzY6o9Mu",
+      "id": "36QG29bbGuJkxNgzY6o9Mu",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Love-Hate-Sex-Pain",
+      "popularity": 61,
+      "preview_url": null,
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:36QG29bbGuJkxNgzY6o9Mu"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6A43Djmhbe9100UwnI7epV"
+            },
+            "href": "https://api.spotify.com/v1/artists/6A43Djmhbe9100UwnI7epV",
+            "id": "6A43Djmhbe9100UwnI7epV",
+            "name": "Cake",
+            "type": "artist",
+            "uri": "spotify:artist:6A43Djmhbe9100UwnI7epV"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/57lJNxlrPSin9SySEnerNb"
+        },
+        "href": "https://api.spotify.com/v1/albums/57lJNxlrPSin9SySEnerNb",
+        "id": "57lJNxlrPSin9SySEnerNb",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/35e72a90de5b5cfc6a2c9b98bb218ed22c7a264f",
+            "width": 634
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/7f23e4a99aed5a44732bbf0b9811e2bab6ace85e",
+            "width": 297
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/174683af531aecb86a4b4eb8d8451c02f0105582",
+            "width": 63
+          }
+        ],
+        "name": "Fashion Nugget",
+        "release_date": "1996",
+        "release_date_precision": "year",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:57lJNxlrPSin9SySEnerNb"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6A43Djmhbe9100UwnI7epV"
+          },
+          "href": "https://api.spotify.com/v1/artists/6A43Djmhbe9100UwnI7epV",
+          "id": "6A43Djmhbe9100UwnI7epV",
+          "name": "Cake",
+          "type": "artist",
+          "uri": "spotify:artist:6A43Djmhbe9100UwnI7epV"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 179653,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USCA19686701"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0xMEF2WiqKWTIG7Krjungw"
+      },
+      "href": "https://api.spotify.com/v1/tracks/0xMEF2WiqKWTIG7Krjungw",
+      "id": "0xMEF2WiqKWTIG7Krjungw",
+      "is_local": false,
+      "is_playable": true,
+      "name": "The Distance",
+      "popularity": 64,
+      "preview_url": "https://p.scdn.co/mp3-preview/cce7b2be031e4b66652d15793ae1985b197ebb5c?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:0xMEF2WiqKWTIG7Krjungw"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/08yf5A2nS4XEeNvabDXqyg"
+            },
+            "href": "https://api.spotify.com/v1/artists/08yf5A2nS4XEeNvabDXqyg",
+            "id": "08yf5A2nS4XEeNvabDXqyg",
+            "name": "Billy Talent",
+            "type": "artist",
+            "uri": "spotify:artist:08yf5A2nS4XEeNvabDXqyg"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0cTOvcvrbNiaiv4WXEUHzT"
+        },
+        "href": "https://api.spotify.com/v1/albums/0cTOvcvrbNiaiv4WXEUHzT",
+        "id": "0cTOvcvrbNiaiv4WXEUHzT",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/b23ec362a71389686d8a74db0a3159f501ad6265",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/0311e40083390b1d58bc5040197cbdfc697dbc80",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/d63225a05a7996ffaf6c6aa89be24fd14acaafbd",
+            "width": 64
+          }
+        ],
+        "name": "Billy Talent II",
+        "release_date": "2006-06-23",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:0cTOvcvrbNiaiv4WXEUHzT"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/08yf5A2nS4XEeNvabDXqyg"
+          },
+          "href": "https://api.spotify.com/v1/artists/08yf5A2nS4XEeNvabDXqyg",
+          "id": "08yf5A2nS4XEeNvabDXqyg",
+          "name": "Billy Talent",
+          "type": "artist",
+          "uri": "spotify:artist:08yf5A2nS4XEeNvabDXqyg"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 198173,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USAT20612281"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2RZWdE8kYPlCAcRUYDeuLC"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2RZWdE8kYPlCAcRUYDeuLC",
+      "id": "2RZWdE8kYPlCAcRUYDeuLC",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Red Flag",
+      "popularity": 64,
+      "preview_url": "https://p.scdn.co/mp3-preview/6acf951e7d2d62f83d4f556c3bcbf2a2611c1235?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:2RZWdE8kYPlCAcRUYDeuLC"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+            },
+            "href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+            "id": "6Wr3hh341P84m3EI8qdn9O",
+            "name": "Rise Against",
+            "type": "artist",
+            "uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4sz6Fn4BYORRLIc1AvQwQx"
+        },
+        "href": "https://api.spotify.com/v1/albums/4sz6Fn4BYORRLIc1AvQwQx",
+        "id": "4sz6Fn4BYORRLIc1AvQwQx",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/04c5f7bafe678ab0b47e75d99544e8502c23e293",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/f38eac8c6a768d20bf74be12b8b3ef8217655fbf",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/b3be9b7130385299599eb52cb91baf47ea0664e6",
+            "width": 64
+          }
+        ],
+        "name": "Wolves",
+        "release_date": "2017-06-09",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:4sz6Fn4BYORRLIc1AvQwQx"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+          },
+          "href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+          "id": "6Wr3hh341P84m3EI8qdn9O",
+          "name": "Rise Against",
+          "type": "artist",
+          "uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 228720,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71703493"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/12C6ufD5zOWsQGHQY7aXRM"
+      },
+      "href": "https://api.spotify.com/v1/tracks/12C6ufD5zOWsQGHQY7aXRM",
+      "id": "12C6ufD5zOWsQGHQY7aXRM",
+      "is_local": false,
+      "is_playable": true,
+      "name": "The Violence",
+      "popularity": 64,
+      "preview_url": null,
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:12C6ufD5zOWsQGHQY7aXRM"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 4,
+      "afterRelinkingSize": 4,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/14pVkFUHDL207LzLHtSA18"
+            },
+            "href": "https://api.spotify.com/v1/artists/14pVkFUHDL207LzLHtSA18",
+            "id": "14pVkFUHDL207LzLHtSA18",
+            "name": "Pantera",
+            "type": "artist",
+            "uri": "spotify:artist:14pVkFUHDL207LzLHtSA18"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/70GAqt2avSiKBJ2IEymou1"
+        },
+        "href": "https://api.spotify.com/v1/albums/70GAqt2avSiKBJ2IEymou1",
+        "id": "70GAqt2avSiKBJ2IEymou1",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/038df23f44769b8d1695021b69d45e323b12e8e9",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ad81c987c8e5413eae0af2f7513aedd14c8de07c",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/213868c1b02a5f28f8e80d30d985c3e97f0eb7d8",
+            "width": 64
+          }
+        ],
+        "name": "Far Beyond Driven",
+        "release_date": "1994",
+        "release_date_precision": "year",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:70GAqt2avSiKBJ2IEymou1"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/14pVkFUHDL207LzLHtSA18"
+          },
+          "href": "https://api.spotify.com/v1/artists/14pVkFUHDL207LzLHtSA18",
+          "id": "14pVkFUHDL207LzLHtSA18",
+          "name": "Pantera",
+          "type": "artist",
+          "uri": "spotify:artist:14pVkFUHDL207LzLHtSA18"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 264800,
+      "explicit": true,
+      "external_ids": {
+        "isrc": "USEE10170425"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2M5WTwqnkyz7bW6P1CiD6q"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2M5WTwqnkyz7bW6P1CiD6q",
+      "id": "2M5WTwqnkyz7bW6P1CiD6q",
+      "is_local": false,
+      "is_playable": true,
+      "name": "I'm Broken",
+      "popularity": 63,
+      "preview_url": "https://p.scdn.co/mp3-preview/6d3f1b1fa85da4b86ad874017e269378e4904e4b?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:2M5WTwqnkyz7bW6P1CiD6q"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+            },
+            "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+            "id": "7oPftvlwr6VrsViSDV7fJY",
+            "name": "Green Day",
+            "type": "artist",
+            "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5dN7F9DV0Qg1XRdIgW8rke"
+        },
+        "href": "https://api.spotify.com/v1/albums/5dN7F9DV0Qg1XRdIgW8rke",
+        "id": "5dN7F9DV0Qg1XRdIgW8rke",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/2027dbfec96249cdc12ff804738898afce24a7a5",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/11cfd8520763b38b9362be2f10e15b68777322f9",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/a1982d961375042cc4b0543235f4d02ad60f3077",
+            "width": 64
+          }
+        ],
+        "name": "American Idiot",
+        "release_date": "2004-09-21",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5dN7F9DV0Qg1XRdIgW8rke"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+          },
+          "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+          "id": "7oPftvlwr6VrsViSDV7fJY",
+          "name": "Green Day",
+          "type": "artist",
+          "uri": "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 548253,
+      "explicit": true,
+      "external_ids": {
+        "isrc": "USRE10400983"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/58KPPL1AdLHMvR2O2PZejr"
+      },
+      "href": "https://api.spotify.com/v1/tracks/58KPPL1AdLHMvR2O2PZejr",
+      "id": "58KPPL1AdLHMvR2O2PZejr",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Jesus of Suburbia",
+      "popularity": 64,
+      "preview_url": "https://p.scdn.co/mp3-preview/ec083b4edfdd1a4cbfb642b231d797e67ceaf69f?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:58KPPL1AdLHMvR2O2PZejr"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+            },
+            "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+            "id": "2WjvvwAX0mdWwq3aFuUdtc",
+            "name": "Rebelution",
+            "type": "artist",
+            "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6ry84mOthM6loLKbhuiovs"
+        },
+        "href": "https://api.spotify.com/v1/albums/6ry84mOthM6loLKbhuiovs",
+        "id": "6ry84mOthM6loLKbhuiovs",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/c9f225a1a514a1215454f3c6307ae2ef801e53ad",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/f68a22dc4ec0a989478e0a1293fa8ad176db8c4a",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/4807c019d1ad03189722974cfc8455a360776b55",
+            "width": 64
+          }
+        ],
+        "name": "Bright Side of Life",
+        "release_date": "2009-08-03",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:6ry84mOthM6loLKbhuiovs"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
+          },
+          "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
+          "id": "2WjvvwAX0mdWwq3aFuUdtc",
+          "name": "Rebelution",
+          "type": "artist",
+          "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 210346,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USME30901417"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5JmJVj3qLsCnBsQ8IC9XLf"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5JmJVj3qLsCnBsQ8IC9XLf",
+      "id": "5JmJVj3qLsCnBsQ8IC9XLf",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Lazy Afternoon",
+      "popularity": 58,
+      "preview_url": "https://p.scdn.co/mp3-preview/7317d8f850700e9d0d59d9adc277631b1e7e0ac4?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 9,
+      "type": "track",
+      "uri": "spotify:track:5JmJVj3qLsCnBsQ8IC9XLf"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6FBDaR13swtiWwGhX1WQsP"
+            },
+            "href": "https://api.spotify.com/v1/artists/6FBDaR13swtiWwGhX1WQsP",
+            "id": "6FBDaR13swtiWwGhX1WQsP",
+            "name": "blink-182",
+            "type": "artist",
+            "uri": "spotify:artist:6FBDaR13swtiWwGhX1WQsP"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38"
+        },
+        "href": "https://api.spotify.com/v1/albums/5qt11cWjSs5Gbqj2Wyfu38",
+        "id": "5qt11cWjSs5Gbqj2Wyfu38",
+        "images": [
+          {
+            "height": 636,
+            "url": "https://i.scdn.co/image/13f894c1300cbdda027ff948ee963640c5126d29",
+            "width": 640
+          },
+          {
+            "height": 298,
+            "url": "https://i.scdn.co/image/13df38bffb65d58fde5341184282a908e49689d4",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/9c233fb13e1758e6035bc9e19d77cda1b18fe84e",
+            "width": 64
+          }
+        ],
+        "name": "Enema Of The State",
+        "release_date": "1999-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5qt11cWjSs5Gbqj2Wyfu38"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6FBDaR13swtiWwGhX1WQsP"
+          },
+          "href": "https://api.spotify.com/v1/artists/6FBDaR13swtiWwGhX1WQsP",
+          "id": "6FBDaR13swtiWwGhX1WQsP",
+          "name": "blink-182",
+          "type": "artist",
+          "uri": "spotify:artist:6FBDaR13swtiWwGhX1WQsP"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 168000,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USMC19959123"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7yCPwWs66K8Ba5lFuU2bcx"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx",
+      "id": "7yCPwWs66K8Ba5lFuU2bcx",
+      "is_local": false,
+      "is_playable": true,
+      "name": "All The Small Things",
+      "popularity": 79,
+      "preview_url": null,
+      "track_number": 8,
+      "type": "track",
+      "uri": "spotify:track:7yCPwWs66K8Ba5lFuU2bcx"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/46gyXjRIvN1NL1eCB8GBxo"
+            },
+            "href": "https://api.spotify.com/v1/artists/46gyXjRIvN1NL1eCB8GBxo",
+            "id": "46gyXjRIvN1NL1eCB8GBxo",
+            "name": "All Time Low",
+            "type": "artist",
+            "uri": "spotify:artist:46gyXjRIvN1NL1eCB8GBxo"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0gpNGTVNivS2wB32tzV3OH"
+        },
+        "href": "https://api.spotify.com/v1/albums/0gpNGTVNivS2wB32tzV3OH",
+        "id": "0gpNGTVNivS2wB32tzV3OH",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/7b0c4dbb7eb1eb17955d852fbd06b0ba5ef18bfa",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/f2bebca9165ddebc37c903ceb8633a5600f68fe0",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/d6b9ab5bd51eba0987f595cd2844b3453e9e223e",
+            "width": 64
+          }
+        ],
+        "name": "Last Young Renegade",
+        "release_date": "2017-06-02",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:0gpNGTVNivS2wB32tzV3OH"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/46gyXjRIvN1NL1eCB8GBxo"
+          },
+          "href": "https://api.spotify.com/v1/artists/46gyXjRIvN1NL1eCB8GBxo",
+          "id": "46gyXjRIvN1NL1eCB8GBxo",
+          "name": "All Time Low",
+          "type": "artist",
+          "uri": "spotify:artist:46gyXjRIvN1NL1eCB8GBxo"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 217680,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USAT21700392"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1isQMKYmpvJ4tOP8R2qkWr"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1isQMKYmpvJ4tOP8R2qkWr",
+      "id": "1isQMKYmpvJ4tOP8R2qkWr",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Drugs & Candy",
+      "popularity": 61,
+      "preview_url": "https://p.scdn.co/mp3-preview/f91172ea1c132692642d16b9f6be676af9fc30ec?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:1isQMKYmpvJ4tOP8R2qkWr"
+    }
+  ],
+  "seeds": [
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+    }
+  ]
+}
