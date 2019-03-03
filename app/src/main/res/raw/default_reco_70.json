@@ -6,75 +6,227 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+              "spotify": "https://open.spotify.com/artist/4EzkuveR9pLvDVFNx6foYD"
             },
-            "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-            "id": "5eAWCfyUhZtHHtBdNk56l1",
-            "name": "System Of A Down",
+            "href": "https://api.spotify.com/v1/artists/4EzkuveR9pLvDVFNx6foYD",
+            "id": "4EzkuveR9pLvDVFNx6foYD",
+            "name": "James Bay",
             "type": "artist",
-            "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+            "uri": "spotify:artist:4EzkuveR9pLvDVFNx6foYD"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/3sSfjX4fhZonjyZ10x0l0f"
+          "spotify": "https://open.spotify.com/album/08cprzGPjtLDvKMwtQh93R"
         },
-        "href": "https://api.spotify.com/v1/albums/3sSfjX4fhZonjyZ10x0l0f",
-        "id": "3sSfjX4fhZonjyZ10x0l0f",
+        "href": "https://api.spotify.com/v1/albums/08cprzGPjtLDvKMwtQh93R",
+        "id": "08cprzGPjtLDvKMwtQh93R",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/734e9f1585b6ad85676243146e3459472c21cf58",
+            "url": "https://i.scdn.co/image/0cdc68f8b84378562cd4098e41cb20ac74c400d2",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/5d217e5f375f0c5cf47776f677610b44f7201ecd",
+            "url": "https://i.scdn.co/image/c2599432712d9e1126aea0e0b849dc125fa09e3d",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/0a7c2fb8dab5a9a64b406878b349e189ea4dcd65",
+            "url": "https://i.scdn.co/image/d7b10bb09d7037c6027965b4b0474b27351500ce",
             "width": 64
           }
         ],
-        "name": "System Of A Down (Bonus Pack)",
-        "release_date": "1998",
-        "release_date_precision": "year",
+        "name": "Electric Light",
+        "release_date": "2018-05-18",
+        "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:3sSfjX4fhZonjyZ10x0l0f"
+        "uri": "spotify:album:08cprzGPjtLDvKMwtQh93R"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+            "spotify": "https://open.spotify.com/artist/4EzkuveR9pLvDVFNx6foYD"
           },
-          "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-          "id": "5eAWCfyUhZtHHtBdNk56l1",
-          "name": "System Of A Down",
+          "href": "https://api.spotify.com/v1/artists/4EzkuveR9pLvDVFNx6foYD",
+          "id": "4EzkuveR9pLvDVFNx6foYD",
+          "name": "James Bay",
           "type": "artist",
-          "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+          "uri": "spotify:artist:4EzkuveR9pLvDVFNx6foYD"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 176693,
-      "explicit": true,
+      "duration_ms": 197280,
+      "explicit": false,
       "external_ids": {
-        "isrc": "USSM19800856"
+        "isrc": "USUM71800827"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/1ByE7lUw6wWMTbCb3woHdK"
+        "spotify": "https://open.spotify.com/track/3XLZOk9aP5VxiO81xFSX2w"
       },
-      "href": "https://api.spotify.com/v1/tracks/1ByE7lUw6wWMTbCb3woHdK",
-      "id": "1ByE7lUw6wWMTbCb3woHdK",
+      "href": "https://api.spotify.com/v1/tracks/3XLZOk9aP5VxiO81xFSX2w",
+      "id": "3XLZOk9aP5VxiO81xFSX2w",
       "is_local": false,
       "is_playable": true,
-      "name": "Know",
-      "popularity": 55,
-      "preview_url": "https://p.scdn.co/mp3-preview/1ad42ab5d676af0908b503c5309204ff879341d4?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 2,
+      "name": "Wild Love",
+      "popularity": 67,
+      "preview_url": null,
+      "track_number": 4,
       "type": "track",
-      "uri": "spotify:track:1ByE7lUw6wWMTbCb3woHdK"
+      "uri": "spotify:track:3XLZOk9aP5VxiO81xFSX2w"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6KImCVD70vtIoJWnq6nGn3"
+            },
+            "href": "https://api.spotify.com/v1/artists/6KImCVD70vtIoJWnq6nGn3",
+            "id": "6KImCVD70vtIoJWnq6nGn3",
+            "name": "Harry Styles",
+            "type": "artist",
+            "uri": "spotify:artist:6KImCVD70vtIoJWnq6nGn3"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1FZKIm3JVDCxTchXDo5jOV"
+        },
+        "href": "https://api.spotify.com/v1/albums/1FZKIm3JVDCxTchXDo5jOV",
+        "id": "1FZKIm3JVDCxTchXDo5jOV",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/d4e1e36b7115e645dc6fd432cdd3ea7c0c4d939a",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/2faf14c121b01bde63b55fdc9fbb3ddeec2ad48d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/f842de1f2db71f3b1a0eb6172b4d33615edaa0ca",
+            "width": 64
+          }
+        ],
+        "name": "Harry Styles",
+        "release_date": "2017-05-12",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:1FZKIm3JVDCxTchXDo5jOV"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6KImCVD70vtIoJWnq6nGn3"
+          },
+          "href": "https://api.spotify.com/v1/artists/6KImCVD70vtIoJWnq6nGn3",
+          "id": "6KImCVD70vtIoJWnq6nGn3",
+          "name": "Harry Styles",
+          "type": "artist",
+          "uri": "spotify:artist:6KImCVD70vtIoJWnq6nGn3"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 229813,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USSM11703955"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4B1rpPmQXwj78wk6aIGwwU"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4B1rpPmQXwj78wk6aIGwwU",
+      "id": "4B1rpPmQXwj78wk6aIGwwU",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Two Ghosts",
+      "popularity": 71,
+      "preview_url": "https://p.scdn.co/mp3-preview/6c346013bbf3634e46456b4abace863b2bc402c3?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:4B1rpPmQXwj78wk6aIGwwU"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4EzkuveR9pLvDVFNx6foYD"
+            },
+            "href": "https://api.spotify.com/v1/artists/4EzkuveR9pLvDVFNx6foYD",
+            "id": "4EzkuveR9pLvDVFNx6foYD",
+            "name": "James Bay",
+            "type": "artist",
+            "uri": "spotify:artist:4EzkuveR9pLvDVFNx6foYD"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/08cprzGPjtLDvKMwtQh93R"
+        },
+        "href": "https://api.spotify.com/v1/albums/08cprzGPjtLDvKMwtQh93R",
+        "id": "08cprzGPjtLDvKMwtQh93R",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/0cdc68f8b84378562cd4098e41cb20ac74c400d2",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/c2599432712d9e1126aea0e0b849dc125fa09e3d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/d7b10bb09d7037c6027965b4b0474b27351500ce",
+            "width": 64
+          }
+        ],
+        "name": "Electric Light",
+        "release_date": "2018-05-18",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:08cprzGPjtLDvKMwtQh93R"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4EzkuveR9pLvDVFNx6foYD"
+          },
+          "href": "https://api.spotify.com/v1/artists/4EzkuveR9pLvDVFNx6foYD",
+          "id": "4EzkuveR9pLvDVFNx6foYD",
+          "name": "James Bay",
+          "type": "artist",
+          "uri": "spotify:artist:4EzkuveR9pLvDVFNx6foYD"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 181360,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71801102"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/16XiTUC2rQvb5lmtOm3FYY"
+      },
+      "href": "https://api.spotify.com/v1/tracks/16XiTUC2rQvb5lmtOm3FYY",
+      "id": "16XiTUC2rQvb5lmtOm3FYY",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Us",
+      "popularity": 69,
+      "preview_url": null,
+      "track_number": 5,
+      "type": "track",
+      "uri": "spotify:track:16XiTUC2rQvb5lmtOm3FYY"
     }
   ],
   "seeds": [
@@ -82,41 +234,41 @@
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "id": "66CXWjxzNUsdJxJ2JdwvnR",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
-    },
-    {
-      "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "0EdvGhlC1FkGItLOWQzG4J",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
-    },
-    {
-      "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 1,
       "afterRelinkingSize": 1,
-      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "id": "1HY2Jd0NmPuamShAr6KMms",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+      "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "4VIvfOurcf0vuLRxLkGnIG",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/4VIvfOurcf0vuLRxLkGnIG"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "id": "7gOdHgIoIKoe4i9Tta6qdD",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/7gOdHgIoIKoe4i9Tta6qdD"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "4VMYDCV2IEDYJArk749S6m",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m"
     }
   ]
 }

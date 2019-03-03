@@ -6,506 +6,117 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2RTUTCvo6onsAnheUk3aL9"
+              "spotify": "https://open.spotify.com/artist/6WY7D3jk8zTrHtmkqqo5GI"
             },
-            "href": "https://api.spotify.com/v1/artists/2RTUTCvo6onsAnheUk3aL9",
-            "id": "2RTUTCvo6onsAnheUk3aL9",
-            "name": "3 Doors Down",
+            "href": "https://api.spotify.com/v1/artists/6WY7D3jk8zTrHtmkqqo5GI",
+            "id": "6WY7D3jk8zTrHtmkqqo5GI",
+            "name": "Maren Morris",
             "type": "artist",
-            "uri": "spotify:artist:2RTUTCvo6onsAnheUk3aL9"
+            "uri": "spotify:artist:6WY7D3jk8zTrHtmkqqo5GI"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/72olNArm75vOycSziqIX9Y"
+          "spotify": "https://open.spotify.com/album/4sSXylKcBB3p47VfrBJlfK"
         },
-        "href": "https://api.spotify.com/v1/albums/72olNArm75vOycSziqIX9Y",
-        "id": "72olNArm75vOycSziqIX9Y",
-        "images": [
-          {
-            "height": 635,
-            "url": "https://i.scdn.co/image/1c09b3f029fe28b9c9f67b18473db70f71ecf858",
-            "width": 640
-          },
-          {
-            "height": 297,
-            "url": "https://i.scdn.co/image/5d6c0f018aa22c34229d971a9bf401586eb747ad",
-            "width": 300
-          },
-          {
-            "height": 63,
-            "url": "https://i.scdn.co/image/8b469e96d05cf41c6a4aba93f07502d3c6c0b69f",
-            "width": 64
-          }
-        ],
-        "name": "Away From The Sun",
-        "release_date": "2002-01-01",
-        "release_date_precision": "day",
-        "total_tracks": 0,
-        "type": "album",
-        "uri": "spotify:album:72olNArm75vOycSziqIX9Y"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2RTUTCvo6onsAnheUk3aL9"
-          },
-          "href": "https://api.spotify.com/v1/artists/2RTUTCvo6onsAnheUk3aL9",
-          "id": "2RTUTCvo6onsAnheUk3aL9",
-          "name": "3 Doors Down",
-          "type": "artist",
-          "uri": "spotify:artist:2RTUTCvo6onsAnheUk3aL9"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 260506,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "USUR10200759"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/3WbphvawbMZ8FyqDxYGdSQ"
-      },
-      "href": "https://api.spotify.com/v1/tracks/3WbphvawbMZ8FyqDxYGdSQ",
-      "id": "3WbphvawbMZ8FyqDxYGdSQ",
-      "is_local": false,
-      "is_playable": true,
-      "name": "When I'm Gone",
-      "popularity": 69,
-      "preview_url": null,
-      "track_number": 1,
-      "type": "track",
-      "uri": "spotify:track:3WbphvawbMZ8FyqDxYGdSQ"
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/6MxlVTY6PmY8Nyn16fvxtb"
-            },
-            "href": "https://api.spotify.com/v1/artists/6MxlVTY6PmY8Nyn16fvxtb",
-            "id": "6MxlVTY6PmY8Nyn16fvxtb",
-            "name": "Slightly Stoopid",
-            "type": "artist",
-            "uri": "spotify:artist:6MxlVTY6PmY8Nyn16fvxtb"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/5FWZm9haAG0NhY6WmdS4oW"
-        },
-        "href": "https://api.spotify.com/v1/albums/5FWZm9haAG0NhY6WmdS4oW",
-        "id": "5FWZm9haAG0NhY6WmdS4oW",
+        "href": "https://api.spotify.com/v1/albums/4sSXylKcBB3p47VfrBJlfK",
+        "id": "4sSXylKcBB3p47VfrBJlfK",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/99614be452418aa67f429a4f16c0da7c38003481",
+            "url": "https://i.scdn.co/image/e6f9064c419e9865782d68ea03bd79ee5c1cdff3",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/70fa9db3e76ba2203110ae78667074ab3e9c89fa",
+            "url": "https://i.scdn.co/image/624ab3dd92feb325108f12c6e7a0a234dda4b6ef",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/fe326958674bb30385fa180b57bff3b8bc0d5080",
+            "url": "https://i.scdn.co/image/43f34303fdb5c9eaf9ce34d699224d93ecdba89a",
             "width": 64
           }
         ],
-        "name": "Closer to the Sun",
-        "release_date": "2005",
-        "release_date_precision": "year",
-        "total_tracks": 0,
-        "type": "album",
-        "uri": "spotify:album:5FWZm9haAG0NhY6WmdS4oW"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/6MxlVTY6PmY8Nyn16fvxtb"
-          },
-          "href": "https://api.spotify.com/v1/artists/6MxlVTY6PmY8Nyn16fvxtb",
-          "id": "6MxlVTY6PmY8Nyn16fvxtb",
-          "name": "Slightly Stoopid",
-          "type": "artist",
-          "uri": "spotify:artist:6MxlVTY6PmY8Nyn16fvxtb"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 247720,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "US74G0560408"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/6wxGZ8D8lAuJpocaTAVVyL"
-      },
-      "href": "https://api.spotify.com/v1/tracks/6wxGZ8D8lAuJpocaTAVVyL",
-      "id": "6wxGZ8D8lAuJpocaTAVVyL",
-      "is_local": false,
-      "is_playable": true,
-      "name": "This Joint",
-      "popularity": 56,
-      "preview_url": "https://p.scdn.co/mp3-preview/a3203248c287f37f368d0a9122b7ae7f97b3162b?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 8,
-      "type": "track",
-      "uri": "spotify:track:6wxGZ8D8lAuJpocaTAVVyL"
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2sil8z5kiy4r76CRTXxBCA"
-            },
-            "href": "https://api.spotify.com/v1/artists/2sil8z5kiy4r76CRTXxBCA",
-            "id": "2sil8z5kiy4r76CRTXxBCA",
-            "name": "The Goo Goo Dolls",
-            "type": "artist",
-            "uri": "spotify:artist:2sil8z5kiy4r76CRTXxBCA"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/1JjGR7DtSA3aRpG99KbhxJ"
-        },
-        "href": "https://api.spotify.com/v1/albums/1JjGR7DtSA3aRpG99KbhxJ",
-        "id": "1JjGR7DtSA3aRpG99KbhxJ",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/02cb5d380c31dbf9e04a7ea7661eba4c46d3fe5b",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/b89616e26b161cd44699bd5382278ba7725438a3",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/81924642274d0141854395597fff0a24d45b7747",
-            "width": 64
-          }
-        ],
-        "name": "A Boy Named Goo",
-        "release_date": "1995-03-10",
+        "name": "HERO (Deluxe Edition)",
+        "release_date": "2017-03-17",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:1JjGR7DtSA3aRpG99KbhxJ"
+        "uri": "spotify:album:4sSXylKcBB3p47VfrBJlfK"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2sil8z5kiy4r76CRTXxBCA"
+            "spotify": "https://open.spotify.com/artist/6WY7D3jk8zTrHtmkqqo5GI"
           },
-          "href": "https://api.spotify.com/v1/artists/2sil8z5kiy4r76CRTXxBCA",
-          "id": "2sil8z5kiy4r76CRTXxBCA",
-          "name": "The Goo Goo Dolls",
+          "href": "https://api.spotify.com/v1/artists/6WY7D3jk8zTrHtmkqqo5GI",
+          "id": "6WY7D3jk8zTrHtmkqqo5GI",
+          "name": "Maren Morris",
           "type": "artist",
-          "uri": "spotify:artist:2sil8z5kiy4r76CRTXxBCA"
+          "uri": "spotify:artist:6WY7D3jk8zTrHtmkqqo5GI"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 270000,
+      "duration_ms": 208893,
       "explicit": false,
       "external_ids": {
-        "isrc": "USWB19400126"
+        "isrc": "USG4X1500786"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/1G8jae4jD8mwkXdodqHsBM"
+        "spotify": "https://open.spotify.com/track/4H0vNUFcHPz5lytcLjwqkr"
       },
-      "href": "https://api.spotify.com/v1/tracks/1G8jae4jD8mwkXdodqHsBM",
-      "id": "1G8jae4jD8mwkXdodqHsBM",
+      "href": "https://api.spotify.com/v1/tracks/4H0vNUFcHPz5lytcLjwqkr",
+      "id": "4H0vNUFcHPz5lytcLjwqkr",
       "is_local": false,
       "is_playable": true,
-      "name": "Name",
-      "popularity": 67,
-      "preview_url": "https://p.scdn.co/mp3-preview/4593361b020e02493ad185554f231124f05ab969?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 6,
-      "type": "track",
-      "uri": "spotify:track:1G8jae4jD8mwkXdodqHsBM"
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
-            },
-            "href": "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
-            "id": "2ye2Wgw4gimLv2eAKyk1NB",
-            "name": "Metallica",
-            "type": "artist",
-            "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/5b7HQ04lPT7eGJQ7fmVsjC"
-        },
-        "href": "https://api.spotify.com/v1/albums/5b7HQ04lPT7eGJQ7fmVsjC",
-        "id": "5b7HQ04lPT7eGJQ7fmVsjC",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/aeef48af9a77204f441b41107b9b6b2b8bad490d",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/4b8e43507fb0b298d8014558937862f18c79a104",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/8e25c181e0d09ceffc7b4bb2062e27af80892fff",
-            "width": 64
-          }
-        ],
-        "name": "Garage, Inc.",
-        "release_date": "1998-11-24",
-        "release_date_precision": "day",
-        "total_tracks": 0,
-        "type": "album",
-        "uri": "spotify:album:5b7HQ04lPT7eGJQ7fmVsjC"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
-          },
-          "href": "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
-          "id": "2ye2Wgw4gimLv2eAKyk1NB",
-          "name": "Metallica",
-          "type": "artist",
-          "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 366400,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "USEV19800008"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/7HPhrbgMHV5cUskknWA2oo"
-      },
-      "href": "https://api.spotify.com/v1/tracks/7HPhrbgMHV5cUskknWA2oo",
-      "id": "7HPhrbgMHV5cUskknWA2oo",
-      "is_local": false,
-      "is_playable": true,
-      "linked_from": {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/track/1aXFBWnnPFRKUN7vuIA5h0"
-        },
-        "href": "https://api.spotify.com/v1/tracks/1aXFBWnnPFRKUN7vuIA5h0",
-        "id": "1aXFBWnnPFRKUN7vuIA5h0",
-        "type": "track",
-        "uri": "spotify:track:1aXFBWnnPFRKUN7vuIA5h0"
-      },
-      "name": "Turn The Page",
-      "popularity": 58,
-      "preview_url": "https://p.scdn.co/mp3-preview/28645e9a565ae18a0e544f91f327c8a05aef1125?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 4,
-      "type": "track",
-      "uri": "spotify:track:7HPhrbgMHV5cUskknWA2oo"
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
-            },
-            "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
-            "id": "2WjvvwAX0mdWwq3aFuUdtc",
-            "name": "Rebelution",
-            "type": "artist",
-            "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/581TFVtaXAO5GeU5Ry324y"
-        },
-        "href": "https://api.spotify.com/v1/albums/581TFVtaXAO5GeU5Ry324y",
-        "id": "581TFVtaXAO5GeU5Ry324y",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/1677a63ec563862b53b7a43e4eb0582ac8d98a83",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/58e018578f7e9f553f9041a39b5f4454d64bc0fd",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/f8339cc7c798de4f53c55ad10b03f7fa446fdeed",
-            "width": 64
-          }
-        ],
-        "name": "Courage to Grow",
-        "release_date": "2007-06-08",
-        "release_date_precision": "day",
-        "total_tracks": 0,
-        "type": "album",
-        "uri": "spotify:album:581TFVtaXAO5GeU5Ry324y"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2WjvvwAX0mdWwq3aFuUdtc"
-          },
-          "href": "https://api.spotify.com/v1/artists/2WjvvwAX0mdWwq3aFuUdtc",
-          "id": "2WjvvwAX0mdWwq3aFuUdtc",
-          "name": "Rebelution",
-          "type": "artist",
-          "uri": "spotify:artist:2WjvvwAX0mdWwq3aFuUdtc"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 322760,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "ushm20777317"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/7z3EXUkDIgi6y3L46JSklf"
-      },
-      "href": "https://api.spotify.com/v1/tracks/7z3EXUkDIgi6y3L46JSklf",
-      "id": "7z3EXUkDIgi6y3L46JSklf",
-      "is_local": false,
-      "is_playable": true,
-      "name": "Attention Span",
-      "popularity": 54,
-      "preview_url": "https://p.scdn.co/mp3-preview/1ee952b1295d8e5a3314d7e41f35461b95273f2a?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 6,
-      "type": "track",
-      "uri": "spotify:track:7z3EXUkDIgi6y3L46JSklf"
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb"
-            },
-            "href": "https://api.spotify.com/v1/artists/7FBcuc1gsnv6Y1nwFtNRCb",
-            "id": "7FBcuc1gsnv6Y1nwFtNRCb",
-            "name": "My Chemical Romance",
-            "type": "artist",
-            "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/0FZK97MXMm5mUQ8mtudjuK"
-        },
-        "href": "https://api.spotify.com/v1/albums/0FZK97MXMm5mUQ8mtudjuK",
-        "id": "0FZK97MXMm5mUQ8mtudjuK",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/767fd98433e0d4ad11bc0e8edf605872bcb7a02c",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/b2ee36d1fb5876b80f2803580fe6714fc7978f7c",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/a801c22d36fc32ee7cc787561308274d801075e1",
-            "width": 64
-          }
-        ],
-        "name": "The Black Parade",
-        "release_date": "2006-10-23",
-        "release_date_precision": "day",
-        "total_tracks": 0,
-        "type": "album",
-        "uri": "spotify:album:0FZK97MXMm5mUQ8mtudjuK"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb"
-          },
-          "href": "https://api.spotify.com/v1/artists/7FBcuc1gsnv6Y1nwFtNRCb",
-          "id": "7FBcuc1gsnv6Y1nwFtNRCb",
-          "name": "My Chemical Romance",
-          "type": "artist",
-          "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 142973,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "USRE10602909"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/0GgN4MhR5GKn5IcKN0e0rG"
-      },
-      "href": "https://api.spotify.com/v1/tracks/0GgN4MhR5GKn5IcKN0e0rG",
-      "id": "0GgN4MhR5GKn5IcKN0e0rG",
-      "is_local": false,
-      "is_playable": true,
-      "name": "Cancer",
+      "name": "Rich",
       "popularity": 64,
-      "preview_url": "https://p.scdn.co/mp3-preview/50bf456258ce03bf6a1f95f0d3e56c0d27122841?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 8,
+      "preview_url": "https://p.scdn.co/mp3-preview/a8e201c35908e1a45e8022267f7738e92837c31d?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
       "type": "track",
-      "uri": "spotify:track:0GgN4MhR5GKn5IcKN0e0rG"
+      "uri": "spotify:track:4H0vNUFcHPz5lytcLjwqkr"
     }
   ],
   "seeds": [
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 1,
-      "afterRelinkingSize": 1,
-      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "66CXWjxzNUsdJxJ2JdwvnR",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+      "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR"
     },
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 2,
-      "afterRelinkingSize": 2,
-      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "1HY2Jd0NmPuamShAr6KMms",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
-    },
-    {
-      "initialPoolSize": 250,
-      "afterFilteringSize": 2,
-      "afterRelinkingSize": 2,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 1,
       "afterRelinkingSize": 1,
-      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "id": "4VIvfOurcf0vuLRxLkGnIG",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+      "href": "https://api.spotify.com/v1/artists/4VIvfOurcf0vuLRxLkGnIG"
     },
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 2,
-      "afterRelinkingSize": 2,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "7gOdHgIoIKoe4i9Tta6qdD",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/7gOdHgIoIKoe4i9Tta6qdD"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "4VMYDCV2IEDYJArk749S6m",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m"
     }
   ]
 }

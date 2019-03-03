@@ -6,161 +6,75 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+              "spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
             },
-            "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-            "id": "5eAWCfyUhZtHHtBdNk56l1",
-            "name": "System Of A Down",
+            "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+            "id": "4VMYDCV2IEDYJArk749S6m",
+            "name": "Daddy Yankee",
             "type": "artist",
-            "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+            "uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/6jWde94ln40epKIQCd8XUh"
+          "spotify": "https://open.spotify.com/album/6Hu1DObY1WeKWxHfeaOcFg"
         },
-        "href": "https://api.spotify.com/v1/albums/6jWde94ln40epKIQCd8XUh",
-        "id": "6jWde94ln40epKIQCd8XUh",
+        "href": "https://api.spotify.com/v1/albums/6Hu1DObY1WeKWxHfeaOcFg",
+        "id": "6Hu1DObY1WeKWxHfeaOcFg",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/3b74b1b2557ec74868bea0dd5c99ed081d32b6f4",
+            "url": "https://i.scdn.co/image/7845925adf4df72199f388140a0e84f24c94ebaa",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/2be5b43048eefe03995804863f02f40654469039",
+            "url": "https://i.scdn.co/image/8012e86a4bcbff9f5dab61b419ef5781499193ec",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/de83304fcae7f914c114713fb1297bc6f5b1e902",
+            "url": "https://i.scdn.co/image/3613eb559777843268b0195b4fbbd053c6db4271",
             "width": 64
           }
         ],
-        "name": "Toxicity",
-        "release_date": "2001",
-        "release_date_precision": "year",
-        "total_tracks": 0,
-        "type": "album",
-        "uri": "spotify:album:6jWde94ln40epKIQCd8XUh"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
-          },
-          "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-          "id": "5eAWCfyUhZtHHtBdNk56l1",
-          "name": "System Of A Down",
-          "type": "artist",
-          "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 176200,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "USSM10107259"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/6gCVA6ja6g0foIsWv0RuSZ"
-      },
-      "href": "https://api.spotify.com/v1/tracks/6gCVA6ja6g0foIsWv0RuSZ",
-      "id": "6gCVA6ja6g0foIsWv0RuSZ",
-      "is_local": false,
-      "is_playable": true,
-      "name": "ATWA",
-      "popularity": 64,
-      "preview_url": "https://p.scdn.co/mp3-preview/9746e630b909c775cf024db2e2af52cec8f83d79?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 9,
-      "type": "track",
-      "uri": "spotify:track:6gCVA6ja6g0foIsWv0RuSZ"
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/0vEsuISMWAKNctLlUAhSZC"
-            },
-            "href": "https://api.spotify.com/v1/artists/0vEsuISMWAKNctLlUAhSZC",
-            "id": "0vEsuISMWAKNctLlUAhSZC",
-            "name": "Counting Crows",
-            "type": "artist",
-            "uri": "spotify:artist:0vEsuISMWAKNctLlUAhSZC"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/4OvTGO8pAGafsfSmwEhXyU"
-        },
-        "href": "https://api.spotify.com/v1/albums/4OvTGO8pAGafsfSmwEhXyU",
-        "id": "4OvTGO8pAGafsfSmwEhXyU",
-        "images": [
-          {
-            "height": 635,
-            "url": "https://i.scdn.co/image/d19fadc356942b37cef009b89239a9e965c981a7",
-            "width": 640
-          },
-          {
-            "height": 298,
-            "url": "https://i.scdn.co/image/d6080de155074a6f7a56e9f7237525b729f1c49c",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/42a3d4cb0db7ba9058017ac00b039445f518f159",
-            "width": 64
-          }
-        ],
-        "name": "Hard Candy",
-        "release_date": "2002-01-01",
+        "name": "Prestige",
+        "release_date": "2012-01-01",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:4OvTGO8pAGafsfSmwEhXyU"
+        "uri": "spotify:album:6Hu1DObY1WeKWxHfeaOcFg"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/0vEsuISMWAKNctLlUAhSZC"
+            "spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
           },
-          "href": "https://api.spotify.com/v1/artists/0vEsuISMWAKNctLlUAhSZC",
-          "id": "0vEsuISMWAKNctLlUAhSZC",
-          "name": "Counting Crows",
+          "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+          "id": "4VMYDCV2IEDYJArk749S6m",
+          "name": "Daddy Yankee",
           "type": "artist",
-          "uri": "spotify:artist:0vEsuISMWAKNctLlUAhSZC"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5ILrArfIV0tMURcHJN8Q07"
-          },
-          "href": "https://api.spotify.com/v1/artists/5ILrArfIV0tMURcHJN8Q07",
-          "id": "5ILrArfIV0tMURcHJN8Q07",
-          "name": "Vanessa Carlton",
-          "type": "artist",
-          "uri": "spotify:artist:5ILrArfIV0tMURcHJN8Q07"
+          "uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 225573,
+      "duration_ms": 190310,
       "explicit": false,
       "external_ids": {
-        "isrc": "USIR10211754"
+        "isrc": "USNPD1200077"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/3ZpiT9OFY8BawTHDTi1Pfz"
+        "spotify": "https://open.spotify.com/track/4oROqjxNSBrVxrcSaW77Mc"
       },
-      "href": "https://api.spotify.com/v1/tracks/3ZpiT9OFY8BawTHDTi1Pfz",
-      "id": "3ZpiT9OFY8BawTHDTi1Pfz",
+      "href": "https://api.spotify.com/v1/tracks/4oROqjxNSBrVxrcSaW77Mc",
+      "id": "4oROqjxNSBrVxrcSaW77Mc",
       "is_local": false,
       "is_playable": true,
-      "name": "Big Yellow Taxi",
-      "popularity": 58,
+      "name": "Perros Salvajes",
+      "popularity": 60,
       "preview_url": null,
-      "track_number": 14,
+      "track_number": 1,
       "type": "track",
-      "uri": "spotify:track:3ZpiT9OFY8BawTHDTi1Pfz"
+      "uri": "spotify:track:4oROqjxNSBrVxrcSaW77Mc"
     },
     {
       "album": {
@@ -168,75 +82,75 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/6i0KVTOvm96T55mbp742ks"
+              "spotify": "https://open.spotify.com/artist/6S2OmqARrzebs0tKUEyXyp"
             },
-            "href": "https://api.spotify.com/v1/artists/6i0KVTOvm96T55mbp742ks",
-            "id": "6i0KVTOvm96T55mbp742ks",
-            "name": "Pennywise",
+            "href": "https://api.spotify.com/v1/artists/6S2OmqARrzebs0tKUEyXyp",
+            "id": "6S2OmqARrzebs0tKUEyXyp",
+            "name": "Demi Lovato",
             "type": "artist",
-            "uri": "spotify:artist:6i0KVTOvm96T55mbp742ks"
+            "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/3B6R5NLi3Lg6pyXUdVf32E"
+          "spotify": "https://open.spotify.com/album/7eh0AAzV329H8VmPnjlSXF"
         },
-        "href": "https://api.spotify.com/v1/albums/3B6R5NLi3Lg6pyXUdVf32E",
-        "id": "3B6R5NLi3Lg6pyXUdVf32E",
+        "href": "https://api.spotify.com/v1/albums/7eh0AAzV329H8VmPnjlSXF",
+        "id": "7eh0AAzV329H8VmPnjlSXF",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/0fda35207b1b5f0be2b698d11e078619ba1e58a1",
+            "url": "https://i.scdn.co/image/4107a54f778c7225d7717e78a05d467ee61d9215",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/d0cbe004dee46d5f9c7471fa9d4fbda1d2f5b940",
+            "url": "https://i.scdn.co/image/3dedaef139c968c8900d03e2beb364575956953e",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/d3f3ac0009d0737a18c6b9cfd2634ba65952b706",
+            "url": "https://i.scdn.co/image/5e25601c4443d2953568636bdfa0c951bc2bff76",
             "width": 64
           }
         ],
-        "name": "Full Circle (2005 Remaster)",
-        "release_date": "1997-04-22",
+        "name": "Body Say",
+        "release_date": "2016-07-01",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:3B6R5NLi3Lg6pyXUdVf32E"
+        "uri": "spotify:album:7eh0AAzV329H8VmPnjlSXF"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/6i0KVTOvm96T55mbp742ks"
+            "spotify": "https://open.spotify.com/artist/6S2OmqARrzebs0tKUEyXyp"
           },
-          "href": "https://api.spotify.com/v1/artists/6i0KVTOvm96T55mbp742ks",
-          "id": "6i0KVTOvm96T55mbp742ks",
-          "name": "Pennywise",
+          "href": "https://api.spotify.com/v1/artists/6S2OmqARrzebs0tKUEyXyp",
+          "id": "6S2OmqARrzebs0tKUEyXyp",
+          "name": "Demi Lovato",
           "type": "artist",
-          "uri": "spotify:artist:6i0KVTOvm96T55mbp742ks"
+          "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 204786,
+      "duration_ms": 193893,
       "explicit": false,
       "external_ids": {
-        "isrc": "USEP40419404"
+        "isrc": "USUM71605932"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/1Syl1VDsZ2z1raR131fMCA"
+        "spotify": "https://open.spotify.com/track/7xrA11O07xo57Bbg6p4hck"
       },
-      "href": "https://api.spotify.com/v1/tracks/1Syl1VDsZ2z1raR131fMCA",
-      "id": "1Syl1VDsZ2z1raR131fMCA",
+      "href": "https://api.spotify.com/v1/tracks/7xrA11O07xo57Bbg6p4hck",
+      "id": "7xrA11O07xo57Bbg6p4hck",
       "is_local": false,
       "is_playable": true,
-      "name": "Society",
-      "popularity": 50,
-      "preview_url": "https://p.scdn.co/mp3-preview/f3d6baa7b63668c721645f20a3a4f81f785e4849?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 4,
+      "name": "Body Say",
+      "popularity": 64,
+      "preview_url": null,
+      "track_number": 1,
       "type": "track",
-      "uri": "spotify:track:1Syl1VDsZ2z1raR131fMCA"
+      "uri": "spotify:track:7xrA11O07xo57Bbg6p4hck"
     },
     {
       "album": {
@@ -244,75 +158,303 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/0EdvGhlC1FkGItLOWQzG4J"
+              "spotify": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
             },
-            "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J",
-            "id": "0EdvGhlC1FkGItLOWQzG4J",
-            "name": "Sublime",
+            "href": "https://api.spotify.com/v1/artists/6M2wZ9GZgrQXHCFfjv46we",
+            "id": "6M2wZ9GZgrQXHCFfjv46we",
+            "name": "Dua Lipa",
             "type": "artist",
-            "uri": "spotify:artist:0EdvGhlC1FkGItLOWQzG4J"
+            "uri": "spotify:artist:6M2wZ9GZgrQXHCFfjv46we"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/2TsCsy22SvMckza20MwOUr"
+          "spotify": "https://open.spotify.com/album/27BxsWgarjLePdql0KzOLP"
         },
-        "href": "https://api.spotify.com/v1/albums/2TsCsy22SvMckza20MwOUr",
-        "id": "2TsCsy22SvMckza20MwOUr",
+        "href": "https://api.spotify.com/v1/albums/27BxsWgarjLePdql0KzOLP",
+        "id": "27BxsWgarjLePdql0KzOLP",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/a7d9e250da6f06acd7bcc478cbbe463d09fa3957",
+            "url": "https://i.scdn.co/image/6478d7d377ffbc15c363f6ec6c080fed4650ea76",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/79c90d3a9270089314203ac03071110373e0d5c9",
+            "url": "https://i.scdn.co/image/4dd4071f5094bb048df61d29c88c8c67fe80e8f1",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/bc4ff772a7bebe18040d644ec83b5e1b4d130278",
+            "url": "https://i.scdn.co/image/63a95e1f0f538fb207edbd15be8ab4fcf49a6675",
             "width": 64
           }
         ],
-        "name": "Gold",
-        "release_date": "2005-01-01",
+        "name": "Be The One",
+        "release_date": "2015-10-30",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:2TsCsy22SvMckza20MwOUr"
+        "uri": "spotify:album:27BxsWgarjLePdql0KzOLP"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/0EdvGhlC1FkGItLOWQzG4J"
+            "spotify": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
           },
-          "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J",
-          "id": "0EdvGhlC1FkGItLOWQzG4J",
-          "name": "Sublime",
+          "href": "https://api.spotify.com/v1/artists/6M2wZ9GZgrQXHCFfjv46we",
+          "id": "6M2wZ9GZgrQXHCFfjv46we",
+          "name": "Dua Lipa",
           "type": "artist",
-          "uri": "spotify:artist:0EdvGhlC1FkGItLOWQzG4J"
+          "uri": "spotify:artist:6M2wZ9GZgrQXHCFfjv46we"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 262173,
+      "duration_ms": 202914,
       "explicit": false,
       "external_ids": {
-        "isrc": "USGA19756962"
+        "isrc": "GBAHT1500573"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/5eFa9CCd4iSku8RJ8tfQX9"
+        "spotify": "https://open.spotify.com/track/1ixphys4A3NEXp6MDScfih"
       },
-      "href": "https://api.spotify.com/v1/tracks/5eFa9CCd4iSku8RJ8tfQX9",
-      "id": "5eFa9CCd4iSku8RJ8tfQX9",
+      "href": "https://api.spotify.com/v1/tracks/1ixphys4A3NEXp6MDScfih",
+      "id": "1ixphys4A3NEXp6MDScfih",
       "is_local": false,
       "is_playable": true,
-      "name": "Slow Ride",
-      "popularity": 50,
+      "name": "Be The One",
+      "popularity": 74,
+      "preview_url": "https://p.scdn.co/mp3-preview/1eb421afdfa6d7eec592423070f2f6c1e3dfe466?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:1ixphys4A3NEXp6MDScfih"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3gd8FJtBJtkRxdfbTu19U2"
+            },
+            "href": "https://api.spotify.com/v1/artists/3gd8FJtBJtkRxdfbTu19U2",
+            "id": "3gd8FJtBJtkRxdfbTu19U2",
+            "name": "Mumford & Sons",
+            "type": "artist",
+            "uri": "spotify:artist:3gd8FJtBJtkRxdfbTu19U2"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3thbkS5Ijz41mAbAOat7wc"
+        },
+        "href": "https://api.spotify.com/v1/albums/3thbkS5Ijz41mAbAOat7wc",
+        "id": "3thbkS5Ijz41mAbAOat7wc",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/bcd20f17bc456e9958a4cf1274a3b98c5ef8814c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/44233849f26ae9059de8370ead211e2e70b002b3",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/d8aa29d1826246c25c21aa8a619504cb650d7e29",
+            "width": 64
+          }
+        ],
+        "name": "Delta",
+        "release_date": "2018-11-16",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3thbkS5Ijz41mAbAOat7wc"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3gd8FJtBJtkRxdfbTu19U2"
+          },
+          "href": "https://api.spotify.com/v1/artists/3gd8FJtBJtkRxdfbTu19U2",
+          "id": "3gd8FJtBJtkRxdfbTu19U2",
+          "name": "Mumford & Sons",
+          "type": "artist",
+          "uri": "spotify:artist:3gd8FJtBJtkRxdfbTu19U2"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 240938,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "GBUM71806310"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1xjIDl9Eh5lBMjIRqMnAZL"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1xjIDl9Eh5lBMjIRqMnAZL",
+      "id": "1xjIDl9Eh5lBMjIRqMnAZL",
+      "is_local": false,
+      "is_playable": true,
+      "name": "42",
+      "popularity": 63,
+      "preview_url": null,
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:1xjIDl9Eh5lBMjIRqMnAZL"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1pgDilWYDWLoOgGjf1iHNu"
+            },
+            "href": "https://api.spotify.com/v1/artists/1pgDilWYDWLoOgGjf1iHNu",
+            "id": "1pgDilWYDWLoOgGjf1iHNu",
+            "name": "Zion",
+            "type": "artist",
+            "uri": "spotify:artist:1pgDilWYDWLoOgGjf1iHNu"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5YQYegKc5aoF6xNnGwVU2v"
+        },
+        "href": "https://api.spotify.com/v1/albums/5YQYegKc5aoF6xNnGwVU2v",
+        "id": "5YQYegKc5aoF6xNnGwVU2v",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/074d559184756f87fd9adabe2bde2a128946ccd6",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/d3ba5267c0d11e87795bd6f917fff15972805caa",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/933c48a24ae90bb2252d69ea7ea0713b8cd43f3c",
+            "width": 64
+          }
+        ],
+        "name": "The Perfect Melody",
+        "release_date": "2007-06-05",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5YQYegKc5aoF6xNnGwVU2v"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1pgDilWYDWLoOgGjf1iHNu"
+      },
+          "href": "https://api.spotify.com/v1/artists/1pgDilWYDWLoOgGjf1iHNu",
+          "id": "1pgDilWYDWLoOgGjf1iHNu",
+          "name": "Zion",
+          "type": "artist",
+          "uri": "spotify:artist:1pgDilWYDWLoOgGjf1iHNu"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 304091,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUG10700436"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6DxS2ZRl8G3EagHkovYXA2"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6DxS2ZRl8G3EagHkovYXA2",
+      "id": "6DxS2ZRl8G3EagHkovYXA2",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Zun Da Da",
+      "popularity": 63,
+      "preview_url": "https://p.scdn.co/mp3-preview/b36723d9d2f11513c9beac9368ba3d0521df7bad?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:6DxS2ZRl8G3EagHkovYXA2"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5KNNVgR6LBIABRIomyCwKJ"
+            },
+            "href": "https://api.spotify.com/v1/artists/5KNNVgR6LBIABRIomyCwKJ",
+            "id": "5KNNVgR6LBIABRIomyCwKJ",
+            "name": "Dermot Kennedy",
+            "type": "artist",
+            "uri": "spotify:artist:5KNNVgR6LBIABRIomyCwKJ"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0zIDCWV5CF01beePYqSPub"
+        },
+        "href": "https://api.spotify.com/v1/albums/0zIDCWV5CF01beePYqSPub",
+        "id": "0zIDCWV5CF01beePYqSPub",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/f3eda5df1723b13f0846926f7e480e72013bf1ef",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/217be3002287629015501c44e2c9a1382aa252d5",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/974957635b254575fbeed957b2932953fe49e2b2",
+            "width": 64
+          }
+        ],
+        "name": "Spotify Singles",
+        "release_date": "2018-08-08",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:0zIDCWV5CF01beePYqSPub"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5KNNVgR6LBIABRIomyCwKJ"
+          },
+          "href": "https://api.spotify.com/v1/artists/5KNNVgR6LBIABRIomyCwKJ",
+          "id": "5KNNVgR6LBIABRIomyCwKJ",
+          "name": "Dermot Kennedy",
+          "type": "artist",
+          "uri": "spotify:artist:5KNNVgR6LBIABRIomyCwKJ"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 224147,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUG11801608"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6S4vdF9ENvX8WN8PvJ6soA"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6S4vdF9ENvX8WN8PvJ6soA",
+      "id": "6S4vdF9ENvX8WN8PvJ6soA",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Heartless - Recorded At RAK Studios, London",
+      "popularity": 66,
       "preview_url": null,
       "track_number": 2,
       "type": "track",
-      "uri": "spotify:track:5eFa9CCd4iSku8RJ8tfQX9"
+      "uri": "spotify:track:6S4vdF9ENvX8WN8PvJ6soA"
     },
     {
       "album": {
@@ -320,75 +462,551 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+              "spotify": "https://open.spotify.com/artist/1wZtkThiXbVNtj6hee6dz9"
             },
-            "href": "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
-            "id": "3jOstUTkEu2JkjvRdBA5Gu",
-            "name": "Weezer",
+            "href": "https://api.spotify.com/v1/artists/1wZtkThiXbVNtj6hee6dz9",
+            "id": "1wZtkThiXbVNtj6hee6dz9",
+            "name": "Wisin & Yandel",
             "type": "artist",
-            "uri": "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+            "uri": "spotify:artist:1wZtkThiXbVNtj6hee6dz9"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/4D8A8M0NJjEdQhusawyeDz"
+          "spotify": "https://open.spotify.com/album/4zbMionGv9W33xjQfoMyuo"
         },
-        "href": "https://api.spotify.com/v1/albums/4D8A8M0NJjEdQhusawyeDz",
-        "id": "4D8A8M0NJjEdQhusawyeDz",
+        "href": "https://api.spotify.com/v1/albums/4zbMionGv9W33xjQfoMyuo",
+        "id": "4zbMionGv9W33xjQfoMyuo",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/4cb2d2eec05c76ed934e44cb070e44d987289594",
+            "url": "https://i.scdn.co/image/24deaf45201e7b41768a0d93f001a53ad8a13bbb",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/825eb9d45255e1e0a58796b382e57002f94c2816",
+            "url": "https://i.scdn.co/image/4f6bdd649e2326c9a52b261ef2611a5da063aebf",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/8cae141c739e33a377b5b6442dd6a30e7c33fe0f",
+            "url": "https://i.scdn.co/image/40251d7eb86b019563100085f8a837bd61892d49",
             "width": 64
           }
         ],
-        "name": "Make Believe",
-        "release_date": "2005-05-10",
+        "name": "Los Campeones del Pueblo \"The Big Leagues\"",
+        "release_date": "2018-12-14",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:4D8A8M0NJjEdQhusawyeDz"
+        "uri": "spotify:album:4zbMionGv9W33xjQfoMyuo"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+            "spotify": "https://open.spotify.com/artist/1wZtkThiXbVNtj6hee6dz9"
           },
-          "href": "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
-          "id": "3jOstUTkEu2JkjvRdBA5Gu",
-          "name": "Weezer",
+          "href": "https://api.spotify.com/v1/artists/1wZtkThiXbVNtj6hee6dz9",
+          "id": "1wZtkThiXbVNtj6hee6dz9",
+          "name": "Wisin & Yandel",
           "type": "artist",
-          "uri": "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+          "uri": "spotify:artist:1wZtkThiXbVNtj6hee6dz9"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 226560,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USSD11800387"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0RdUq32U3zXzz2s9510RV2"
+      },
+      "href": "https://api.spotify.com/v1/tracks/0RdUq32U3zXzz2s9510RV2",
+      "id": "0RdUq32U3zXzz2s9510RV2",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Tú Tienes",
+      "popularity": 60,
+      "preview_url": "https://p.scdn.co/mp3-preview/7c54fa29a6a9863b7396356eb5c53e19accbef3d?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:0RdUq32U3zXzz2s9510RV2"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
+            },
+            "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+            "id": "4VMYDCV2IEDYJArk749S6m",
+            "name": "Daddy Yankee",
+            "type": "artist",
+            "uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0oYAyanXTsJJpwd74T7VrR"
+        },
+        "href": "https://api.spotify.com/v1/albums/0oYAyanXTsJJpwd74T7VrR",
+        "id": "0oYAyanXTsJJpwd74T7VrR",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/b89188050ef9ad6242a8d7551a8d02b5c6b22c33",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/0cdc3a107d449228d1b28cd3ff7808cd4df15715",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/4ea82bfb64f86fa14adffd6c063f53438e91dfec",
+            "width": 64
+          }
+        ],
+        "name": "Yo Contra Tí",
+        "release_date": "2017-09-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:0oYAyanXTsJJpwd74T7VrR"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
+          },
+          "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+          "id": "4VMYDCV2IEDYJArk749S6m",
+          "name": "Daddy Yankee",
+          "type": "artist",
+          "uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1Wxz2tqJPKjkWnwh6SyX8U"
+          },
+          "href": "https://api.spotify.com/v1/artists/1Wxz2tqJPKjkWnwh6SyX8U",
+          "id": "1Wxz2tqJPKjkWnwh6SyX8U",
+          "name": "Orquesta Sinfónica de Puerto Rico",
+          "type": "artist",
+          "uri": "spotify:artist:1Wxz2tqJPKjkWnwh6SyX8U"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 231614,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "US2BU1700108"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6VI4CFQlNXFQukGgLxfNZx"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6VI4CFQlNXFQukGgLxfNZx",
+      "id": "6VI4CFQlNXFQukGgLxfNZx",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Yo Contra Tí",
+      "popularity": 50,
+      "preview_url": "https://p.scdn.co/mp3-preview/955d37cf77310ef399e4d32168cb2cfe985a1a43?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:6VI4CFQlNXFQukGgLxfNZx"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6S2OmqARrzebs0tKUEyXyp"
+            },
+            "href": "https://api.spotify.com/v1/artists/6S2OmqARrzebs0tKUEyXyp",
+            "id": "6S2OmqARrzebs0tKUEyXyp",
+            "name": "Demi Lovato",
+            "type": "artist",
+            "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6Kssm2LosQ0WyLukFZkEG5"
+        },
+        "href": "https://api.spotify.com/v1/albums/6Kssm2LosQ0WyLukFZkEG5",
+        "id": "6Kssm2LosQ0WyLukFZkEG5",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/4b7d658a10685e325c7bcea68f3fc1f04386c05d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/d573fae6c53a4cdb60543ef4bb8acd0539ffa0bd",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/8a0bf8914487599d7c3035fd1941627cb90ce48d",
+            "width": 64
+          }
+        ],
+        "name": "Demi",
+        "release_date": "2013-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:6Kssm2LosQ0WyLukFZkEG5"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6S2OmqARrzebs0tKUEyXyp"
+          },
+          "href": "https://api.spotify.com/v1/artists/6S2OmqARrzebs0tKUEyXyp",
+          "id": "6S2OmqARrzebs0tKUEyXyp",
+          "name": "Demi Lovato",
+          "type": "artist",
+          "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
         }
       ],
       "disc_number": 1,
       "duration_ms": 196093,
       "explicit": false,
       "external_ids": {
-        "isrc": "USIR10500448"
+        "isrc": "USHR11334425"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/1yKu2MhpwzDXXH2tzG6xoa"
+        "spotify": "https://open.spotify.com/track/6SjCa7LhEpPNiCxe3bLln4"
       },
-      "href": "https://api.spotify.com/v1/tracks/1yKu2MhpwzDXXH2tzG6xoa",
-      "id": "1yKu2MhpwzDXXH2tzG6xoa",
+      "href": "https://api.spotify.com/v1/tracks/6SjCa7LhEpPNiCxe3bLln4",
+      "id": "6SjCa7LhEpPNiCxe3bLln4",
       "is_local": false,
       "is_playable": true,
-      "name": "Beverly Hills",
-      "popularity": 67,
+      "name": "Made In The USA",
+      "popularity": 59,
+      "preview_url": null,
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:6SjCa7LhEpPNiCxe3bLln4"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7n2wHs1TKAczGzO7Dd2rGr"
+            },
+            "href": "https://api.spotify.com/v1/artists/7n2wHs1TKAczGzO7Dd2rGr",
+            "id": "7n2wHs1TKAczGzO7Dd2rGr",
+            "name": "Shawn Mendes",
+            "type": "artist",
+            "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2VP96XdMOKTXefI8Nui23s"
+        },
+        "href": "https://api.spotify.com/v1/albums/2VP96XdMOKTXefI8Nui23s",
+        "id": "2VP96XdMOKTXefI8Nui23s",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/75c02b42da899fc03b8a3cbfb8686a3920385525",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/78eea1f0b06dcb4be755df52cba4498add46be10",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/2d0511fca7dd3030b8b52c1c77224c5ee7d33580",
+            "width": 64
+          }
+        ],
+        "name": "Shawn Mendes",
+        "release_date": "2018-05-25",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:2VP96XdMOKTXefI8Nui23s"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7n2wHs1TKAczGzO7Dd2rGr"
+          },
+          "href": "https://api.spotify.com/v1/artists/7n2wHs1TKAczGzO7Dd2rGr",
+          "id": "7n2wHs1TKAczGzO7Dd2rGr",
+          "name": "Shawn Mendes",
+          "type": "artist",
+          "uri": "spotify:artist:7n2wHs1TKAczGzO7Dd2rGr"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 200600,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71804952"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/376Gg7Oxo5C5jUWDWpVXeI"
+      },
+      "href": "https://api.spotify.com/v1/tracks/376Gg7Oxo5C5jUWDWpVXeI",
+      "id": "376Gg7Oxo5C5jUWDWpVXeI",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Where Were You In The Morning?",
+      "popularity": 77,
+      "preview_url": null,
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:376Gg7Oxo5C5jUWDWpVXeI"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/70kkdajctXSbqSMJbQO424"
+            },
+            "href": "https://api.spotify.com/v1/artists/70kkdajctXSbqSMJbQO424",
+            "id": "70kkdajctXSbqSMJbQO424",
+            "name": "Kacey Musgraves",
+            "type": "artist",
+            "uri": "spotify:artist:70kkdajctXSbqSMJbQO424"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/7f6xPqyaolTiziKf5R5Z0c"
+        },
+        "href": "https://api.spotify.com/v1/albums/7f6xPqyaolTiziKf5R5Z0c",
+        "id": "7f6xPqyaolTiziKf5R5Z0c",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/74001b62726f25b6086a6f3626ba6478917c5d20",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/90d3e685558fa4c4ec88380616033ea32a1f3de5",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/5178be1a7f89b34d2dd197053d59a781d14543da",
+            "width": 64
+          }
+        ],
+        "name": "Golden Hour",
+        "release_date": "2018-03-30",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:7f6xPqyaolTiziKf5R5Z0c"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/70kkdajctXSbqSMJbQO424"
+          },
+          "href": "https://api.spotify.com/v1/artists/70kkdajctXSbqSMJbQO424",
+          "id": "70kkdajctXSbqSMJbQO424",
+          "name": "Kacey Musgraves",
+          "type": "artist",
+          "uri": "spotify:artist:70kkdajctXSbqSMJbQO424"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 198453,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71800138"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0pMfPzdRiPAoSM9yWF4OcT"
+      },
+      "href": "https://api.spotify.com/v1/tracks/0pMfPzdRiPAoSM9yWF4OcT",
+      "id": "0pMfPzdRiPAoSM9yWF4OcT",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Golden Hour",
+      "popularity": 71,
+      "preview_url": null,
+      "track_number": 12,
+      "type": "track",
+      "uri": "spotify:track:0pMfPzdRiPAoSM9yWF4OcT"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/33ScadVnbm2X8kkUqOkC6Z"
+            },
+            "href": "https://api.spotify.com/v1/artists/33ScadVnbm2X8kkUqOkC6Z",
+            "id": "33ScadVnbm2X8kkUqOkC6Z",
+            "name": "Don Omar",
+            "type": "artist",
+            "uri": "spotify:artist:33ScadVnbm2X8kkUqOkC6Z"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6mGDfbDErYIJsmSewvccWm"
+        },
+        "href": "https://api.spotify.com/v1/albums/6mGDfbDErYIJsmSewvccWm",
+        "id": "6mGDfbDErYIJsmSewvccWm",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/499ae65844549ec26844c9d48e5690d8054c2190",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/36847e33164681469e58216189107326b6a7d55c",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/8954e1a007c5a8325550657d869dfd0f6b53635f",
+            "width": 64
+          }
+        ],
+        "name": "Meet The Orphans",
+        "release_date": "2010-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:6mGDfbDErYIJsmSewvccWm"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/33ScadVnbm2X8kkUqOkC6Z"
+          },
+          "href": "https://api.spotify.com/v1/artists/33ScadVnbm2X8kkUqOkC6Z",
+          "id": "33ScadVnbm2X8kkUqOkC6Z",
+          "name": "Don Omar",
+          "type": "artist",
+          "uri": "spotify:artist:33ScadVnbm2X8kkUqOkC6Z"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5bv5RplEOwdCvhq0EILh9E"
+          },
+          "href": "https://api.spotify.com/v1/artists/5bv5RplEOwdCvhq0EILh9E",
+          "id": "5bv5RplEOwdCvhq0EILh9E",
+          "name": "Lucenzo",
+          "type": "artist",
+          "uri": "spotify:artist:5bv5RplEOwdCvhq0EILh9E"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 198773,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71020778"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2a1o6ZejUi8U3wzzOtCOYw"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2a1o6ZejUi8U3wzzOtCOYw",
+      "id": "2a1o6ZejUi8U3wzzOtCOYw",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Danza Kuduro",
+      "popularity": 74,
+      "preview_url": null,
+      "track_number": 12,
+      "type": "track",
+      "uri": "spotify:track:2a1o6ZejUi8U3wzzOtCOYw"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
+            },
+            "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+            "id": "4VMYDCV2IEDYJArk749S6m",
+            "name": "Daddy Yankee",
+            "type": "artist",
+            "uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0j74hxgbgc4THmz7rasxgn"
+        },
+        "href": "https://api.spotify.com/v1/albums/0j74hxgbgc4THmz7rasxgn",
+        "id": "0j74hxgbgc4THmz7rasxgn",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/5fda52a7db0b1a847277841b4af10c1a21a7a8d8",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/e9f7b2469ed14f69f23dea315ab1b8d8b6bc18c3",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/53a4e407edd1821b97c8adf18a3142413060f1c9",
+            "width": 64
+          }
+        ],
+        "name": "Shaky Shaky",
+        "release_date": "2016-04-08",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:0j74hxgbgc4THmz7rasxgn"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4VMYDCV2IEDYJArk749S6m"
+          },
+          "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m",
+          "id": "4VMYDCV2IEDYJArk749S6m",
+          "name": "Daddy Yankee",
+          "type": "artist",
+          "uri": "spotify:artist:4VMYDCV2IEDYJArk749S6m"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 234320,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "US2BU1600020"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7gcMKL3lnDxsp4bIXyv6Zk"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7gcMKL3lnDxsp4bIXyv6Zk",
+      "id": "7gcMKL3lnDxsp4bIXyv6Zk",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Shaky Shaky",
+      "popularity": 69,
       "preview_url": null,
       "track_number": 1,
       "type": "track",
-      "uri": "spotify:track:1yKu2MhpwzDXXH2tzG6xoa"
+      "uri": "spotify:track:7gcMKL3lnDxsp4bIXyv6Zk"
     },
     {
       "album": {
@@ -396,75 +1014,191 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/3XXrhkZKSGd3CUJQFnx5tQ"
+              "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
             },
-            "href": "https://api.spotify.com/v1/artists/3XXrhkZKSGd3CUJQFnx5tQ",
-            "id": "3XXrhkZKSGd3CUJQFnx5tQ",
-            "name": "Sublime With Rome",
+            "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+            "id": "0LyfQWJT6nXafLPZqxe9Of",
+            "name": "Various Artists",
             "type": "artist",
-            "uri": "spotify:artist:3XXrhkZKSGd3CUJQFnx5tQ"
+            "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/6248uTiCGShjuOPDeUkDU1"
+          "spotify": "https://open.spotify.com/album/0LhDyJXelg31FKLW5GDcKi"
         },
-        "href": "https://api.spotify.com/v1/albums/6248uTiCGShjuOPDeUkDU1",
-        "id": "6248uTiCGShjuOPDeUkDU1",
+        "href": "https://api.spotify.com/v1/albums/0LhDyJXelg31FKLW5GDcKi",
+        "id": "0LhDyJXelg31FKLW5GDcKi",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/38a35fa3a250058b2c92ee68b0cae7550a5af698",
+            "url": "https://i.scdn.co/image/09b6b9c97794250f1972e81fbbf70d5b06f4347a",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/fd9f74a3a9b28f3c468d8ae0321b6b5261ad907e",
+            "url": "https://i.scdn.co/image/c447247f137a94ec296d6e486e2c48129c9401e8",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/12a91df7a5758d4b6ee965787c47ed14635a103f",
+            "url": "https://i.scdn.co/image/5dd77af1df468489e1d2e8387999e4335a78242d",
             "width": 64
           }
         ],
-        "name": "Wicked Heart",
-        "release_date": "2018-07-27",
+        "name": "Dear Evan Hansen (Original Broadway Cast Recording)",
+        "release_date": "2017-02-03",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:6248uTiCGShjuOPDeUkDU1"
+        "uri": "spotify:album:0LhDyJXelg31FKLW5GDcKi"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3XXrhkZKSGd3CUJQFnx5tQ"
+            "spotify": "https://open.spotify.com/artist/6qGkLCMQkNGOJ079iEcC5k"
           },
-          "href": "https://api.spotify.com/v1/artists/3XXrhkZKSGd3CUJQFnx5tQ",
-          "id": "3XXrhkZKSGd3CUJQFnx5tQ",
-          "name": "Sublime With Rome",
+          "href": "https://api.spotify.com/v1/artists/6qGkLCMQkNGOJ079iEcC5k",
+          "id": "6qGkLCMQkNGOJ079iEcC5k",
+          "name": "Ben Platt",
           "type": "artist",
-          "uri": "spotify:artist:3XXrhkZKSGd3CUJQFnx5tQ"
+          "uri": "spotify:artist:6qGkLCMQkNGOJ079iEcC5k"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/31Rv7Yk0rBrYdQ0ELNZDaR"
+          },
+          "href": "https://api.spotify.com/v1/artists/31Rv7Yk0rBrYdQ0ELNZDaR",
+          "id": "31Rv7Yk0rBrYdQ0ELNZDaR",
+          "name": "Kristolyn Lloyd",
+          "type": "artist",
+          "uri": "spotify:artist:31Rv7Yk0rBrYdQ0ELNZDaR"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2FYB9zfwe2ayj4zfNeh466"
+          },
+          "href": "https://api.spotify.com/v1/artists/2FYB9zfwe2ayj4zfNeh466",
+          "id": "2FYB9zfwe2ayj4zfNeh466",
+          "name": "Will Roland",
+          "type": "artist",
+          "uri": "spotify:artist:2FYB9zfwe2ayj4zfNeh466"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5hqM93qFRmwRv3QGrLO0jK"
+          },
+          "href": "https://api.spotify.com/v1/artists/5hqM93qFRmwRv3QGrLO0jK",
+          "id": "5hqM93qFRmwRv3QGrLO0jK",
+          "name": "Laura Dreyfuss",
+          "type": "artist",
+          "uri": "spotify:artist:5hqM93qFRmwRv3QGrLO0jK"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5bi4lyuj5ZrayYKlibl9ij"
+          },
+          "href": "https://api.spotify.com/v1/artists/5bi4lyuj5ZrayYKlibl9ij",
+          "id": "5bi4lyuj5ZrayYKlibl9ij",
+          "name": "Original Broadway Cast of Dear Evan Hansen",
+          "type": "artist",
+          "uri": "spotify:artist:5bi4lyuj5ZrayYKlibl9ij"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 198320,
+      "duration_ms": 360906,
       "explicit": false,
       "external_ids": {
-        "isrc": "QZ7G41800015"
+        "isrc": "USAT21603427"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/6dqLKzSb6PBqMHAs8PhySK"
+        "spotify": "https://open.spotify.com/track/1H7Zqkq54andtaSSnLRrfp"
       },
-      "href": "https://api.spotify.com/v1/tracks/6dqLKzSb6PBqMHAs8PhySK",
-      "id": "6dqLKzSb6PBqMHAs8PhySK",
+      "href": "https://api.spotify.com/v1/tracks/1H7Zqkq54andtaSSnLRrfp",
+      "id": "1H7Zqkq54andtaSSnLRrfp",
       "is_local": false,
       "is_playable": true,
-      "name": "Wicked Heart",
-      "popularity": 53,
-      "preview_url": "https://p.scdn.co/mp3-preview/9b4ba999227bef14050526ae796d035e08e3cd61?cid=774b29d4f13844c495f206cafdad9c86",
+      "name": "You Will Be Found",
+      "popularity": 66,
+      "preview_url": "https://p.scdn.co/mp3-preview/e5f0e8ff34d61ef2f70786c6ab7f86629d2aecb8?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 8,
+      "type": "track",
+      "uri": "spotify:track:1H7Zqkq54andtaSSnLRrfp"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2jnIB6XdLvnJUeNTy5A0J2"
+            },
+            "href": "https://api.spotify.com/v1/artists/2jnIB6XdLvnJUeNTy5A0J2",
+            "id": "2jnIB6XdLvnJUeNTy5A0J2",
+            "name": "Why Don't We",
+            "type": "artist",
+            "uri": "spotify:artist:2jnIB6XdLvnJUeNTy5A0J2"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2qIbHfs93z6eDwGoAdCkXA"
+        },
+        "href": "https://api.spotify.com/v1/albums/2qIbHfs93z6eDwGoAdCkXA",
+        "id": "2qIbHfs93z6eDwGoAdCkXA",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab5c1f4c3605dba768451bfe40c2a98a796bdee3",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/f69d919b73a3c4de6c4410a74f6a69c6d07a1e28",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/0372b0ac77e8c134842a0966d0e1495b70ba87b8",
+            "width": 64
+          }
+        ],
+        "name": "8 Letters",
+        "release_date": "2018-08-31",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:2qIbHfs93z6eDwGoAdCkXA"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2jnIB6XdLvnJUeNTy5A0J2"
+          },
+          "href": "https://api.spotify.com/v1/artists/2jnIB6XdLvnJUeNTy5A0J2",
+          "id": "2jnIB6XdLvnJUeNTy5A0J2",
+          "name": "Why Don't We",
+          "type": "artist",
+          "uri": "spotify:artist:2jnIB6XdLvnJUeNTy5A0J2"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 190026,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USAT21810389"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4zRZAmBQP8vhNPf9i9opXt"
+      },
+      "href": "https://api.spotify.com/v1/tracks/4zRZAmBQP8vhNPf9i9opXt",
+      "id": "4zRZAmBQP8vhNPf9i9opXt",
+      "is_local": false,
+      "is_playable": true,
+      "name": "8 Letters",
+      "popularity": 81,
+      "preview_url": "https://p.scdn.co/mp3-preview/16d35ca0255daafe4816e8ca55b0b56994bb01ef?cid=774b29d4f13844c495f206cafdad9c86",
       "track_number": 1,
       "type": "track",
-      "uri": "spotify:track:6dqLKzSb6PBqMHAs8PhySK"
+      "uri": "spotify:track:4zRZAmBQP8vhNPf9i9opXt"
     },
     {
       "album": {
@@ -472,151 +1206,75 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+              "spotify": "https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5"
             },
-            "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-            "id": "5eAWCfyUhZtHHtBdNk56l1",
-            "name": "System Of A Down",
+            "href": "https://api.spotify.com/v1/artists/1vyhD5VmyZ7KMfW5gqLgo5",
+            "id": "1vyhD5VmyZ7KMfW5gqLgo5",
+            "name": "J Balvin",
             "type": "artist",
-            "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+            "uri": "spotify:artist:1vyhD5VmyZ7KMfW5gqLgo5"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/3QxX3NbWyLlLG6lP1xveL3"
+          "spotify": "https://open.spotify.com/album/5kprdYds6oZb4iSldfflOT"
         },
-        "href": "https://api.spotify.com/v1/albums/3QxX3NbWyLlLG6lP1xveL3",
-        "id": "3QxX3NbWyLlLG6lP1xveL3",
+        "href": "https://api.spotify.com/v1/albums/5kprdYds6oZb4iSldfflOT",
+        "id": "5kprdYds6oZb4iSldfflOT",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/2b4d88d7d8c2ff42f431d5d6d21caa6908ae8a64",
-            "width": 637
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/99a8c1edc099c4f380bf3bbd3dce585cae12b4fa",
-            "width": 299
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/0eb5aff3b4585b958ff059cd8856ccd4b76afe6c",
-            "width": 64
-          }
-        ],
-        "name": "Hypnotize",
-        "release_date": "2005-11-22",
-        "release_date_precision": "day",
-        "total_tracks": 0,
-        "type": "album",
-        "uri": "spotify:album:3QxX3NbWyLlLG6lP1xveL3"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
-          },
-          "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-          "id": "5eAWCfyUhZtHHtBdNk56l1",
-          "name": "System Of A Down",
-          "type": "artist",
-          "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 175266,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "USSM10505336"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/0dgCqrI14Oe3nqGLS3qbzJ"
-      },
-      "href": "https://api.spotify.com/v1/tracks/0dgCqrI14Oe3nqGLS3qbzJ",
-      "id": "0dgCqrI14Oe3nqGLS3qbzJ",
-      "is_local": false,
-      "is_playable": true,
-      "name": "U-Fig",
-      "popularity": 52,
-      "preview_url": "https://p.scdn.co/mp3-preview/563b0f9e0311bd25fc65b07a6d088a9c7aa2d144?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 7,
-      "type": "track",
-      "uri": "spotify:track:0dgCqrI14Oe3nqGLS3qbzJ"
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/6MxlVTY6PmY8Nyn16fvxtb"
-            },
-            "href": "https://api.spotify.com/v1/artists/6MxlVTY6PmY8Nyn16fvxtb",
-            "id": "6MxlVTY6PmY8Nyn16fvxtb",
-            "name": "Slightly Stoopid",
-            "type": "artist",
-            "uri": "spotify:artist:6MxlVTY6PmY8Nyn16fvxtb"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/0EI8YjnyrsrQPNKIDfCY2n"
-        },
-        "href": "https://api.spotify.com/v1/albums/0EI8YjnyrsrQPNKIDfCY2n",
-        "id": "0EI8YjnyrsrQPNKIDfCY2n",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/4ce580cb3ebec9c709f16d1883a183374b8107c2",
+            "url": "https://i.scdn.co/image/cc56f48efc4285caaa8e895337846f5174bf3989",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/6439df6230349d6c8984eebbcefaf5c18e6d215e",
+            "url": "https://i.scdn.co/image/7fc77d0d78cee3538bf6843cf01463d5d7b59acb",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/1b25597521e90734db7c914f667082ebc9e4a15f",
+            "url": "https://i.scdn.co/image/5cbecd0922be98dad9bbb23fc1ff46438a671102",
             "width": 64
           }
         ],
-        "name": "Meanwhile...Back at the Lab",
-        "release_date": "2015-06-29",
+        "name": "Vibras",
+        "release_date": "2018-05-25",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:0EI8YjnyrsrQPNKIDfCY2n"
+        "uri": "spotify:album:5kprdYds6oZb4iSldfflOT"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/6MxlVTY6PmY8Nyn16fvxtb"
+            "spotify": "https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5"
           },
-          "href": "https://api.spotify.com/v1/artists/6MxlVTY6PmY8Nyn16fvxtb",
-          "id": "6MxlVTY6PmY8Nyn16fvxtb",
-          "name": "Slightly Stoopid",
+          "href": "https://api.spotify.com/v1/artists/1vyhD5VmyZ7KMfW5gqLgo5",
+          "id": "1vyhD5VmyZ7KMfW5gqLgo5",
+          "name": "J Balvin",
           "type": "artist",
-          "uri": "spotify:artist:6MxlVTY6PmY8Nyn16fvxtb"
+          "uri": "spotify:artist:1vyhD5VmyZ7KMfW5gqLgo5"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 194693,
+      "duration_ms": 254720,
       "explicit": false,
       "external_ids": {
-        "isrc": "USME31500131"
+        "isrc": "USUM71802359"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/4wavvLf7CTGjyYL33GQ04T"
+        "spotify": "https://open.spotify.com/track/2yBWnRKj0Zx7AF1kufajvW"
       },
-      "href": "https://api.spotify.com/v1/tracks/4wavvLf7CTGjyYL33GQ04T",
-      "id": "4wavvLf7CTGjyYL33GQ04T",
+      "href": "https://api.spotify.com/v1/tracks/2yBWnRKj0Zx7AF1kufajvW",
+      "id": "2yBWnRKj0Zx7AF1kufajvW",
       "is_local": false,
       "is_playable": true,
-      "name": "The Prophet",
-      "popularity": 52,
-      "preview_url": "https://p.scdn.co/mp3-preview/118fb5e6dd8c01d8e123155ee839b42bfd540ab3?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 3,
+      "name": "Ahora",
+      "popularity": 67,
+      "preview_url": null,
+      "track_number": 6,
       "type": "track",
-      "uri": "spotify:track:4wavvLf7CTGjyYL33GQ04T"
+      "uri": "spotify:track:2yBWnRKj0Zx7AF1kufajvW"
     },
     {
       "album": {
@@ -624,75 +1282,84 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/6GkJh85o22LfD2vgL9DP6f"
+              "spotify": "https://open.spotify.com/artist/0X2BH1fck6amBIoJhDVmmJ"
             },
-            "href": "https://api.spotify.com/v1/artists/6GkJh85o22LfD2vgL9DP6f",
-            "id": "6GkJh85o22LfD2vgL9DP6f",
-            "name": "Dirty Heads",
+            "href": "https://api.spotify.com/v1/artists/0X2BH1fck6amBIoJhDVmmJ",
+            "id": "0X2BH1fck6amBIoJhDVmmJ",
+            "name": "Ellie Goulding",
             "type": "artist",
-            "uri": "spotify:artist:6GkJh85o22LfD2vgL9DP6f"
+            "uri": "spotify:artist:0X2BH1fck6amBIoJhDVmmJ"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/4BPGOyXZzwewhnpOiikI4M"
+          "spotify": "https://open.spotify.com/album/3KVeczHxWg5YFKb0gS62f2"
         },
-        "href": "https://api.spotify.com/v1/albums/4BPGOyXZzwewhnpOiikI4M",
-        "id": "4BPGOyXZzwewhnpOiikI4M",
+        "href": "https://api.spotify.com/v1/albums/3KVeczHxWg5YFKb0gS62f2",
+        "id": "3KVeczHxWg5YFKb0gS62f2",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/1284f02d16b0eb7b7663248b3f3984e9333fa81b",
+            "url": "https://i.scdn.co/image/e48198ceb8506fdeb77417193d00a9727da43b96",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/f06e41a32c117a39e2f1f5701d1d8d0350bd0f7f",
+            "url": "https://i.scdn.co/image/192af9014fafc6ed4aa51110278af9ec5089071f",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/544cc8130e25c170f1ec41c0e31bb339d15d8ab0",
+            "url": "https://i.scdn.co/image/5f1ba9360ad717366fde69d690be79009f5a91f1",
             "width": 64
           }
         ],
-        "name": "Home | Phantoms of Summer: The Acoustic Sessions",
-        "release_date": "2013-10-29",
+        "name": "Halcyon Days",
+        "release_date": "2013-01-01",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:4BPGOyXZzwewhnpOiikI4M"
+        "uri": "spotify:album:3KVeczHxWg5YFKb0gS62f2"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/6GkJh85o22LfD2vgL9DP6f"
+            "spotify": "https://open.spotify.com/artist/0X2BH1fck6amBIoJhDVmmJ"
           },
-          "href": "https://api.spotify.com/v1/artists/6GkJh85o22LfD2vgL9DP6f",
-          "id": "6GkJh85o22LfD2vgL9DP6f",
-          "name": "Dirty Heads",
+          "href": "https://api.spotify.com/v1/artists/0X2BH1fck6amBIoJhDVmmJ",
+          "id": "0X2BH1fck6amBIoJhDVmmJ",
+          "name": "Ellie Goulding",
           "type": "artist",
-          "uri": "spotify:artist:6GkJh85o22LfD2vgL9DP6f"
+          "uri": "spotify:artist:0X2BH1fck6amBIoJhDVmmJ"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 229781,
+      "duration_ms": 231211,
       "explicit": false,
       "external_ids": {
-        "isrc": "USDPK1303511"
+        "isrc": "GBUM71303482"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/2kDlcjouMC8uoSSotXzjI9"
+        "spotify": "https://open.spotify.com/track/0xMd5bcWTbyXS7wPrBtZA6"
       },
-      "href": "https://api.spotify.com/v1/tracks/2kDlcjouMC8uoSSotXzjI9",
-      "id": "2kDlcjouMC8uoSSotXzjI9",
+      "href": "https://api.spotify.com/v1/tracks/0xMd5bcWTbyXS7wPrBtZA6",
+      "id": "0xMd5bcWTbyXS7wPrBtZA6",
       "is_local": false,
       "is_playable": true,
-      "name": "Garland",
-      "popularity": 50,
-      "preview_url": "https://p.scdn.co/mp3-preview/be9bff63f907f883c34abc3f7d8697ba2d1a147e?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 5,
+      "linked_from": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2GgxS8bUT5G25QJTsfSv0R"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2GgxS8bUT5G25QJTsfSv0R",
+        "id": "2GgxS8bUT5G25QJTsfSv0R",
+        "type": "track",
+        "uri": "spotify:track:2GgxS8bUT5G25QJTsfSv0R"
+      },
+      "name": "Burn",
+      "popularity": 66,
+      "preview_url": null,
+      "track_number": 14,
       "type": "track",
-      "uri": "spotify:track:2kDlcjouMC8uoSSotXzjI9"
+      "uri": "spotify:track:0xMd5bcWTbyXS7wPrBtZA6"
     },
     {
       "album": {
@@ -700,75 +1367,95 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/3aBkeBhwadnWMWoVJ2CxJC"
+              "spotify": "https://open.spotify.com/artist/00me4Ke1LsvMxt5kydlMyU"
             },
-            "href": "https://api.spotify.com/v1/artists/3aBkeBhwadnWMWoVJ2CxJC",
-            "id": "3aBkeBhwadnWMWoVJ2CxJC",
-            "name": "Rob Thomas",
+            "href": "https://api.spotify.com/v1/artists/00me4Ke1LsvMxt5kydlMyU",
+            "id": "00me4Ke1LsvMxt5kydlMyU",
+            "name": "Cosculluela",
             "type": "artist",
-            "uri": "spotify:artist:3aBkeBhwadnWMWoVJ2CxJC"
+            "uri": "spotify:artist:00me4Ke1LsvMxt5kydlMyU"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
+        },
+            "href": "https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X",
+            "id": "4q3ewBCX7sLwd24euuV69X",
+            "name": "Bad Bunny",
+            "type": "artist",
+            "uri": "spotify:artist:4q3ewBCX7sLwd24euuV69X"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/72aNaOna8AV0GZADXRbFlX"
+          "spotify": "https://open.spotify.com/album/23gojwaJJ5vJxFiAQtiTsQ"
         },
-        "href": "https://api.spotify.com/v1/albums/72aNaOna8AV0GZADXRbFlX",
-        "id": "72aNaOna8AV0GZADXRbFlX",
+        "href": "https://api.spotify.com/v1/albums/23gojwaJJ5vJxFiAQtiTsQ",
+        "id": "23gojwaJJ5vJxFiAQtiTsQ",
         "images": [
           {
-            "height": 638,
-            "url": "https://i.scdn.co/image/433ebf0a9deff30488984489f340d378e5cb3864",
+            "height": 640,
+            "url": "https://i.scdn.co/image/586f15240d777e8adac7815572e8d9fceb01a36a",
             "width": 640
           },
           {
-            "height": 299,
-            "url": "https://i.scdn.co/image/ff2c968da4336b56a0554c94049b61607f583392",
+            "height": 300,
+            "url": "https://i.scdn.co/image/5ccde4c2c4b7145349285497f8421556730fc353",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab602ab8b5de13a62861030d61a791bb4d20b4cb",
+            "url": "https://i.scdn.co/image/331c6ae5460a5bf67e9292b437d0d8c2b650dbd5",
             "width": 64
           }
         ],
-        "name": "cradlesong",
-        "release_date": "2009-06-22",
+        "name": "Madura (feat. Bad Bunny)",
+        "release_date": "2018-04-13",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:72aNaOna8AV0GZADXRbFlX"
+        "uri": "spotify:album:23gojwaJJ5vJxFiAQtiTsQ"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3aBkeBhwadnWMWoVJ2CxJC"
+            "spotify": "https://open.spotify.com/artist/00me4Ke1LsvMxt5kydlMyU"
           },
-          "href": "https://api.spotify.com/v1/artists/3aBkeBhwadnWMWoVJ2CxJC",
-          "id": "3aBkeBhwadnWMWoVJ2CxJC",
-          "name": "Rob Thomas",
+          "href": "https://api.spotify.com/v1/artists/00me4Ke1LsvMxt5kydlMyU",
+          "id": "00me4Ke1LsvMxt5kydlMyU",
+          "name": "Cosculluela",
           "type": "artist",
-          "uri": "spotify:artist:3aBkeBhwadnWMWoVJ2CxJC"
+          "uri": "spotify:artist:00me4Ke1LsvMxt5kydlMyU"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
+          },
+          "href": "https://api.spotify.com/v1/artists/4q3ewBCX7sLwd24euuV69X",
+          "id": "4q3ewBCX7sLwd24euuV69X",
+          "name": "Bad Bunny",
+          "type": "artist",
+          "uri": "spotify:artist:4q3ewBCX7sLwd24euuV69X"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 280000,
+      "duration_ms": 190909,
       "explicit": false,
       "external_ids": {
-        "isrc": "USAT20900637"
+        "isrc": "USWL11800164"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/3LtwmK1OfN0dGs9jf3qSjn"
+        "spotify": "https://open.spotify.com/track/0r9d60ZYPAlFHq8qnUtkXN"
       },
-      "href": "https://api.spotify.com/v1/tracks/3LtwmK1OfN0dGs9jf3qSjn",
-      "id": "3LtwmK1OfN0dGs9jf3qSjn",
+      "href": "https://api.spotify.com/v1/tracks/0r9d60ZYPAlFHq8qnUtkXN",
+      "id": "0r9d60ZYPAlFHq8qnUtkXN",
       "is_local": false,
       "is_playable": true,
-      "name": "Her Diamonds",
-      "popularity": 57,
-      "preview_url": "https://p.scdn.co/mp3-preview/16de0e7d9d63c578b986ec986f27ab9c0cc01326?cid=774b29d4f13844c495f206cafdad9c86",
+      "name": "Madura (feat. Bad Bunny)",
+      "popularity": 78,
+      "preview_url": "https://p.scdn.co/mp3-preview/2c599f4bc026c7b3cc5cfa43d688adb5e17abe45?cid=774b29d4f13844c495f206cafdad9c86",
       "track_number": 1,
       "type": "track",
-      "uri": "spotify:track:3LtwmK1OfN0dGs9jf3qSjn"
+      "uri": "spotify:track:0r9d60ZYPAlFHq8qnUtkXN"
     },
     {
       "album": {
@@ -776,75 +1463,75 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2sil8z5kiy4r76CRTXxBCA"
+              "spotify": "https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5"
             },
-            "href": "https://api.spotify.com/v1/artists/2sil8z5kiy4r76CRTXxBCA",
-            "id": "2sil8z5kiy4r76CRTXxBCA",
-            "name": "The Goo Goo Dolls",
+            "href": "https://api.spotify.com/v1/artists/1vyhD5VmyZ7KMfW5gqLgo5",
+            "id": "1vyhD5VmyZ7KMfW5gqLgo5",
+            "name": "J Balvin",
             "type": "artist",
-            "uri": "spotify:artist:2sil8z5kiy4r76CRTXxBCA"
+            "uri": "spotify:artist:1vyhD5VmyZ7KMfW5gqLgo5"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/6D90di2omDqlKebQBKZy5e"
+          "spotify": "https://open.spotify.com/album/5Fqdd85mAoGDp0K9lmbPDp"
         },
-        "href": "https://api.spotify.com/v1/albums/6D90di2omDqlKebQBKZy5e",
-        "id": "6D90di2omDqlKebQBKZy5e",
+        "href": "https://api.spotify.com/v1/albums/5Fqdd85mAoGDp0K9lmbPDp",
+        "id": "5Fqdd85mAoGDp0K9lmbPDp",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/48c7b1e2c9c59d46df6eaea68cb46ef32123366c",
+            "url": "https://i.scdn.co/image/de5af2c4616ac4149c9049907835072cdee339b6",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/53423fa8ef515f25ff7ab21e83e876c4f565bc97",
+            "url": "https://i.scdn.co/image/dd6fe5874de1d1527c0a101c7edede3e7e1f0eb0",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/47c8443775faef2c16a940f8398f9d8c7bfe1564",
+            "url": "https://i.scdn.co/image/f20f453e23d18cdb3fe215c93b46e49193f2be6a",
             "width": 64
           }
         ],
-        "name": "You Should Be Happy",
-        "release_date": "2017-05-12",
+        "name": "La Familia",
+        "release_date": "2013-01-01",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:6D90di2omDqlKebQBKZy5e"
+        "uri": "spotify:album:5Fqdd85mAoGDp0K9lmbPDp"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2sil8z5kiy4r76CRTXxBCA"
+            "spotify": "https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5"
           },
-          "href": "https://api.spotify.com/v1/artists/2sil8z5kiy4r76CRTXxBCA",
-          "id": "2sil8z5kiy4r76CRTXxBCA",
-          "name": "The Goo Goo Dolls",
+          "href": "https://api.spotify.com/v1/artists/1vyhD5VmyZ7KMfW5gqLgo5",
+          "id": "1vyhD5VmyZ7KMfW5gqLgo5",
+          "name": "J Balvin",
           "type": "artist",
-          "uri": "spotify:artist:2sil8z5kiy4r76CRTXxBCA"
+          "uri": "spotify:artist:1vyhD5VmyZ7KMfW5gqLgo5"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 200386,
+      "duration_ms": 220853,
       "explicit": false,
       "external_ids": {
-        "isrc": "USWB11700572"
+        "isrc": "MXF061200319"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/0PFfAiEFREC6PugLPN03aa"
+        "spotify": "https://open.spotify.com/track/7syG2WcnpcoJvxSZT9VbAa"
       },
-      "href": "https://api.spotify.com/v1/tracks/0PFfAiEFREC6PugLPN03aa",
-      "id": "0PFfAiEFREC6PugLPN03aa",
+      "href": "https://api.spotify.com/v1/tracks/7syG2WcnpcoJvxSZT9VbAa",
+      "id": "7syG2WcnpcoJvxSZT9VbAa",
       "is_local": false,
       "is_playable": true,
-      "name": "Use Me",
-      "popularity": 50,
-      "preview_url": "https://p.scdn.co/mp3-preview/dc844b2349f7e09ad1f96f3b2a232bf475a0b8db?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number": 2,
+      "name": "Yo Te Lo Dije",
+      "popularity": 63,
+      "preview_url": null,
+      "track_number": 15,
       "type": "track",
-      "uri": "spotify:track:0PFfAiEFREC6PugLPN03aa"
+      "uri": "spotify:track:7syG2WcnpcoJvxSZT9VbAa"
     }
   ],
   "seeds": [
@@ -852,41 +1539,41 @@
       "initialPoolSize": 250,
       "afterFilteringSize": 3,
       "afterRelinkingSize": 3,
-      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "id": "66CXWjxzNUsdJxJ2JdwvnR",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+      "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR"
     },
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 5,
-      "afterRelinkingSize": 5,
-      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "afterFilteringSize": 3,
+      "afterRelinkingSize": 3,
+      "id": "1HY2Jd0NmPuamShAr6KMms",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+      "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms"
     },
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 1,
-      "afterRelinkingSize": 1,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "afterFilteringSize": 4,
+      "afterRelinkingSize": 4,
+      "id": "4VIvfOurcf0vuLRxLkGnIG",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/4VIvfOurcf0vuLRxLkGnIG"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 2,
       "afterRelinkingSize": 2,
-      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "id": "7gOdHgIoIKoe4i9Tta6qdD",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+      "href": "https://api.spotify.com/v1/artists/7gOdHgIoIKoe4i9Tta6qdD"
     },
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 1,
-      "afterRelinkingSize": 1,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "afterFilteringSize": 10,
+      "afterRelinkingSize": 10,
+      "id": "4VMYDCV2IEDYJArk749S6m",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m"
     }
   ]
 }

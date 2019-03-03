@@ -1,45 +1,303 @@
 {
-  "tracks": [],
+  "tracks": [
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3gd8FJtBJtkRxdfbTu19U2"
+            },
+            "href": "https://api.spotify.com/v1/artists/3gd8FJtBJtkRxdfbTu19U2",
+            "id": "3gd8FJtBJtkRxdfbTu19U2",
+            "name": "Mumford & Sons",
+            "type": "artist",
+            "uri": "spotify:artist:3gd8FJtBJtkRxdfbTu19U2"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3thbkS5Ijz41mAbAOat7wc"
+        },
+        "href": "https://api.spotify.com/v1/albums/3thbkS5Ijz41mAbAOat7wc",
+        "id": "3thbkS5Ijz41mAbAOat7wc",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/bcd20f17bc456e9958a4cf1274a3b98c5ef8814c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/44233849f26ae9059de8370ead211e2e70b002b3",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/d8aa29d1826246c25c21aa8a619504cb650d7e29",
+            "width": 64
+          }
+        ],
+        "name": "Delta",
+        "release_date": "2018-11-16",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3thbkS5Ijz41mAbAOat7wc"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3gd8FJtBJtkRxdfbTu19U2"
+          },
+          "href": "https://api.spotify.com/v1/artists/3gd8FJtBJtkRxdfbTu19U2",
+          "id": "3gd8FJtBJtkRxdfbTu19U2",
+          "name": "Mumford & Sons",
+          "type": "artist",
+          "uri": "spotify:artist:3gd8FJtBJtkRxdfbTu19U2"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 265096,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "GBUM71805627"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5V0nHhlYIjUMfcSoJ5ziRD"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5V0nHhlYIjUMfcSoJ5ziRD",
+      "id": "5V0nHhlYIjUMfcSoJ5ziRD",
+      "is_local": false,
+      "is_playable": true,
+      "linked_from": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7HFgnF1oPMzkCqEMBOA2yI"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7HFgnF1oPMzkCqEMBOA2yI",
+        "id": "7HFgnF1oPMzkCqEMBOA2yI",
+        "type": "track",
+        "uri": "spotify:track:7HFgnF1oPMzkCqEMBOA2yI"
+      },
+      "name": "Beloved",
+      "popularity": 67,
+      "preview_url": null,
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:5V0nHhlYIjUMfcSoJ5ziRD"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1wZtkThiXbVNtj6hee6dz9"
+            },
+            "href": "https://api.spotify.com/v1/artists/1wZtkThiXbVNtj6hee6dz9",
+            "id": "1wZtkThiXbVNtj6hee6dz9",
+            "name": "Wisin & Yandel",
+            "type": "artist",
+            "uri": "spotify:artist:1wZtkThiXbVNtj6hee6dz9"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0mfiGkVJST0ysEVznu2aZP"
+        },
+        "href": "https://api.spotify.com/v1/albums/0mfiGkVJST0ysEVznu2aZP",
+        "id": "0mfiGkVJST0ysEVznu2aZP",
+        "images": [
+          {
+            "height": 632,
+            "url": "https://i.scdn.co/image/9591409251c1b3b00fb322054a071468bb58671f",
+            "width": 640
+          },
+          {
+            "height": 296,
+            "url": "https://i.scdn.co/image/1d0cb90986932bff281f57ac38a0abbf22f0c33a",
+            "width": 300
+          },
+          {
+            "height": 63,
+            "url": "https://i.scdn.co/image/8ba6ef5686bf7568bd0c04be194901746302e964",
+            "width": 64
+          }
+        ],
+        "name": "Pa'l Mundo",
+        "release_date": "2005-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:0mfiGkVJST0ysEVznu2aZP"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1wZtkThiXbVNtj6hee6dz9"
+          },
+          "href": "https://api.spotify.com/v1/artists/1wZtkThiXbVNtj6hee6dz9",
+          "id": "1wZtkThiXbVNtj6hee6dz9",
+          "name": "Wisin & Yandel",
+          "type": "artist",
+          "uri": "spotify:artist:1wZtkThiXbVNtj6hee6dz9"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 172680,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "US3B90500021"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1kQqiC1rS1FiuVpeBKN0QN"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1kQqiC1rS1FiuVpeBKN0QN",
+      "id": "1kQqiC1rS1FiuVpeBKN0QN",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Rakata",
+      "popularity": 65,
+      "preview_url": null,
+      "track_number": 10,
+      "type": "track",
+      "uri": "spotify:track:1kQqiC1rS1FiuVpeBKN0QN"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3ATyg4fGC9F8trfb0GRWmX"
+            },
+            "href": "https://api.spotify.com/v1/artists/3ATyg4fGC9F8trfb0GRWmX",
+            "id": "3ATyg4fGC9F8trfb0GRWmX",
+            "name": "Joey Montana",
+            "type": "artist",
+            "uri": "spotify:artist:3ATyg4fGC9F8trfb0GRWmX"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/47uyFQHOD02S0lj9ptRpoB"
+            },
+            "href": "https://api.spotify.com/v1/artists/47uyFQHOD02S0lj9ptRpoB",
+            "id": "47uyFQHOD02S0lj9ptRpoB",
+            "name": "Felipe Araújo",
+            "type": "artist",
+            "uri": "spotify:artist:47uyFQHOD02S0lj9ptRpoB"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3zF84HQxyipXhFD5YuXBJD"
+        },
+        "href": "https://api.spotify.com/v1/albums/3zF84HQxyipXhFD5YuXBJD",
+        "id": "3zF84HQxyipXhFD5YuXBJD",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/62ed7b424225fab28d35d9829b17c3e3d8502ebc",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/0ec3d54888acf8687f9d1c8685679f822a6348c7",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/22d83491dc456fa7e9b792cb0bdb89b569b8ca06",
+            "width": 64
+          }
+        ],
+        "name": "Viral Pisadinha",
+        "release_date": "2018-12-21",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3zF84HQxyipXhFD5YuXBJD"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3ATyg4fGC9F8trfb0GRWmX"
+          },
+          "href": "https://api.spotify.com/v1/artists/3ATyg4fGC9F8trfb0GRWmX",
+          "id": "3ATyg4fGC9F8trfb0GRWmX",
+          "name": "Joey Montana",
+          "type": "artist",
+          "uri": "spotify:artist:3ATyg4fGC9F8trfb0GRWmX"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/47uyFQHOD02S0lj9ptRpoB"
+          },
+          "href": "https://api.spotify.com/v1/artists/47uyFQHOD02S0lj9ptRpoB",
+          "id": "47uyFQHOD02S0lj9ptRpoB",
+          "name": "Felipe Araújo",
+          "type": "artist",
+          "uri": "spotify:artist:47uyFQHOD02S0lj9ptRpoB"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 143800,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71822120"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5QkdDDljE45agZ2vVcSk3W"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5QkdDDljE45agZ2vVcSk3W",
+      "id": "5QkdDDljE45agZ2vVcSk3W",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Viral Pisadinha",
+      "popularity": 60,
+      "preview_url": null,
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:5QkdDDljE45agZ2vVcSk3W"
+    }
+  ],
   "seeds": [
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "id": "66CXWjxzNUsdJxJ2JdwvnR",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+      "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "id": "1HY2Jd0NmPuamShAr6KMms",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
+      "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "4VIvfOurcf0vuLRxLkGnIG",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/4VIvfOurcf0vuLRxLkGnIG"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "id": "7gOdHgIoIKoe4i9Tta6qdD",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/7gOdHgIoIKoe4i9Tta6qdD"
     },
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "4VMYDCV2IEDYJArk749S6m",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
-    },
-    {
-      "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m"
     }
   ]
 }

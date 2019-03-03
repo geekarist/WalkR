@@ -6,117 +6,157 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/6Ghvu1VvMGScGpOUJBAHNH"
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
             },
-            "href": "https://api.spotify.com/v1/artists/6Ghvu1VvMGScGpOUJBAHNH",
-            "id": "6Ghvu1VvMGScGpOUJBAHNH",
-            "name": "Deftones",
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
             "type": "artist",
-            "uri": "spotify:artist:6Ghvu1VvMGScGpOUJBAHNH"
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4IVAbR2w4JJNJDDRFP3E83"
+            },
+            "href": "https://api.spotify.com/v1/artists/4IVAbR2w4JJNJDDRFP3E83",
+            "id": "4IVAbR2w4JJNJDDRFP3E83",
+            "name": "6LACK",
+            "type": "artist",
+            "uri": "spotify:artist:4IVAbR2w4JJNJDDRFP3E83"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7c0XG5cIJTrrAgEC3ULPiq"
+            },
+            "href": "https://api.spotify.com/v1/artists/7c0XG5cIJTrrAgEC3ULPiq",
+            "id": "7c0XG5cIJTrrAgEC3ULPiq",
+            "name": "Ty Dolla $ign",
+            "type": "artist",
+            "uri": "spotify:artist:7c0XG5cIJTrrAgEC3ULPiq"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/7o4UsmV37Sg5It2Eb7vHzu"
+          "spotify": "https://open.spotify.com/album/0c4JocKlxYfBjZep8TJkcI"
         },
-        "href": "https://api.spotify.com/v1/albums/7o4UsmV37Sg5It2Eb7vHzu",
-        "id": "7o4UsmV37Sg5It2Eb7vHzu",
+        "href": "https://api.spotify.com/v1/albums/0c4JocKlxYfBjZep8TJkcI",
+        "id": "0c4JocKlxYfBjZep8TJkcI",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/a236e1988e6625faf03cb81a2eed167eb72906d0",
+            "url": "https://i.scdn.co/image/7758ccfe5caec21069822250ec4e43b17d26b63c",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/97245eb782fb09e0892d2d695613d947033682b8",
+            "url": "https://i.scdn.co/image/df0f2ccac862322a5c65e2a581f3322755af274d",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/3cc68cf7e2323b9a893ee31914d65bccd2e8b357",
+            "url": "https://i.scdn.co/image/4426fbfa005eb5725543e05e5791e619c47084a1",
             "width": 64
           }
         ],
-        "name": "Around The Fur",
-        "release_date": "1997-10-27",
+        "name": "OTW",
+        "release_date": "2018-04-20",
         "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:7o4UsmV37Sg5It2Eb7vHzu"
+        "uri": "spotify:album:0c4JocKlxYfBjZep8TJkcI"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/6Ghvu1VvMGScGpOUJBAHNH"
-          },
-          "href": "https://api.spotify.com/v1/artists/6Ghvu1VvMGScGpOUJBAHNH",
-          "id": "6Ghvu1VvMGScGpOUJBAHNH",
-          "name": "Deftones",
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+      },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
           "type": "artist",
-          "uri": "spotify:artist:6Ghvu1VvMGScGpOUJBAHNH"
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4IVAbR2w4JJNJDDRFP3E83"
+          },
+          "href": "https://api.spotify.com/v1/artists/4IVAbR2w4JJNJDDRFP3E83",
+          "id": "4IVAbR2w4JJNJDDRFP3E83",
+          "name": "6LACK",
+          "type": "artist",
+          "uri": "spotify:artist:4IVAbR2w4JJNJDDRFP3E83"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7c0XG5cIJTrrAgEC3ULPiq"
+          },
+          "href": "https://api.spotify.com/v1/artists/7c0XG5cIJTrrAgEC3ULPiq",
+          "id": "7c0XG5cIJTrrAgEC3ULPiq",
+          "name": "Ty Dolla $ign",
+          "type": "artist",
+          "uri": "spotify:artist:7c0XG5cIJTrrAgEC3ULPiq"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 214760,
-      "explicit": false,
+      "duration_ms": 263013,
+      "explicit": true,
       "external_ids": {
-        "isrc": "USMV29700142"
+        "isrc": "USRC11801716"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/1158ckiB5S4cpsdYHDB9IF"
+        "spotify": "https://open.spotify.com/track/6Hgh47WXVKtXN5zGOu0hjI"
       },
-      "href": "https://api.spotify.com/v1/tracks/1158ckiB5S4cpsdYHDB9IF",
-      "id": "1158ckiB5S4cpsdYHDB9IF",
+      "href": "https://api.spotify.com/v1/tracks/6Hgh47WXVKtXN5zGOu0hjI",
+      "id": "6Hgh47WXVKtXN5zGOu0hjI",
       "is_local": false,
       "is_playable": true,
-      "name": "My Own Summer (Shove It)",
-      "popularity": 65,
-      "preview_url": "https://p.scdn.co/mp3-preview/8d311acfa67d329ce5eec2dbcf336c330c70533a?cid=774b29d4f13844c495f206cafdad9c86",
+      "name": "OTW",
+      "popularity": 83,
+      "preview_url": "https://p.scdn.co/mp3-preview/809f303d112c4a0485d27a5246d987d6629056aa?cid=774b29d4f13844c495f206cafdad9c86",
       "track_number": 1,
       "type": "track",
-      "uri": "spotify:track:1158ckiB5S4cpsdYHDB9IF"
+      "uri": "spotify:track:6Hgh47WXVKtXN5zGOu0hjI"
     }
   ],
   "seeds": [
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "6TcnmlCSxihzWOQJ8k0rNS",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
-    },
-    {
-      "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "0EdvGhlC1FkGItLOWQzG4J",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
-    },
-    {
-      "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
-    },
-    {
-      "initialPoolSize": 250,
       "afterFilteringSize": 1,
       "afterRelinkingSize": 1,
-      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "id": "66CXWjxzNUsdJxJ2JdwvnR",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+      "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "id": "1HY2Jd0NmPuamShAr6KMms",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "4VIvfOurcf0vuLRxLkGnIG",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/4VIvfOurcf0vuLRxLkGnIG"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "7gOdHgIoIKoe4i9Tta6qdD",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/7gOdHgIoIKoe4i9Tta6qdD"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 0,
+      "afterRelinkingSize": 0,
+      "id": "4VMYDCV2IEDYJArk749S6m",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m"
     }
   ]
 }

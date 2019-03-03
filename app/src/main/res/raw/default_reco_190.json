@@ -6,75 +6,332 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+              "spotify": "https://open.spotify.com/artist/6jJ0s89eD6GaHleKKya26X"
             },
-            "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-            "id": "5eAWCfyUhZtHHtBdNk56l1",
-            "name": "System Of A Down",
+            "href": "https://api.spotify.com/v1/artists/6jJ0s89eD6GaHleKKya26X",
+            "id": "6jJ0s89eD6GaHleKKya26X",
+            "name": "Katy Perry",
             "type": "artist",
-            "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+            "uri": "spotify:artist:6jJ0s89eD6GaHleKKya26X"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/3sSfjX4fhZonjyZ10x0l0f"
+          "spotify": "https://open.spotify.com/album/0UlbGi4oAth8s6rwaGSU8Z"
         },
-        "href": "https://api.spotify.com/v1/albums/3sSfjX4fhZonjyZ10x0l0f",
-        "id": "3sSfjX4fhZonjyZ10x0l0f",
+        "href": "https://api.spotify.com/v1/albums/0UlbGi4oAth8s6rwaGSU8Z",
+        "id": "0UlbGi4oAth8s6rwaGSU8Z",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/734e9f1585b6ad85676243146e3459472c21cf58",
+            "url": "https://i.scdn.co/image/b299ad5eb6ed3a397533adc9a3d7ab310d0e308e",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/5d217e5f375f0c5cf47776f677610b44f7201ecd",
+            "url": "https://i.scdn.co/image/41039d739108937038ff70d4daae3b5d650b5c68",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/0a7c2fb8dab5a9a64b406878b349e189ea4dcd65",
+            "url": "https://i.scdn.co/image/86e000bbd6036c5201d344429cd5a2c32ecf19b5",
             "width": 64
           }
         ],
-        "name": "System Of A Down (Bonus Pack)",
-        "release_date": "1998",
-        "release_date_precision": "year",
+        "name": "Witness (Deluxe)",
+        "release_date": "2017-06-09",
+        "release_date_precision": "day",
         "total_tracks": 0,
         "type": "album",
-        "uri": "spotify:album:3sSfjX4fhZonjyZ10x0l0f"
+        "uri": "spotify:album:0UlbGi4oAth8s6rwaGSU8Z"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+            "spotify": "https://open.spotify.com/artist/6jJ0s89eD6GaHleKKya26X"
           },
-          "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
-          "id": "5eAWCfyUhZtHHtBdNk56l1",
-          "name": "System Of A Down",
+          "href": "https://api.spotify.com/v1/artists/6jJ0s89eD6GaHleKKya26X",
+          "id": "6jJ0s89eD6GaHleKKya26X",
+          "name": "Katy Perry",
           "type": "artist",
-          "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+          "uri": "spotify:artist:6jJ0s89eD6GaHleKKya26X"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4ryoUS0W8qXokfMxrlJt6O"
+          },
+          "href": "https://api.spotify.com/v1/artists/4ryoUS0W8qXokfMxrlJt6O",
+          "id": "4ryoUS0W8qXokfMxrlJt6O",
+          "name": "Skip Marley",
+          "type": "artist",
+          "uri": "spotify:artist:4ryoUS0W8qXokfMxrlJt6O"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 151733,
-      "explicit": true,
+      "duration_ms": 237733,
+      "explicit": false,
       "external_ids": {
-        "isrc": "USSM19800758"
+        "isrc": "USUM71700560"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/1qGmxIGEuBEkj7bft72Kh0"
+        "spotify": "https://open.spotify.com/track/7qvxFz3JodM0A7xEM7k3YD"
       },
-      "href": "https://api.spotify.com/v1/tracks/1qGmxIGEuBEkj7bft72Kh0",
-      "id": "1qGmxIGEuBEkj7bft72Kh0",
+      "href": "https://api.spotify.com/v1/tracks/7qvxFz3JodM0A7xEM7k3YD",
+      "id": "7qvxFz3JodM0A7xEM7k3YD",
       "is_local": false,
       "is_playable": true,
-      "name": "Suite-Pee",
-      "popularity": 57,
-      "preview_url": "https://p.scdn.co/mp3-preview/e1fd221c8ac0836b767bdc472e9bc1fb154eec53?cid=774b29d4f13844c495f206cafdad9c86",
+      "name": "Chained To The Rhythm",
+      "popularity": 74,
+      "preview_url": null,
+      "track_number": 9,
+      "type": "track",
+      "uri": "spotify:track:7qvxFz3JodM0A7xEM7k3YD"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0X2BH1fck6amBIoJhDVmmJ"
+            },
+            "href": "https://api.spotify.com/v1/artists/0X2BH1fck6amBIoJhDVmmJ",
+            "id": "0X2BH1fck6amBIoJhDVmmJ",
+            "name": "Ellie Goulding",
+            "type": "artist",
+            "uri": "spotify:artist:0X2BH1fck6amBIoJhDVmmJ"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5nhoVKDcCXvi3AruUFJWnv"
+        },
+        "href": "https://api.spotify.com/v1/albums/5nhoVKDcCXvi3AruUFJWnv",
+        "id": "5nhoVKDcCXvi3AruUFJWnv",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/b451043e9adb93e9552f17b972ffb4bed7ff7364",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/36b3103435d216dedff6c40fe8c2d662df8b9d89",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/29422e611a5758c200a46522b3da5e9b639a712d",
+            "width": 64
+          }
+        ],
+        "name": "Delirium (Deluxe)",
+        "release_date": "2015-11-13",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:5nhoVKDcCXvi3AruUFJWnv"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0X2BH1fck6amBIoJhDVmmJ"
+          },
+          "href": "https://api.spotify.com/v1/artists/0X2BH1fck6amBIoJhDVmmJ",
+          "id": "0X2BH1fck6amBIoJhDVmmJ",
+          "name": "Ellie Goulding",
+          "type": "artist",
+          "uri": "spotify:artist:0X2BH1fck6amBIoJhDVmmJ"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 252534,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "GBUM71507204"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2l8w0zZVn4AZNuzrht7MRT"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2l8w0zZVn4AZNuzrht7MRT",
+      "id": "2l8w0zZVn4AZNuzrht7MRT",
+      "is_local": false,
+      "is_playable": true,
+      "linked_from": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3zHq9ouUJQFQRf3cm1rRLu"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3zHq9ouUJQFQRf3cm1rRLu",
+        "id": "3zHq9ouUJQFQRf3cm1rRLu",
+        "type": "track",
+        "uri": "spotify:track:3zHq9ouUJQFQRf3cm1rRLu"
+      },
+      "name": "Love Me Like You Do - From \"Fifty Shades Of Grey\"",
+      "popularity": 68,
+      "preview_url": null,
+      "track_number": 9,
+      "type": "track",
+      "uri": "spotify:track:2l8w0zZVn4AZNuzrht7MRT"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6"
+            },
+            "href": "https://api.spotify.com/v1/artists/5YGY8feqx7naU7z4HrwZM6",
+            "id": "5YGY8feqx7naU7z4HrwZM6",
+            "name": "Miley Cyrus",
+            "type": "artist",
+            "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3RDqXDc1bAETps54MSSOW0"
+        },
+        "href": "https://api.spotify.com/v1/albums/3RDqXDc1bAETps54MSSOW0",
+        "id": "3RDqXDc1bAETps54MSSOW0",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/f70bb46e668e224ea67c6afa25ba438881e50d15",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/1bbb957cadafd87d859e1de8435a02536ef3a28b",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ceb3ac9cf9bdccef18978bdae0a6de1cfaf2b22a",
+            "width": 64
+          }
+        ],
+        "name": "Bangerz (Deluxe Version)",
+        "release_date": "2013-10-04",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:3RDqXDc1bAETps54MSSOW0"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6"
+          },
+          "href": "https://api.spotify.com/v1/artists/5YGY8feqx7naU7z4HrwZM6",
+          "id": "5YGY8feqx7naU7z4HrwZM6",
+          "name": "Miley Cyrus",
+          "type": "artist",
+          "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6vXTefBL93Dj5IqAWq6OTv"
+          },
+          "href": "https://api.spotify.com/v1/artists/6vXTefBL93Dj5IqAWq6OTv",
+          "id": "6vXTefBL93Dj5IqAWq6OTv",
+          "name": "French Montana",
+          "type": "artist",
+          "uri": "spotify:artist:6vXTefBL93Dj5IqAWq6OTv"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 229693,
+      "explicit": true,
+      "external_ids": {
+        "isrc": "USRC11301270"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6dDIOU6AqgLkrjFNPgvKY6"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6dDIOU6AqgLkrjFNPgvKY6",
+      "id": "6dDIOU6AqgLkrjFNPgvKY6",
+      "is_local": false,
+      "is_playable": true,
+      "name": "FU",
+      "popularity": 62,
+      "preview_url": "https://p.scdn.co/mp3-preview/8e5d97375aebcb28f328b832c367b047680b0a60?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 10,
+      "type": "track",
+      "uri": "spotify:track:6dDIOU6AqgLkrjFNPgvKY6"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/329e4yvIujISKGKz1BZZbO"
+            },
+            "href": "https://api.spotify.com/v1/artists/329e4yvIujISKGKz1BZZbO",
+            "id": "329e4yvIujISKGKz1BZZbO",
+            "name": "Farruko",
+            "type": "artist",
+            "uri": "spotify:artist:329e4yvIujISKGKz1BZZbO"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/78Oz14a9RQV82w94fQPUle"
+        },
+        "href": "https://api.spotify.com/v1/albums/78Oz14a9RQV82w94fQPUle",
+        "id": "78Oz14a9RQV82w94fQPUle",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/25f86d78155094e3e2426429fb1ac4138a16175b",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/26c3f218fd8b415c7e2910dd106d082b84f6eda6",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/b6f5fd0e02ed91286ab3d423b12b4b20fb5813f2",
+            "width": 64
+          }
+        ],
+        "name": "Nadie",
+        "release_date": "2019-01-17",
+        "release_date_precision": "day",
+        "total_tracks": 0,
+        "type": "album",
+        "uri": "spotify:album:78Oz14a9RQV82w94fQPUle"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/329e4yvIujISKGKz1BZZbO"
+          },
+          "href": "https://api.spotify.com/v1/artists/329e4yvIujISKGKz1BZZbO",
+          "id": "329e4yvIujISKGKz1BZZbO",
+          "name": "Farruko",
+          "type": "artist",
+          "uri": "spotify:artist:329e4yvIujISKGKz1BZZbO"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 228760,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USSD11800412"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2VRVV7cvAGPJ2EBU4FIVCz"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2VRVV7cvAGPJ2EBU4FIVCz",
+      "id": "2VRVV7cvAGPJ2EBU4FIVCz",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Nadie",
+      "popularity": 76,
+      "preview_url": "https://p.scdn.co/mp3-preview/82ad4d924388bfbb0f1e9f15493043edaefdf36d?cid=774b29d4f13844c495f206cafdad9c86",
       "track_number": 1,
       "type": "track",
-      "uri": "spotify:track:1qGmxIGEuBEkj7bft72Kh0"
+      "uri": "spotify:track:2VRVV7cvAGPJ2EBU4FIVCz"
     }
   ],
   "seeds": [
@@ -82,41 +339,41 @@
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "6TcnmlCSxihzWOQJ8k0rNS",
+      "id": "66CXWjxzNUsdJxJ2JdwvnR",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/6TcnmlCSxihzWOQJ8k0rNS"
+      "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR"
+    },
+    {
+      "initialPoolSize": 250,
+      "afterFilteringSize": 2,
+      "afterRelinkingSize": 2,
+      "id": "1HY2Jd0NmPuamShAr6KMms",
+      "type": "ARTIST",
+      "href": "https://api.spotify.com/v1/artists/1HY2Jd0NmPuamShAr6KMms"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 0,
       "afterRelinkingSize": 0,
-      "id": "0EdvGhlC1FkGItLOWQzG4J",
+      "id": "4VIvfOurcf0vuLRxLkGnIG",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/0EdvGhlC1FkGItLOWQzG4J"
-    },
-    {
-      "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
-      "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/4VIvfOurcf0vuLRxLkGnIG"
     },
     {
       "initialPoolSize": 250,
       "afterFilteringSize": 1,
       "afterRelinkingSize": 1,
-      "id": "5eAWCfyUhZtHHtBdNk56l1",
+      "id": "7gOdHgIoIKoe4i9Tta6qdD",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1"
+      "href": "https://api.spotify.com/v1/artists/7gOdHgIoIKoe4i9Tta6qdD"
     },
     {
       "initialPoolSize": 250,
-      "afterFilteringSize": 0,
-      "afterRelinkingSize": 0,
-      "id": "7oPftvlwr6VrsViSDV7fJY",
+      "afterFilteringSize": 1,
+      "afterRelinkingSize": 1,
+      "id": "4VMYDCV2IEDYJArk749S6m",
       "type": "ARTIST",
-      "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY"
+      "href": "https://api.spotify.com/v1/artists/4VMYDCV2IEDYJArk749S6m"
     }
   ]
 }
