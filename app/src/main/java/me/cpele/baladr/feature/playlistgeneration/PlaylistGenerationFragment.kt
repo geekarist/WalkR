@@ -76,6 +76,10 @@ class PlaylistGenerationFragment : Fragment() {
         generationTempoTapButton.setOnClickListener {
             TapTempoDialogFragment.newInstance().show(childFragmentManager, TAG_FRAGMENT_TAP_TEMPO)
         }
+
+        generationCalibrateButton.setOnClickListener {
+            CalibrationDialogFragment.newInstance().show(childFragmentManager, TAG_FRAGMENT_CALIBRATION)
+        }
     }
 
     override fun onResume() {
@@ -87,5 +91,6 @@ class PlaylistGenerationFragment : Fragment() {
 
     companion object {
         private const val TAG_FRAGMENT_TAP_TEMPO = "TAG_FRAGMENT_TAP_TEMPO"
+        private const val TAG_FRAGMENT_CALIBRATION = "TAG_FRAGMENT_CALIBRATION"
     }
 }

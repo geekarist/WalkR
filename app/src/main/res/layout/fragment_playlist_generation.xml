@@ -51,12 +51,13 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:drawableStart="@drawable/ic_walk"
         android:text="@string/generation_detect"
-        app:layout_constraintBottom_toBottomOf="@+id/generationTempoLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/generationTempoLabel" />
+        app:layout_constraintStart_toEndOf="@+id/generationTempoTapButton"
+        app:layout_constraintTop_toBottomOf="@+id/generationTempoMaxLabel" />
 
     <Button
         android:id="@+id/generationTempoTapButton"
@@ -66,9 +67,24 @@
         android:layout_marginEnd="8dp"
         android:drawableStart="@drawable/ic_touch_app"
         android:text="@string/generation_tap"
-        app:layout_constraintBottom_toBottomOf="@+id/generationTempoLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/generationTempoDetectButton"
         app:layout_constraintEnd_toStartOf="@+id/generationTempoDetectButton"
-        app:layout_constraintTop_toTopOf="@+id/generationTempoLabel" />
+        app:layout_constraintStart_toEndOf="@+id/generationCalibrateButton"
+        app:layout_constraintTop_toTopOf="@+id/generationTempoDetectButton" />
+
+    <Button
+        android:id="@+id/generationCalibrateButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_tune"
+        android:text="@string/generation_calibrate"
+        app:layout_constraintBottom_toBottomOf="@+id/generationTempoDetectButton"
+        app:layout_constraintEnd_toStartOf="@+id/generationTempoTapButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/generationTempoDetectButton" />
 
     <View
         android:id="@+id/generationDivider"

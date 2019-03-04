@@ -12,6 +12,7 @@
     <string name="generation_title">Generate Playlist</string>
     <string name="generation_detect">Detect</string>
     <string name="generation_tap">Tap</string>
+    <string name="generation_calibrate">Calibrate</string>
 
     <string name="display_label">Playlist Tracks</string>
     <string name="display_save">Save Playlist</string>
