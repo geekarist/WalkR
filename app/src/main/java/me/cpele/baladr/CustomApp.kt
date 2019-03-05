@@ -72,6 +72,10 @@ class CustomApp : Application() {
         TapTempoViewModel.Factory(tapTempoMeasurement)
     }
 
+    val calibrationViewModelFactory: ViewModelProvider.Factory by lazy {
+        CalibrationViewModel.Factory(tapTempoMeasurement)
+    }
+
     companion object {
         lateinit var instance: CustomApp
     }
