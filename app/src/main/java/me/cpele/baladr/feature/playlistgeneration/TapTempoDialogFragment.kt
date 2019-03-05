@@ -8,6 +8,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.fragment_tap_tempo.*
+import me.cpele.baladr.CustomApp
 import me.cpele.baladr.R
 
 class TapTempoDialogFragment : DialogFragment() {
@@ -17,7 +18,10 @@ class TapTempoDialogFragment : DialogFragment() {
     }
 
     private val viewModel: TapTempoViewModel by lazy {
-        ViewModelProviders.of(this).get(TapTempoViewModel::class.java)
+        ViewModelProviders.of(
+            this,
+            CustomApp.instance.tapTempoViewModelFactory
+        ).get(TapTempoViewModel::class.java)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
