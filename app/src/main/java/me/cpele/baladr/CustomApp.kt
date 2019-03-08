@@ -69,11 +69,11 @@ class CustomApp : Application() {
     private val tapTempoMeasurement: TapTempoMeasurement by lazy { TapTempoMeasurement() }
 
     val tapTempoViewModelFactory: ViewModelProvider.Factory by lazy {
-        TapTempoViewModel.Factory(tapTempoMeasurement)
+        TapTempoViewModel.Factory(tapTempoMeasurement, this)
     }
 
     val calibrationViewModelFactory: ViewModelProvider.Factory by lazy {
-        CalibrationViewModel.Factory(tapTempoMeasurement)
+        CalibrationViewModel.Factory(tapTempoMeasurement, tempoDetection, this)
     }
 
     companion object {

@@ -40,9 +40,14 @@ class TapTempoDialogFragment : DialogFragment() {
         tapTempoReset.setOnClickListener { viewModel.onReset() }
         tapTempoButton.setOnClickListener { viewModel.onTap() }
 
-        viewModel.beatsPerMin.observe(this, Observer<Int> {
-            tapTempoCount.text = it.toString()
-            parentViewModel?.onTempoChangedExternally(it)
+        viewModel.beatsPerMinStr.observe(this, Observer<String> {
+            tapTempoCount.text = it
+        })
+
+        viewModel.beatsPerMin.observe(this, Observer {
+            it?.let { tempo ->
+                parentViewModel?.onTempoChangedExternally(tempo)
+            }
         })
     }
 }

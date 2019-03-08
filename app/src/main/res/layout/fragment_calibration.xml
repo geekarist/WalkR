@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/calibrationTapCount"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:drawableTop="@drawable/ic_touch_app"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/calibrationTapButton"
+        app:layout_constraintEnd_toStartOf="@+id/calibrationDetectedCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="122" />
+
+    <TextView
+        android:id="@+id/calibrationDetectedCount"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:drawableTop="@drawable/ic_walk"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/calibrationTapCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calibrationTapCount"
+        app:layout_constraintTop_toTopOf="@+id/calibrationTapCount"
+        tools:text="67" />
+
+    <Button
+        android:id="@+id/calibrationTapButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/tap_tempo_tap_in_rythm"
+        app:layout_constraintBottom_toTopOf="@+id/calibrationResetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calibrationTapCount" />
+
+    <Button
+        android:id="@+id/calibrationResetButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/tap_tempo_reset"
+        app:layout_constraintBottom_toTopOf="@+id/calibrationClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calibrationTapButton" />
+
+    <Button
+        android:id="@+id/calibrationClose"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/tap_tempo_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calibrationResetButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

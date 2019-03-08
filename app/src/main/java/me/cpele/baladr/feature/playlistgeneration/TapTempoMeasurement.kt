@@ -11,7 +11,7 @@ class TapTempoMeasurement {
 
     private val tapsData = MutableLiveData<MutableList<Long>>().apply { value = mutableListOf() }
 
-    val beatsPerMin: LiveData<Int> = Transformations.map(tapsData) { nullableTaps: MutableList<Long>? ->
+    val beatsPerMin: LiveData<Int?> = Transformations.map(tapsData) { nullableTaps: MutableList<Long>? ->
         nullableTaps
             ?.takeIf { it.size >= 2 }
             ?.let { taps ->
@@ -20,7 +20,7 @@ class TapTempoMeasurement {
                 val diffMsec = lastTapMsec - firstTapMsec
                 val beatsPerMsec = taps.size.dec().toDouble() / diffMsec
                 (beatsPerMsec * TimeUnit.MINUTES.toMillis(1)).roundToInt()
-            } ?: 0
+            }
     }
 
     fun onTap() {
