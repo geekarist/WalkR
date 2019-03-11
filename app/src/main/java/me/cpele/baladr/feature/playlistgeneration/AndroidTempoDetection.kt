@@ -40,7 +40,7 @@ class AndroidTempoDetection(private val app: Application) : TempoDetection {
                     val diffMsec = timestampMsec - startTimeMsec
                     val diffMin: Float = diffMsec / 1000f / 60f
                     val countPerMin = (currentCount - firstCount) / diffMin
-                    deferred.complete(countPerMin.toInt() - 70)
+                    deferred.complete(countPerMin.toInt())
                 }
             }
         }
