@@ -4,7 +4,10 @@ import androidx.lifecycle.*
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
-class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : ViewModel(), CoroutineScope {
+class PlaylistGenerationViewModel(
+    private val tempoDetection: TempoDetection,
+    private val calibrationFactorRepo: CalibrationFactorRepository
+) : ViewModel(), CoroutineScope {
 
     private val job = Job()
     override val coroutineContext: CoroutineContext = Dispatchers.Default + job
@@ -33,7 +36,11 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
         _detectionRunning.postValue(true)
         val tempo = tempoDetection.executeAsync(durationSeconds).await()
         _detectionRunning.postValue(false)
-        withContext(Dispatchers.Main) { onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET) }
+        withContext(Dispatchers.Main) {
+            val calibrationFactor = calibrationFactorRepo.value
+            val fixedTempo = (tempo * calibrationFactor).toInt()
+            onProgressChanged(fixedTempo - TEMPO_PROGRESS_OFFSET)
+        }
     }
 
     fun onTempoChangedExternally(tempo: Int) {
@@ -45,10 +52,13 @@ class PlaylistGenerationViewModel(private val tempoDetection: TempoDetection) : 
         super.onCleared()
     }
 
-    class Factory(private val tempoDetection: TempoDetection) :
+    class Factory(
+        private val tempoDetection: TempoDetection,
+        private val calibrationFactorRepo: CalibrationFactorRepository
+    ) :
         ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(PlaylistGenerationViewModel(tempoDetection)) as T
+            return modelClass.cast(PlaylistGenerationViewModel(tempoDetection, calibrationFactorRepo)) as T
         }
     }
 

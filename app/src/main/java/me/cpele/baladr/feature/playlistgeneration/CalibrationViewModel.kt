@@ -1,6 +1,7 @@
 package me.cpele.baladr.feature.playlistgeneration
 
 import android.app.Application
+import android.widget.Toast
 import androidx.lifecycle.*
 import com.github.musichin.reactivelivedata.map
 import kotlinx.coroutines.*
@@ -10,7 +11,8 @@ import kotlin.coroutines.CoroutineContext
 class CalibrationViewModel(
     private val tapTempoMeasurement: TapTempoMeasurement,
     private val detection: TempoDetection,
-    private val app: Application
+    private val app: Application,
+    private val calibrationFactorRepository: CalibrationFactorRepository
 ) : ViewModel(), CoroutineScope {
 
     private val job = SupervisorJob()
@@ -34,7 +36,18 @@ class CalibrationViewModel(
         if (!isDetecting) {
             isDetecting = true
             launch {
-                _detected.postValue(detection.executeAsync(10).await())
+                val detectedTempo = detection.executeAsync(10).await()
+                _detected.postValue(detectedTempo)
+                tapTempo.value?.let {
+                    calibrationFactorRepository.value = it.toFloat() / detectedTempo.toFloat()
+                    withContext(Dispatchers.Main) {
+                        Toast.makeText(
+                            app,
+                            "Fixed tempo: ${detectedTempo * calibrationFactorRepository.value}",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
                 isDetecting = false
             }
         }
@@ -55,10 +68,18 @@ class CalibrationViewModel(
     class Factory(
         private val tapTempoMeasurement: TapTempoMeasurement,
         private val detection: TempoDetection,
-        private val app: Application
+        private val app: Application,
+        private val calibrationFactorRepo: CalibrationFactorRepository
     ) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(CalibrationViewModel(tapTempoMeasurement, detection, app)) as T
+            return modelClass.cast(
+                CalibrationViewModel(
+                    tapTempoMeasurement,
+                    detection,
+                    app,
+                    calibrationFactorRepo
+                )
+            ) as T
         }
     }
 }
