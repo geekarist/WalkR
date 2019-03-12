@@ -5,7 +5,6 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
-import android.os.SystemClock
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.delay
@@ -14,32 +13,29 @@ import java.util.concurrent.TimeUnit
 
 class AndroidTempoDetection(private val app: Application) : TempoDetection {
 
-    private var listener: StepCountSensorListener? = null
+    private var listener: StepDetectSensorListener? = null
 
     private val sensorManager: SensorManager by lazy {
         app.getSystemService(Application.SENSOR_SERVICE) as SensorManager
     }
 
-    private inner class StepCountSensorListener(
+    private inner class StepDetectSensorListener(
         private val startTimeMsec: Long,
         private val endTimeMsec: Long,
         private val deferred: CompletableDeferred<Int>
     ) : SensorEventListener {
         override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit
 
-        private var firstCount = 0f
+        private var totalCount = 0
 
         override fun onSensorChanged(event: SensorEvent?) {
-            event?.values?.get(0)?.let { currentCount ->
-                val timestampMsec =
-                    System.currentTimeMillis() -
-                            SystemClock.elapsedRealtime() +
-                            TimeUnit.NANOSECONDS.toMillis(event.timestamp)
-                if (firstCount == 0f) firstCount = currentCount
+            event?.values?.size?.let { count ->
+                totalCount += count
+                val timestampMsec = event.timestamp
                 if (timestampMsec >= endTimeMsec) {
                     val diffMsec = timestampMsec - startTimeMsec
                     val diffMin: Float = diffMsec / 1000f / 60f
-                    val countPerMin = (currentCount - firstCount) / diffMin
+                    val countPerMin = totalCount.toFloat() / diffMin
                     deferred.complete(countPerMin.toInt())
                 }
             }
@@ -58,8 +54,8 @@ class AndroidTempoDetection(private val app: Application) : TempoDetection {
         val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
 
         sensorManager.unregisterListener(listener)
-        listener = StepCountSensorListener(startTimeMsec, endTimeMsec, deferred)
-        val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+        listener = StepDetectSensorListener(startTimeMsec, endTimeMsec, deferred)
+        val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR)
         sensorManager.registerListener(
             listener,
             stepSensor,
