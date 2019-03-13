@@ -6,35 +6,49 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/calibrationTapCount"
-        style="@style/TextAppearance.AppCompat.Display1"
-        android:layout_width="64dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:drawableTop="@drawable/ic_touch_app"
-        android:gravity="center_horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/calibrationTapButton"
-        app:layout_constraintEnd_toStartOf="@+id/calibrationDetectedCount"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:text="122" />
-
-    <TextView
         android:id="@+id/calibrationDetectedCount"
         style="@style/TextAppearance.AppCompat.Display1"
         android:layout_width="64dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
         android:drawableTop="@drawable/ic_walk"
         android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/calibrationTapCount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/calibrationTapCount"
+        app:layout_constraintEnd_toStartOf="@+id/calibrationFactor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/calibrationTapCount"
         tools:text="67" />
+
+    <TextView
+        android:id="@+id/calibrationFactor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calibrationTapCount"
+        app:layout_constraintEnd_toStartOf="@+id/calibrationTapCount"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calibrationDetectedCount"
+        tools:text="\u00d7 1.24 \u003d" />
+
+    <TextView
+        android:id="@+id/calibrationTapCount"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:drawableTop="@drawable/ic_touch_app"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/calibrationTapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calibrationFactor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="122" />
 
     <Button
         android:id="@+id/calibrationTapButton"

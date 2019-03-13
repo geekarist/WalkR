@@ -40,7 +40,10 @@ class CalibrationDialogFragment : DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.calibrationClose.setOnClickListener { dismiss() }
+        view.calibrationClose.setOnClickListener {
+            viewModel.onReset()
+            dismiss()
+        }
         view.calibrationTapButton.setOnClickListener { viewModel.onTap() }
         view.calibrationResetButton.setOnClickListener { viewModel.onReset() }
 
@@ -50,6 +53,10 @@ class CalibrationDialogFragment : DialogFragment() {
 
         viewModel.tapTempoStr.observe(this, Observer {
             view.calibrationTapCount.text = it?.toString()
+        })
+
+        viewModel.calibrationFactorStr.observe(this, Observer {
+            view.calibrationFactor.text = it
         })
 
         viewModel.tapTempo.observe(this, Observer {

@@ -31,6 +31,10 @@ class CalibrationViewModel(
         it?.toString() ?: app.getString(R.string.walkr_not_applicable)
     }
 
+    val calibrationFactorStr: LiveData<String> = Transformations.map(calibrationFactorRepository.liveValue) {
+        String.format(app.getString(R.string.calibration_factor), it)
+    }
+
     fun onTap() {
         tapTempoMeasurement.onTap()
         if (!isDetecting) {

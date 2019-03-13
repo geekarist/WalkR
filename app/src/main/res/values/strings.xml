@@ -44,4 +44,6 @@
     <string name="tap_tempo_tap_in_rythm">Tap in rhythm</string>
     <string name="tap_tempo_close">Close</string>
     <string name="tap_tempo_reset">Reset</string>
+
+    <string name="calibration_factor">\u00d7 %.02f \u003d</string>
 </resources>
