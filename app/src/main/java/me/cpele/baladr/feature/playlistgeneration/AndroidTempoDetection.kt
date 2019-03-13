@@ -5,6 +5,8 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
+import android.os.SystemClock
+import android.util.Log
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.delay
@@ -31,11 +33,16 @@ class AndroidTempoDetection(private val app: Application) : TempoDetection {
         override fun onSensorChanged(event: SensorEvent?) {
             event?.values?.size?.let { count ->
                 totalCount += count
-                val timestampMsec = event.timestamp
-                if (timestampMsec >= endTimeMsec) {
-                    val diffMsec = timestampMsec - startTimeMsec
+                val eventTimeSinceBootNsec = event.timestamp
+                val eventTimeSinceBootMsec = eventTimeSinceBootNsec / 1_000_000L
+                val bootTimeMsec = System.currentTimeMillis() - SystemClock.elapsedRealtime()
+                val eventTimeSinceEpochMsec = bootTimeMsec + eventTimeSinceBootMsec
+                Log.d(this@AndroidTempoDetection.javaClass.simpleName, "${Date(eventTimeSinceEpochMsec)}: $count")
+                if (eventTimeSinceEpochMsec >= endTimeMsec) {
+                    val diffMsec = eventTimeSinceEpochMsec - startTimeMsec
                     val diffMin: Float = diffMsec / 1000f / 60f
                     val countPerMin = totalCount.toFloat() / diffMin
+                    Log.d(this@AndroidTempoDetection.javaClass.simpleName, "Count per min: $countPerMin")
                     deferred.complete(countPerMin.toInt())
                 }
             }
