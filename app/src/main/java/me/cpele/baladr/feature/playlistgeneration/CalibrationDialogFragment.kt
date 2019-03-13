@@ -17,10 +17,6 @@ class CalibrationDialogFragment : DialogFragment() {
         fun newInstance() = CalibrationDialogFragment()
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_calibration, container, false)
-    }
-
     private val viewModel: CalibrationViewModel by lazy {
         ViewModelProviders.of(
             this,
@@ -35,6 +31,10 @@ class CalibrationDialogFragment : DialogFragment() {
                 CustomApp.instance.mainViewModelFactory
             ).get(PlaylistGenerationViewModel::class.java)
         }
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_calibration, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
