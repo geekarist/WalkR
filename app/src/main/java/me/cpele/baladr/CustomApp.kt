@@ -61,7 +61,7 @@ class CustomApp : Application() {
         MainViewModel.Factory(authStateRepository)
     }
 
-    private val tempoDetection: TempoDetection by lazy { AndroidDetectorTempoDetection(this) }
+    private val tempoDetection: TempoDetection by lazy { AndroidCounterTempoDetection(this) }
 
     private val calibrationFactorRepository: CalibrationFactorRepository by lazy {
         CalibrationFactorRepository(PreferenceManager.getDefaultSharedPreferences(this))

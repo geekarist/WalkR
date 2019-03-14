@@ -63,10 +63,10 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
         sensorManager.registerListener(
             listener,
             stepSensor,
-            SensorManager.SENSOR_DELAY_FASTEST
+            TimeUnit.SECONDS.toMicros(3).toInt()
         )
 
-        delay(TimeUnit.SECONDS.toMillis(11))
+        delay(TimeUnit.SECONDS.toMillis(13))
         deferred.complete(0)
 
         return deferred
