@@ -5,6 +5,7 @@ import androidx.lifecycle.Transformations
 import me.cpele.baladr.common.database.AuthStateDao
 import net.openid.appauth.AuthState
 
+// TODO: Move to common package
 class AuthStateRepository(private val authStateDao: AuthStateDao) {
 
     fun set(authState: AuthState) {
