@@ -66,7 +66,7 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
             TimeUnit.SECONDS.toMicros(3).toInt()
         )
 
-        delay(TimeUnit.SECONDS.toMillis(13))
+        delay(TimeUnit.SECONDS.toMillis(durationSeconds + 3L))
         deferred.complete(0)
 
         return deferred
