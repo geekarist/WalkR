@@ -43,15 +43,15 @@ dependencies {
         )
     )
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.extra.get("kotlin_version")}")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.extra.get("kotlinVersion")}")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1")
 
-    implementation("android.arch.navigation:navigation-fragment:1.0.0-beta02")
-    implementation("android.arch.navigation:navigation-ui:1.0.0-beta02")
-    implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0-beta02")
-    implementation("android.arch.navigation:navigation-ui-ktx:1.0.0-beta02")
+    implementation("android.arch.navigation:navigation-fragment:1.0.0")
+    implementation("android.arch.navigation:navigation-ui:1.0.0")
+    implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0")
+    implementation("android.arch.navigation:navigation-ui-ktx:1.0.0")
     implementation("androidx.appcompat:appcompat:1.0.2")
     implementation("androidx.core:core-ktx:1.0.1")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
