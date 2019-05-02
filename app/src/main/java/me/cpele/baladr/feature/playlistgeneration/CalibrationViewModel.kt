@@ -1,7 +1,6 @@
 package me.cpele.baladr.feature.playlistgeneration
 
 import android.app.Application
-import android.widget.Toast
 import androidx.lifecycle.*
 import com.github.musichin.reactivelivedata.map
 import kotlinx.coroutines.*
@@ -40,17 +39,10 @@ class CalibrationViewModel(
         if (!isDetecting) {
             isDetecting = true
             launch {
-                val detectedTempo = detection.execute(10).await()
-                _detected.postValue(detectedTempo)
+                val detectedTempo = detection.execute(10)
+                withContext(Dispatchers.Main) { _detected.value = detectedTempo }
                 tapTempo.value?.let {
                     calibrationFactorRepository.value = it.toFloat() / detectedTempo.toFloat()
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(
-                            app,
-                            "Fixed tempo: ${detectedTempo * calibrationFactorRepository.value}",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
                 }
                 isDetecting = false
             }
