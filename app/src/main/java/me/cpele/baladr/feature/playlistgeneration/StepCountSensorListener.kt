@@ -4,13 +4,12 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.os.SystemClock
-import kotlinx.coroutines.CompletableDeferred
 import java.util.concurrent.TimeUnit
 
 class StepCountSensorListener(
     private val startTimeMsec: Long,
     private val endTimeMsec: Long,
-    private val deferred: CompletableDeferred<Int>
+    private val callback: (Int) -> Unit
 ) : SensorEventListener {
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit
 
@@ -27,7 +26,7 @@ class StepCountSensorListener(
                 val diffMsec = timestampMsec - startTimeMsec
                 val diffMin: Float = diffMsec / 1000f / 60f
                 val countPerMin = (currentCount - firstCount) / diffMin
-                deferred.complete(countPerMin.toInt())
+                callback(countPerMin.toInt())
             }
         }
     }

@@ -36,11 +36,11 @@ class CalibrationViewModel(
     }
 
     fun onTap() {
-        tapTempoMeasurement.onTap()
+        tapTempoMeasurement.onBeat()
         if (!isDetecting) {
             isDetecting = true
             launch {
-                val detectedTempo = detection.executeAsync(10).await()
+                val detectedTempo = detection.execute(10).await()
                 _detected.postValue(detectedTempo)
                 tapTempo.value?.let {
                     calibrationFactorRepository.value = it.toFloat() / detectedTempo.toFloat()

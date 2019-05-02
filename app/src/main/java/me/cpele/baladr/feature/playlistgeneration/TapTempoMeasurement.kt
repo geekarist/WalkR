@@ -7,11 +7,11 @@ import java.util.*
 import java.util.concurrent.TimeUnit
 import kotlin.math.roundToInt
 
-class TapTempoMeasurement {
+class TapTempoMeasurement : TempoMeasurement {
 
     private val tapsData = MutableLiveData<MutableList<Long>>().apply { value = mutableListOf() }
 
-    val beatsPerMin: LiveData<Int?> = Transformations.map(tapsData) { nullableTaps: MutableList<Long>? ->
+    override val beatsPerMin: LiveData<Int?> = Transformations.map(tapsData) { nullableTaps: MutableList<Long>? ->
         nullableTaps
             ?.takeIf { it.size >= 2 }
             ?.let { taps ->
@@ -23,7 +23,7 @@ class TapTempoMeasurement {
             }
     }
 
-    fun onTap() {
+    override fun onBeat() {
         val nowMsec = Date().time
         val tapsList = tapsData.value
         if (isResetDelayElapsed(tapsList)) {
@@ -39,7 +39,7 @@ class TapTempoMeasurement {
         return nowMsec - lastTapMsec > TimeUnit.SECONDS.toMillis(2)
     }
 
-    fun onReset() {
+    override fun onReset() {
         val tapsList = tapsData.value
         tapsList?.clear()
         tapsData.value = tapsList

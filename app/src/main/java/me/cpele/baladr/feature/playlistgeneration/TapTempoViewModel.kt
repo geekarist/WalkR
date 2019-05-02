@@ -17,7 +17,7 @@ class TapTempoViewModel(
         it?.toString() ?: app.getString(R.string.walkr_not_applicable)
     }
 
-    fun onTap() = measurement.onTap()
+    fun onTap() = measurement.onBeat()
     fun onReset() = measurement.onReset()
 
     class Factory(

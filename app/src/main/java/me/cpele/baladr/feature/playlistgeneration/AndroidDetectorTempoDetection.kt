@@ -46,7 +46,7 @@ class AndroidDetectorTempoDetection(private val app: Application) : TempoDetecti
         }
     }
 
-    override suspend fun executeAsync(durationSeconds: Int): Deferred<Int> {
+    override suspend fun execute(durationSeconds: Int): Deferred<Int> {
 
         val deferred = CompletableDeferred<Int>().apply {
             invokeOnCompletion {

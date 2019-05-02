@@ -27,7 +27,7 @@ class FitTempoDetection(context: Context) : TempoDetection {
         )
     }
 
-    override suspend fun executeAsync(durationSeconds: Int): Deferred<Int> {
+    override suspend fun execute(durationSeconds: Int): Deferred<Int> {
         val deferred = CompletableDeferred<Int>()
         GoogleSignIn.getLastSignedInAccount(appContext)?.let { account ->
             val (startTime, endTime) = record(account)
