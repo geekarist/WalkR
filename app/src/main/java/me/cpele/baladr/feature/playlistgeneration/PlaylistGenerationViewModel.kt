@@ -34,12 +34,16 @@ class PlaylistGenerationViewModel(
 
     fun onStartTempoDetection(durationSeconds: Int) = launch {
         _detectionRunning.postValue(true)
-        val tempo = tempoDetection.execute(durationSeconds)
-        withContext(Dispatchers.Main) {
-            _detectionRunning.value = false
-            val calibrationFactor = calibrationFactorRepo.value
-            val fixedTempo = (tempo * calibrationFactor).toInt()
-            onProgressChanged(fixedTempo - TEMPO_PROGRESS_OFFSET)
+        try {
+            val tempo = tempoDetection.execute(durationSeconds)
+            withContext(Dispatchers.Main) {
+                _detectionRunning.value = false
+                val calibrationFactor = calibrationFactorRepo.value
+                val fixedTempo = (tempo * calibrationFactor).toInt()
+                onProgressChanged(fixedTempo - TEMPO_PROGRESS_OFFSET)
+            }
+        } catch (e: TimeoutCancellationException) {
+            TODO()
         }
     }
 

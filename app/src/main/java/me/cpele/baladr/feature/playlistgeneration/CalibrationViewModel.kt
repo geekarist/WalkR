@@ -1,10 +1,12 @@
 package me.cpele.baladr.feature.playlistgeneration
 
 import android.app.Application
+import androidx.annotation.StringRes
 import androidx.lifecycle.*
 import com.github.musichin.reactivelivedata.map
 import kotlinx.coroutines.*
 import me.cpele.baladr.R
+import me.cpele.baladr.common.LiveEvent
 import kotlin.coroutines.CoroutineContext
 
 class CalibrationViewModel(
@@ -30,23 +32,35 @@ class CalibrationViewModel(
         it?.toString() ?: app.getString(R.string.walkr_not_applicable)
     }
 
+    private val _viewEvent = MutableLiveData<LiveEvent<ViewEvent>>()
+    val viewEvent: LiveData<LiveEvent<ViewEvent>> get() = _viewEvent
+
     val calibrationFactorStr: LiveData<String> = Transformations.map(calibrationFactorRepository.liveValue) {
         String.format(app.getString(R.string.calibration_factor), it)
     }
 
-    fun onTap() {
+    fun onTap() = launch {
         tapTempoMeasurement.onBeat()
         if (!isDetecting) {
             isDetecting = true
-            launch {
+            try {
                 val detectedTempo = detection.execute(10)
                 withContext(Dispatchers.Main) { _detected.value = detectedTempo }
                 tapTempo.value?.let {
                     calibrationFactorRepository.value = it.toFloat() / detectedTempo.toFloat()
                 }
                 isDetecting = false
+            } catch (e: TimeoutCancellationException) {
+                isDetecting = false
+                withContext(Dispatchers.Main) {
+                    _viewEvent.value = LiveEvent(ViewEvent.Toast(R.string.calibration_failed))
+                }
             }
         }
+    }
+
+    sealed class ViewEvent {
+        data class Toast(@StringRes val message: Int) : ViewEvent()
     }
 
     fun onReset() {

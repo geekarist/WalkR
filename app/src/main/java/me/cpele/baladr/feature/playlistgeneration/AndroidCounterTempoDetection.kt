@@ -3,11 +3,12 @@ package me.cpele.baladr.feature.playlistgeneration
 import android.app.Application
 import android.hardware.Sensor
 import android.hardware.SensorManager
+import kotlinx.coroutines.CancellableContinuation
+import kotlinx.coroutines.suspendCancellableCoroutine
+import kotlinx.coroutines.withTimeout
 import java.util.*
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.Continuation
 import kotlin.coroutines.resume
-import kotlin.coroutines.suspendCoroutine
 
 class AndroidCounterTempoDetection(private val app: Application) : TempoDetection {
 
@@ -18,26 +19,31 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
     }
 
     override suspend fun execute(durationSeconds: Int): Int =
-        suspendCoroutine { continuation: Continuation<Int> ->
+        withTimeout(durationSeconds + 3L) {
+            suspendCancellableCoroutine { continuation: CancellableContinuation<Int> ->
 
-            val startTimeMsec = Date().time
-            val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
+                continuation.invokeOnCancellation { disposeListener() }
 
-            listener?.let { sensorManager.unregisterListener(it) }
-            listener = StepCountSensorListener(startTimeMsec, endTimeMsec) {
-                listener?.let(sensorManager::unregisterListener)
-                listener = null
-                continuation.resume(it)
+                val startTimeMsec = Date().time
+                val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
+
+                disposeListener()
+                listener = StepCountSensorListener(startTimeMsec, endTimeMsec) {
+                    disposeListener()
+                    continuation.resume(it)
+                }
+                val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+                sensorManager.registerListener(
+                    listener,
+                    stepSensor,
+                    TimeUnit.SECONDS.toMicros(3).toInt()
+                )
             }
-            val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
-            sensorManager.registerListener(
-                listener,
-                stepSensor,
-                TimeUnit.SECONDS.toMicros(3).toInt()
-            )
-            TimeUnit.SECONDS.toMillis(durationSeconds + 3L)
-            listener?.let(sensorManager::unregisterListener)
-            listener = null
         }
+
+    private fun disposeListener() {
+        listener?.let(sensorManager::unregisterListener)
+        listener = null
+    }
 }
 
