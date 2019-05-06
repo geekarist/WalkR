@@ -1,6 +1,7 @@
 package me.cpele.baladr.feature.playlistgeneration
 
 import android.app.Application
+import android.util.Log
 import androidx.annotation.StringRes
 import androidx.lifecycle.*
 import com.github.musichin.reactivelivedata.map
@@ -50,11 +51,12 @@ class CalibrationViewModel(
                     calibrationFactorRepository.value = it.toFloat() / detectedTempo.toFloat()
                 }
                 isDetecting = false
-            } catch (e: TimeoutCancellationException) {
+            } catch (e: Exception) {
                 isDetecting = false
                 withContext(Dispatchers.Main) {
                     _viewEvent.value = LiveEvent(ViewEvent.Toast(R.string.calibration_failed))
                 }
+                Log.w(javaClass.simpleName, "Error during tempo detection", e)
             }
         }
     }

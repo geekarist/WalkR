@@ -1,13 +1,20 @@
 package me.cpele.baladr.feature.playlistgeneration
 
+import android.util.Log
+import androidx.annotation.StringRes
 import androidx.lifecycle.*
 import kotlinx.coroutines.*
+import me.cpele.baladr.R
+import me.cpele.baladr.common.LiveEvent
 import kotlin.coroutines.CoroutineContext
 
 class PlaylistGenerationViewModel(
     private val tempoDetection: TempoDetection,
     private val calibrationFactorRepo: CalibrationFactorRepository
 ) : ViewModel(), CoroutineScope {
+
+    private val _viewEventData = MutableLiveData<LiveEvent<ViewEvent>>()
+    val viewEventData: LiveData<LiveEvent<ViewEvent>> get() = _viewEventData
 
     private val job = Job()
     override val coroutineContext: CoroutineContext = Dispatchers.Default + job
@@ -42,8 +49,12 @@ class PlaylistGenerationViewModel(
                 val fixedTempo = (tempo * calibrationFactor).toInt()
                 onProgressChanged(fixedTempo - TEMPO_PROGRESS_OFFSET)
             }
-        } catch (e: TimeoutCancellationException) {
-            TODO()
+        } catch (e: Exception) {
+            withContext(Dispatchers.Main) {
+                _detectionRunning.value = false
+                _viewEventData.value = LiveEvent(ViewEvent.Toast(R.string.generation_detection_failed, e.message))
+            }
+            Log.w(javaClass.simpleName, "Error during tempo detection", e)
         }
     }
 
@@ -54,6 +65,10 @@ class PlaylistGenerationViewModel(
     override fun onCleared() {
         job.cancel()
         super.onCleared()
+    }
+
+    sealed class ViewEvent {
+        data class Toast(@StringRes val message: Int, val cause: String?) : ViewEvent()
     }
 
     class Factory(

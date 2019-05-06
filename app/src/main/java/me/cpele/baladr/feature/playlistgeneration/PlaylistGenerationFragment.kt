@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -69,6 +70,10 @@ class PlaylistGenerationFragment : Fragment() {
             generationTempoSeekBar.isEnabled = it
         })
 
+        viewModel.viewEventData.observe(this, Observer {
+            it.consumed?.let { viewEvent -> renderEvent(viewEvent) }
+        })
+
         generationTempoDetectButton.setOnClickListener {
             viewModel.onStartTempoDetection(durationSeconds = 10)
         }
@@ -81,6 +86,15 @@ class PlaylistGenerationFragment : Fragment() {
             CalibrationDialogFragment.newInstance().show(childFragmentManager, TAG_FRAGMENT_CALIBRATION)
         }
     }
+
+    private fun renderEvent(viewEvent: PlaylistGenerationViewModel.ViewEvent) =
+        when (viewEvent) {
+            is PlaylistGenerationViewModel.ViewEvent.Toast -> Toast.makeText(
+                context,
+                getString(viewEvent.message, viewEvent.cause),
+                Toast.LENGTH_SHORT
+            ).show()
+        }
 
     override fun onResume() {
         super.onResume()
