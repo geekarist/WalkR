@@ -41,7 +41,7 @@ class CalibrationViewModel(
     }
 
     fun onTap() = launch {
-        tapTempoMeasurement.onBeat()
+        withContext(Dispatchers.Main) { tapTempoMeasurement.onBeat() }
         if (!isDetecting) {
             isDetecting = true
             try {

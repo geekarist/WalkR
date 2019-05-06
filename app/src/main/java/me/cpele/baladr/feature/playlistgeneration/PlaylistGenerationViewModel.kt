@@ -43,10 +43,12 @@ class PlaylistGenerationViewModel(
         _detectionRunning.postValue(true)
         try {
             val tempo = tempoDetection.execute(durationSeconds)
+            Log.d(javaClass.simpleName, "Detected tempo: $tempo")
             withContext(Dispatchers.Main) {
                 _detectionRunning.value = false
                 val calibrationFactor = calibrationFactorRepo.value
                 val fixedTempo = (tempo * calibrationFactor).toInt()
+                Log.d(javaClass.simpleName, "Fixed tempo: $fixedTempo")
                 onProgressChanged(fixedTempo - TEMPO_PROGRESS_OFFSET)
             }
         } catch (e: Exception) {

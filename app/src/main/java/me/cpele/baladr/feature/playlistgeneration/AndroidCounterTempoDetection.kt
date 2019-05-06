@@ -3,6 +3,7 @@ package me.cpele.baladr.feature.playlistgeneration
 import android.app.Application
 import android.hardware.Sensor
 import android.hardware.SensorManager
+import android.util.Log
 import kotlinx.coroutines.CancellableContinuation
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeout
@@ -31,6 +32,10 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
                 disposeListener()
                 listener = StepCountSensorListener(startTimeMsec, endTimeMsec) {
                     disposeListener()
+                    Log.d(
+                        this@AndroidCounterTempoDetection.javaClass.simpleName,
+                        "Called back with $it"
+                    )
                     continuation.resume(it)
                 }
                 val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
