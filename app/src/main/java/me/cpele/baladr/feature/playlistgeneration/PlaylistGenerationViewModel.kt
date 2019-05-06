@@ -42,7 +42,6 @@ class PlaylistGenerationViewModel(
         _detectionRunning.postValue(true)
         try {
             val tempo = tempoDetection.execute(durationSeconds)
-            Log.d(javaClass.simpleName, "Detected tempo: $tempo")
             withContext(Dispatchers.Main) {
                 _detectionRunning.value = false
                 onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET)

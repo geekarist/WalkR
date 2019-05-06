@@ -4,7 +4,6 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.os.SystemClock
-import android.util.Log
 import java.util.concurrent.TimeUnit
 
 class StepCountSensorListener(
@@ -22,17 +21,13 @@ class StepCountSensorListener(
                 System.currentTimeMillis() -
                         SystemClock.elapsedRealtime() +
                         TimeUnit.NANOSECONDS.toMillis(event.timestamp)
-            Log.d(javaClass.simpleName, "Event received at $timestampMsec")
             if (firstCount == 0f) {
-                Log.d(javaClass.simpleName, "Was first event")
                 firstCount = currentCount
             }
             if (timestampMsec >= endTimeMsec) {
-                Log.d(javaClass.simpleName, "End time exceeded")
                 val diffMsec = timestampMsec - startTimeMsec
                 val diffMin: Float = diffMsec / 1000f / 60f
                 val countPerMin = (currentCount - firstCount) / diffMin
-                Log.d(javaClass.simpleName, "Result is $countPerMin")
                 callback(countPerMin.toInt())
             }
         }
