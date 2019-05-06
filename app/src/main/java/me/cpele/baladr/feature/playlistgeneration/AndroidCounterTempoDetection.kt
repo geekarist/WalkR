@@ -18,8 +18,9 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
         app.getSystemService(Application.SENSOR_SERVICE) as SensorManager
     }
 
-    override suspend fun execute(durationSeconds: Int): Int =
-        withTimeout(durationSeconds + 3L) {
+    override suspend fun execute(durationSeconds: Int): Int {
+        val durationMillis = TimeUnit.SECONDS.toMillis(durationSeconds + 3L)
+        return withTimeout(durationMillis) {
             suspendCancellableCoroutine { continuation: CancellableContinuation<Int> ->
 
                 continuation.invokeOnCancellation { disposeListener() }
@@ -40,6 +41,7 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
                 )
             }
         }
+    }
 
     private fun disposeListener() {
         listener?.let(sensorManager::unregisterListener)
