@@ -81,10 +81,6 @@ class PlaylistGenerationFragment : Fragment() {
         generationTempoTapButton.setOnClickListener {
             TapTempoDialogFragment.newInstance().show(childFragmentManager, TAG_FRAGMENT_TAP_TEMPO)
         }
-
-        generationCalibrateButton.setOnClickListener {
-            CalibrationDialogFragment.newInstance().show(childFragmentManager, TAG_FRAGMENT_CALIBRATION)
-        }
     }
 
     private fun renderEvent(viewEvent: PlaylistGenerationViewModel.ViewEvent) =
