@@ -9,8 +9,7 @@ import me.cpele.baladr.common.LiveEvent
 import kotlin.coroutines.CoroutineContext
 
 class PlaylistGenerationViewModel(
-    private val tempoDetection: TempoDetection,
-    private val calibrationFactorRepo: CalibrationFactorRepository
+    private val tempoDetection: TempoDetection
 ) : ViewModel(), CoroutineScope {
 
     private val _viewEventData = MutableLiveData<LiveEvent<ViewEvent>>()
@@ -46,10 +45,7 @@ class PlaylistGenerationViewModel(
             Log.d(javaClass.simpleName, "Detected tempo: $tempo")
             withContext(Dispatchers.Main) {
                 _detectionRunning.value = false
-                val calibrationFactor = calibrationFactorRepo.value
-                val fixedTempo = (tempo * calibrationFactor).toInt()
-                Log.d(javaClass.simpleName, "Fixed tempo: $fixedTempo")
-                onProgressChanged(fixedTempo - TEMPO_PROGRESS_OFFSET)
+                onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET)
             }
         } catch (e: Exception) {
             withContext(Dispatchers.Main) {
@@ -74,12 +70,11 @@ class PlaylistGenerationViewModel(
     }
 
     class Factory(
-        private val tempoDetection: TempoDetection,
-        private val calibrationFactorRepo: CalibrationFactorRepository
+        private val tempoDetection: TempoDetection
     ) :
         ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(PlaylistGenerationViewModel(tempoDetection, calibrationFactorRepo)) as T
+            return modelClass.cast(PlaylistGenerationViewModel(tempoDetection)) as T
         }
     }
 

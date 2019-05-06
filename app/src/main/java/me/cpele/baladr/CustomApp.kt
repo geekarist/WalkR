@@ -1,7 +1,6 @@
 package me.cpele.baladr
 
 import android.app.Application
-import android.preference.PreferenceManager
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import com.google.gson.Gson
@@ -63,22 +62,14 @@ class CustomApp : Application() {
 
     private val tempoDetection: TempoDetection by lazy { AndroidCounterTempoDetection(this) }
 
-    private val calibrationFactorRepository: CalibrationFactorRepository by lazy {
-        CalibrationFactorRepository(PreferenceManager.getDefaultSharedPreferences(this))
-    }
-
     val playlistGenerationViewModelFactory: ViewModelProvider.Factory by lazy {
-        PlaylistGenerationViewModel.Factory(tempoDetection, calibrationFactorRepository)
+        PlaylistGenerationViewModel.Factory(tempoDetection)
     }
 
     private val tapTempoMeasurement: TapTempoMeasurement by lazy { TapTempoMeasurement() }
 
     val tapTempoViewModelFactory: ViewModelProvider.Factory by lazy {
         TapTempoViewModel.Factory(tapTempoMeasurement, this)
-    }
-
-    val calibrationViewModelFactory: ViewModelProvider.Factory by lazy {
-        CalibrationViewModel.Factory(tapTempoMeasurement, tempoDetection, this, calibrationFactorRepository)
     }
 
     companion object {
