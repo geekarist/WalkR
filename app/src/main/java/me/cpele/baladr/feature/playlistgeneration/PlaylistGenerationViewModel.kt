@@ -38,19 +38,22 @@ class PlaylistGenerationViewModel(
         }
     }
 
-    fun onStartTempoDetection(durationSeconds: Int) = launch {
-        _detectionRunning.postValue(true)
+    fun onStartTempoDetection(durationSeconds: Int) = launch(Dispatchers.Main) {
+        _detectionRunning.value = true
         try {
-            val tempo = tempoDetection.execute(durationSeconds)
-            withContext(Dispatchers.Main) {
-                _detectionRunning.value = false
-                onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET)
+            val tempo = withContext(Dispatchers.Default) {
+                tempoDetection.execute(durationSeconds)
             }
+            _detectionRunning.value = false
+            onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET)
         } catch (e: Exception) {
-            withContext(Dispatchers.Main) {
-                _detectionRunning.value = false
-                _viewEventData.value = LiveEvent(ViewEvent.Toast(R.string.generation_detection_failed, e.message))
-            }
+            _detectionRunning.value = false
+            _viewEventData.value = LiveEvent(
+                ViewEvent.Toast(
+                    R.string.generation_detection_failed,
+                    e.message
+                )
+            )
             Log.w(javaClass.simpleName, "Error during tempo detection", e)
         }
     }
