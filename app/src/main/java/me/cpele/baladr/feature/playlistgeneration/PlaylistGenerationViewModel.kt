@@ -44,10 +44,17 @@ class PlaylistGenerationViewModel(
             val tempo = withContext(Dispatchers.Default) {
                 tempoDetection.execute(durationSeconds)
             }
-            _detectionRunning.value = false
             onProgressChanged(tempo - TEMPO_PROGRESS_OFFSET)
+        } catch (e: TimeoutCancellationException) {
+            _viewEventData.value = LiveEvent(
+                ViewEvent.Toast(
+                    R.string.generation_detection_failed,
+                    e.message
+                )
+            )
+        } catch (e: CancellationException) {
+            // Ignore normal cancellation exception
         } catch (e: Exception) {
-            _detectionRunning.value = false
             _viewEventData.value = LiveEvent(
                 ViewEvent.Toast(
                     R.string.generation_detection_failed,
@@ -55,6 +62,8 @@ class PlaylistGenerationViewModel(
                 )
             )
             Log.w(javaClass.simpleName, "Error during tempo detection", e)
+        } finally {
+            _detectionRunning.value = false
         }
     }
 

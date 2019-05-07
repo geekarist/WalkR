@@ -15,6 +15,7 @@
     <string name="generation_tap">Tap</string>
     <string name="generation_calibrate">Calibrate</string>
     <string name="generation_detection_failed">Tempo detection failed (%1$s), please retry</string>
+    <string name="generation_detection_cancelled">Tempo detection cancelled</string>
 
     <string name="display_label">Playlist Tracks</string>
     <string name="display_save">Save Playlist</string>
