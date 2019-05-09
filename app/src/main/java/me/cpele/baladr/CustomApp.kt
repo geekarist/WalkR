@@ -60,7 +60,8 @@ class CustomApp : Application() {
         MainViewModel.Factory(authStateRepository)
     }
 
-    private val tempoDetection: TempoDetection by lazy { AndroidCounterTempoDetection(this) }
+    private val tempoDetectionAsync by lazy { AndroidCounterTempoDetectionAsync(this) }
+    private val tempoDetection: TempoDetection by lazy { AndroidCounterTempoDetection(tempoDetectionAsync) }
 
     val playlistGenerationViewModelFactory: ViewModelProvider.Factory by lazy {
         PlaylistGenerationViewModel.Factory(tempoDetection)

@@ -1,22 +1,14 @@
 package me.cpele.baladr.feature.playlistgeneration
 
-import android.app.Application
-import android.hardware.Sensor
-import android.hardware.SensorManager
 import kotlinx.coroutines.CancellableContinuation
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeout
-import java.util.*
 import java.util.concurrent.TimeUnit
 import kotlin.coroutines.resume
 
-class AndroidCounterTempoDetection(private val app: Application) : TempoDetection {
-
-    private var listener: StepCountSensorListener? = null
-
-    private val sensorManager: SensorManager by lazy {
-        app.getSystemService(Application.SENSOR_SERVICE) as SensorManager
-    }
+class AndroidCounterTempoDetection(
+    private val tempoDetectionAsync: AndroidCounterTempoDetectionAsync
+) : TempoDetection {
 
     override suspend fun execute(durationSeconds: Int): Int {
 
@@ -26,36 +18,13 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
 
             suspendCancellableCoroutine { continuation: CancellableContinuation<Int> ->
 
-                continuation.invokeOnCancellation { disposeListener() }
+                continuation.invokeOnCancellation { tempoDetectionAsync.cancel() }
 
-                executeAsync(durationSeconds) {
-                    disposeListener()
+                tempoDetectionAsync.execute(durationSeconds) {
                     continuation.resume(it)
                 }
             }
         }
-    }
-
-    private fun executeAsync(durationSeconds: Int, callback: (Int) -> Unit) {
-
-        val startTimeMsec = Date().time
-        val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
-
-        disposeListener()
-        listener = StepCountSensorListener(startTimeMsec, endTimeMsec) {
-            callback(it)
-        }
-        val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
-        sensorManager.registerListener(
-            listener,
-            stepSensor,
-            TimeUnit.SECONDS.toMicros(3).toInt()
-        )
-    }
-
-    private fun disposeListener() {
-        listener?.let(sensorManager::unregisterListener)
-        listener = null
     }
 }
 
