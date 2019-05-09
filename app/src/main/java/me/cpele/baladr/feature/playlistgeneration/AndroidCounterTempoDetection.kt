@@ -19,28 +19,38 @@ class AndroidCounterTempoDetection(private val app: Application) : TempoDetectio
     }
 
     override suspend fun execute(durationSeconds: Int): Int {
+
         val durationMillis = TimeUnit.SECONDS.toMillis(durationSeconds + 3L)
+
         return withTimeout(durationMillis) {
+
             suspendCancellableCoroutine { continuation: CancellableContinuation<Int> ->
 
                 continuation.invokeOnCancellation { disposeListener() }
 
-                val startTimeMsec = Date().time
-                val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
-
-                disposeListener()
-                listener = StepCountSensorListener(startTimeMsec, endTimeMsec) {
+                executeAsync(durationSeconds) {
                     disposeListener()
                     continuation.resume(it)
                 }
-                val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
-                sensorManager.registerListener(
-                    listener,
-                    stepSensor,
-                    TimeUnit.SECONDS.toMicros(3).toInt()
-                )
             }
         }
+    }
+
+    private fun executeAsync(durationSeconds: Int, callback: (Int) -> Unit) {
+
+        val startTimeMsec = Date().time
+        val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
+
+        disposeListener()
+        listener = StepCountSensorListener(startTimeMsec, endTimeMsec) {
+            callback(it)
+        }
+        val stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
+        sensorManager.registerListener(
+            listener,
+            stepSensor,
+            TimeUnit.SECONDS.toMicros(3).toInt()
+        )
     }
 
     private fun disposeListener() {
