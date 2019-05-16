@@ -7,7 +7,12 @@ import android.util.Log
 import java.util.*
 import java.util.concurrent.TimeUnit
 
-class AndroidCounterTempoDetectionAsync(private val app: Application) {
+interface TempoDetectionAsync {
+    fun execute(durationSeconds: Int, callback: (Int) -> Unit)
+    fun cancel()
+}
+
+class AndroidCounterTempoDetectionAsync(private val app: Application) : TempoDetectionAsync {
 
     private val sensorManager: SensorManager by lazy {
         app.getSystemService(Application.SENSOR_SERVICE) as SensorManager
@@ -15,7 +20,7 @@ class AndroidCounterTempoDetectionAsync(private val app: Application) {
 
     private var listener: StepCountSensorListener? = null
 
-    fun execute(durationSeconds: Int, callback: (Int) -> Unit) {
+    override fun execute(durationSeconds: Int, callback: (Int) -> Unit) {
 
         val startTimeMsec = Date().time
         val endTimeMsec = startTimeMsec + TimeUnit.SECONDS.toMillis(durationSeconds.toLong())
@@ -35,7 +40,7 @@ class AndroidCounterTempoDetectionAsync(private val app: Application) {
         )
     }
 
-    fun cancel() = disposeListener()
+    override fun cancel() = disposeListener()
 
     private fun disposeListener() {
         Log.v(javaClass.simpleName, "Unregistering")
