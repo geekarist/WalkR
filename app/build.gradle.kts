@@ -45,15 +45,15 @@ dependencies {
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.extra.get("kotlinVersion")}")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1")
 
     implementation("android.arch.navigation:navigation-fragment:1.0.0")
     implementation("android.arch.navigation:navigation-ui:1.0.0")
     implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0")
     implementation("android.arch.navigation:navigation-ui-ktx:1.0.0")
     implementation("androidx.appcompat:appcompat:1.0.2")
-    implementation("androidx.core:core-ktx:1.0.1")
+    implementation("androidx.core:core-ktx:1.0.2")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.lifecycle:lifecycle-extensions:2.0.0")
@@ -79,8 +79,8 @@ dependencies {
     implementation("net.openid:appauth:0.7.1-7-g060c3fb")
 
     testImplementation("junit:junit:4.12")
-    androidTestImplementation("androidx.test:runner:1.1.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.1.1")
+    androidTestImplementation("androidx.test:runner:1.2.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
 
     debugImplementation("com.facebook.stetho:stetho:1.5.0")
 }
