@@ -46,34 +46,34 @@ class CustomApp : Application() {
     }
 
     val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {
-        ViewModelFactory(
+        ViewModelFactory {
             PlaylistDisplayViewModel(
                 this,
                 trackRepository,
                 playlistRepository
             )
-        )
+        }
     }
 
     val libraryViewModelFactory: ViewModelProvider.Factory by lazy {
-        ViewModelFactory(LibraryViewModel(this, playlistRepository))
+        ViewModelFactory { LibraryViewModel(this, playlistRepository) }
     }
 
     val mainViewModelFactory by lazy {
-        ViewModelFactory(MainViewModel(authStateRepository))
+        ViewModelFactory { MainViewModel(authStateRepository) }
     }
 
     private val tempoDetectionAsync by lazy { AndroidCounterTempoDetectionAsync(this) }
     private val tempoDetection: TempoDetection by lazy { AndroidCounterTempoDetection(tempoDetectionAsync) }
 
     val playlistGenerationViewModelFactory: ViewModelProvider.Factory by lazy {
-        ViewModelFactory(PlaylistGenerationViewModel(tempoDetection))
+        ViewModelFactory { PlaylistGenerationViewModel(tempoDetection) }
     }
 
     private val tapTempoMeasurement: TapTempoMeasurement by lazy { TapTempoMeasurement() }
 
     val tapTempoViewModelFactory: ViewModelProvider.Factory by lazy {
-        ViewModelFactory(TapTempoViewModel(tapTempoMeasurement, this))
+        ViewModelFactory { TapTempoViewModel(tapTempoMeasurement, this) }
     }
 
     companion object {
