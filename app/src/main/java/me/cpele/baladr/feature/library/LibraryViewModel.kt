@@ -2,7 +2,9 @@ package me.cpele.baladr.feature.library
 
 import android.app.Application
 import androidx.annotation.StringRes
-import androidx.lifecycle.*
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.Transformations
 import me.cpele.baladr.R
 import me.cpele.baladr.common.business.PlaylistRepository
 import me.cpele.baladr.feature.library.item.GroupLibItem
@@ -14,15 +16,6 @@ class LibraryViewModel(
         private val app: Application,
         playlistRepository: PlaylistRepository
 ) : AndroidViewModel(app) {
-
-    class Factory(
-            private val app: Application,
-            private val playlistRepository: PlaylistRepository
-    ) : ViewModelProvider.Factory {
-        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(LibraryViewModel(app, playlistRepository)) as T
-        }
-    }
 
     val libItems: LiveData<List<LibItem>> = Transformations.map(playlistRepository.findAll()) { playlists ->
         val startOfToday by lazy { findStartOfToday() }

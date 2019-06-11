@@ -6,6 +6,7 @@ import androidx.room.Room
 import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.cpele.baladr.common.ViewModelFactory
 import me.cpele.baladr.common.business.PlaylistRepository
 import me.cpele.baladr.common.business.TrackRepository
 import me.cpele.baladr.common.database.CustomDatabase
@@ -45,32 +46,34 @@ class CustomApp : Application() {
     }
 
     val playlistDisplayViewModelFactory: ViewModelProvider.Factory by lazy {
-        PlaylistDisplayViewModel.Factory(
-            this,
-            trackRepository,
-            playlistRepository
+        ViewModelFactory(
+            PlaylistDisplayViewModel(
+                this,
+                trackRepository,
+                playlistRepository
+            )
         )
     }
 
     val libraryViewModelFactory: ViewModelProvider.Factory by lazy {
-        LibraryViewModel.Factory(this, playlistRepository)
+        ViewModelFactory(LibraryViewModel(this, playlistRepository))
     }
 
     val mainViewModelFactory by lazy {
-        MainViewModel.Factory(authStateRepository)
+        ViewModelFactory(MainViewModel(authStateRepository))
     }
 
     private val tempoDetectionAsync by lazy { AndroidCounterTempoDetectionAsync(this) }
     private val tempoDetection: TempoDetection by lazy { AndroidCounterTempoDetection(tempoDetectionAsync) }
 
     val playlistGenerationViewModelFactory: ViewModelProvider.Factory by lazy {
-        PlaylistGenerationViewModel.Factory(tempoDetection)
+        ViewModelFactory(PlaylistGenerationViewModel(tempoDetection))
     }
 
     private val tapTempoMeasurement: TapTempoMeasurement by lazy { TapTempoMeasurement() }
 
     val tapTempoViewModelFactory: ViewModelProvider.Factory by lazy {
-        TapTempoViewModel.Factory(tapTempoMeasurement, this)
+        ViewModelFactory(TapTempoViewModel(tapTempoMeasurement, this))
     }
 
     companion object {

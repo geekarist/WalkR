@@ -2,7 +2,9 @@ package me.cpele.baladr.feature.playlistdisplay
 
 import android.app.Application
 import android.view.View
-import androidx.lifecycle.*
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.github.musichin.reactivelivedata.combineLatestWith
 import com.github.musichin.reactivelivedata.map
 import com.github.musichin.reactivelivedata.switchMap
@@ -19,18 +21,6 @@ class PlaylistDisplayViewModel(
     private val trackRepository: TrackRepository,
     private val playlistRepository: PlaylistRepository
 ) : AndroidViewModel(app) {
-
-    class Factory(
-        private val application: Application,
-        private val trackRepository: TrackRepository,
-        private val playlistRepository: PlaylistRepository
-    ) : ViewModelProvider.Factory {
-        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(
-                PlaylistDisplayViewModel(application, trackRepository, playlistRepository)
-            ) as T
-        }
-    }
 
     private val tempoData: MutableLiveData<Int> = MutableLiveData()
 

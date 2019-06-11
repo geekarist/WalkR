@@ -2,7 +2,10 @@ package me.cpele.baladr.feature.playlistgeneration
 
 import android.util.Log
 import androidx.annotation.StringRes
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Transformations
+import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.*
 import me.cpele.baladr.R
 import me.cpele.baladr.common.LiveEvent
@@ -78,15 +81,6 @@ class PlaylistGenerationViewModel(
 
     sealed class ViewEvent {
         data class Toast(@StringRes val message: Int, val cause: String?) : ViewEvent()
-    }
-
-    class Factory(
-        private val tempoDetection: TempoDetection
-    ) :
-        ViewModelProvider.Factory {
-        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.cast(PlaylistGenerationViewModel(tempoDetection)) as T
-        }
     }
 
     companion object {
